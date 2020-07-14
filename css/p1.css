@@ -1,0 +1,166 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: Helvetica, Arial;
+}
+
+.topnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: seagreen;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.topnav img {
+    width: 75%;
+    length: 75%;
+}
+
+.topnav li {
+    float: left;
+}
+
+.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav .search-bar button{
+    float: right;
+    padding: 6px 10px;
+    margin-top: 25px;
+    margin-right: 16px;
+    background: lightgray;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.topnav input[type=text] {
+    padding: 6px;
+    margin-top: 25px;
+    font-size: 16px;
+    border: none;
+}
+
+.mainnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: seagreen;
+    position: fixed;
+    top: 90px;
+    width: 100%;
+}
+
+.mainnav li {
+    float: left;
+}
+
+.mainnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.mainnav a:hover {
+    background-color: darkgreen;
+}
+
+.grid-container {
+    display: grid;
+    grid-column-gap: 50px;
+    /*grid-template-columns: auto auto auto;*/
+    grid-template-columns: 400px 400px 400px;
+    justify-content: space-evenly;
+    padding: 50px;
+    padding-top: 0px;
+}
+
+.grid-item {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.grid-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.grid-item a:hover {
+    font-weight: bold;
+}
+
+.grid-item img {
+    max-width: 300px;
+    max-height: 200px;
+    padding: 30px;
+}
+
+.sale-price {
+    color: red;
+    font-weight: bolder;
+}
+.original-price {
+    text-decoration: line-through;
+}
+
+.main {
+    margin-top: 170px;
+}
+
+.main h2 {
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+}
+
+.main h2 a {
+    text-decoration: none;
+    color: black
+}
+
+p {
+    margin-left: 10px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 20px;
+}
+footer {
+    background-color: seagreen;
+    padding: 10px;
+    margin-top: 50px;
+    color: white;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    display: inline;
+}
+
+footer a:hover {
+    font-weight: bold;
+}
