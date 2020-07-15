@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="Kyle"> <!-- Made product page template -->
+    <meta charset="UTF-8">
+    <title>Salmon Filet | Meat</title> <!-- Change -->
+    <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
+</head>
+
+<header>
+    <!-- Logo and Search bar-->
+    <div class="topnav">
+        <ul>
+            <li><img src="../../images/logo_new.png" alt="Green Mart logo" id="logo"></li>
+            <li style="float:right">
+                <div class="search-bar">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search for a product" name="search">
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main navigation bar with Aisles, random buttons, login, sign up, checkout-->
+    <div class="mainnav">
+        <ul>
+            <li><a href="../../p1.html">Home</a></li>
+            <li><a href="aisles/p2.html">Aisles</a></li> <!-- TODO: Implement dropdown menu -->
+            <li><a href="deals/">Deals</a></li>
+            <li><a href="recipes/">Recipes</a></li>
+            <li><a href="blog/">Blog</a></li>
+
+            <li style="float:right"><a href="cart/">Shopping Cart (0)</a></li>
+            <li style="float:right"><a href="signup/">Sign Up</a></li>
+            <li style="float:right"><a href="login/">Log In</a></li>
+        </ul>
+    </div>
+</header>
+
+<body>
+    <div class="main">
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="../../images/meat/salmon.png" alt="Salmon"> <!-- Change -->
+            </div>
+            <div class="grid-item">
+                <h2>Salmon Filet</h2> <!-- Change -->
+                <span class="original-price">$10.99/lb</span><br /> <!-- Change -->
+                <span class="sale-price">$8.50/lb</span><br /> <!-- Remove if not on sale -->
+                <br />
+                Product of Nova Scotia. <br /> <br /> <!-- Change -->
+                <div class="addtocart">
+                    <form action="/action_page.php">
+                        <label for="quantity">Quantity:</label> <br />
+                        <button type="submit" style="float:right">Add to Cart</button>
+                        <input type="text" id="quantity" name="quantity" value="1">
+                    </form>
+                </div>
+                <br /> <br />
+                <h3>Description</h3> <!-- Change description below -->
+                <p>Fresh Atlantic salmon straight from the harbours of Nova Scotia. Certified to be sustainably farmed
+                    in the open seas by local fishers.
+                Check out our <a href="../../recipes">recipes</a> to see what delicious appetizers and meals you can
+                    make with salmon.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <ul>
+        <li>Copyright &copy 2020 Green Mart Inc. All Rights Reserved.</li>
+        <li>Created my free logo at <a href="https://logomakr.com/">Logomakr.com</a></li>
+    </ul>
+</footer>
+
+</html>

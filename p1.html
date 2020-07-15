@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:style="http://www.w3.org/1999/html">
+
 <head>
+    <meta name="author" content="Kyle">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Welcome to Green Mart!</title>
     <link rel="stylesheet" type="text/css" href="css/p1.css" />
 </head>
 
+<header>
+    <!-- Logo and Search bar-->
+    <div class="topnav">
+        <ul>
+            <li><img src="images/logo_new.png" alt="Green Mart logo" id="logo"></li>
+            <li style="float:right">
+                <div class="search-bar">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search for a product" name="search">
+                        <button type="submit" style="float:right">Submit</button>
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main navigation bar with Aisles, random buttons, login, sign up, checkout-->
+    <div class="mainnav">
+        <ul>
+            <li><a href="p1.html">Home</a></li>
+            <li><a href="aisles/p2.html">Aisles</a></li> <!-- TODO: Implement dropdown menu -->
+            <li><a href="deals/">Deals</a></li>
+            <li><a href="recipes/">Recipes</a></li>
+            <li><a href="blog/">Blog</a></li>
+
+            <li style="float:right"><a href="cart/">Shopping Cart (0)</a></li>
+            <li style="float:right"><a href="signup/">Sign Up</a></li>
+            <li style="float:right"><a href="login/">Log In</a></li>
+        </ul>
+    </div>
+</header>
+
 <body>
-<!-- Logo and Search bar-->
-<div class="topnav">
-    <ul>
-        <li><img src="images/logo_new.png" alt="Green Mart logo" id="logo"></li>
-        <li style="float:right">
-            <div class="search-bar">
-                <form actio="/action_page.php">
-                <input type="text" placeholder="Search for a product" name="search">
-                <button type="submit">Submit</button>
-                </form>
-            </div>
-        </li>
-    </ul>
-</div>
-
-<!-- Main navigation bar with Aisles, random buttons, login, sign up, checkout-->
-<div class="mainnav">
-    <ul>
-        <li><a href="aisles/p2.html">Aisles</a></li> <!-- TODO: Implement dropdown menu -->
-        <li><a href="deals/">Deals</a></li>
-        <li><a href="recipes/">Recipes</a></li>
-        <li><a href="blog/">Blog</a></li>
-
-        <li style="float:right"><a href="cart/">Shopping Cart (0)</a></li>
-        <li style="float:right"><a href="signup/">Sign Up</a></li>
-        <li style="float:right"><a href="login/">Log In</a></li>
-
-
-    </ul>
-</div>
-
     <div class="main">
         <h2><a href="deals/">Deals of the week</a></h2>
 
@@ -104,7 +108,6 @@
         <p>Aenean sed elit sed ante pharetra tincidunt. Sed egestas lectus sit amet hendrerit luctus. Ut elit velit, vulputate porttitor mauris in, volutpat vestibulum mi. Cras vehicula eros dolor, a laoreet mi mattis quis. Suspendisse sit amet placerat mauris, in fringilla velit. Duis in justo et mi consequat convallis a et erat. Ut tincidunt mauris urna, at convallis dolor sodales ac. Nullam egestas vulputate velit, et eleifend massa sagittis sed. Maecenas congue cursus diam tempor ultrices. Ut pellentesque vel mi ut finibus. Aliquam vestibulum maximus erat. Suspendisse dictum a erat et elementum.</p>
         <p>Nullam volutpat risus eget lacus feugiat vestibulum. Phasellus elementum dolor leo, pretium facilisis velit dapibus ultricies. In lacinia bibendum euismod. In vestibulum elit et sodales interdum. Sed aliquet massa ligula, quis tempus lectus sollicitudin id. Donec justo nunc, ultrices ac felis quis, eleifend placerat dui. Aliquam ante elit, faucibus sit amet vulputate a, efficitur quis ex. Nulla nunc lorem, sodales ut eleifend vitae, aliquet vitae nibh. Ut eget sodales nulla, et sagittis dolor. Curabitur et lacus lacus. Curabitur dapibus scelerisque magna, ut condimentum tellus vehicula sed. Vivamus at blandit orci. Donec non ultrices nulla, quis venenatis justo. Nulla sit amet lobortis magna. Donec non auctor nisl.</p>
         <p>Curabitur metus massa, lobortis sed dui nec, hendrerit viverra ante. Phasellus interdum nunc velit, sed interdum diam congue a. Vivamus at magna ut dui ornare laoreet sed a justo. Vivamus porttitor, dui a rutrum vulputate, ipsum eros luctus neque, at fringilla risus tortor quis dui. Pellentesque sollicitudin pharetra arcu. Cras tincidunt, arcu id consequat blandit, erat metus accumsan lacus, id varius ipsum tellus facilisis eros. Praesent efficitur sagittis arcu, vel viverra nisl consequat ut. Aliquam a sodales turpis.</p>
-
 </div>
 </body>
 
@@ -112,7 +115,6 @@
     <ul>
         <li>Copyright &copy 2020 Green Mart Inc. All Rights Reserved.</li>
         <li>Created my free logo at <a href="https://logomakr.com/">Logomakr.com</a></li>
-
     </ul>
 </footer>
 
