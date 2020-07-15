@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:style="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Green Mart!</title>
+    <link rel="stylesheet" type="text/css" href="css/p6.css" />
+    <style>
+        
+    #box{
+       border: 1px solid black;
+       padding: 5px 10px 5px 10px;
+       margin-left: auto;
+       margin-right: auto;
+       margin: 150px;
+       width: 45%;
+       margin-bottom: 0px;
+       background: lightgreen;
+     }
+   </style>
+</head>
+
+<body>
+<!-- Logo and Search bar-->
+<div class="topnav">
+    <ul>
+        <li><img src="images/logo_new.png" alt="Green Mart logo" id="logo"></li>
+        <li style="float:right">
+            <div class="search-bar">
+                <form actio="/action_page.php">
+                <input type="text" placeholder="Search for a product" name="search">
+                <button type="submit">Submit</button>
+                </form>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!-- Main navigation bar with Aisles, random buttons, login, sign up, checkout-->
+<div class="mainnav">
+    <ul>
+        <li><a href="aisles/p2.html">Aisles</a></li> <!-- TODO: Implement dropdown menu -->
+        <li><a href="deals/">Deals</a></li>
+        <li><a href="recipes/">Recipes</a></li>
+        <li><a href="blog/">Blog</a></li>
+
+        <li style="float:right"><a href="cart/">Shopping Cart (0)</a></li>
+        <li style="float:right"><a href="p6.html">Sign Up</a></li>
+        <li style="float:right"><a href="p5.html">Log In</a></li>
+    </ul>
+</div>
+    <div class="main">
+        
+        <form id="box">
+            <h4 style="font-weight: bold; color: darkblue; text-align: center;">SIGNUP TO CREATE A GREENMART ACCOUNT</h4>
+            <h3 style="font-weight: bold; text-decoration: underline;">PROFILE</h3>
+        
+            <label for="firstname">*FIRST NAME</label>
+            <input type="text" name="firstname" required>	&nbsp;	&nbsp;
+            <label for="lastname">*LAST NAME</label>
+            <input type="text" name="lastname" required><br><br>
+            <label for="email">*EMAIL</label>
+            <input type="text" name="email" required> &nbsp;	&nbsp;
+            <label for="confemail">*CONFIRM EMAIL</label>
+            <input type="text" name="confemail" required><br><br>
+            <label for="postalcode">*POSTAL CODE</label>
+            <input type="text" name="postalcode" required><br><br>
+            <label for="phone">PHONE NUMBER</label>
+            <input type="text" name=phone><br><br>
+            <label for="password">PASSWORD (minimum 6 characters, including numbers and letters)</label>
+                <input type="password" value="" id="myInput">
+                <input type="checkbox" onclick="myFunction()" required>Show Password
+            
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("myInput");
+                  if (x.type === "password") {
+                    x.type = "text";
+                  } else {
+                    x.type = "password";
+                  }
+                }
+            </script><br><br>
+            <label for="password">CONFIRM PASSWORD</label><br>
+                <input type="password" value="" id="myInput"><br><br>
+            
+                
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+          <label for="vehicle1"> Subscribe to receive email notifications on Green Mart promotions. Unsubscribe at any time.</label><br><br>
+          <button type="button" class="submit" style="font-weight: bold;">FINISH PROFILE</button>
+        </form>
+
+        <p>Already have a Green Mart account? <a href="p5.html">Login</a> to shop online.</p>
+    </div>
+</body>
+
+<div id="page-container">
+    <div id="content-wrap">
+        <ul>
+            <li>Copyright &copy 2020 Green Mart Inc. All Rights Reserved.</li>
+            <li>Created my free logo at <a href="https://logomakr.com/">Logomakr.com</a></li>
+        </ul>
+    </div>
+    <footer id="footer"></footer>
+  </div>
+</html>
