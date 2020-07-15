@@ -2,7 +2,7 @@
 h1 {
     font-family: cursive;
     color: seagreen;
-    vertical-align: center;
+
 }
 
 h2 {font-family: fantasy;
@@ -98,4 +98,7 @@ textarea {
 th{
     border-bottom-style: dotted;
 
+}
+body{
+   margin-top: 200px;
 }

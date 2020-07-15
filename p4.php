@@ -7,13 +7,12 @@
     <title>Shopping cart</title>
 </head>
 
-<header>
-    <button class = "continue">Continue Shopping</button>
-    <h1 align="center">My Shopping Cart</h1>
-</header>
+
 <body>
 <?php require "common/header.php"; ?>
 
+<button class = "continue">Continue Shopping</button>
+<h1 align="center" >My Shopping Cart</h1>
 <table align="center" cellspacing="20" >
     <tr valign="top">
         <th class = "img-with-text">
