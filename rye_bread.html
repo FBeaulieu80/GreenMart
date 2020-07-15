@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="Athigan"> 
+    <meta charset="UTF-8">
+    <title>Rye bread | Bakery</title> 
+    <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
+</head>
+
+<header>
+    <!-- Logo and Search bar-->
+    <div class="topnav">
+        <ul>
+            <li><img src="../../images/logo_new.png" alt="Green Mart logo" id="logo"></li>
+            <li style="float:right">
+                <div class="search-bar">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search for a product" name="search">
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main navigation bar with Aisles, random buttons, login, sign up, checkout-->
+    <div class="mainnav">
+        <ul>
+            <li><a href="../../p1.html">Home</a></li>
+            <li><a href="../aisles/p2">Aisles</a></li> <!-- TODO: Implement dropdown menu -->
+            <li><a href="deals/">Deals</a></li>
+            <li><a href="recipes/">Recipes</a></li>
+            <li><a href="blog/">Blog</a></li>
+
+            <li style="float:right"><a href="cart/">Shopping Cart (0)</a></li>
+            <li style="float:right"><a href="../../p6.html">Sign Up</a></li>
+            <li style="float:right"><a href="../../p5.html">Log In</a></li>
+        </ul>
+    </div>
+</header>
+
+<body>
+    <div class="main">
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="../../images/bakery/rye_bread.jpg" alt="Rye Bread"> 
+            </div>
+            <div class="grid-item">
+                <h2>Rye Bread</h2> 
+                <span class="original-price">$3.66/ea</span><br /> 
+                <span class="sale-price">$3.45/ea</span><br />
+                <br />
+                 <br />
+                 <div class="addtocart">
+                    <form action="/action_page.php">
+                        <label for="quantity">Quantity:</label> <br />
+                        <button type="submit" style="float:right">Add to Cart</button>
+                        <input type="text" id="quantity" name="quantity" value="1">
+                    </form>
+                </div>
+                <p>Whole grain and loaded with flavor</p><br />
+                <h3>Description</h3> 
+                <p>High fibre bread made from whole wheat flour, yeast, caraway seeds and soybean oil. 
+                Check out our <a href="../../recipes">recipes</a> to how you can add rye bread to your home meals.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <ul>
+        <li>Copyright &copy 2020 Green Mart Inc. All Rights Reserved.</li>
+        <li>Created my free logo at <a href="https://logomakr.com/">Logomakr.com</a></li>
+    </ul>
+</footer>
+
+</html>
