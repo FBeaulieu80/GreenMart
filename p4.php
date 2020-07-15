@@ -8,7 +8,7 @@
 </head>
 
 
-<body>
+<body marginwidth="100%">
 <?php require "common/header.php"; ?>
 
 <button class = "continue">Continue Shopping</button>
