@@ -1,9 +1,10 @@
-<html lang="en">
+<html lang="en" xmlns:style="http://www.w3.org/1999/html">
 <head>
-    <title>User List</title>
-    <link rel="stylesheet" type="text/css" href="../css/backstore.css"/>
+    <meta charset="UTF-8">
+    <title>Welcome to Green Mart!</title>
+    <link rel="stylesheet" type="text/css" href="../css/backstore.css" />
+    <meta name="author" content="Felix Beaulieu">
 </head>
-<body>
 <header>
     <!-- Logo -->
     <div class="topnav">
@@ -21,25 +22,19 @@
         </ul>
     </div>
 </header>
-
+<body>
 <div class="main">
-    <div id="user-list" class="user-sidenav">
-        <a href="EditUserProfile.php">Felix Beaulieu</a>
-        <a href="EditUserProfile.php">Michael Rowe</a>
-        <a href="EditUserProfile.php">Kyle Taylor-Bracken</a>
-        <a href="EditUserProfile.php">Athigan Sinnathurai</a>
-        <a href="EditUserProfile.php">Laura Boivin</a>
-        <a href="EditUserProfile.php"><b>+</b> New User</a>
-    </div>
-</div>
+    <div style=""> Error 404. <br/> Page not found. </div>
 
+</div>
+</body>
 
 <footer>
     <ul>
         <li>Copyright &copy 2020 Green Mart Inc. All Rights Reserved.</li>
         <li>Created my free logo at <a href="https://logomakr.com/">Logomakr.com</a></li>
+
     </ul>
 </footer>
-</body>
 
 </html>

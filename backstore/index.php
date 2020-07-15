@@ -19,7 +19,7 @@
             <li><a href="UserList.php">Users</a></li>
             <li><a href="404.php">Orders</a></li>
 
-            <li style="float:right"><a href="login/">Log In</a></li>
+            <li style="float:right"><a href="404.php">Log In</a></li>
         </ul>
     </div>
 </header>
