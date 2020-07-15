@@ -6,7 +6,7 @@
     <meta name="author" content="Felix Beaulieu">
 </head>
 <body>
-<?php require "common/header.html"; ?>
+<?php require "common/header.php"; ?>
 <div class="main">
     <h2>Back Store</h2>
 </div>

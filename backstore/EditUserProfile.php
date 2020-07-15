@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="../css/backstore.css"/>
 </head>
 <body>
-<?php require "common/header.html"; ?>
+<?php require "common/header.php"; ?>
 <div class="main">
     <form class="user-profile">
         <div class="container">
