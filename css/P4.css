@@ -23,16 +23,17 @@ h4{
 
 table {
     border-style: ridge;
-
     border-color: darkslategrey;
 }
 
 .img-with-text {
-    text-align: justify;
+    text-align: center;
     width: 250px;
+
 }
 .img-with-text {
     display: block;
+    text-align: center;
 ;
 }
 button {
