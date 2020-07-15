@@ -8,20 +8,33 @@ html, body {
     font-family: Helvetica, Arial;
 }
 
+.topnav {
+    position: relative;
+    background-color: seagreen;
+    top: 0;
+    max-width: 100%;
+    margin: 0;
+    min-height: 50px;
+    height: 5%;
+    max-height: 100px;
+    padding: 2%;
+}
+
 .topnav ul {
     list-style-type: none;
     margin: 0;
-    padding: 10px;
+    padding: 0;
+    /*padding: 10px;*/
     overflow: hidden;
     background-color: seagreen;
-    position: fixed;
-    top: 0;
-    width: 100%;
+    /*position: relative;*/
+    /*top: 0;*/
+    /*width: 100%;*/
 }
 
 .topnav img {
     width: 75%;
-    length: 75%;
+    display: block;
 }
 
 .topnav li {
@@ -54,15 +67,21 @@ html, body {
     border: none;
 }
 
+.mainnav {
+    width: 100%;
+    position: relative;
+}
+
 .mainnav ul {
+    max-width:100%;
+    max-height:100%;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: seagreen;
-    position: fixed;
-    top: 90px;
     width: 100%;
+    position: relative;
 }
 
 .mainnav li {
@@ -84,7 +103,8 @@ html, body {
 
 /* MAIN CONTENT */
 .main {
-    margin-top: 170px;
+    position: relative;
+    /*margin-top: 170px;*/
 }
 
 .main h2 {

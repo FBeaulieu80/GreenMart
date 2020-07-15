@@ -1,0 +1,54 @@
+.aisles-sidenav {
+    height: 100%;
+    max-height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: seagreen;
+    overflow-x: hidden;
+    padding-top: 5%;
+    transition: 0.5s;
+    display: block;
+    width: fit-content;
+    max-width: 20%;
+    float: left;
+    z-index: 1;
+}
+
+.aisles-sidenav a {
+    padding: 2% 2% 2% 15%; /* <top> <right> <bottom> <left> */
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.aisles-sidenav a:hover {
+    background-color: darkgreen;
+}
+
+.aisles {
+    position: relative;
+    display: block;
+    background-color: darkseagreen;
+    height: 100%;
+    max-height: 100%;
+}
+
+.aisles-content {
+    display: inline-block;
+    position: relative;
+    padding: 5% 2% 2% 2%;
+    margin:0;
+}
+
+.aisles-content a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.aisles-content a:hover {
+    background-color: darkgreen;
+}
