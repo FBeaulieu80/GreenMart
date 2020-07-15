@@ -3,9 +3,12 @@
 <head>
     <title>Order List</title>
 </head>
-<body marginwidth="100%">
+<body>
+<?php require "common/header.php"; ?>
+<h1>Order List</h1>
 <button>Add</button>
-<table>
+
+<table marginwidth="100%">
     <tr>
         <th>Product Name</th>
         <th>Product ID</th>
@@ -21,5 +24,6 @@
         <th></th>
     </tr>
 </table>
+<?php require "common/footer.html"; ?>
 </body>
 
