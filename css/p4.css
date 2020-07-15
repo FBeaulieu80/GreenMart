@@ -2,6 +2,7 @@
 h1 {
     font-family: cursive;
     color: seagreen;
+    vertical-align: center;
 }
 
 h2 {font-family: fantasy;
@@ -24,9 +25,11 @@ h4{
 table {
     border-style: ridge;
     border-color: darkslategrey;
+    vertical-align: center;
 }
 
 .img-with-text {
+
     text-align: center;
     width: 250px;
 
