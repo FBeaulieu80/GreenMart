@@ -28,8 +28,8 @@
             <li><a href="<?php echo $base ?>common/404.php">Blog</a></li>
 
             <li style="float:right"><a href="<?php echo $base ?>p4.php">Shopping Cart (4)</a></li>
-            <li style="float:right"><a href="<?php echo $base ?>p5.php">Sign Up</a></li>
-            <li style="float:right"><a href="<?php echo $base ?>p6.php">Log In</a></li>
+            <li style="float:right"><a href="<?php echo $base ?>p6.php">Sign Up</a></li>
+            <li style="float:right"><a href="<?php echo $base ?>p5.php">Log In</a></li>
         </ul>
     </div>
 </header>
