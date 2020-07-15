@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome to Green Mart!</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/p5.css" />
     <style>
         
@@ -20,34 +21,7 @@
 </head>
 
 <body>
-<!-- Logo and Search bar-->
-<div class="topnav">
-    <ul>
-        <li><img src="images/logo_new.png" alt="Green Mart logo" id="logo"></li>
-        <li style="float:right">
-            <div class="search-bar">
-                <form actio="/action_page.php">
-                <input type="text" placeholder="Search for a product" name="search">
-                <button type="submit">Submit</button>
-                </form>
-            </div>
-        </li>
-    </ul>
-</div>
-
-<!-- Main navigation bar with Aisles, random buttons, login, sign up, checkout-->
-<div class="mainnav">
-    <ul>
-        <li><a href="aisles/p2.html">Aisles</a></li> <!-- TODO: Implement dropdown menu -->
-        <li><a href="deals/">Deals</a></li>
-        <li><a href="recipes/">Recipes</a></li>
-        <li><a href="blog/">Blog</a></li>
-
-        <li style="float:right"><a href="cart/">Shopping Cart (0)</a></li>
-        <li style="float:right"><a href="p6.html">Sign Up</a></li>
-        <li style="float:right"><a href="p5.html">Log In</a></li>
-    </ul>
-</div>
+    <?php require_once "common/header.php"?>
     <div class="main">
         
         <form id="box">
@@ -72,7 +46,7 @@
         <button type="button" class="forgetpassword" style="font-weight: bold; float: right;">Forget Password</button>
         </form>
 
-        <p>Don't have an account? <a href="p6.html">Sign up</a> to shop online and receive all the latest promotions at Green Mart.</p>
+        <p>Don't have an account? <a href="p6.php">Sign up</a> to shop online and receive all the latest promotions at Green Mart.</p>
     </div>
 </body>
 <footer>

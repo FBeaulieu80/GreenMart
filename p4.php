@@ -2,6 +2,7 @@
 <html long = "en">
 
 <head>
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/p4.css">
     <title>Shopping cart</title>
 </head>
@@ -11,6 +12,8 @@
     <h1 align="center">My Shopping Cart</h1>
 </header>
 <body>
+<?php require "common/header.php"; ?>
+
 <table align="center" cellspacing="20" >
     <tr valign="top">
         <th class = "img-with-text">
@@ -95,7 +98,7 @@
         </th>
     </tr>
 </table>
-
+<?php require "common/footer.html"; ?>
 </body>
 
 </html>
