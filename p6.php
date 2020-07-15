@@ -3,53 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome to Green Mart!</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/p6.css" />
     <style>
-        
-    #box{
-       border: 1px solid black;
-       padding: 5px 10px 5px 10px;
-       margin-left: auto;
-       margin-right: auto;
-       margin: 150px;
-       width: 45%;
-       margin-bottom: 0px;
-       background: lightgreen;
-     }
-   </style>
+        #box{
+            border: 1px solid black;
+            padding: 5px 10px 5px 10px;
+            width: 45%;
+            margin: 150px 150px 0;
+            background: lightgreen;
+        }
+    </style>
 </head>
 
 <body>
-<!-- Logo and Search bar-->
-<div class="topnav">
-    <ul>
-        <li><img src="images/logo_new.png" alt="Green Mart logo" id="logo"></li>
-        <li style="float:right">
-            <div class="search-bar">
-                <form actio="/action_page.php">
-                <input type="text" placeholder="Search for a product" name="search">
-                <button type="submit">Submit</button>
-                </form>
-            </div>
-        </li>
-    </ul>
-</div>
-
-<!-- Main navigation bar with Aisles, random buttons, login, sign up, checkout-->
-<div class="mainnav">
-    <ul>
-        <li><a href="aisles/p2.html">Aisles</a></li> <!-- TODO: Implement dropdown menu -->
-        <li><a href="deals/">Deals</a></li>
-        <li><a href="recipes/">Recipes</a></li>
-        <li><a href="blog/">Blog</a></li>
-
-        <li style="float:right"><a href="cart/">Shopping Cart (0)</a></li>
-        <li style="float:right"><a href="p6.html">Sign Up</a></li>
-        <li style="float:right"><a href="p5.html">Log In</a></li>
-    </ul>
-</div>
+    <?php require_once "common/header.php"?>
     <div class="main">
-        
         <form id="box">
             <h4 style="font-weight: bold; color: darkblue; text-align: center;">SIGNUP TO CREATE A GREENMART ACCOUNT</h4>
             <h3 style="font-weight: bold; text-decoration: underline;">PROFILE</h3>
@@ -89,17 +58,8 @@
           <button type="button" class="submit" style="font-weight: bold;">FINISH PROFILE</button>
         </form>
 
-        <p>Already have a Green Mart account? <a href="p5.html">Login</a> to shop online.</p>
+        <p>Already have a Green Mart account? <a href="p5.php">Login</a> to shop online.</p>
     </div>
 </body>
-
-<div id="page-container">
-    <div id="content-wrap">
-        <ul>
-            <li>Copyright &copy 2020 Green Mart Inc. All Rights Reserved.</li>
-            <li>Created my free logo at <a href="https://logomakr.com/">Logomakr.com</a></li>
-        </ul>
-    </div>
-    <footer id="footer"></footer>
-  </div>
+<?php require_once "common/footer.html"?>
 </html>

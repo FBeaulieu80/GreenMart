@@ -17,7 +17,7 @@
             <li><a href="<?php echo $base; ?>backstore/UserList.php">Users</a></li>
             <li><a href="<?php echo $base; ?>backstore/common/404.php">Orders</a></li>
 
-            <li style="float:right"><a href="<?php echo $base; ?>backstore/common/404.php">Log In</a></li>
+            <li style="float:right"><a href="<?php echo $base; ?>p5.php">Log In</a></li>
         </ul>
     </div>
 </header>
