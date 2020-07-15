@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:style="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Green Mart!</title>
+    <link rel="stylesheet" type="text/css" href="css/p5.css" />
+    <style>
+        
+    #box{
+       border: 1px solid black;
+       padding: 5px 5px 5px 15px;
+       margin-left: auto;
+       margin-right: auto;
+       margin: 150px;
+       width: 30%;
+       margin-bottom: 0px;
+       background: lightgreen;
+     }
+   </style>
+</head>
+
+<body>
+<!-- Logo and Search bar-->
+<div class="topnav">
+    <ul>
+        <li><img src="images/logo_new.png" alt="Green Mart logo" id="logo"></li>
+        <li style="float:right">
+            <div class="search-bar">
+                <form actio="/action_page.php">
+                <input type="text" placeholder="Search for a product" name="search">
+                <button type="submit">Submit</button>
+                </form>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!-- Main navigation bar with Aisles, random buttons, login, sign up, checkout-->
+<div class="mainnav">
+    <ul>
+        <li><a href="aisles/p2.html">Aisles</a></li> <!-- TODO: Implement dropdown menu -->
+        <li><a href="deals/">Deals</a></li>
+        <li><a href="recipes/">Recipes</a></li>
+        <li><a href="blog/">Blog</a></li>
+
+        <li style="float:right"><a href="cart/">Shopping Cart (0)</a></li>
+        <li style="float:right"><a href="p6.html">Sign Up</a></li>
+        <li style="float:right"><a href="p5.html">Log In</a></li>
+    </ul>
+</div>
+    <div class="main">
+        
+        <form id="box">
+            <h4 style="font-weight: bold; color: darkblue;text-align: center;">LOG IN TO YOUR GREEN MART ACCOUNT</h4>
+            <label for="name">Email:</label>
+            <input type="text" name="email" required><br><br>
+            Password: <input type="password" value="" id="myInput"><br><br>
+            <input type="checkbox" onclick="myFunction()" required>Show Password<br><br>
+            
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("myInput");
+                  if (x.type === "password") {
+                    x.type = "text";
+                  } else {
+                    x.type = "password";
+                  }
+                }
+            </script>
+        
+        <button type="button" class="submit" style="font-weight: bold;">Submit</button>
+        <button type="button" class="forgetpassword" style="font-weight: bold; float: right;">Forget Password</button>
+        </form>
+
+        <p>Don't have an account? <a href="p6.html">Sign up</a> to shop online and receive all the latest promotions at Green Mart.</p>
+    </div>
+</body>
+<footer>
+    <ul>
+        <li>Copyright &copy 2020 Green Mart Inc. All Rights Reserved.</li>
+        <li>Created my free logo at <a href="https://logomakr.com/">Logomakr.com</a></li>
+    </ul>
+</footer>
+</html>
