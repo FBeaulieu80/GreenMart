@@ -12,7 +12,7 @@
 <h1 align = "center">Edit Order List<br/></h1>
 
 <form action = "" >
-    <select name = "editProduct">
+    <select name = "editProduct" >
         <option>New Product</option>
         <option>Organic Banana</option>
         <option>Yummy Chickpeas</option>
@@ -59,6 +59,7 @@
                     <select name = "answer"><option>No</option><option>Yes</option> </select></form></td>
         </tr>
     </table>
+
     <button>Save</button>
 
 

@@ -9,11 +9,11 @@
 <?php require "common/header.php"; ?>
 <h1>Order List </h1>
 <div align="center">
-<a href="backstore/p12.php" class = "button">Add</a>
-<a href="backstore/p12.php" class = "button">Edit</a>
+<a href="../backstore/p12.php" class = "button">Add</a>
+<a href="../backstore/p12.php" class = "button">Edit</a>
 </div>
 
-<table marginwidth="100%" cellspacing = "20" align = "center" >
+<table marginwidth="100%" cellspacing = "20" align = "center">
     <tr>
         <th>Product Name</th>
         <th>Product ID</th>

@@ -10,3 +10,11 @@ div.editOrder{
 body{
     text-align:  center;
 }
+table{
+background-color: cornsilk;
+    border-style: double;
+    margin-bottom: 5%;
+}
+select{
+     text-align-last: center;
+}
