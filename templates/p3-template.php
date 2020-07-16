@@ -5,7 +5,7 @@
     <meta name="author" content="Kyle"> <!-- Made product page template -->
     <meta charset="UTF-8">
     <title>Banana | Fruit & Veg</title> <!-- Change -->
-    <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
+    <link rel="stylesheet" type="text/css" href="../css/p3.css" />
 </head>
 <body>
     <?php require_once "../../common/header.php"; ?>
@@ -13,7 +13,7 @@
 
         <div class="grid-container">
             <div class="grid-item">
-                <img src="../../images/fruit-veg/banana.png" alt="Banana"> <!-- Change -->
+                <img src="../images/fruit-veg/banana.png" alt="Banana"> <!-- Change -->
             </div>
             <div class="grid-item">
                 <h2>Banana</h2> <!-- Change -->
