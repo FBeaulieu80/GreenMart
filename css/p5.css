@@ -141,16 +141,15 @@ p {
     padding-right: 150px;
     padding-bottom: 20px;
 }
+
 footer {
+    width: 100%;
+    position: relative;
     background-color: seagreen;
     padding: 10px;
     margin-top: 50px;
     color: white;
-    position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-    
+
 }
 
 footer ul {

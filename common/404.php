@@ -1,7 +1,8 @@
 <html lang="en" xmlns:style="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome to Green Mart!</title>
+    <title>Oops! | Green Mart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/main.css" />
     <meta name="author" content="Felix Beaulieu">
 </head>

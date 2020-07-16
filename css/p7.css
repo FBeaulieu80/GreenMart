@@ -1,0 +1,9 @@
+.product-table {
+    text-align: center;
+    word-wrap: break-word;
+    resize:none;
+}
+
+textarea {
+    resize:none;
+}

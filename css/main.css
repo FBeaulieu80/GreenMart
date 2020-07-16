@@ -1,27 +1,43 @@
 /* COPY CODE FROM HERE FOR TOP BAR */
-html, body {
+html, body, footer {
     margin: 0;
     padding: 0;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 * {
     font-family: Helvetica, Arial;
+    /*box-sizing: border-box;*/
+}
+
+.topnav {
+    position: relative;
+    background-color: seagreen;
+    top: 0;
+    max-width: 100%;
+    margin: 0;
+    min-height: 50px;
+    height: 5%;
+    max-height: 100px;
+    padding: 2%;
 }
 
 .topnav ul {
     list-style-type: none;
     margin: 0;
-    padding: 10px;
+    padding: 0;
+    /*padding: 10px;*/
     overflow: hidden;
     background-color: seagreen;
-    position: fixed;
-    top: 0;
-    width: 100%;
+    /*position: relative;*/
+    /*top: 0;*/
+    /*width: 100%;*/
 }
 
 .topnav img {
     width: 75%;
-    length: 75%;
+    display: block;
 }
 
 .topnav li {
@@ -54,15 +70,21 @@ html, body {
     border: none;
 }
 
+.mainnav {
+    width: 100%;
+    position: relative;
+}
+
 .mainnav ul {
+    max-width:100%;
+    max-height:100%;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: seagreen;
-    position: fixed;
-    top: 90px;
     width: 100%;
+    position: relative;
 }
 
 .mainnav li {
@@ -84,33 +106,38 @@ html, body {
 
 /* MAIN CONTENT */
 .main {
-    margin-top: 170px;
+    position: relative;
+    display: block;
+    /*margin-top: 170px;*/
+    padding: 2%;
 }
 
 .main h2 {
     text-align: center;
     padding: 10px;
     font-size: 40px;
-}
-
-.main h2 a {
-    text-decoration: none;
-    color: black
+    margin: 0;
+    max-width: 100%;
 }
 
 p {
-    margin-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    /*margin-left: 10px;
     padding-left: 150px;
     padding-right: 150px;
-    padding-bottom: 20px;
+    padding-bottom: 20px;*/
 }
 /* END OF MAIN CONTENT */
 
 /* COPY FOOTER STYLE */
 footer {
+    width: 100%;
+    position: relative;
     background-color: seagreen;
     padding: 10px;
-    margin-top: 50px;
+    /*margin-top: 50px;*/
     color: white;
     /*position: fixed;*/ /* Uncomment if your page is short */
 }

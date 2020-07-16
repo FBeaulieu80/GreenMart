@@ -9,10 +9,10 @@
         
     #box{
        border: 1px solid black;
-       padding: 5px 5px 5px 15px;
+       padding: 1% 1% 1% 3%;
        margin-left: auto;
        margin-right: auto;
-       margin: 150px;
+       margin: 13%;
        width: 30%;
        margin-bottom: 0px;
        background: lightgreen;
@@ -47,6 +47,8 @@
         </form>
 
         <p>Don't have an account? <a href="p6.php">Sign up</a> to shop online and receive all the latest promotions at Green Mart.</p>
+        
+        <p><button style="background-color: black;"><a href="backstore/index.php" style="text-decoration: none; color: white;">Access Backstore</a></button></p>
     </div>
 </body>
 <footer>

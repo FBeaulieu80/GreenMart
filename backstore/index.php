@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Green Mart!</title>
+    <title>Back Store | Green Mart</title>
     <link rel="stylesheet" type="text/css" href="../css/backstore.css" />
     <meta name="author" content="Felix Beaulieu">
 </head>
