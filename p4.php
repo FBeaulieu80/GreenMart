@@ -5,7 +5,7 @@
     <meta name="author" content="Laura Boivin">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/p4.css">
-    <title>Shopping cart</title>
+    <title>Shopping Cart (4) | Green Mart</title>
 </head>
 
 
@@ -98,7 +98,7 @@
         </th>
     </tr>
 </table>
-<?php require "common/footer.html"; ?>
+<?php //require "common/footer.html"; ?>
 </body>
 
 </html>

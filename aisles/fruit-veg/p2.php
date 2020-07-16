@@ -5,26 +5,26 @@
     <title>Aisles</title>
     <link rel="stylesheet" href="../../css/main.css" type="text/css" />
     <link rel="stylesheet" href="../../css/p2.css" type="text/css" />
-    <meta name="author" content="TBD"> <!-- TODO: Change the author name -->
+    <meta name="author" content="Kyle"> <!-- TODO: Change the author name -->
 </head>
 <body>
 <?php require "../../common/header.php"; ?>
 <div class="main">
-    <h2 class="aisle-header">Bakery</h2>
+    <h2 class="aisle-header">Fruits & Vegetables</h2>
     <div class="aisle-cards-container">
         <div class="aisle-card">
-            <a href="rye_bread.php">
-                <img src="../../images/bakery/rye_bread.jpg" alt="Rye Bread">
-                <div class="text">Rye Bread</div>
-                <div class="price-sale">$3.45/ea</div>
+            <a href="banana.php">
+                <img src="../../images/fruit-veg/banana.png" alt="Banana">
+                <div class="text">Banana</div>
+                <div class="price-sale">$0.60/lb</div>
             </a>
         </div>
 
         <div class="aisle-card">
-            <a href="p3-template.php">
-                <img src="../../images/bakery/baguette.jpg" alt="Baguette">
-                <div class="text">Baguette</div>
-                <div class="price">$99.99/ea</div>
+            <a href="kiwi.php">
+                <img src="../../images/fruit-veg/kiwi.jpg" alt="kiwi">
+                <div class="text">Kiwi</div>
+                <div class="price-sale">$2.15/lb</div>
             </a>
         </div>
     </div>

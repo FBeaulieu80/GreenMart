@@ -7,78 +7,78 @@ html, body {
     font-family: Helvetica, Arial;
 }
 
-.topnav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 10px;
-    overflow: hidden;
-    background-color: seagreen;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
+/*.topnav ul {*/
+/*    list-style-type: none;*/
+/*    margin: 0;*/
+/*    padding: 10px;*/
+/*    overflow: hidden;*/
+/*    background-color: seagreen;*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    width: 100%;*/
+/*}*/
 
-.topnav img {
-    width: 75%;
-    length: 75%;
-}
+/*.topnav img {*/
+/*    width: 75%;*/
+/*    length: 75%;*/
+/*}*/
 
-.topnav li {
-    float: left;
-}
+/*.topnav li {*/
+/*    float: left;*/
+/*}*/
 
-.topnav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+/*.topnav li a {*/
+/*    display: block;*/
+/*    color: white;*/
+/*    text-align: center;*/
+/*    padding: 14px 16px;*/
+/*    text-decoration: none;*/
+/*}*/
 
-.topnav .search-bar button{
-    float: right;
-    padding: 6px 10px;
-    margin-top: 25px;
-    margin-right: 16px;
-    background: lightgray;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
+/*.topnav .search-bar button{*/
+/*    float: right;*/
+/*    padding: 6px 10px;*/
+/*    margin-top: 25px;*/
+/*    margin-right: 16px;*/
+/*    background: lightgray;*/
+/*    font-size: 16px;*/
+/*    border: none;*/
+/*    cursor: pointer;*/
+/*}*/
 
-.topnav input[type=text]{
-    padding: 6px;
-    margin-top: 25px;
-    font-size: 16px;
-    border: none;
-}
+/*.topnav input[type=text]{*/
+/*    padding: 6px;*/
+/*    margin-top: 25px;*/
+/*    font-size: 16px;*/
+/*    border: none;*/
+/*}*/
 
-.mainnav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: seagreen;
-    position: fixed;
-    top: 90px;
-    width: 100%;
-}
+/*.mainnav ul {*/
+/*    list-style-type: none;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    overflow: hidden;*/
+/*    background-color: seagreen;*/
+/*    position: fixed;*/
+/*    top: 90px;*/
+/*    width: 100%;*/
+/*}*/
 
-.mainnav li {
-    float: left;
-}
+/*.mainnav li {*/
+/*    float: left;*/
+/*}*/
 
-.mainnav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+/*.mainnav li a {*/
+/*    display: block;*/
+/*    color: white;*/
+/*    text-align: center;*/
+/*    padding: 14px 16px;*/
+/*    text-decoration: none;*/
+/*}*/
 
-.mainnav a:hover {
-    background-color: darkgreen;
-}
+/*.mainnav a:hover {*/
+/*    background-color: darkgreen;*/
+/*}*/
 
 .grid-container {
     display: grid;

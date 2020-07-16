@@ -23,14 +23,14 @@
             <span class="sale-price">$0.60/lb!!</span><br />
         </div>
         <div class="grid-item">
-            <a href="aisles/meat/salmon-filet.html"><img src="images/meat/salmon.png" alt="Banana"></a><br />
-            <a href="aisles/meat/salmon-filet.html">Salmon Filet</a> <br /> <br />
+            <a href="aisles/meat/salmon-filet.php"><img src="images/meat/salmon.png" alt="Banana"></a><br />
+            <a href="aisles/meat/salmon-filet.php">Salmon Filet</a> <br /> <br />
             <span class="original-price">$10.99/lb</span><br />
             <span class="sale-price">$8.50/lb!!</span><br />
         </div>
         <div class="grid-item">
-            <a href="aisles/snacks/kombucha.html"><img src="images/snacks/kombucha.png" alt="Banana"></a><br />
-            <a href="aisles/snacks/kombucha.html">GT's Kombucha (Assorted flavours)</a><br /> <br />
+            <a href="aisles/snacks/kombucha.php"><img src="images/snacks/kombucha.png" alt="Banana"></a><br />
+            <a href="aisles/snacks/kombucha.php">GT's Kombucha (Assorted flavours)</a><br /> <br />
             <span class="original-price">$4.79/ea</span><br />
             <span class="sale-price">$3.00/ea!!</span><br />
         </div>

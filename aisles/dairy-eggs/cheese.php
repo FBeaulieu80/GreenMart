@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Cheese | Dairy & Eggs</title>
     <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/main.css" />
 </head>
 
 <body>
