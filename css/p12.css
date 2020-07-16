@@ -3,11 +3,10 @@
 textarea {
     resize: none;
 }
-.container{
-    text-align: center;
+div.editOrder{
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 body{
     text-align:  center;
-
-
 }
