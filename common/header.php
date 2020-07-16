@@ -22,7 +22,7 @@
     <div class="mainnav">
         <ul>
             <li><a href="<?php echo $base ?>index.php">Home</a></li>
-            <li><a href="<?php echo $base ?>aisles/p2.php">Aisles</a></li> <!-- TODO: Implement dropdown menu -->
+            <li><a href="<?php echo $base ?>aisles/index.php">Aisles</a></li> <!-- TODO: Implement dropdown menu -->
             <li><a href="<?php echo $base ?>common/404.php">Deals</a></li>
             <li><a href="<?php echo $base ?>common/404.php">Recipes</a></li>
             <li><a href="<?php echo $base ?>common/404.php">Blog</a></li>

@@ -104,6 +104,7 @@ html, body {
 /* MAIN CONTENT */
 .main {
     position: relative;
+    display: block;
     /*margin-top: 170px;*/
 }
 
@@ -128,9 +129,11 @@ p {
 
 /* COPY FOOTER STYLE */
 footer {
+    width: 100%;
+    position: relative;
     background-color: seagreen;
     padding: 10px;
-    margin-top: 50px;
+    /*margin-top: 50px;*/
     color: white;
     /*position: fixed;*/ /* Uncomment if your page is short */
 }
