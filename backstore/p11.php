@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="author" content="Laura Boivin">
     <link rel = "stylesheet" type = "text/css" href="../css/p11.css">
     <link rel="stylesheet" type="text/css" href="../css/backstore.css">
     <title>Order List</title>

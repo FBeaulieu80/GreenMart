@@ -4,6 +4,7 @@
 <link rel = "stylesheet" type = "text/css" href="../css/p12.css">
 <link rel="stylesheet" type = "text/css" href="../css/backstore.css">
 <head>
+    <meta name="author" content="Laura Boivin">
     <title>Order List</title>
 </head>
 

@@ -2,6 +2,7 @@
 <html long = "en">
 
 <head>
+    <meta name="author" content="Laura Boivin">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/p4.css">
     <title>Shopping cart</title>
