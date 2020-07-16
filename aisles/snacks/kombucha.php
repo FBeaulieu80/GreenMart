@@ -4,9 +4,9 @@
 <head>
     <meta name="author" content="Kyle"> <!-- Made product page template -->
     <meta charset="UTF-8">
-    <title>GT's Kombucha | Snacks</title> <!-- Change -->
-    <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
+    <title>GT's Kombucha | Snacks | Green Mart</title> <!-- Change -->
     <link rel="stylesheet" type="text/css" href="../../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
 </head>
 
 <body>

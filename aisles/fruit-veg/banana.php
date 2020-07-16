@@ -5,8 +5,8 @@
     <meta name="author" content="Kyle"> <!-- Made product page template -->
     <meta charset="UTF-8">
     <title>Banana | Fruit & Veg | Green Mart</title> <!-- Change -->
-    <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
     <link rel="stylesheet" type="text/css" href="../../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
 </head>
 
 <body>

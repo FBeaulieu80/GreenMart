@@ -2,7 +2,7 @@
 <html lang="en" xmlns:style="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome to Green Mart!</title>
+    <title>Log In | Green Mart</title>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/p5.css" />
     <style>
@@ -50,11 +50,7 @@
         
         <p><button style="background-color: black;"><a href="backstore/index.php" style="text-decoration: none; color: white;">Access Backstore</a></button></p>
     </div>
+    <?php require_once "common/footer.html"?>
 </body>
-<footer>
-    <ul>
-        <li>Copyright &copy 2020 Green Mart Inc. All Rights Reserved.</li>
-        <li>Created my free logo at <a href="https://logomakr.com/">Logomakr.com</a></li>
-    </ul>
-</footer>
+
 </html>

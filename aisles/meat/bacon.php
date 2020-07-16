@@ -4,9 +4,9 @@
 <head>
     <meta name="author" content="Athigan"> 
     <meta charset="UTF-8">
-    <title>Bacon | Meat</title> 
-    <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
+    <title>Bacon | Meat | Green Mart</title>
     <link rel="stylesheet" type="text/css" href="../../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
 </head>
 
 <body>

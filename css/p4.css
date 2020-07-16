@@ -50,9 +50,11 @@ textarea{
 
 
 table{
-    width: 100%;
+    width: 50%;
     text-align: center;
+    margin-bottom: 50px;
 }
+
 p{
     text-align: center;
 }

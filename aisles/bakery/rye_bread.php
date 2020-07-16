@@ -3,9 +3,9 @@
 <head>
     <meta name="author" content="Athigan"> 
     <meta charset="UTF-8">
-    <title>Rye bread | Bakery</title> 
-    <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
+    <title>Rye bread | Bakery | Green Mart</title>
     <link rel="stylesheet" type="text/css" href="../../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
 </head>
 
 <body>

@@ -7,79 +7,6 @@ html, body {
     font-family: Helvetica, Arial;
 }
 
-/*.topnav ul {*/
-/*    list-style-type: none;*/
-/*    margin: 0;*/
-/*    padding: 10px;*/
-/*    overflow: hidden;*/
-/*    background-color: seagreen;*/
-/*    position: fixed;*/
-/*    top: 0;*/
-/*    width: 100%;*/
-/*}*/
-
-/*.topnav img {*/
-/*    width: 75%;*/
-/*    length: 75%;*/
-/*}*/
-
-/*.topnav li {*/
-/*    float: left;*/
-/*}*/
-
-/*.topnav li a {*/
-/*    display: block;*/
-/*    color: white;*/
-/*    text-align: center;*/
-/*    padding: 14px 16px;*/
-/*    text-decoration: none;*/
-/*}*/
-
-/*.topnav .search-bar button{*/
-/*    float: right;*/
-/*    padding: 6px 10px;*/
-/*    margin-top: 25px;*/
-/*    margin-right: 16px;*/
-/*    background: lightgray;*/
-/*    font-size: 16px;*/
-/*    border: none;*/
-/*    cursor: pointer;*/
-/*}*/
-
-/*.topnav input[type=text]{*/
-/*    padding: 6px;*/
-/*    margin-top: 25px;*/
-/*    font-size: 16px;*/
-/*    border: none;*/
-/*}*/
-
-/*.mainnav ul {*/
-/*    list-style-type: none;*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*    overflow: hidden;*/
-/*    background-color: seagreen;*/
-/*    position: fixed;*/
-/*    top: 90px;*/
-/*    width: 100%;*/
-/*}*/
-
-/*.mainnav li {*/
-/*    float: left;*/
-/*}*/
-
-/*.mainnav li a {*/
-/*    display: block;*/
-/*    color: white;*/
-/*    text-align: center;*/
-/*    padding: 14px 16px;*/
-/*    text-decoration: none;*/
-/*}*/
-
-/*.mainnav a:hover {*/
-/*    background-color: darkgreen;*/
-/*}*/
-
 .grid-container {
     display: grid;
     grid-column-gap: 0px;
@@ -92,7 +19,6 @@ html, body {
 .grid-item {
     padding: 10px;
     text-align: left;
-    margin-top: 50px;
 }
 
 .grid-item a {
@@ -122,7 +48,7 @@ html, body {
 }
 
 .main {
-    margin-top: 170px;
+    margin-top: 30px;
     padding-left: 150px;
     padding-right: 150px;
     padding-bottom: 20px;
@@ -130,6 +56,7 @@ html, body {
 
 .main h2 {
     text-align: left;
+    padding: 0px;
     font-size: 40px;
 }
 
@@ -164,35 +91,4 @@ table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
     font-weight: normal;
-}
-
-footer {
-    background-color: seagreen;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: -10px;
-    margin-top: 50px;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-footer a {
-    text-decoration: none;
-    color: white;
-    display: inline;
-}
-
-footer a:hover {
-    font-weight: bold;
 }

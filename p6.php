@@ -2,7 +2,7 @@
 <html lang="en" xmlns:style="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome to Green Mart!</title>
+    <title>Sign Up | Green Mart</title>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/p6.css" />
     <style>
@@ -20,7 +20,7 @@
     <?php require_once "common/header.php"?>
     <div class="main">
         <form id="box">
-            <h4 style="font-weight: bold; color: darkblue; text-align: center;">SIGNUP TO CREATE A GREENMART ACCOUNT</h4>
+            <h4 style="font-weight: bold; color: darkblue; text-align: center;">SIGNUP TO CREATE A GREEN MART ACCOUNT</h4>
             <h3 style="font-weight: bold; text-decoration: underline;">PROFILE</h3>
         
             <label for="firstname">*FIRST NAME</label>
