@@ -25,26 +25,26 @@
                     <th>Product Name</th>
                     <th>Aisle</th>
                     <th>Price</th>
-                    <th>Sale Price</th>
+                    <th>Discounted Price</th>
                     <th>Quantity</th>
-                    <th>Location</th>
+                    <th>Origin</th>
                     <th>Description</th>
                     <th>Seller</th>
                     <th>Status</th>
                     <th>Action</th>
                 </tr>
                 <tr>
-                    <td><img src="../images/bakery/baguette.jpg" alt="Baguette" style="width:50px;height:50px"</td>
+                    <td><input type="button" value="Upload"></td>
                     <td>1</td>
-                    <td><input type="text" size="15"></td>
-                    <td><input type="text" size="15"></td>
-                    <td><input type="text" size="15"></td>
-                    <td><input type="text" size="15"></td>
-                    <td><input type="number" size="15"></td>
-                    <td><input type="text" size="15"></td>
-                    <td><input type="text" size="15"></td>
-                    <td><input type="text" size="15"></td>
-                    <td><input type="text" size="15"></td>
+                    <td><input type="text" name="Product-Name" placeholder="Product Name" size="15"></td>
+                    <td><input type="text" name="Aisle" placeholder="Aisle" size="15"></td>
+                    <td><input type="text" name="Price" placeholder="Price" size="15"></td>
+                    <td><input type="text" name="Discounted-Price" placeholder="Discounted Price" size="15"></td>
+                    <td><input type="number" name="Quantity" placeholder="Quantity" size="15"></td>
+                    <td><input type="text" name="Origin" placeholder="Origin" size="15"></td>
+                    <td><input type="text" name="Description" placeholder="Description" size="15"></td>
+                    <td><input type="text" name="Seller" placeholder="Seller" size="15"></td>
+                    <td><input type="text" name="Status" placeholder="Status" size="15"></td>
                     <td><input type="submit" value="Submit"></td>
                 </form>
             </tr>

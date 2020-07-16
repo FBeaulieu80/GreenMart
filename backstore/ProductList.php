@@ -32,7 +32,7 @@
                 <th>Price</th>
                 <th>Sale Price</th>
                 <th>Quantity</th>
-                <th>Location</th>
+                <th>Origin</th>
                 <th>Description</th>
                 <th>Seller</th>
                 <th>Status</th>
@@ -91,7 +91,9 @@
                 <td>112</td>
                 <td>Guatemala</td>
                 <td>
-                    <textarea id="description" name="description" rows="1" cols="40">Organic bananas from Guatemala. Grown on a sustainable and fair trade certified farm. Check out our recipes to see what delicious meals and desserts you can make with bananas.</textarea>
+                    <textarea id="description" name="description" rows="1" cols="40"><p>Organic bananas from Guatemala.
+                            Grown on a sustainable and fair trade certified farm. Check out our recipes to see what
+                            delicious meals and desserts you can make with bananas.</p></textarea>
                 </td>
                 <td>Jose</td>
                 <td>Enabled</td>

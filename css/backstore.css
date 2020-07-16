@@ -44,6 +44,8 @@ html, body, header {
     overflow: hidden;
     background-color: seagreen;
     width: 100%;
+    max-width:100%;
+    max-height:100%;
 }
 
 .mainnav li {
@@ -61,6 +63,7 @@ html, body, header {
 .mainnav a:hover {
     background-color: darkgreen;
 }
+/* END OF HEADER STYLE */
 
 .main {
     position: relative;
@@ -84,34 +87,8 @@ p {
     padding-right: 150px;
     padding-bottom: 20px;
 }
-/* COPY FOOTER STYLE */
-footer {
-    background-color: seagreen;
-    padding: 10px;
-    margin-top: 50px;
-    color: white;
-    position: fixed; /* Uncomment if your page is short */
-}
 
-footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-footer a {
-    text-decoration: none;
-    color: white;
-    display: inline;
-}
-
-footer a:hover {
-    font-weight: bold;
-}
-/* COPY FOOTER STYLE */
-
-/* USERS PAGE (P9) */
+/* START OF USERS PAGE (P9) */
 .main .user-sidenav {
     height: 100%;
     max-height: 100%;
@@ -162,7 +139,7 @@ footer a:hover {
 }
 /* END OF USERS PAGE (P9) */
 
-/* EDIT USER PROFILE */
+/* START EDIT USER PROFILE (P10) */
 .user-profile {
     width: 100%;
     max-width: 100%;
@@ -225,3 +202,31 @@ footer a:hover {
     margin: 0;
     padding: 0.5% 0.5%;
 }
+/* END EDIT USER PROFILE (P10) */
+
+/* START FOOTER STYLE */
+footer {
+    background-color: seagreen;
+    padding: 10px;
+    margin-top: 50px;
+    color: white;
+    position: fixed; /* Uncomment if your page is short */
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    display: inline;
+}
+
+footer a:hover {
+    font-weight: bold;
+}
+/* END FOOTER STYLE */
