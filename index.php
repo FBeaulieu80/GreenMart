@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:style="http://www.w3.org/1999/html">
+<html lang="en">
 
 <head>
     <meta name="author" content="Kyle">
@@ -17,8 +17,8 @@
 
     <div class="grid-container">
         <div class="grid-item">
-            <a href="aisles/fruit-veg/banana.html"><img src="images/fruit-veg/banana.png" alt="Banana"></a><br />
-            <a href="aisles/fruit-veg/banana.html"> Banana </a><br /> <br />
+            <a href="aisles/fruit-veg/banana.php"><img src="images/fruit-veg/banana.png" alt="Banana"></a><br />
+            <a href="aisles/fruit-veg/banana.php"> Banana </a><br /> <br />
             <span class="original-price">$0.89/lb</span><br />
             <span class="sale-price">$0.60/lb!!</span><br />
         </div>
