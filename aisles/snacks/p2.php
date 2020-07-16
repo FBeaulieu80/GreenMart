@@ -5,7 +5,7 @@
     <title>Aisles</title>
     <link rel="stylesheet" href="../../css/main.css" type="text/css" />
     <link rel="stylesheet" href="../../css/p2.css" type="text/css" />
-    <meta name="author" content="Felix Beaulieu">
+    <meta name="author" content="TBD"> <!-- TODO: Change the author name -->
 </head>
 <body>
 <?php require "../../common/header.php"; ?>

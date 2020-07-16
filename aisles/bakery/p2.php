@@ -21,14 +21,14 @@
         </div>
 
         <div class="aisle-card">
-            <a href="p3-template.php">
+            <a href="baguette.php">
                 <img src="../../images/bakery/baguette.jpg" alt="Baguette">
-                <div class="text">Baguette</div>
-                <div class="price">$99.99/ea</div>
+                <div class="text">French Baguette</div>
+                <div class="price-sale">$3.95</div>
             </a>
         </div>
     </div>
 </div>
-<!--?php require "../../common/footer.html"; ?-->
+<?php require "../../common/footer.html"; ?>
 </body>
 </html>

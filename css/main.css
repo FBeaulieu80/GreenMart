@@ -1,11 +1,14 @@
 /* COPY CODE FROM HERE FOR TOP BAR */
-html, body {
+html, body, footer {
     margin: 0;
     padding: 0;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 * {
     font-family: Helvetica, Arial;
+    /*box-sizing: border-box;*/
 }
 
 .topnav {
@@ -106,24 +109,25 @@ html, body {
     position: relative;
     display: block;
     /*margin-top: 170px;*/
+    padding: 2%;
 }
 
 .main h2 {
     text-align: center;
     padding: 10px;
     font-size: 40px;
-}
-
-.main h2 a {
-    text-decoration: none;
-    color: black
+    margin: 0;
+    max-width: 100%;
 }
 
 p {
-    margin-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    /*margin-left: 10px;
     padding-left: 150px;
     padding-right: 150px;
-    padding-bottom: 20px;
+    padding-bottom: 20px;*/
 }
 /* END OF MAIN CONTENT */
 

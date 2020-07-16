@@ -1,7 +1,10 @@
 <html lang="en">
 <head>
-    <title>Edit User Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit User Profile | Back Store | Green Mart</title>
     <link rel="stylesheet" type="text/css" href="../css/backstore.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/p10.css"/>
+    <meta name="author" content="Felix Beaulieu">
 </head>
 <body>
 <?php require "common/header.php"; ?>

@@ -1,12 +1,16 @@
 <html lang="en">
 <head>
-    <title>User List</title>
+    <title>User List | Back Store | Green Mart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/backstore.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/p9.css"/>
+    <meta name="author" content="Felix Beaulieu">
 </head>
 <body>
 <?php require "common/header.php"; ?>
 <div class="main">
-    <div id="user-list" class="user-sidenav">
+    <h2>Green Mart User Accounts</h2>
+    <div class="user-sidenav">
         <a href="EditUserProfile.php">Felix Beaulieu</a>
         <a href="EditUserProfile.php">Michael Rowe</a>
         <a href="EditUserProfile.php">Kyle Taylor-Bracken</a>

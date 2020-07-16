@@ -58,12 +58,14 @@
     position: relative;
     width: 100%;
     display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .aisle-card {
     position: relative;
-    width: 150px;
-    height: 150px;
+    max-width: 25%;
+    height: auto;
     float: left;
     display: block;
     padding: 2%;

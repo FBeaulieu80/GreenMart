@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aisles</title>
+    <title>Aisles | Green Mart</title>
     <link rel="stylesheet" href="../css/main.css" type="text/css" />
     <link rel="stylesheet" href="../css/p2.css" type="text/css" />
     <meta name="author" content="Felix Beaulieu">
@@ -52,13 +52,9 @@
                 </div>
             </a>
         </div>
-
-
-
-
     </div>
 </div>
-<!--?php require "../common/footer.html"; ?-->
+<?php require "../common/footer.html"; ?>
 </body>
 </html>
 
