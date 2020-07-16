@@ -16,11 +16,11 @@
                 <img src="../../images/bakery/baguette.jpg" alt="French Baguette">
             </div>
             <div class="grid-item">
-                <h2>Banana</h2> <!-- Change -->
+                <h2>French Style Baguette</h2>
                 <span class="original-price">$4.95</span><br />
                 <span class="sale-price">$3.95</span><br />
                 <br />
-                Product of Canada. <br /> <br /> <!-- Change -->
+                Product of Canada. <br /> <br />
                 <div class="addtocart">
                     <form action="/action_page.php">
                         <label for="quantity">Quantity:</label> <br />
@@ -30,8 +30,7 @@
                 </div>
                 <br /> <br />
                 <h3>Description</h3> <!-- Change description below -->
-                <p>Organic French style baguette backed fresh daily. Made from locally sourced flour thanks to our partnership with local farms.
-                Check out our <a href="../../recipes">recipes</a> to see what delicious meals and desserts you can make with bananas.</p>
+                <p>Organic French style baguette backed fresh daily. Made from locally sourced flour thanks to our partnership with local farms.</p>
             </div>
         </div>
     </div>
