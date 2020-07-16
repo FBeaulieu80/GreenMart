@@ -24,7 +24,7 @@
 
         <table style="width:100%">
             <tr>
-                <th></th>
+                <th><input type="checkbox" id="delete"></th>
                 <th>Image</th>
                 <th>ID</th>
                 <th>Product Name</th>
