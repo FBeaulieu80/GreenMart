@@ -9,10 +9,10 @@
         
     #box{
        border: 1px solid black;
-       padding: 5px 5px 5px 15px;
+       padding: 1% 1% 1% 3%;
        margin-left: auto;
        margin-right: auto;
-       margin: 150px;
+       margin: 13%;
        width: 30%;
        margin-bottom: 0px;
        background: lightgreen;
