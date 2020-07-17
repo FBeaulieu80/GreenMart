@@ -29,7 +29,7 @@
                         <input type="text" id="quantity" name="quantity" value="1">
                     </form>
                 </div>
-                <p>What a delicious, strong and elegant package</p><br />
+                <p>Product of Canada.</p><br />
                 <h3>Description</h3> 
                 <p>Eggs are laid by female animals of many different species, including birds, reptiles, amphibians, a
                     few mammals, and fish, and many of these have been eaten by humans for thousands of years. Bird and
