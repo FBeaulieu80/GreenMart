@@ -1,7 +1,7 @@
 <html lang="en">
 
 <head>
-    <meta name="author" content="Michael">
+    <meta name="author" content="Michael Rowe">
     <meta charset="UTF-8">
     <title>Cheese | Dairy & Eggs | Green Mart</title>
     <link rel="stylesheet" type="text/css" href="../../css/main.css" />
@@ -37,13 +37,6 @@
         </div>
     </div>
 </div>
+<?php require "../../common/footer.html"; ?>
 </body>
-
-<footer>
-    <ul>
-        <li>Copyright &copy 2020 Green Mart Inc. All Rights Reserved.</li>
-        <li>Created my free logo at <a href="https://logomakr.com/">Logomakr.com</a></li>
-    </ul>
-</footer>
-
 </html>

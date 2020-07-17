@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta name="author" content="Kyle"> <!-- Made product page template -->
+    <meta name="author" content="Kyle Taylor-Bracken"> <!-- Made product page template -->
     <meta charset="UTF-8">
     <title>Salmon Filet | Meat | Green Mart</title> <!-- Change -->
     <link rel="stylesheet" type="text/css" href="../../css/main.css" />
@@ -39,6 +39,7 @@
             </div>
         </div>
     </div>
+<?php require "../../common/footer.html"; ?>
 </body>
 
 </html>

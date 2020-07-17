@@ -1,7 +1,7 @@
 <html lang="en">
 
 <head>
-    <meta name="author" content="Athigan"> 
+    <meta name="author" content="Athigan Sinnathurai">
     <meta charset="UTF-8">
     <title>Rye bread | Bakery | Green Mart</title>
     <link rel="stylesheet" type="text/css" href="../../css/main.css" />
@@ -36,13 +36,6 @@
             </div>
         </div>
     </div>
+    <?php require "../../common/footer.html"; ?>
 </body>
-
-<footer>
-    <ul>
-        <li>Copyright &copy 2020 Green Mart Inc. All Rights Reserved.</li>
-        <li>Created my free logo at <a href="https://logomakr.com/">Logomakr.com</a></li>
-    </ul>
-</footer>
-
 </html>

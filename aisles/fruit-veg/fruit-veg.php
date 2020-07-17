@@ -5,7 +5,7 @@
     <title>Fruits & Vegetables</title>
     <link rel="stylesheet" href="../../css/main.css" type="text/css" />
     <link rel="stylesheet" href="../../css/p2.css" type="text/css" />
-    <meta name="author" content="Kyle"> <!-- TODO: Change the author name -->
+    <meta name="author" content="Kyle Taylor-Bracken">
 </head>
 <body>
 <?php require "../../common/header.php"; ?>
@@ -29,6 +29,6 @@
         </div>
     </div>
 </div>
-<!--?php require "../../common/footer.html"; ?-->
+<?php require "../../common/footer.html"; ?>
 </body>
 </html>
