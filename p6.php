@@ -6,17 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/p6.css" />
     <meta name="author" content="Athigan Sinnathurai"/>
-    <style>
-        #box{
-            border: 1px solid black;
-            padding: 5px 10px 5px 10px;
-            width: 45%;
-            margin: 150px 150px 0;
-            background: lightgreen;
-        }
-    </style>
 </head>
-
 <body>
     <?php require_once "common/header.php"?>
     <div class="main">
@@ -28,12 +18,12 @@
             <input type="text" name="firstname" required>	&nbsp;	&nbsp;
             <label for="lastname">*LAST NAME</label>
             <input type="text" name="lastname" required><br><br>
-            <label for="email">*EMAIL</label>
-            <input type="text" name="email" required> &nbsp;	&nbsp;
-            <label for="confemail">*CONFIRM EMAIL</label>
-            <input type="text" name="confemail" required><br><br>
+            <label for="address">*ADDRESS</label>
+            <input style="width: 70%;" type="text" name="address" required><br><br>
             <label for="postalcode">*POSTAL CODE</label>
             <input type="text" name="postalcode" required><br><br>
+            <label for="email">*EMAIL</label>
+            <input type="text" name="email" required> &nbsp;&nbsp;
             <label for="phone">PHONE NUMBER</label>
             <input type="text" name=phone><br><br>
             <label for="password">PASSWORD (minimum 6 characters, including numbers and letters)</label>
@@ -59,7 +49,7 @@
           <button type="button" class="submit" style="font-weight: bold;">FINISH PROFILE</button>
         </form>
 
-        <p>Already have a Green Mart account? <a href="p5.php">Login</a> to shop online.</p>
+        <p style="text-indent: 28%;">Already have a Green Mart account? <a href="p5.html">Login</a> to shop online.</p>
     </div>
 </body>
 <?php require_once "common/footer.html"?>
