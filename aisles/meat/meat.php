@@ -10,8 +10,12 @@
 <body>
 <?php require "../../common/header.php"; ?>
 <div class="main">
-    <h2 class="aisle-header">Meat</h2>
-    <div class="aisle-cards-container">
+    <div class="row aisle-header">
+        <div class="col-1"><a href="../index.php"><<</a></div>
+        <div class="col-11">Meat</div>
+    </div>
+
+    <div class="aisle-cards">
         <div class="aisle-card">
             <a href="bacon.php">
                 <img src="../../images/meat/bacon.jpg" alt="Bacon">

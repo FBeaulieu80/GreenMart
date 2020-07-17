@@ -10,7 +10,7 @@
 <body>
 <?php require "../common/header.php"; ?>
 <div class="main">
-    <div class="aisle-cards-container">
+    <div class="aisle-cards">
         <div class="aisle-card">
             <a href="bakery/bakery.php">
                 <img class="image" src="../images/bakery/bakery.jpg" alt="Bread">
@@ -19,7 +19,6 @@
                 </div>
             </a>
         </div>
-
         <div class="aisle-card">
             <a href="dairy-eggs/dairy-eggs.php">
                 <img class="image" src="../images/dairy-eggs/cheese.jpg" alt="Cheese">
