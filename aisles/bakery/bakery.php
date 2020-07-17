@@ -27,6 +27,14 @@
                 <div class="price-sale">$3.95</div>
             </a>
         </div>
+
+        <div class="aisle-card">
+            <a href="carrot_cake.php">
+                <img src="../../images/bakery/carrot-cake.jpg" alt="Carrot Cake">
+                <div class="text">Carrot Cake</div>
+                <div class="price">$11.99</div>
+            </a>
+        </div>
     </div>
 </div>
 <?php require "../../common/footer.html"; ?>
