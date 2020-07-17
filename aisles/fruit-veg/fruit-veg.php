@@ -27,6 +27,13 @@
                 <div class="price-sale">$2.15/lb</div>
             </a>
         </div>
+        <div class="aisle-card">
+            <a href="cherries.php">
+                <img src="../../images/fruit-veg/cherries.jpg" alt="cherries">
+                <div class="text">Cherries</div>
+                <div class="price-sale">$4.99/lb</div>
+            </a>
+        </div>
     </div>
 </div>
 <?php require "../../common/footer.html"; ?>
