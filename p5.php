@@ -6,16 +6,6 @@
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/p5.css" />
     <meta name="author" content="Athigan Sinnathurai"/>
-    <style>
-        
-    #box{
-       border: 1px solid black;
-       padding: 1% 1% 1% 3%;
-        width: 30%;
-        margin: 13% 13% 0;
-        background: lightgreen;
-     }
-   </style>
 </head>
 
 <body>
