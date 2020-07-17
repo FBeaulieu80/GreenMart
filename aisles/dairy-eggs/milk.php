@@ -3,7 +3,7 @@
 <head>
     <meta name="author" content="Michael Rowe">
     <meta charset="UTF-8">
-    <title>Cheese | Dairy & Eggs | Green Mart</title>
+    <title>Milk | Dairy & Eggs | Green Mart</title>
     <link rel="stylesheet" type="text/css" href="../../css/main.css" />
     <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
 </head>
@@ -14,12 +14,11 @@
 
     <div class="grid-container">
         <div class="grid-item">
-            <img src="../../images/dairy-eggs/cheese.jpg" alt="Eggs">
+            <img src="../../images/dairy-eggs/milk.jpg" alt="Milk">
         </div>
         <div class="grid-item">
-            <h2>Cheese</h2>
-            <span class="original-price">$3.79/lb</span><br />
-            <span class="sale-price">$3.29/lb</span><br />
+            <h2>Milk</h2>
+            <span class="price">$4.49/ea</span><br />
             <br />
             <br />
             <div class="addtocart">
@@ -29,11 +28,11 @@
                     <input type="text" id="quantity" name="quantity" value="1">
                 </form>
             </div>
-            <p>Product of Switzerland.</p><br />
+            <p>Product of United States.</p><br />
             <h3>Description</h3>
-            <p>Cheese is a dairy product, derived from milk and produced in a wide range of flavors, textures and forms
-                by coagulation of the milk protein casein. It comprises proteins and fat from milk, usually the milk of
-                cows, buffalo, goats, or sheep.</p>
+            <p>Milk is a white, nutrient-rich liquid food produced in the mammary glands of mammals. It is the primary source
+                of nutrition for infant mammals before they are able to digest other types of food. Early-lactation milk contains
+                colostrum, which carries the mother's antibodies to its young and can reduce the risk of many diseases.</p>
         </div>
     </div>
 </div>

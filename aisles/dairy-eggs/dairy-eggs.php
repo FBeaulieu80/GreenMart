@@ -27,6 +27,14 @@
                 <div class="price-sale">$3.29/lb</div>
             </a>
         </div>
+
+        <div class="aisle-card">
+            <a href="milk.php">
+                <img src="../../images/dairy-eggs/milk.jpg" alt="Milk">
+                <div class="text">Milk</div>
+                <div class="price-sale">$4.49/lb</div>
+            </a>
+        </div>
     </div>
 </div>
 <?php require "../../common/footer.html"; ?>
