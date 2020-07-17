@@ -14,12 +14,18 @@
         <!-- TODO: All inputs should have labels.-->
         <form id="box">
             <h4 style="font-weight: bold; color: darkblue;text-align: center;">LOG IN TO YOUR GREEN MART ACCOUNT</h4>
-            <label for="email">Email:</label>
-            <input type="text" name="email" id="email" required><br><br>
-            <label for="login_password">Password: </label>
-            <input type="password" value="" id="login_password"><br><br>
-            <input type="checkbox" id="showpasscb" onclick="myFunction()" required>
-            <label for="showpasscb">Show Password</label><br><br>
+            <label>
+                Email:
+                <input type="text" name="email" id="email" required>
+            </label><br><br>
+            <label>
+                Password:
+                <input type="password" value="" id="login_password">
+            </label><br><br>
+            <label>
+                <input type="checkbox" id="showpasscb" onclick="myFunction()" required>
+                Show Password
+            </label><br><br>
             
             <script>
                 function myFunction() {
@@ -33,7 +39,7 @@
             </script>
         
         <button type="button" class="submit" style="font-weight: bold;">Submit</button>
-        <button type="button" class="forgetpassword" style="font-weight: bold; float: right;">Forgot Password</button>
+        <button type="button" class="forgotpassword" style="font-weight: bold; float: right;">Forgot Password</button>
         </form>
 
         <p style="text-indent: 15%;">Don't have an account? <a href="p6.php">Sign up</a> to shop online and receive all the latest promotions at Green Mart.</p>
