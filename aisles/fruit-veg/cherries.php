@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta name="author" content="Kyle Taylor-Bracken"> <!-- Made product page template -->
+    <meta name="author" content="Felix Beaulieu">
     <meta charset="UTF-8">
-    <title>Cherries | Fruit & Veg | Green Mart</title> <!-- Change -->
+    <title>Cherries | Fruit & Veg | Green Mart</title>
     <link rel="stylesheet" type="text/css" href="../../css/main.css" />
     <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
 </head>
@@ -18,10 +18,9 @@
             <img src="../../images/fruit-veg/cherries.jpg" alt="Cherries">
         </div>
         <div class="grid-item">
-            <h2>Cherries</h2> <!-- Change -->
-            <span class="original-price" style="text-decoration: none">$4.99/lb</span><br />
-
-            <br />
+            <h2>Cherries</h2>
+            <span class="original-price" style="text-decoration: none">$4.99/lb</span>
+            <br /><br />
             Product of Mexico. <br /> <br />
             <div class="addtocart">
                 <form action="/action_page.php">
@@ -31,7 +30,7 @@
                 </form>
             </div>
             <br /> <br />
-            <h3>Description</h3> <!-- Change description below -->
+            <h3>Description</h3>
             <p>Organic Cherries from Mexico. Grown on a sustainable and fair trade certified farm.
                 Check out our <a href="../../recipes">recipes</a> to see what delicious meals and desserts you can
                 make with cherries.</p>
