@@ -14,7 +14,7 @@ html, body {
     grid-template-columns: 400px 400px 400px;
     justify-content: space-evenly;
     padding: 50px;
-    padding-top: 0px;
+    padding-top:0;
 }
 
 .grid-item {

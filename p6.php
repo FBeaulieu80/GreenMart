@@ -5,6 +5,7 @@
     <title>Sign Up | Green Mart</title>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/p6.css" />
+    <meta name="author" content="Athigan Sinnathurai"/>
     <style>
         #box{
             border: 1px solid black;
@@ -22,7 +23,7 @@
         <form id="box">
             <h4 style="font-weight: bold; color: darkblue; text-align: center;">SIGNUP TO CREATE A GREEN MART ACCOUNT</h4>
             <h3 style="font-weight: bold; text-decoration: underline;">PROFILE</h3>
-        
+            <!-- TODO: All inputs should have labels.-->
             <label for="firstname">*FIRST NAME</label>
             <input type="text" name="firstname" required>	&nbsp;	&nbsp;
             <label for="lastname">*LAST NAME</label>

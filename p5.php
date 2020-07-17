@@ -5,17 +5,15 @@
     <title>Log In | Green Mart</title>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/p5.css" />
+    <meta name="author" content="Athigan Sinnathurai"/>
     <style>
         
     #box{
        border: 1px solid black;
        padding: 1% 1% 1% 3%;
-       margin-left: auto;
-       margin-right: auto;
-       margin: 13%;
-       width: 30%;
-       margin-bottom: 0px;
-       background: lightgreen;
+        width: 30%;
+        margin: 13% 13% 0;
+        background: lightgreen;
      }
    </style>
 </head>
@@ -23,7 +21,7 @@
 <body>
     <?php require_once "common/header.php"?>
     <div class="main">
-        
+        <!-- TODO: All inputs should have labels.-->
         <form id="box">
             <h4 style="font-weight: bold; color: darkblue;text-align: center;">LOG IN TO YOUR GREEN MART ACCOUNT</h4>
             <label for="name">Email:</label>
