@@ -10,7 +10,11 @@
 <body>
 <?php require "../../common/header.php"; ?>
 <div class="main">
-    <h2 class="aisle-header">Fruits & Vegetables</h2>
+    <div class="row aisle-header">
+        <div class="col-1"><a href="../index.php"><<</a></div>
+        <div class="col-11">Fruits & Vegetables</div>
+    </div>
+
     <div class="aisle-cards">
         <div class="aisle-card">
             <a href="banana.php">

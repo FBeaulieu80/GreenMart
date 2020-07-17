@@ -6,17 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/p6.css" />
     <meta name="author" content="Athigan Sinnathurai"/>
-    <style>
-        #box{
-            border: 1px solid black;
-            padding: 5px 10px 5px 10px;
-            width: 45%;
-            margin: 150px 150px 0;
-            background: lightgreen;
-        }
-    </style>
 </head>
-
 <body>
     <?php require_once "common/header.php"?>
     <div class="main">
@@ -25,33 +15,35 @@
             <h3 style="font-weight: bold; text-decoration: underline;">PROFILE</h3>
             <!-- TODO: All inputs should have labels.-->
             <label for="firstname">*FIRST NAME</label>
-            <input type="text" name="firstname" required>	&nbsp;	&nbsp;
+            <input type="text" name="firstname" id="firstname" required>	&nbsp;	&nbsp;
             <label for="lastname">*LAST NAME</label>
-            <input type="text" name="lastname" required><br><br>
-            <label for="email">*EMAIL</label>
-            <input type="text" name="email" required> &nbsp;	&nbsp;
-            <label for="confemail">*CONFIRM EMAIL</label>
-            <input type="text" name="confemail" required><br><br>
+            <input type="text" name="lastname" id="lastname" required><br><br>
+            <label for="address">*ADDRESS</label>
+            <input style="width: 70%;" type="text" name="address" id="address" required><br><br>
             <label for="postalcode">*POSTAL CODE</label>
-            <input type="text" name="postalcode" required><br><br>
+            <input type="text" name="postalcode" id="postalcode" required><br><br>
+            <label for="email">*EMAIL</label>
+            <input type="text" name="email" id="email" required> &nbsp;&nbsp;
             <label for="phone">PHONE NUMBER</label>
-            <input type="text" name=phone><br><br>
-            <label for="password">PASSWORD (minimum 6 characters, including numbers and letters)</label>
-                <input type="password" value="" id="myInput">
+            <input type="text" name=phone id="phone"><br><br>
+            <label for="signup_password">PASSWORD (minimum 6 characters, including numbers and letters)</label><br>
+                <input type="password" value="" id="signup_password">
+            <label for="showpasscb">
                 <input type="checkbox" onclick="myFunction()" required>Show Password
-            
+            </label><br><br>
+            <label for="signup_confirm_password">CONFIRM PASSWORD</label><br>
+            <input type="password" value="" id="signup_confirm_password"><br><br>
             <script>
                 function myFunction() {
-                  var x = document.getElementById("myInput");
-                  if (x.type === "password") {
-                    x.type = "text";
+                    const x = document.getElementById("signup_password");
+                    const y = document.getElementById("signup_confirm_password");
+                    if (x.type === "password") {
+                    x.type = y.type = "text";
                   } else {
-                    x.type = "password";
+                    x.type = y.type = "password";
                   }
                 }
-            </script><br><br>
-            <label for="password">CONFIRM PASSWORD</label><br>
-                <input type="password" value="" id="myInput"><br><br>
+            </script>
             
                 
         <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
@@ -59,7 +51,7 @@
           <button type="button" class="submit" style="font-weight: bold;">FINISH PROFILE</button>
         </form>
 
-        <p>Already have a Green Mart account? <a href="p5.php">Login</a> to shop online.</p>
+        <p style="text-indent: 28%;">Already have a Green Mart account? <a href="p5.php">Login</a> to shop online.</p>
     </div>
 </body>
 <?php require_once "common/footer.html"?>

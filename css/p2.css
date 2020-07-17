@@ -61,12 +61,7 @@
     max-width: 1200px;
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
-}
-
-.aisle-item {
-    box-sizing: border-box;
-    text-align: center;
+    grid-template-rows: 1fr min-content;
 }
 
 .aisle-card {
@@ -75,6 +70,7 @@
     height: auto;
     display: block;
     padding: 2%;
+
 }
 
 .aisle-card a {
@@ -84,16 +80,14 @@
 
 .aisle-card img {
     box-sizing: border-box;
-    max-width: 200px;
     max-height: 200px;
-    object-fit: cover;
-    position: relative;
     margin-left: auto;
     margin-right: auto;
     opacity: 1;
     display: block;
     transition: .5s ease;
     backface-visibility: hidden;
+
 }
 
 
@@ -156,6 +150,10 @@
 .aisle-header a {
     text-decoration: none;
     color: white;
+    padding: 2%;
+}
+.aisle-header .col-1 {
+    text-align: left;
 }
 
 .aisle-header a:hover {

@@ -10,7 +10,11 @@
 <body>
 <?php require "../../common/header.php"; ?>
 <div class="main">
-    <h2 class="aisle-header">Meat</h2>
+    <div class="row aisle-header">
+        <div class="col-1"><a href="../index.php"><<</a></div>
+        <div class="col-11">Meat</div>
+    </div>
+
     <div class="aisle-cards">
         <div class="aisle-card">
             <a href="bacon.php">
@@ -25,6 +29,14 @@
                 <img src="../../images/meat/salmon.png" alt="Salmon Filet">
                 <div class="text">Salmon Filet</div>
                 <div class="price-sale">$8.50/lb</div>
+            </a>
+        </div>
+
+        <div class="aisle-card">
+            <a href="chicken.php">
+                <img src="../../images/meat/chicken.jpg" alt="Whole Roasted Chicken">
+                <div class="text">Roast Chicken</div>
+                <div class="price">$9.99/ea</div>
             </a>
         </div>
     </div>

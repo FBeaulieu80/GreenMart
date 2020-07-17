@@ -17,24 +17,26 @@
 
 
     <div class="aisle-cards">
-        <div class="aisle-item">
-            <div class="aisle-card">
-                <a href="rye_bread.php">
-                    <img src="../../images/bakery/rye_bread.jpg" alt="Rye Bread">
-                    <div class="text">Rye Bread</div>
-                    <div class="price-sale">$3.45/ea</div>
-                </a>
-            </div>
+        <div class="aisle-card">
+            <a href="rye_bread.php">
+                <img src="../../images/bakery/rye_bread.jpg" alt="Rye Bread">
+                <div class="text">Rye Bread</div>
+                <div class="price-sale">$3.45/ea</div>
+            </a>
         </div>
-
-        <div class="aisle-item">
-            <div class="aisle-card">
-                <a href="baguette.php">
-                    <img src="../../images/bakery/baguette.jpg" alt="Baguette">
-                    <div class="text">French Baguette</div>
-                    <div class="price-sale">$3.95</div>
-                </a>
-            </div>
+        <div class="aisle-card">
+            <a href="baguette.php">
+                <img src="../../images/bakery/baguette.jpg" alt="Baguette">
+                <div class="text">French Baguette</div>
+                <div class="price-sale">$3.95</div>
+            </a>
+        </div>
+        <div class="aisle-card">
+            <a href="carrot_cake.php">
+                <img src="../../images/bakery/carrot-cake.jpg" alt="Carrot Cake">
+                <div class="text">Carrot Cake</div>
+                <div class="price">$11.99/ea</div>
+            </a>
         </div>
     </div>
 </div>

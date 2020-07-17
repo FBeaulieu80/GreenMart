@@ -17,8 +17,8 @@
             </div>
             <div class="grid-item">
                 <h2>French Style Baguette</h2>
-                <span class="original-price">$4.95</span><br />
-                <span class="sale-price">$3.95</span><br />
+                <span class="original-price">$4.95/ea</span><br />
+                <span class="sale-price">$3.95/ea</span><br />
                 <br />
                 Product of Canada. <br /> <br />
                 <div class="addtocart">
@@ -34,6 +34,6 @@
             </div>
         </div>
     </div>
-<?php require "common/footer.html" ?>
+    <?php require "../../common/footer.html" ?>
 </body>
 </html>
