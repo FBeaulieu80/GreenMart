@@ -26,7 +26,7 @@
             <input type="text" name="email" required> &nbsp;&nbsp;
             <label for="phone">PHONE NUMBER</label>
             <input type="text" name=phone><br><br>
-            <label for="password">PASSWORD (minimum 6 characters, including numbers and letters)</label>
+            <label for="password">PASSWORD (minimum 6 characters, including numbers and letters)</label><br>
                 <input type="password" value="" id="myInput">
                 <input type="checkbox" onclick="myFunction()" required>Show Password
             
@@ -49,7 +49,7 @@
           <button type="button" class="submit" style="font-weight: bold;">FINISH PROFILE</button>
         </form>
 
-        <p style="text-indent: 28%;">Already have a Green Mart account? <a href="p5.html">Login</a> to shop online.</p>
+        <p style="text-indent: 28%;">Already have a Green Mart account? <a href="p5.php">Login</a> to shop online.</p>
     </div>
 </body>
 <?php require_once "common/footer.html"?>
