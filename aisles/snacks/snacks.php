@@ -11,7 +11,7 @@
 <?php require "../../common/header.php"; ?>
 <div class="main">
     <h2 class="aisle-header">Snacks</h2>
-    <div class="aisle-cards-container">
+    <div class="aisle-cards">
         <div class="aisle-card">
             <a href="kombucha.php">
                 <img src="../../images/snacks/kombucha.png" alt="Kombucha">

@@ -11,7 +11,7 @@
 <?php require "../../common/header.php"; ?>
 <div class="main">
     <h2 class="aisle-header">Dairy & Eggs</h2>
-    <div class="aisle-cards-container">
+    <div class="aisle-cards">
         <div class="aisle-card">
             <a href="eggs.php">
                 <img src="../../images/dairy-eggs/eggs.jpg" alt="Eggs">
