@@ -1,26 +1,27 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta name="author" content="Michael Rowe">
     <meta charset="UTF-8">
-    <title>Milk | Dairy & Eggs | Green Mart</title>
+    <title>Chicken | Meat | Green Mart</title>
     <link rel="stylesheet" type="text/css" href="../../css/main.css" />
     <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
 </head>
 
 <body>
-<?php require "../../common/header.php" ?>
+<?php require_once "../../common/header.php"; ?>
 <div class="main">
 
     <div class="grid-container">
         <div class="grid-item">
-            <img src="../../images/dairy-eggs/milk.jpg" alt="Milk">
+            <img src="../../images/meat/chicken.jpg" alt="Chicken">
         </div>
         <div class="grid-item">
-            <h2>Milk</h2>
-            <span class="price">$4.49/ea</span><br />
+            <h2>Roast Chicken</h2>
+            <span class="price">$9.99/lb</span><br />
             <br />
-            <br />
+            Product of Alberta. <br /> <br />
             <div class="addtocart">
                 <form action="/action_page.php">
                     <label for="quantity">Quantity:</label> <br />
@@ -28,14 +29,15 @@
                     <input type="text" id="quantity" name="quantity" value="1">
                 </form>
             </div>
-            <p>Product of the United States.</p><br />
-            <h3>Description</h3>
-            <p>Milk is a white, nutrient-rich liquid food produced in the mammary glands of mammals. It is the primary source
-                of nutrition for infant mammals before they are able to digest other types of food. Early-lactation milk contains
-                colostrum, which carries the mother's antibodies to its young and can reduce the risk of many diseases.</p>
+            <br /> <br />
+            <h3>Description</h3> <!-- Change description below -->
+            <p>Chicken is the most common type of poultry in the world. Owing to the relative ease and low cost of raising
+                them in comparison to animals such as cattle or hogs, chickens have become prevalent throughout the cuisine
+                of cultures around the world, and their meat has been variously adapted to regional tastes.</p>
         </div>
     </div>
 </div>
 <?php require "../../common/footer.html"; ?>
 </body>
+
 </html>

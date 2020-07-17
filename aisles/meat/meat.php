@@ -27,6 +27,14 @@
                 <div class="price-sale">$8.50/lb</div>
             </a>
         </div>
+
+        <div class="aisle-card">
+            <a href="chicken.php">
+                <img src="../../images/meat/chicken.jpg" alt="Whole Roasted Chicken">
+                <div class="text">Roast Chicken</div>
+                <div class="price">$9.99/ea</div>
+            </a>
+        </div>
     </div>
 </div>
 <?php require "../../common/footer.html"; ?>
