@@ -3,9 +3,9 @@
 <head>
     <meta name="author" content="Michael">
     <meta charset="UTF-8">
-    <title>Eggs | Dairy & Eggs</title>
-    <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
+    <title>Eggs | Dairy & Eggs | Green Mart</title>
     <link rel="stylesheet" type="text/css" href="../../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
 </head>
 
 <body>

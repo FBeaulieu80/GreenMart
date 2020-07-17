@@ -7,79 +7,6 @@ html, body {
     font-family: Helvetica, Arial;
 }
 
-.topnav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 10px;
-    overflow: hidden;
-    background-color: seagreen;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.topnav img {
-    width: 75%;
-    
-}
-
-.topnav li {
-    float: left;
-}
-
-.topnav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.topnav .search-bar button{
-    float: right;
-    padding: 6px 10px;
-    margin-top: 25px;
-    margin-right: 16px;
-    background: lightgray;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-.topnav input[type=text] {
-    padding: 6px;
-    margin-top: 25px;
-    font-size: 16px;
-    border: none;
-}
-
-.mainnav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: seagreen;
-    position: fixed;
-    top: 90px;
-    width: 100%;
-}
-
-.mainnav li {
-    float: left;
-}
-
-.mainnav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.mainnav a:hover {
-    background-color: darkgreen;
-}
-
 .grid-container {
     display: grid;
     grid-column-gap: 50px;
@@ -87,7 +14,7 @@ html, body {
     grid-template-columns: 400px 400px 400px;
     justify-content: space-evenly;
     padding: 50px;
-    padding-top: 0px;
+    padding-top:0;
 }
 
 .grid-item {
@@ -120,10 +47,6 @@ html, body {
     text-decoration: line-through;
 }
 
-.main {
-    margin-top: 170px;
-}
-
 .main h2 {
     text-align: center;
     padding: 10px;
@@ -140,31 +63,4 @@ p {
     padding-left: 150px;
     padding-right: 150px;
     padding-bottom: 20px;
-}
-
-footer {
-    width: 100%;
-    position: relative;
-    background-color: seagreen;
-    padding: 10px;
-    margin-top: 50px;
-    color: white;
-
-}
-
-footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-footer a {
-    text-decoration: none;
-    color: white;
-    display: inline;
-}
-
-footer a:hover {
-    font-weight: bold;
 }

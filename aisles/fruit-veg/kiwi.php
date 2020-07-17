@@ -4,9 +4,9 @@
 <head>
     <meta name="author" content="Athigan">
     <meta charset="UTF-8">
-    <title>Kiwi | Fruit & Veg</title>
-    <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
+    <title>Kiwi | Fruit & Veg | Green Mart</title>
     <link rel="stylesheet" type="text/css" href="../../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
 </head>
 
 <body>

@@ -110,6 +110,7 @@ html, body, footer {
     display: block;
     /*margin-top: 170px;*/
     padding: 2%;
+    margin-bottom: 50px;
 }
 
 .main h2 {
@@ -120,10 +121,6 @@ html, body, footer {
     max-width: 100%;
 }
 
-.main h2 a {
-    color: black;
-    text-decoration: none;
-}
 
 p {
     margin-left: auto;
@@ -143,7 +140,6 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: -10px;
-    margin-top: 50px;
     color: white;
     position: fixed;
     bottom: 0;
