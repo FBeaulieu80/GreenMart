@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="author" content="Michael Rowe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Michael">
     <meta charset="UTF-8">
     <title>Carrot Cake | Bakery | Green Mart</title>
     <link rel="stylesheet" type="text/css" href="../../css/main.css" />
@@ -17,7 +17,7 @@
         </div>
         <div class="grid-item">
             <h2>Carrot Cake</h2>
-            <span class="price">$11.99</span><br />
+            <span class="price">$11.99/ea</span><br />
             <br />
             Product of Australia. <br /> <br />
             <div class="addtocart">
