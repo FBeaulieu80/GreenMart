@@ -24,7 +24,7 @@
             <a href="baguette.php">
                 <img src="../../images/bakery/baguette.jpg" alt="Baguette">
                 <div class="text">French Baguette</div>
-                <div class="price-sale">$3.95</div>
+                <div class="price-sale">$3.95/ea</div>
             </a>
         </div>
 
@@ -32,7 +32,7 @@
             <a href="carrot_cake.php">
                 <img src="../../images/bakery/carrot-cake.jpg" alt="Carrot Cake">
                 <div class="text">Carrot Cake</div>
-                <div class="price">$11.99</div>
+                <div class="price">$11.99/ea</div>
             </a>
         </div>
     </div>

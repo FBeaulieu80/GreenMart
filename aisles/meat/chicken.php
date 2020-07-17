@@ -19,7 +19,7 @@
         </div>
         <div class="grid-item">
             <h2>Roast Chicken</h2>
-            <span class="price">$9.99/lb</span><br />
+            <span class="price">$9.99/ea</span><br />
             <br />
             Product of Alberta. <br /> <br />
             <div class="addtocart">
