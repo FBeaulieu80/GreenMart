@@ -9,3 +9,15 @@
 textarea {
     resize:none;
 }
+
+html, body{ height:100%; margin:0; }
+
+/* Trick */
+body{
+    display:flex;
+    flex-direction:column;
+}
+
+footer{
+    margin-top:auto;
+}
