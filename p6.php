@@ -67,7 +67,7 @@
           <button type="button" class="submit" style="font-weight: bold;">FINISH PROFILE</button>
         </form>
 
-        <p style="text-indent: 28%;">Already have a Green Mart account? <a href="p5.php">Login</a> to shop online.</p>
+        <p style="text-align: center;">Already have a Green Mart account? <a href="p5.php">Login</a> to shop online.</p>
     </div>
 </body>
 <?php require_once "common/footer.html"?>
