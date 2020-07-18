@@ -15,7 +15,7 @@
 
     <div class="grid-container">
         <div class="grid-item">
-            <img src="../../images/meat/chicken.jpg" alt="Chicken">
+            <img src="../../images/meat/chicken.jpg" alt="Roast Chicken">
         </div>
         <div class="grid-item">
             <h2>Roast Chicken</h2>

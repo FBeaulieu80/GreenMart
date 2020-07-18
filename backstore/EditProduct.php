@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <title>Edit Product</title>
     <!--<link rel="stylesheet" type="text/css" href="../css/main.css" />-->
-    <link rel="stylesheet" type="text/css" href="../css/p7.css" />
+    <link rel="stylesheet" type="text/css" href="../css/p7bak.css" />
     <link rel="stylesheet" type="text/css" href="../css/backstore.css" />
 </head>
 

@@ -49,7 +49,7 @@
                 <td>0</td>
                 <td>France</td>
                 <td>
-                    <textarea id="description" name="description" rows="1" cols="40">A baguette is a long, thin loaf of French bread that is commonly made from basic lean dough. It is distinguishable by its length and crisp crust. A baguette has a diameter of about 5 or 6 cm and a usual length of about 65 cm, although a baguette can be up to 1 m long.</textarea>
+                    <textarea id="description" name="description" rows="1" cols="30">A baguette is a long, thin loaf of French bread that is commonly made from basic lean dough. It is distinguishable by its length and crisp crust. A baguette has a diameter of about 5 or 6 cm and a usual length of about 65 cm, although a baguette can be up to 1 m long.</textarea>
                 </td>
                 <td>Bob</td>
                 <td>Disabled</td>
@@ -70,7 +70,7 @@
                 <td>12</td>
                 <td>Canada</td>
                 <td>
-                    <textarea id="description" name="description" rows="1" cols="40">Eggs are laid by female animals of many different species, including birds, reptiles, amphibians, a few mammals, and fish, and many of these have been eaten by humans for thousands of years. Bird and reptile eggs consist of a protective eggshell, albumen, and vitellus, contained within various thin membranes.</textarea>
+                    <textarea id="description" name="description" rows="1" cols="30">Eggs are laid by female animals of many different species, including birds, reptiles, amphibians, a few mammals, and fish, and many of these have been eaten by humans for thousands of years. Bird and reptile eggs consist of a protective eggshell, albumen, and vitellus, contained within various thin membranes.</textarea>
                 </td>
                 <td>Jane</td>
                 <td>Disabled</td>
@@ -91,9 +91,7 @@
                 <td>112</td>
                 <td>Guatemala</td>
                 <td>
-                    <textarea id="description" name="description" rows="1" cols="40"><p>Organic bananas from Guatemala.
-                            Grown on a sustainable and fair trade certified farm. Check out our recipes to see what
-                            delicious meals and desserts you can make with bananas.</p></textarea>
+                    <textarea id="description" name="description" rows="1" cols="30">Organic bananas from Guatemala. Grown on a sustainable and fair trade certified farm. Check out our recipes to see what delicious meals and desserts you can make with bananas.</textarea>
                 </td>
                 <td>Jose</td>
                 <td>Enabled</td>
@@ -114,7 +112,7 @@
                 <td>35</td>
                 <td>Nova Scotia</td>
                 <td>
-                    <textarea id="description" name="description" rows="1" cols="40">Fresh Atlantic salmon straight from the harbours of Nova Scotia. Certified to be sustainably farmed in the open seas by local fishers. Check out our recipes to see what delicious appetizers and meals you can make with salmon.</textarea>
+                    <textarea id="description" name="description" rows="1" cols="30">Fresh Atlantic salmon straight from the harbours of Nova Scotia. Certified to be sustainably farmed in the open seas by local fishers. Check out our recipes to see what delicious appetizers and meals you can make with salmon.</textarea>
                 </td>
                 <td>Sarah</td>
                 <td>Enabled</td>
@@ -135,7 +133,7 @@
                 <td>6</td>
                 <td>United States</td>
                 <td>
-                    <textarea id="description" name="description" rows="1" cols="40">GT's organic and raw kombucha is guaranteed to aid your health. Kombucha is a naturally fermented tea beverage made with a SCOBY (symbiotic culture of bacteria and yeast) that helps with digestion and improving the immune system.</textarea>
+                    <textarea id="description" name="description" rows="1" cols="30">GT's organic and raw kombucha is guaranteed to aid your health. Kombucha is a naturally fermented tea beverage made with a SCOBY (symbiotic culture of bacteria and yeast) that helps with digestion and improving the immune system.</textarea>
                 </td>
                 <td>GT</td>
                 <td>Enabled</td>

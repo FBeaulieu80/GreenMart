@@ -34,7 +34,7 @@
 
         <div class="aisle-card">
             <a href="chicken.php">
-                <img src="../../images/meat/chicken.jpg" alt="Whole Roasted Chicken">
+                <img src="../../images/meat/chicken.jpg" alt="Roast Chicken">
                 <div class="text">Roast Chicken</div>
                 <div class="price">$9.99/ea</div>
             </a>
