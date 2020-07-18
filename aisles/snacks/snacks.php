@@ -25,10 +25,10 @@
         </div>
 
         <div class="aisle-card">
-            <a href="p3-template.php">
-                <img src="../../images/bakery/baguette.jpg" alt="Baguette">
-                <div class="text">TO DO</div>
-                <div class="price">$99.99/ea</div>
+            <a href="Cookies.php">
+                <img src="../../images/snacks/Chocolate%20cookies.jpg.jpg" alt="Vegan Fairtrade Chocolate Cookies">
+                <div class="text">Vegan Fairtrade Chocolate Cookies</div>
+                <div class="price">$4.99/ea</div>
             </a>
         </div>
     </div>
