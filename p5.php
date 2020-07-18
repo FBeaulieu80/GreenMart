@@ -42,8 +42,8 @@
         <button type="button" class="forgotpassword" style="font-weight: bold; float: right;">Forgot Password</button>
         </form>
 
-        <p style="text-indent: 15%;">Don't have an account? <a href="p6.php">Sign up</a> to shop online and receive all the latest promotions at Green Mart.</p>
-        <p style="text-indent: 45%;"><button style="background-color: black; "><a href="backstore/index.php" style="text-decoration: none; color: white;">Access Backstore</a></button></p>
+        <p style="text-align: center;">Don't have an account? <a href="p6.php">Sign up</a> to shop online and receive all the latest promotions at Green Mart.</p>
+        <p style="text-align: center;"><button style="background-color: black; "><a href="backstore/index.php" style="text-decoration: none; color: white;">Access Backstore</a></button></p>
     </div>
     <?php require_once "common/footer.html"?>
 </body>

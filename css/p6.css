@@ -10,10 +10,8 @@ html, body {
 #box{
        border: 1px solid black;
        padding: 1% 2% 1% 2%;
-       margin-left: auto;
-       margin-right: auto;
-       width: 45%;
-       margin-bottom: 0;
+       margin: 0 auto;
+       max-width: 550px;;
        background: lightgreen;
 }
 

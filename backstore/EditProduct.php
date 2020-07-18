@@ -7,16 +7,17 @@
     <meta charset="UTF-8">
     <title>Edit Product</title>
     <!--<link rel="stylesheet" type="text/css" href="../css/main.css" />-->
-    <link rel="stylesheet" type="text/css" href="../css/p7bak.css" />
+    <link rel="stylesheet" type="text/css" href="../css/p8.css" />
     <link rel="stylesheet" type="text/css" href="../css/backstore.css" />
 </head>
 
-<!-- Header in external file -->
-<?php require "common/header.php"; ?>
 
 <body>
+<!-- Header in external file -->
+<?php require "common/header.php"; ?>
 <div class="main">
-    <div id="product-list" class="product-table">
+    <h2>Edit Product</h2>
+    <div id="edit-product" class="product-table">
         <form action="ProductList.php">
             <table style="width:100%">
                 <tr>
@@ -52,9 +53,9 @@
     </div>
 </div>
 
-</body>
-
 <!--Footer in external file-->
 <?php require "common/footer.html"; ?>
+</body>
+
 
 </html>

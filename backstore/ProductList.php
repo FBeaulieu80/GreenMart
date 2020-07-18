@@ -11,11 +11,12 @@
     <link rel="stylesheet" type="text/css" href="../css/backstore.css" />
 </head>
 
-<!-- Header in external file -->
-<?php require "common/header.php"; ?>
 
 <body>
+<!-- Header in external file -->
+<?php require "common/header.php"; ?>
 <div class="main">
+    <h2>Product List</h2>
     <div id="product-list" class="product-table">
         <form action="EditProduct.php">
             <input type="submit" value="Add">
@@ -152,9 +153,9 @@
     </div>
 </div>
 
-</body>
-
 <!--Footer in external file-->
 <?php require "common/footer.html"; ?>
+</body>
+
 
 </html>
