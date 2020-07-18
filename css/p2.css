@@ -78,6 +78,10 @@
     text-decoration: none;
 }
 
+.aisle-card a:hover {
+    font-weight: bold;
+}
+
 .aisle-card img {
     box-sizing: border-box;
     max-height: 200px;
@@ -157,7 +161,7 @@
 }
 
 .aisle-header a:hover {
-    background-color: darkgreen;
+    font-weight: normal;
 }
 
 .row {
