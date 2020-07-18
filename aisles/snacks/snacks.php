@@ -5,7 +5,7 @@
     <title>Snacks | Green Mart</title>
     <link rel="stylesheet" href="../../css/main.css" type="text/css" />
     <link rel="stylesheet" href="../../css/p2.css" type="text/css" />
-    <meta name="author" content="TBD"> <!-- TODO: Change the author name -->
+    <meta name="author" content="Laura Boivin">
 </head>
 <body>
 <?php require "../../common/header.php"; ?>
