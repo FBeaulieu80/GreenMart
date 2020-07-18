@@ -1,0 +1,123 @@
+html, body, header {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: Helvetica, Arial;
+    box-sizing: border-box;
+}
+
+/* LOGO TOP NAV */
+.topnav {
+    position: relative;
+    background-color: seagreen;
+    top: 0;
+    max-width: 100%;
+    margin: 0;
+    padding: 2%;
+    min-height: 50px;
+    height: 5%;
+    max-height: 100px;
+}
+
+.topnav a {
+    max-width:100%;
+    max-height:100%;
+}
+
+.topnav a img {
+    max-width:100%;
+    max-height:100%;
+    display: block;
+}
+
+/* MAIN MENU */
+.mainnav {
+    width: 100%;
+    position: relative;
+}
+
+.mainnav ul {
+    max-width:100%;
+    max-height:100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: seagreen;
+    width: 100%;
+    max-width:100%;
+    max-height:100%;
+}
+
+.mainnav li {
+    float: left;
+}
+
+.mainnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.mainnav a:hover {
+    background-color: darkgreen;
+}
+/* END OF HEADER STYLE */
+
+/* MAIN SECTION */
+.main {
+    position: relative;
+}
+
+.main h2 {
+    text-align: center;
+    font-size: 40px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.main h2 a {
+    text-decoration: none;
+    color: black
+}
+
+p {
+    margin-left: 10px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 20px;
+}
+
+/* COPY FOOTER STYLE */
+footer {
+    width: 100%;
+    position: relative;
+    background-color: seagreen;
+    padding: 10px;
+    /*margin-top: 50px;*/
+    color: white;
+    /*position: fixed;*/ /* Uncomment if your page is short */
+    bottom: 0;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    display: inline;
+}
+
+footer a:hover {
+    font-weight: bold;
+}
+/* COPY FOOTER STYLE */

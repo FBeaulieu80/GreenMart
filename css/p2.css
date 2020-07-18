@@ -1,0 +1,189 @@
+/*.aisles-sidenav {
+    height: 100%;
+    max-height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: seagreen;
+    overflow-x: hidden;
+    padding-top: 5%;
+    transition: 0.5s;
+    display: block;
+    width: fit-content;
+    max-width: 20%;
+    float: left;
+    z-index: 1;
+}*/
+/*
+.aisles-sidenav a {
+    padding: 2% 2% 2% 15%;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.aisles-sidenav a:hover {
+    background-color: darkgreen;
+}*/
+
+/*.aisles {
+    position: relative;
+    display: block;
+    background-color: darkseagreen;
+    height: 100%;
+    max-height: 100%;
+}*/
+
+/*.aisles-content {
+    display: inline-block;
+    position: relative;
+    padding: 5% 2% 2% 2%;
+    margin:0;
+}
+
+.aisles-content a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.aisles-content a:hover {
+    background-color: darkgreen;
+}*/
+
+/* AISLES LANDING PAGE */
+.aisle-cards {
+    box-sizing: border-box;
+    display: grid;
+    margin: 0 auto;
+    max-width: 1200px;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr min-content;
+}
+
+.aisle-card {
+    box-sizing: border-box;
+    position: relative;
+    height: auto;
+    display: block;
+    padding: 2%;
+
+}
+
+.aisle-card a {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.aisle-card img {
+    box-sizing: border-box;
+    max-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+}
+
+
+.middle {
+    box-sizing: border-box;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+@media (max-width: 900px) {
+    .middle {opacity: 1}
+}
+
+.aisle-card:hover .image {
+    opacity: 0.3;
+}
+
+.aisle-card:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    box-sizing: border-box;
+    background-color: darkgreen;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    text-align: center;
+}
+
+.aisle-card .price-sale {
+    box-sizing: border-box;
+    background-color: darkseagreen;
+    text-align: center;
+    color: red;
+}
+
+.aisle-card .price {
+    box-sizing: border-box;
+    background-color: darkseagreen;
+    text-align: center;
+    color: white;
+}
+
+/**/
+.aisle-header {
+    box-sizing: border-box;
+    background-color: seagreen;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 2%;
+    text-align: center;
+    margin: 0;
+}
+.aisle-header a {
+    text-decoration: none;
+    color: white;
+    padding: 2%;
+}
+.aisle-header .col-1 {
+    text-align: left;
+}
+
+.aisle-header a:hover {
+    background-color: darkgreen;
+}
+
+.row {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    box-sizing: border-box;
+    float: left;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}

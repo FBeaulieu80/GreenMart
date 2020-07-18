@@ -1,0 +1,105 @@
+h1 {
+    /*font-family: cursive;*/
+    color: seagreen;
+
+}
+
+h2 {
+    /*font-family: fantasy;*/
+    font-size: large;
+    text-align: center;
+    /*button-align: left;*/
+}
+
+h3 {
+    font-family: Helvetica;
+    font-size: large;
+    text-align: center;
+}
+
+h4{
+    /*font-family: cursive;*/
+    color: seagreen;
+}
+
+table {
+    border-style: ridge;
+    border-color: darkslategrey;
+    vertical-align: center;
+}
+
+.img-with-text {
+
+    text-align: center;
+    width: 250px;
+
+}
+.img-with-text {
+    display: block;
+    text-align: center;
+
+}
+button {
+    margin: auto;
+
+}
+textarea{
+    position: center;
+    margin: auto;
+}
+
+
+table{
+    width: 50%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+p{
+    text-align: center;
+}
+.subtract{
+    background-color: burlywood;
+    text-align: center;
+    display: block;
+    margin: auto;
+
+}
+.delete{
+    font-family: cursive;
+    background-color: burlywood;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+.add{
+    background-color: burlywood;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+.continue{
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+textarea {
+    background-color: thistle;
+    text-align: center;
+    display: block;
+    width: 30px
+}
+
+textarea {
+    resize: none;
+}
+
+.checkout{
+    border-style: groove;
+    border-color: thistle;
+}
+th{
+    border-bottom-style: dotted;
+
+}
+

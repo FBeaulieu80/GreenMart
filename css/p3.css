@@ -1,0 +1,94 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: Helvetica, Arial;
+}
+
+.grid-container {
+    display: grid;
+    grid-column-gap:0;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+    padding: 50px;
+    padding-top:0;
+}
+
+.grid-item {
+    padding: 10px;
+    text-align: left;
+}
+
+.grid-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.grid-item a:hover {
+    font-weight: bold;
+}
+
+.grid-item img {
+    max-width: 300px;
+    max-height: 200px;
+    padding: 30px;
+}
+
+.sale-price {
+    color: red;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    font-size: 20px;
+}
+
+.main {
+    margin-top: 30px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 20px;
+}
+
+.main h2 {
+    text-align: left;
+    padding:0;
+    font-size: 40px;
+}
+
+.main h2 a {
+    text-decoration: none;
+    color: black
+}
+
+#quantity {
+    width: 30px;
+}
+
+.addtocart{
+display: inline-block;
+}
+
+.addtocart button {
+    float: left;
+    padding: 6px 10px 6px 6px;
+    background: lightgray;
+    font-size: 16px;
+    border: none;
+    margin-left: 10px;
+}
+
+.addtocart input[type=text]{
+    font-size: 16px;
+    padding: 4px 10px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-weight: normal;
+}
