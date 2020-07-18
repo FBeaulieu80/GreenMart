@@ -1,15 +1,18 @@
 /* author Michael Rowe */
 /* responsive CSS modified from: https://css-tricks.com/responsive-data-tables/ */
 
+h2 {
+    color: seagreen;
+}
+textarea {
+    resize:none;
+}
 /*
 Generic Styling, for Desktops/Laptops
 */
 table {
     width: 100%;
     border-collapse: collapse;
-}
-textarea {
-    resize:none;
 }
 th {
     background: #333;

@@ -7,8 +7,8 @@
     <meta charset="UTF-8">
     <title>Edit Product</title>
     <!--<link rel="stylesheet" type="text/css" href="../css/main.css" />-->
-    <link rel="stylesheet" type="text/css" href="../css/p8.css" />
     <link rel="stylesheet" type="text/css" href="../css/backstore.css" />
+    <link rel="stylesheet" type="text/css" href="../css/p8.css" />
 </head>
 
 
