@@ -26,7 +26,7 @@
 
         <div class="aisle-card">
             <a href="Cookies.php">
-                <img src="../../images/snacks/Chocolate%20cookies.jpg.jpg" alt="Vegan Fairtrade Chocolate Cookies">
+                <img src="../../images/snacks/Chocolate%20cookies.jpg" alt="Vegan Fairtrade Chocolate Cookies">
                 <div class="text">Vegan Fairtrade Chocolate Cookies</div>
                 <div class="price">$4.99/ea</div>
             </a>

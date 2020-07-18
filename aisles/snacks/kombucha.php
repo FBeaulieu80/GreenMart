@@ -15,7 +15,7 @@
 
         <div class="grid-container">
             <div class="grid-item">
-                <img src="../../images/snacks/kombucha.png" alt="Banana"> <!-- Change -->
+                <img src="../../images/snacks/kombucha.png" alt="Kombucha"> <!-- Change -->
             </div>
             <div class="grid-item">
                 <h2>GT's Kombucha</h2> <!-- Change -->
