@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:style="http://www.w3.org/1999/html">
+<html lang="en">
 
 <head>
     <meta name="author" content="Kyle">
@@ -15,26 +15,37 @@
 <div class="main">
     <h2><a href="common/404.php">Deals of the week</a></h2>
 
-    <div class="grid-container">
-        <div class="grid-item">
-            <a href="aisles/fruit-veg/banana.html"><img src="images/fruit-veg/banana.png" alt="Banana"></a><br />
-            <a href="aisles/fruit-veg/banana.html"> Banana </a><br /> <br />
-            <span class="original-price">$0.89/lb</span><br />
-            <span class="sale-price">$0.60/lb!!</span><br />
+    <div class="dow-cards">
+        <div class="dow-item">
+            <div class="col">
+                <a href="aisles/fruit-veg/banana.php">
+                    <img class="row-3" src="images/fruit-veg/banana.png" alt="Banana"><br />
+                    <div class="row-1">Banana </div>
+                    <div class="row-1 original-price">$0.89/lb</div>
+                    <div class="row-1 sale-price">$0.60/lb!!</div>
+                </a>
+            </div>
         </div>
-        <div class="grid-item">
-            <a href="aisles/meat/salmon-filet.html"><img src="images/meat/salmon.png" alt="Banana"></a><br />
-            <a href="aisles/meat/salmon-filet.html">Salmon Filet</a> <br /> <br />
-            <span class="original-price">$10.99/lb</span><br />
-            <span class="sale-price">$8.50/lb!!</span><br />
+        <div class="dow-item">
+            <div class="col">
+                <a href="aisles/meat/salmon-filet.php">
+                    <img class="row-3" src="images/meat/salmon.png" alt="Banana">
+                    <div class="row-1">Salmon Filet</div>
+                    <div class="row-1 original-price">$10.99/lb</div>
+                    <div class="row-1 sale-price">$8.50/lb!!</div>
+                </a>
+            </div>
         </div>
-        <div class="grid-item">
-            <a href="aisles/snacks/kombucha.html"><img src="images/snacks/kombucha.png" alt="Banana"></a><br />
-            <a href="aisles/snacks/kombucha.html">GT's Kombucha (Assorted flavours)</a><br /> <br />
-            <span class="original-price">$4.79/ea</span><br />
-            <span class="sale-price">$3.00/ea!!</span><br />
+        <div class="dow-item">
+            <div class="col">
+                <a href="aisles/snacks/kombucha.php">
+                    <img class="row-3" src="images/snacks/kombucha.png" alt="Banana">
+                    <div class="row-1">GT's Kombucha (Assorted flavours)</div>
+                    <div class="row-1 original-price">$4.79/ea</div>
+                    <div class="row-1 sale-price">$3.00/ea!!</div>
+                </a>
+            </div>
         </div>
-
     </div>
 
     <h2>About us</h2>

@@ -110,6 +110,7 @@ html, body, footer {
     display: block;
     /*margin-top: 170px;*/
     padding: 2%;
+    margin-bottom: 50px;
 }
 
 .main h2 {
@@ -119,6 +120,7 @@ html, body, footer {
     margin: 0;
     max-width: 100%;
 }
+
 
 p {
     margin-left: auto;
@@ -133,13 +135,16 @@ p {
 
 /* COPY FOOTER STYLE */
 footer {
-    width: 100%;
-    position: relative;
     background-color: seagreen;
-    padding: 10px;
-    /*margin-top: 50px;*/
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: -10px;
     color: white;
-    /*position: fixed;*/ /* Uncomment if your page is short */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 footer ul {

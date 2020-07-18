@@ -1,9 +1,10 @@
 <html lang="en">
 
 <head>
-    <meta name="author" content="Michael">
+    <meta name="author" content="Michael Rowe">
     <meta charset="UTF-8">
-    <title>Eggs | Dairy & Eggs</title>
+    <title>Eggs | Dairy & Eggs | Green Mart</title>
+    <link rel="stylesheet" type="text/css" href="../../css/main.css" />
     <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
 </head>
 
@@ -28,7 +29,7 @@
                         <input type="text" id="quantity" name="quantity" value="1">
                     </form>
                 </div>
-                <p>What a delicious, strong and elegant package</p><br />
+                <p>Product of Canada.</p><br />
                 <h3>Description</h3> 
                 <p>Eggs are laid by female animals of many different species, including birds, reptiles, amphibians, a
                     few mammals, and fish, and many of these have been eaten by humans for thousands of years. Bird and
@@ -36,13 +37,6 @@
             </div>
         </div>
     </div>
+    <?php require "../../common/footer.html"; ?>
 </body>
-
-<footer>
-    <ul>
-        <li>Copyright &copy 2020 Green Mart Inc. All Rights Reserved.</li>
-        <li>Created my free logo at <a href="https://logomakr.com/">Logomakr.com</a></li>
-    </ul>
-</footer>
-
 </html>

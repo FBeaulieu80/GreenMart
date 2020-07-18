@@ -1,6 +1,6 @@
 <html lang="en" xmlns:style="http://www.w3.org/1999/html">
 <head>
-    <meta name="author" content="Michael">
+    <meta name="author" content="Michael Rowe">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aisles</title>
@@ -10,8 +10,12 @@
 <body>
 <?php require "../../common/header.php"; ?>
 <div class="main">
-    <h2 class="aisle-header">Dairy & Eggs</h2>
-    <div class="aisle-cards-container">
+    <div class="row aisle-header">
+        <div class="col-1"><a href="../index.php"><<</a></div>
+        <div class="col-11">Dairy & Eggs</div>
+    </div>
+
+    <div class="aisle-cards">
         <div class="aisle-card">
             <a href="eggs.php">
                 <img src="../../images/dairy-eggs/eggs.jpg" alt="Eggs">
@@ -27,8 +31,16 @@
                 <div class="price-sale">$3.29/lb</div>
             </a>
         </div>
+
+        <div class="aisle-card">
+            <a href="milk.php">
+                <img src="../../images/dairy-eggs/milk.jpg" alt="Milk">
+                <div class="text">Milk</div>
+                <div class="price-sale">$4.49/lb</div>
+            </a>
+        </div>
     </div>
 </div>
-<!--?php require "../../common/footer.html"; ?-->
+<?php require "../../common/footer.html"; ?>
 </body>
 </html>

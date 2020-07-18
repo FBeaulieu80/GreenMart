@@ -1,41 +1,42 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta name="author" content="Athigan Sinnathurai">
     <meta charset="UTF-8">
-    <title>Rye bread | Bakery | Green Mart</title>
+    <title>Kiwi | Fruit & Veg | Green Mart</title>
     <link rel="stylesheet" type="text/css" href="../../css/main.css" />
     <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
 </head>
 
 <body>
-    <?php require "../../common/header.php" ?>
+<?php require_once "../../common/header.php"; ?>
     <div class="main">
 
         <div class="grid-container">
             <div class="grid-item">
-                <img src="../../images/bakery/rye_bread.jpg" alt="Rye Bread"> 
+                <img src="../../images/fruit-veg/kiwi.jpg" alt="Kiwi">
             </div>
             <div class="grid-item">
-                <h2>Rye Bread</h2> 
-                <span class="original-price">$3.66/ea</span><br /> 
-                <span class="sale-price">$3.45/ea</span><br />
+                <h2>Kiwi</h2> <!-- Change -->
+                <span class="original-price">$2.30/lb</span><br /> 
+                <span class="sale-price">$2.15/lb</span><br /> 
                 <br />
-                 <br />
-                 <div class="addtocart">
+                Product of Honduras. <br /> <br /> 
+                <div class="addtocart">
                     <form action="/action_page.php">
                         <label for="quantity">Quantity:</label> <br />
                         <button type="submit" style="float:right">Add to Cart</button>
                         <input type="text" id="quantity" name="quantity" value="1">
                     </form>
                 </div>
-                <p>Whole grain and loaded with flavor</p><br />
+                <br /> <br />
                 <h3>Description</h3> 
-                <p>High fibre bread made from whole wheat flour, yeast, caraway seeds and soybean oil. 
-                Check out our <a href="../../recipes">recipes</a> to how you can add rye bread to your home meals.</p>
+                <p>Fresh kiwis from Honduras. Grown on a sustainable and fair trade certified farm.
+                Check out our <a href="../../recipes">recipes</a> to how you can add kiwis to your home meals.</p>
             </div>
         </div>
     </div>
-    <?php require "../../common/footer.html"; ?>
+<?php require "../../common/footer.html"; ?>
 </body>
 </html>

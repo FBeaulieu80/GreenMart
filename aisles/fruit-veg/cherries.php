@@ -1,27 +1,27 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta name="author" content="Michael Rowe">
+    <meta name="author" content="Felix Beaulieu">
     <meta charset="UTF-8">
-    <title>Cheese | Dairy & Eggs | Green Mart</title>
+    <title>Cherries | Fruit & Veg | Green Mart</title>
     <link rel="stylesheet" type="text/css" href="../../css/main.css" />
     <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
 </head>
 
 <body>
-<?php require "../../common/header.php" ?>
+<?php require_once "../../common/header.php"; ?>
 <div class="main">
 
     <div class="grid-container">
         <div class="grid-item">
-            <img src="../../images/dairy-eggs/cheese.jpg" alt="Eggs">
+            <img src="../../images/fruit-veg/cherries.jpg" alt="Cherries">
         </div>
         <div class="grid-item">
-            <h2>Cheese</h2>
-            <span class="original-price">$3.79/lb</span><br />
-            <span class="sale-price">$3.29/lb</span><br />
-            <br />
-            <br />
+            <h2>Cherries</h2>
+            <span class="original-price" style="text-decoration: none">$4.99/lb</span>
+            <br /><br />
+            Product of Mexico. <br /> <br />
             <div class="addtocart">
                 <form action="/action_page.php">
                     <label for="quantity">Quantity:</label> <br />
@@ -29,14 +29,15 @@
                     <input type="text" id="quantity" name="quantity" value="1">
                 </form>
             </div>
-            <p>Product of Switzerland.</p><br />
+            <br /> <br />
             <h3>Description</h3>
-            <p>Cheese is a dairy product, derived from milk and produced in a wide range of flavors, textures and forms
-                by coagulation of the milk protein casein. It comprises proteins and fat from milk, usually the milk of
-                cows, buffalo, goats, or sheep.</p>
+            <p>Organic Cherries from Mexico. Grown on a sustainable and fair trade certified farm.
+                Check out our <a href="../../recipes">recipes</a> to see what delicious meals and desserts you can
+                make with cherries.</p>
         </div>
     </div>
 </div>
 <?php require "../../common/footer.html"; ?>
 </body>
+
 </html>

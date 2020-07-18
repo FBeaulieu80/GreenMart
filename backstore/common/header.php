@@ -2,7 +2,7 @@
     <?php
         $httpProtocol = !isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] != 'on' ? 'http' : 'https';
         $base = $httpProtocol.'://'.$_SERVER['HTTP_HOST'];
-        $base = strpos($base, "localhost")? $base."/soen287_website/": $base."/"; ?>
+        $base = strpos($base, "localhost")? $base."/SOEN287/": $base."/"; ?>
     <div class="topnav">
         <a href="<?php echo $base; ?>backstore/index.php">
             <img src="<?php echo $base; ?>images/logo_new.png" alt="Green Mart logo">

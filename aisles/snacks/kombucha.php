@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Felix Beaulieu">
+    <meta name="author" content="Kyle Taylor-Bracken"> <!-- Made product page template -->
     <meta charset="UTF-8">
-    <title>French Baguette | Bakery | Green Mart</title>
+    <title>GT's Kombucha | Snacks | Green Mart</title> <!-- Change -->
     <link rel="stylesheet" type="text/css" href="../../css/main.css" />
     <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
 </head>
+
 <body>
-    <?php require_once "../../common/header.php"; ?>
+<?php require_once "../../common/header.php"; ?>
     <div class="main">
+
         <div class="grid-container">
             <div class="grid-item">
-                <img src="../../images/bakery/baguette.jpg" alt="French Baguette">
+                <img src="../../images/snacks/kombucha.png" alt="Banana"> <!-- Change -->
             </div>
             <div class="grid-item">
-                <h2>French Style Baguette</h2>
-                <span class="original-price">$4.95/ea</span><br />
-                <span class="sale-price">$3.95/ea</span><br />
+                <h2>GT's Kombucha</h2> <!-- Change -->
+                <span class="original-price">$4.79/ea</span><br /> <!-- Change -->
+                <span class="sale-price">$3.00/ea</span><br /> <!-- Remove if not on sale -->
                 <br />
-                Product of Canada. <br /> <br />
+                Product of the United States. <br /> <br /> <!-- Change -->
                 <div class="addtocart">
                     <form action="/action_page.php">
                         <label for="quantity">Quantity:</label> <br />
@@ -30,10 +32,13 @@
                 </div>
                 <br /> <br />
                 <h3>Description</h3> <!-- Change description below -->
-                <p>Organic French style baguette backed fresh daily. Made from locally sourced flour thanks to our partnership with local farms.</p>
+                <p>GT's organic and raw kombucha is guaranteed to aid your health. Kombucha is a naturally fermented
+                tea beverage made with a SCOBY (symbiotic culture of bacteria and yeast) that helps with digestion and
+                improving the immune system.</p>
             </div>
         </div>
     </div>
-    <?php require "../../common/footer.html" ?>
+<?php require "../../common/footer.html"; ?>
 </body>
+
 </html>

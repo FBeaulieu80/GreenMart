@@ -1,24 +1,24 @@
-
 h1 {
-    font-family: cursive;
+    /*font-family: cursive;*/
     color: seagreen;
 
 }
 
-h2 {font-family: fantasy;
+h2 {
+    /*font-family: fantasy;*/
     font-size: large;
     text-align: center;
-    button-align: left;
+    /*button-align: left;*/
 }
 
-h3{
+h3 {
     font-family: Helvetica;
     font-size: large;
     text-align: center;
 }
 
 h4{
-    font-family: cursive;
+    /*font-family: cursive;*/
     color: seagreen;
 }
 
@@ -37,7 +37,7 @@ table {
 .img-with-text {
     display: block;
     text-align: center;
-;
+
 }
 button {
     margin: auto;
@@ -50,9 +50,11 @@ textarea{
 
 
 table{
-    width: 100%;
+    width: 50%;
     text-align: center;
+    margin-bottom: 50px;
 }
+
 p{
     text-align: center;
 }
@@ -100,6 +102,4 @@ th{
     border-bottom-style: dotted;
 
 }
-body{
-   margin-top: 200px;
-}
+
