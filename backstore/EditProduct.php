@@ -37,15 +37,15 @@
                 <tr>
                     <td><input type="button" value="Upload"></td>
                     <td>1</td>
-                    <td><input type="text" name="Product-Name" placeholder="Product Name" size="15"></td>
-                    <td><input type="text" name="Aisle" placeholder="Aisle" size="15"></td>
-                    <td><input type="text" name="Price" placeholder="Price" size="15"></td>
-                    <td><input type="text" name="Discounted-Price" placeholder="Discounted Price" size="15"></td>
-                    <td><input type="number" name="Quantity" placeholder="Quantity" size="15"></td>
-                    <td><input type="text" name="Origin" placeholder="Origin" size="15"></td>
-                    <td><input type="text" name="Description" placeholder="Description" size="15"></td>
-                    <td><input type="text" name="Seller" placeholder="Seller" size="15"></td>
-                    <td><input type="text" name="Status" placeholder="Status" size="15"></td>
+                    <td><input type="text" name="Product-Name" placeholder="Product Name" size="11"></td>
+                    <td><input type="text" name="Aisle" placeholder="Aisle" size="10"></td>
+                    <td><input type="text" name="Price" placeholder="Price" size="10"></td>
+                    <td><input type="text" name="Discounted-Price" placeholder="Discounted Price" size="11"></td>
+                    <td><input type="number" name="Quantity" placeholder="Quantity" size="10"></td>
+                    <td><input type="text" name="Origin" placeholder="Origin" size="10"></td>
+                    <td><input type="text" name="Description" placeholder="Description" size="10"></td>
+                    <td><input type="text" name="Seller" placeholder="Seller" size="10"></td>
+                    <td><input type="text" name="Status" placeholder="Status" size="10"></td>
                     <td><input type="submit" value="Submit"></td>
                 </form>
             </tr>
