@@ -24,30 +24,12 @@
     font-size: 24pt;
 }
 
-#new-user {
-    border-top: 1px solid darkgreen;
-    padding: 2% 2% 2% 15%; /* <top> <right> <bottom> <left> */
-}
-
-#new-user a {
-    display: inline;
-    position: relative;
-    padding: 0;
-    margin: 0;
-}
-
-#new-user-plus {
-    font-weight: bolder;
-    color: white;
-    display: inline;
-}
-
-.main .user-sidenav a:hover {
+.user-sidenav a:hover {
     background-color: darkgreen;
 }
 
-.main .user-sidenav button.active {
-    background-color: greenyellow;
+.user-info-container {
+
 }
 
 .main h2 {
@@ -59,3 +41,4 @@
     padding: 1%;
     margin: 0;
 }
+

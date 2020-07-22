@@ -1,0 +1,29 @@
+[
+  {
+    "id":  1,
+    "firstName":  "Felix",
+    "lastName": "Beaulieu",
+    "email":  "",
+    "fullAddress": "",
+    "phoneNumber":  "",
+    "avatarUrl": ""
+  },
+  {
+    "id":  2,
+    "firstName":  "Michael",
+    "lastName": "Rowe",
+    "email":  "",
+    "fullAddress": "",
+    "phoneNumber":  "",
+    "avatarUrl": ""
+  },
+  {
+    "id":  3,
+    "firstName":  "Kyle",
+    "lastName": "Taylor-Bracken",
+    "email":  "",
+    "fullAddress": "",
+    "phoneNumber":  "",
+    "avatarUrl": ""
+  }
+]
