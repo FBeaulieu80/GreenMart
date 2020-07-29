@@ -59,12 +59,21 @@
                     x.type = y.type = "password";
                   }
                 }
+                
+                function finished(){
+                    var pass = document.getElementById('signup_password'),
+                    cpass = document.getElementById('signup_confirm_password');
+                    if(pass.value==cpass.value){
+                        alert('Your account has been created!');
+                    } else{
+                        alert("Passwords not matching. Please try again.");
+                    }
+                }
             </script>
             
-                
         <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
           <label for="vehicle1"> Subscribe to receive email notifications on Green Mart promotions. Unsubscribe at any time.</label><br><br>
-          <button type="button" class="submit" style="font-weight: bold;">FINISH PROFILE</button>
+          <button onclick="finished()" type="button" class="submit" style="font-weight: bold;">FINISH PROFILE</button>
         </form>
 
         <p style="text-align: center;">Already have a Green Mart account? <a href="p5.php">Login</a> to shop online.</p>
