@@ -87,6 +87,31 @@ display: inline-block;
     padding: 4px 10px;
 }
 
+.addtocart #decr-item, .addtocart #incr-item {
+    margin: 0px;
+    padding: 6px 6px 6px 6px;
+}
+.detailed-description-button button {
+    padding: 6px 6px 6px 6px;
+    background: lightgray;
+    font-size: 16px;
+    border: none;
+    margin-left: 0px;
+}
+
+#detailed-description {
+    display: none;
+    margin-top: 10px;
+}
+
+.type button {
+    padding: 6px 6px 6px 6px;
+    background: lightgray;
+    font-size: 16px;
+    border: none;
+    margin-left: 0px;
+}
+
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
