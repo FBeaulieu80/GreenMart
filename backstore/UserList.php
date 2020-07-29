@@ -6,28 +6,22 @@
     <link rel="stylesheet" type="text/css" href="../css/p9.css"/>
     <script type="text/javascript" src="../scripts/loadusers.js"></script>
     <!--script type="text/javascript" src="../files/users.json"></script-->
-    <script>
-
-    </script>
     <meta name="author" content="Felix Beaulieu">
 </head>
-<body onload="generateUserList()">
+<body onload="generateUserList()" on>
 <?php require "common/header.php"; ?>
-<div class="main">
-    <h2>Green Mart User Accounts</h2>
-    <div class="user-sidenav" id="greenmart-user-list">
-        <!--a href="EditUserProfile.php">Felix Beaulieu</a>
-        <a href="EditUserProfile.php">Michael Rowe</a>
-        <a href="EditUserProfile.php">Kyle Taylor-Bracken</a>
-        <a href="EditUserProfile.php">Athigan Sinnathurai</a>
-        <a href="EditUserProfile.php">Laura Boivin</a-->
-        <a href="EditUserProfile.php" id="new-user-link"><b>+</b> New User</a>
+<div id="userListMain" class="main">
+    <h2 id="userListPageHeader">Green Mart User Accounts</h2>
+    <div class="tabContainer" id="userListDiv">
+        <button class="tabLink" id="newUserBtn" onclick="window.open('EditUserProfile.php', '_self');"><b>+</b> New User</button>
     </div>
 
-    <div class="user-info-container">
 
-    </div>
 </div>
+<script type="text/javascript">
+    //defaultOpen.click();
+</script>
+
 <?php require "common/footer.html"; ?>
 </body>
 
