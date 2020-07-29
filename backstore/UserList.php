@@ -10,6 +10,7 @@
 </head>
 <body onload="generateUserList()" on>
 <?php require "common/header.php"; ?>
+
 <div id="userListMain" class="main">
     <h2 id="userListPageHeader">Green Mart User Accounts</h2>
     <div class="tabContainer" id="userListDiv">
@@ -18,8 +19,10 @@
 
 
 </div>
-<script type="text/javascript">
-    //defaultOpen.click();
+
+<script>
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
 </script>
 
 <?php require "common/footer.html"; ?>

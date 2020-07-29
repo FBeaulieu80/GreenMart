@@ -3,14 +3,6 @@
  * */
 
 /* HELPER FUNCTIONS */
-/*function concatenate(...strings) {
-    let output = "";
-    for (const stringsKey in strings) {
-        output += " " + strings[stringsKey];
-    }
-    return output;
-}*/
-
 function getJsonFile(path, callback) {
     let request = new XMLHttpRequest();
     request.open("GET", path,);
@@ -58,57 +50,61 @@ class User {
         User.userCount++;
     }
 
-    generateAvatar() {
-        let avatar = document.createElement("img");
-        avatar.alt = "Avatar";
-        avatar.src = this.avatarUrl;
-        avatar.className = "userInfoAvatar";
-        return avatar;
-    }
-
-    generateNameDiv() {
-        let nameDiv = document.createElement("div");
-
-        let firstName = document.createElement("label");
-        firstName.className = "userInfoName";
-        firstName.innerHTML = "First Name: ".concat("<b>", this.firstName, "</b>");
-
-        let lastName = document.createElement("label");
-        lastName.className = "userInfoName";
-        lastName.innerHTML = "Last Name: ".concat("<b>", this.lastName, "</b>");
-
-        nameDiv.appendChild(firstName);
-        nameDiv.appendChild(lastName);
-        return nameDiv;
-    }
-
-    generateEmail() {
-        return document.createElement("div");
-    }
-
-    generateAddress() {
-        return document.createElement("div");
-    }
-
-    generatePhoneNumber() {
-        return document.createElement("div");
-    }
-
     generateHtmlCard() {
         let userInfoCard = document.createElement("div");
         userInfoCard.className = "userInfoCard";
-        userInfoCard.id = "user".concat(this.id);
-        
-        let header = document.createElement("h2");
-        header.className = "userInfoHeader";
+        userInfoCard.id = "user" + this.id;
+
+        let headerDiv = document.createElement("div");
+        headerDiv.className = "userInfoHeader";
+
+        let header = document.createElement("h3");
         header.innerHTML = this.id + ". " + this.firstName + " " + this.lastName;
 
-        userInfoCard.appendChild(header);
-        userInfoCard.appendChild(this.generateAvatar());
-        userInfoCard.appendChild(this.generateNameDiv());
-        userInfoCard.appendChild(this.generateEmail());
-        userInfoCard.appendChild(this.generateAddress());
-        userInfoCard.appendChild(this.generatePhoneNumber());
+        let editBtn = document.createElement("button");
+        editBtn.className = "editButton";
+        editBtn.innerHTML = "Edit";
+        editBtn.onclick = function() { window.open("EditUserProfile.php", "_self"); };
+        headerDiv.appendChild(header);
+        headerDiv.appendChild(editBtn);
+
+        let avatar = document.createElement("img");
+        avatar.alt = "Avatar";
+        if (this.avatarUrl == null || this.avatarUrl === "") {
+            avatar.src = "../images/users/avatar.svg";
+        }
+        else {
+            avatar.src = this.avatarUrl;
+        }
+        avatar.className = "userInfoAvatar";
+
+        let firstName = document.createElement("div");
+        firstName.className = "userInfo";
+        firstName.innerHTML = "First Name: " + "<b>" + this.firstName + "</b>";
+
+        let lastName = document.createElement("div");
+        lastName.className = "userInfo";
+        lastName.innerHTML = "Last Name: " + "<b>" + this.lastName + "</b>";
+
+        let emailDiv = document.createElement("div");
+        emailDiv.className = "userInfo";
+        emailDiv.innerHTML = "email: " + "<b>" + this.email + "</b>";
+
+        let addressDiv = document.createElement("div");
+        addressDiv.className = "userInfo";
+        addressDiv.innerHTML = "Full Address: " + "<b>" + this.fullAddress + "</b>";
+
+        let phoneNumberDiv = document.createElement("div");
+        phoneNumberDiv.className = "userInfo";
+        phoneNumberDiv.innerHTML = "Phone Number: " + "<b>" + this.phoneNumber + "</b>";
+
+        userInfoCard.appendChild(headerDiv);
+        userInfoCard.appendChild(avatar);
+        userInfoCard.appendChild(firstName);
+        userInfoCard.appendChild(lastName);
+        userInfoCard.appendChild(emailDiv);
+        userInfoCard.appendChild(addressDiv);
+        userInfoCard.appendChild(phoneNumberDiv);
 
         return userInfoCard;
     }
@@ -131,19 +127,19 @@ function generateUserList() {
 
             const userButton = document.createElement('button');
             userButton.innerHTML = user.firstName + " " + user.lastName;
-            userButton.className = "tabLink";
-
+            userButton.className = "userLink";
 
             let userInfoCard = user.generateHtmlCard();
             document.getElementById("userListMain").appendChild(userInfoCard);
 
-            userButton.onclick = function() { openUser(userInfoCard) };
-            document.getElementById("userListDiv").insertBefore(userButton,
-                document.getElementById("newUserBtn"));
+            userButton.onclick = function() { openUser(userButton, userInfoCard) };
+            document.getElementById("userListDiv").insertBefore(userButton, document.getElementById("newUserBtn"));
+
+            if (i === 0) {
+                openUser(userButton, userInfoCard);
+            }
         }
     });
-
-
 }
 /* END OF HTML GENERATOR FUNCTIONS */
 function createNewUser() {
@@ -178,21 +174,16 @@ function changeAvatar() {
     }
 }
 
-function openUser(element) {
-    let i, userInfoCards, tabLinks;
-    userInfoCards = document.getElementsByClassName("userInfoCard");
-    for (i = 0; i < userInfoCards.length; i++) {
-        if (userInfoCards[i] != null) {
-            let user = userInfoCards[i];
-            user.style.display = "none";
-        }
+function openUser(userLink, userInfoCard) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("userInfoCard");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
     }
-    tabLinks = document.getElementsByClassName("tabLink");
-    for (i = 0; i < tabLinks.length; i++) {
-        let link = tabLinks[i];
-        link.className = link.className.replace("active", "");
+    tablinks = document.getElementsByClassName("userLink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    element.style.display = "block";
-    element.className += " active";
-
+    userInfoCard.style.display = "block";
+    userLink.className += " active";
 }

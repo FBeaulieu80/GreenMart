@@ -3,9 +3,9 @@
     "id":  1,
     "firstName":  "Felix",
     "lastName": "Beaulieu",
-    "email":  "",
-    "fullAddress": "",
-    "phoneNumber":  "",
+    "email":  "felix.beaulieu@mail.concordia.ca",
+    "fullAddress": "123 rue Street, Cityville, A1B 2C3, Country",
+    "phoneNumber":  "(514) 555-5555",
     "avatarUrl": "https://pixabay.com/get/52e9d2444e51aa14f6d1867dda35367b1c3ad7e357597740_1920.jpg"
   },
   {
