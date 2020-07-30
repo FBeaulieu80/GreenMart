@@ -92,3 +92,13 @@ table, th, td {
     border-collapse: collapse;
     font-weight: normal;
 }
+
+.cookie-options{
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+.cookie-button{
+    height: 50px;
+    width: 125px;
+}
