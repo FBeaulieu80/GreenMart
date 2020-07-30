@@ -4,19 +4,15 @@ html, body, header {
 }
 
 * {
-    font-family: Helvetica, Arial;
+    font-family: Helvetica, Arial, sans-serif;
     box-sizing: border-box;
 }
 
 /* LOGO TOP NAV */
 .topnav {
-    position: relative;
     background-color: seagreen;
-    top: 0;
-    max-width: 100%;
+    width: 100%;
     margin: 0;
-    min-height: 50px;
-    max-height: 100px;
 }
 
 .topnav a {
@@ -33,46 +29,70 @@ html, body, header {
 }
 
 /* MAIN MENU */
-.mainnav {
-    width: 100%;
-    position: relative;
-}
-
-.mainnav ul {
-    max-width:100%;
-    max-height:100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+#mainNav {
     overflow: hidden;
     background-color: seagreen;
-    width: 100%;
-    max-width:100%;
-    max-height:100%;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
 }
 
-.mainnav li {
-    float: left;
+#storeLink {
+    border-right: 5px solid darkgreen
 }
 
-.mainnav li a {
+#mainNav a {
     display: block;
-    color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0.75rem 0.75rem;
     text-decoration: none;
+    color: white;
 }
 
-.mainnav a:hover {
+#mainNav a:hover {
     background-color: darkgreen;
+}
+
+#mainNav a.active {
+    background-color: mediumseagreen;
+}
+
+.sticky {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 1vh 2vh #333333;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+#logInIcon {
+    display: none;
+    height: 1rem;
+    filter: invert(1);
+    margin: 0;
+    padding: 0;
+}
+
+#logInText {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 400px) {
+    #logInIcon {
+        display: inline-block;
+    }
+    #logInText {
+        display: none;
+    }
 }
 /* END OF HEADER STYLE */
 
 /* MAIN SECTION */
-.main {
-    position: relative;
-}
-
 .main h2 {
     text-align: center;
     font-size: 40px;
@@ -84,23 +104,15 @@ html, body, header {
     text-decoration: none;
     color: black
 }
+/* END OF MAIN SECTION */
 
-p {
-    margin-left: 10px;
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-bottom: 20px;
-}
-
-/* COPY FOOTER STYLE */
+/* FOOTER */
 footer {
     width: 100%;
-    position: fixed;
     background-color: seagreen;
     padding: 10px;
     color: white;
     bottom: 0;
-    /*float: bottom;*/
 }
 
 footer ul {
@@ -119,4 +131,5 @@ footer a {
 footer a:hover {
     font-weight: bold;
 }
-/* COPY FOOTER STYLE */
+/* END OF FOOTER */
+

@@ -10,14 +10,25 @@
     </div>
 
     <!-- Main navigation bar with Inventory (P7, P8), Users (P9, P10), Orders (P11, P12) and Login-->
-    <div class="mainnav">
-        <ul>
-            <li><a href="<?php echo $base; ?>index.php" style="border-right: 5px solid darkgreen">Store</a></li>
-            <li><a href="<?php echo $base; ?>backstore/ProductList.php">Inventory</a></li>
-            <li><a href="<?php echo $base; ?>backstore/UserList.php">Users</a></li>
-            <li><a href="<?php echo $base; ?>backstore/p11.php">Orders</a></li>
-
-            <li style="float:right"><a href="<?php echo $base; ?>p5.php">Log In</a></li>
-        </ul>
+    <div id="mainNav">
+        <a href="<?php echo $base; ?>index.php" id="storeLink">Store</a>
+        <a href="<?php echo $base; ?>backstore/ProductList.php">Inventory</a>
+        <a href="<?php echo $base; ?>backstore/UserList.php">Users</a>
+        <a href="<?php echo $base; ?>backstore/p11.php">Orders</a>
+        <a href="<?php echo $base; ?>p5.php"><img id="logInIcon" src="<?php echo $base; ?>images/users/avatar.svg" alt="Avatar"><p id="logInText">Log In</p></a>
     </div>
 </header>
+<script type="text/javascript">
+    window.onscroll = function () { setStickyNav() };
+
+    var mainNav = document.getElementById("mainNav");
+    var sticky = mainNav.offsetTop;
+
+    function setStickyNav() {
+        if (window.pageYOffset >= sticky) {
+            mainNav.classList.add("sticky");
+        } else {
+            mainNav.classList.remove("sticky");
+        }
+    }
+</script>
