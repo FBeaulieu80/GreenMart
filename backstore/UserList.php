@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/backstore.css"/>
     <link rel="stylesheet" type="text/css" href="../css/p9.css"/>
-    <script type="text/javascript" src="../scripts/userList.js"></script>
+    <script type="text/javascript" src="../scripts/backstore/userList.js"></script>
     <!--script type="text/javascript" src="../files/users.json"></script-->
     <meta name="author" content="Felix Beaulieu">
 </head>
