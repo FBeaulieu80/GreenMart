@@ -80,11 +80,13 @@ display: inline-block;
     font-size: 16px;
     border: none;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .addtocart input[type=text]{
     font-size: 16px;
     padding: 4px 10px;
+
 }
 
 table, th, td {
@@ -101,4 +103,37 @@ table, th, td {
 .cookie-button{
     height: 50px;
     width: 125px;
+    font-size: 15px;
+    background: tan;
+    cursor: pointer;
+}
+
+#details{
+    cursor: pointer;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+    background-color: lightgoldenrodyellow;
+    border-style: ridge;
+}
+
+#description{
+    max-height: 70px;
+    overflow: hidden;
+
+    /*set smooth transitions up*/
+
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
+
+}
+
+#description.open{
+    max-height: 300px;
+
+    /*set smooth transitions up*/
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
 }

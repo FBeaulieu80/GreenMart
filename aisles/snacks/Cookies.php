@@ -17,14 +17,14 @@
 
         <h3>Select one of our delicious cookie options</h3>
         <button class = "cookie-button" id = "button1">Chocolate</button>
-        <button class = "cookie-button" id = "button2">Salted Caramel</button>
-        <button class = "cookie-button" id = "button3">Peanut Butter</button>
+        <button class = "cookie-button" id = "button2">Peanut Butter</button>
+        <button class = "cookie-button" id = "button3">Salted Caramel</button>
 
     </div>
     <div class="grid-container">
         <div class="grid-item">
-            <img src="../../images/snacks/Chocolate%20cookies.jpg" alt="Chocolate Cookies"> <!-- default image -->
-            <script src = "../../js/cookies.js"></script>
+            <img src="../../images/snacks/Chocolate%20cookies.jpg" alt="Cookies image"> <!-- default image -->
+            <script src = "../../js/cookie-types.js"></script>
         </div>
         <div class="grid-item">
             <h2>Vegan Fairtrade Cookies</h2>
@@ -40,11 +40,18 @@
                 </form>
             </div>
             <br /> <br />
-            <button class = "cookie-button" id = "button4">Description</button>
-            <script src = "../../js/cookies.js"></script>
-            <p>These vegan fairtrade cookies are a baker's masterpiece. This snack is delicious, moist and melts
-                in your mouth. All workers at every step of production
-                are well compensated for their work and all our ingredients are ethically sourced, as they should be.  </p>
+            <div id = "description">
+            <p>These vegan fairtrade cookies are a baker's masterpiece. <br><br>
+                This snack is delicious, moist and melts
+                in your mouth. At every step of production,
+                all workers are well compensated for their work and all
+                our ingredients are ethically sourced, as they should be.  </p>
+            </div>
+
+            <a id = "details">More Details</a>
+
+            <script src = "../../js/cookie-description.js"></script>
+
         </div>
     </div>
 </div>

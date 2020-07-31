@@ -14,4 +14,3 @@ button2.addEventListener("click", () => {
 button3.addEventListener("click", () => {
     img.src = "../../images/snacks/spice-643848_1920.jpg"
 })
-
