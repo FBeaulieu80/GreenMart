@@ -40,7 +40,7 @@
 
                     <button type="submit" style="float:right" id="cookcartbutton">Add to Cart</button>
                     <button id = "subtract">-</button>
-                    <input type = "number" value = 1 id="cookquantity" name="quantity">
+                    <input type = "text" value = 1 id="cookquantity" name="quantity" readonly>
                     <button id = "add">+</button> <br /> <br />
                 <label id = "total">Subtotal:</label>
                 <span id = "total" class = "subtotal">$4.99</span>

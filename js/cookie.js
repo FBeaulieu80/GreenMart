@@ -34,18 +34,25 @@
         }
     }
 
-/* variables for the cookie increment & decrementing */
+/* variables for the cookie increment & decrementing*/
     var btnAdd = document.getElementById("add")
     var btnSub = document.getElementById("subtract")
     var input = document.getElementById("cookquantity")
 
 /* code for the cookie increment & decrementing */
     btnAdd.addEventListener("click", () =>{
-        input.value = parseInt(input.value) +1;
+        input.value = parseInt(input.value)+1 ;
     })
-    btnSub.addEventListener("click", () => {
-        input.value = parseInt(input.value) - 1;
-     })
+
+    btnSub.addEventListener("click", () =>{
+    subtractQuantity() ;
+    })
+
+    function subtractQuantity(){
+        if (input.value > 0){
+        input.value--;
+        }
+    }
 
 /* variable for calculating subtotal */
     var quantity = document.getElementById("cookquantity").value
