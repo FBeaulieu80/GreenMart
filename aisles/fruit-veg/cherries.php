@@ -3,6 +3,7 @@
 
 <head>
     <meta name="author" content="Felix Beaulieu"> <!-- Buttons (WP2) added by Kyle -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Cherries | Fruits & Vegetables | Green Mart</title>
     <link rel="stylesheet" type="text/css" href="../../css/main.css" />
@@ -15,9 +16,12 @@
 
     <div class="grid-container">
         <div class="grid-item">
+            <div class="col">
             <img id="cherry-image" src="../../images/fruit-veg/bing-cherry.jpg" alt="Cherries">
+            </div>
         </div>
         <div class="grid-item">
+            <div class="col">
             <h2>Cherries</h2>
             <span class="original-price" style="text-decoration: none">$4.99/lb</span>
             <br /><br />
@@ -39,11 +43,11 @@
             <br />
             <label for="quantity">Quantity:</label> <br />
             <div class="addtocart">
-                <form action="/action_page.php">
-                    <button type="submit" style="float:right">Add to Cart</button>
-                    <button type="button" id="incr-item" onclick="quantity.value++" style="float:right">+</button>
-                    <button type="button" id="decr-item" onclick="quantity.value--" style="float:left">-</button>
-                    <input type="text" id="quantity" name="quantity" value="1">
+                <form action="">
+                    <button type="button" onclick="alert('Products added to cart!')" style="float:right">Add to Cart</button>
+                    <button type="button" id="incr-item" onclick="quantityIncr()" style="float:right">+</button>
+                    <button type="button" id="decr-item" onclick="quantityDecr()" style="float:left">-</button>
+                    <input type="text" id="quantity" name="quantity" value="1" readonly>
                 </form>
             </div>
 
@@ -55,11 +59,11 @@
                 Organic Cherries from Mexico. Grown on a sustainable and fair trade certified farm.
                 Check out our <a href="../../recipes.php">recipes</a> to see what delicious meals and desserts you can make with cherries.
             </div>
-
+            </div>
         </div>
     </div>
 </div>
-<script src="../../js/cherries.js"></script>
+<script src="../../scripts/aisles/fruitveg-cherries.js"></script>
 <?php require "../../common/footer.html"; ?>
 </body>
 

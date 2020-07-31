@@ -54,11 +54,21 @@ function regular() {
 }
 
 function detailedDescription() {
-
     let x = document.getElementById("detailed-description");
     if (x.style.display === "none") {
         x.style.display = "block";
     } else {
         x.style.display = "none";
+    }
+}
+
+function quantityIncr(){
+    if (document.getElementById("quantity").value < 30){
+        document.getElementById("quantity").value++;
+    }
+}
+function quantityDecr() {
+    if (document.getElementById("quantity").value > 0){
+        document.getElementById("quantity").value--;
     }
 }
