@@ -1,33 +1,237 @@
 /*
  * Author: Felix Beaulieu
  */
+/* BACKSTORE.CSS */
+html, body, header {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* LOGO TOP NAV */
+.topnav {
+    background-color: seagreen;
+    width: 100%;
+    margin: 0;
+}
+
+.topnav a {
+    max-height: 100px;
+    width:100%;
+    height:100%;
+}
+
+.topnav a img {
+    padding: 1%;
+    max-width:100%;
+    max-height:100%;
+    display: block;
+}
+
+/* MAIN MENU */
+#mainNav {
+    overflow: hidden;
+    background-color: seagreen;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+}
+
+#storeLink {
+    border-right: 5px solid darkgreen
+}
+
+#mainNav a {
+    display: block;
+    text-align: center;
+    padding: 0.75rem 0.75rem;
+    text-decoration: none;
+    color: white;
+}
+
+#mainNav a:hover {
+    background-color: darkgreen;
+}
+
+#mainNav a.active {
+    background-color: mediumseagreen;
+}
+
+.sticky {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 1vh 2vh #333333;
+    padding-top: 1vh;
+}
+
+.sticky + .main{
+    padding-top: 60px;
+}
+
+#logInIcon {
+    display: none;
+    height: 1rem;
+    filter: invert(1);
+    margin: 0;
+    padding: 0;
+}
+
+#logInText {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 400px) {
+    #logInIcon {
+        display: inline-block;
+    }
+    #logInText {
+        display: none;
+    }
+}
+/* END OF HEADER STYLE */
+
+/* MAIN SECTION */
+.main h2 {
+    text-align: center;
+    font-size: 40px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.main h2 a {
+    text-decoration: none;
+    color: black
+}
+/* END OF MAIN SECTION */
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background-color: seagreen;
+    padding: 10px;
+    color: white;
+    bottom: 0;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    display: inline;
+}
+
+footer a:hover {
+    font-weight: bold;
+}
+/* END OF FOOTER */
+
+/* END OF BACKSTORE.CSS */
+
 * {box-sizing: border-box}
+
+body {
+    background-color: seagreen;
+    min-width: 300px;
+
+}
+
+#userListMainDiv {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: fit-content(100%) auto fit-content(100%);
+    grid-template-columns: 30% 70%;
+    grid-template-areas:
+            "header header"
+            "menu card"
+            "footer footer";
+}
+
+/* PAGE HEADER */
+#pageHeader {
+    /*Parent Grid*/
+    grid-area: header;
+    /*Grid*/
+    display: grid;
+    grid-template-columns: fit-content(100%) auto;
+    grid-template-rows: auto;
+    /*Other*/
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    background-color: seagreen;
+}
+
+#pageHeader h2 {
+    background-color: inherit;
+    color: white;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    font-size: 30px;
+}
+
+/* MENU ICON STYLE AND ANIMATION */
+#pageHeader #toggleSideNavButton {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: 0.4s;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change {
+    transform: rotate(-90deg);
+}
+
+#toggleSideNavButton:hover {
+    background-color: darkgreen;
+}
+/* END OF MENU ICON STYLE AND ANIMATION */
+
+
+/* END OF PAGE HEADER */
 
 /* Style the tab */
 .tabContainer {
-    float: left;
+    /*Parent Grid*/
+    grid-area: menu;
+    /*Other*/
+    /*float: left;*/
     background-color: seagreen;
-    width: 30%;
-    height: 100%;
+    width: 100%;
+    height: content-box;
     border: none;
     min-width: 100px;
-    /*position: relative;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    transition: 0.5s;
-    display: block;
-    margin: 0;*/
+    overflow: auto;
+
 }
 
 /* Style the buttons inside the tab */
-.tabContainer button {
-    display: block;
+.tabLink {
     background-color: inherit;
     color: white;
-    padding: 2% 2% 2% 15%; /* <top> <right> <bottom> <left> */
     width: 100%;
     border: none;
     outline: none;
@@ -35,6 +239,16 @@
     cursor: pointer;
     transition: 0.3s;
     font-size: 17px;
+}
+
+.tabContainer input {
+    width: 100%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    border: none;
+    padding: 0.5rem;
+    outline: none;
 }
 
 /* Change background color of buttons on hover */
@@ -50,42 +264,35 @@
 
 /* Style the tab content */
 .userInfoCard {
-    float: left;
+    /*Parent Grid*/
+    grid-area: card;
+    /*Other*/
     background-color: mediumseagreen;
-    width: 70%;
     display: none;
     height: 100%;
     color: white;
-    padding: 0 1rem;
+    padding: 0 2rem;
+    overflow-wrap: break-word;
 }
 
-.userInfoHeader {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.userInfoCard h3 {
-    color: white;
-    display: inline-block;
-    margin: 0;
-    font-size: 17px;
-    padding: 1rem;
+.userInfoCard .userInfoHeader {
+    display: grid;
+    grid-template-columns: 80% 20%;
 }
 
 .editButton {
-    background-color: mediumseagreen;
+    background-color: inherit;
     margin: 0;
     color: white;
     border: none;
     outline: none;
     cursor: pointer;
     transition: 0.3s;
-    font-size: 17px;
     float: right;
     padding: 1rem;
-    width: 10%;
+    text-transform: uppercase;
     text-align: center;
+    min-width: fit-content;
 }
 
 .editButton:hover {
@@ -104,15 +311,61 @@
 .userInfo {
     color: white;
     margin: 0 auto;
-    padding: 2%;
+    padding: 0.5rem;
 }
 
-#userListPageHeader {
-    position: relative;
-    background-color: seagreen;
-    color: white;
-    text-align: center;
-    font-size: 40px;
-    padding: 1%;
-    margin: 0;
+div::-webkit-scrollbar-track
+{
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+    background-color: #008400;
+}
+
+div::-webkit-scrollbar
+{
+    width: 0.5rem;
+    background-color: #F5F5F5;
+}
+
+div::-webkit-scrollbar-thumb
+{
+    background-color: #004400;
+
+}
+
+/* MEDIA QUERIES */
+/* SMALL SCREENS */
+@media (max-width: 400px) {
+    #userListSideNav {
+        display: none;
+    }
+
+    #userListMainDiv {
+        grid-template-areas:
+            "header header"
+            "card card"
+            "footer footer";
+    }
+
+    .editButton {
+        background-color: darkgreen;
+    }
+
+    #pageHeader h2 {
+        font-size: 20px;
+    }
+
+    .tabLink {
+        font-size: 8vw;
+    }
+}
+/* LARGE SCREENS */
+@media (min-width: 800px) {
+    body {
+        padding: 0 10%;
+    }
+}
+/* END OF MEDIA QUERIES */
+
+footer {
+    grid-area: footer;
 }

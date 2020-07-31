@@ -63,9 +63,10 @@ html, body, header {
     left: 0;
     width: 100%;
     box-shadow: 0 1vh 2vh #333333;
+    padding-top: 1vh;
 }
 
-.sticky + .content {
+.sticky + .main{
     padding-top: 60px;
 }
 
@@ -132,4 +133,3 @@ footer a:hover {
     font-weight: bold;
 }
 /* END OF FOOTER */
-
