@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta name="author" content="Laura Boivin">
     <meta charset="UTF-8">
     <title>Vegan Fairtrade Cookies | Snacks | Green Mart</title>
     <link rel="stylesheet" type="text/css" href="../../css/main.css" />
     <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
+    <script src = "../../js/cookie.js" async></script>
 
 </head>
 
@@ -24,7 +26,7 @@
     <div class="grid-container">
         <div class="grid-item">
             <img src="../../images/snacks/Chocolate%20cookies.jpg" alt="Cookies image"> <!-- default image -->
-            <script src = "../../js/cookie-types.js"></script>
+
         </div>
         <div class="grid-item">
             <h2>Vegan Fairtrade Cookies</h2>
@@ -32,13 +34,22 @@
 
             <br />
             Product of Canada. <br /> <br />
-            <div class="addtocart">
-                <form action="/action_page.php">
-                    <label for="quantity">Quantity:</label> <br />
-                    <button type="submit" style="float:right">Add to Cart</button>
-                    <input type="text" id="quantity" name="quantity" value="1">
-                </form>
+            <div class="cookie-addToCart">
+
+                    <label for="quantity">Quantity:</label> <br /> <br />
+
+                    <button type="submit" style="float:right" id="cookcartbutton">Add to Cart</button>
+                    <button id = "subtract">-</button>
+                    <input type = "number" value = 1 id="cookquantity" name="quantity">
+                    <button id = "add">+</button> <br /> <br />
+                <label id = "total">Subtotal:</label>
+                <span id = "total" class = "subtotal">$4.99</span>
+
+
+
+
             </div>
+
             <br /> <br />
             <div id = "description">
             <p>These vegan fairtrade cookies are a baker's masterpiece. <br><br>
@@ -50,7 +61,7 @@
 
             <a id = "details">More Details</a>
 
-            <script src = "../../js/cookie-description.js"></script>
+
 
         </div>
     </div>

@@ -95,6 +95,7 @@ table, th, td {
     font-weight: normal;
 }
 
+
 .cookie-options{
     text-align: center;
     margin-bottom: 50px;
@@ -136,4 +137,38 @@ table, th, td {
     -webkit-transition: max-height 0.7s;
     -moz-transition: max-height 0.7s;
     transition: max-height 0.7s;
+}
+
+.cookie-addToCart{
+    display: inline-block;
+    padding: 10px;
+
+}
+
+#cookcartbutton {
+    float: left;
+    padding: 6px 10px 6px 6px;
+    background: lightgray;
+    font-size: 16px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#add, #subtract{
+    cursor: pointer;
+    font-size: 12px;
+    padding: 6px 10px 6px 10px;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+#cookquantity{
+    text-align: center;
+    padding: 6px 10px 6px 10px;
+    width: 40px;
+}
+
+#total, #amount{
+  font-weight: bold;
 }
