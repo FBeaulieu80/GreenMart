@@ -12,6 +12,7 @@ function increaseValue() {
     value = isNaN(value) ? 0 : value;
     value++;
     document.getElementById('number').value = value;
+    document.getElementById("price").innerHTML = "$" + (Math.floor((3.29 * document.getElementById("number").value) * 100) / 100).toString();
   }
 
 function decreaseValue() {
@@ -20,6 +21,7 @@ function decreaseValue() {
     value < 1 ? value = 1 : '';
     value--;
     document.getElementById('number').value = value;
+    document.getElementById("price").innerHTML = "$" + (Math.floor((3.29 * document.getElementById("number").value) * 100) / 100).toString();
 }
 
 function swapImage(){
