@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/main.css" />
     <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
     <script src = "../../js/cookie.js" async></script>
-    <meta name = "viewpoint" content = width = device-width, initial-scale = 1.0">
+    <meta name = "viewpoint" content = "width = device-width, initial-scale = 1.0">
 </head>
 
 <body>
