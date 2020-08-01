@@ -1,7 +1,7 @@
 <html lang="en">
 
 <head>
-    <meta name="author" content="Michael Rowe">
+    <meta name="author" content="Michael Rowe"> <!-- Buttons added by Athigan Sinnathurai-->
     <meta charset="UTF-8">
     <title>Cheese | Dairy & Eggs | Green Mart</title>
     <link rel="stylesheet" type="text/css" href="../../css/main.css" />
@@ -32,12 +32,12 @@
                 </select></p>
 
             <div class="addtocart">
-                <form action="/action_page.php">
+                <form action=""> <!-- Will add /action_page.php for WP3 -->
                     <label for="quantity">Quantity:</label> <br />
                         <div onclick="increaseValue()" value="Increase Value">+</div>
                         <input type="number" id="number" value="0" />
                         <div onclick="decreaseValue()" value="Decrease Value">-</div><br>
-                    <button type="submit">Add to Cart</button>
+                    <button type="submit" onclick="alert('Item has been added to your cart.')">Add to Cart</button>
                 </form>
             </div>
             <p>Product of Switzerland.</p><br />
