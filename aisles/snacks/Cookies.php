@@ -9,7 +9,7 @@
     <title>Vegan Fairtrade Cookies | Snacks | Green Mart</title>
     <link rel="stylesheet" type="text/css" href="../../css/main.css" />
     <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
-    <script src = "../../js/cookie.js" async></script>
+    <script src = "../../scripts/aisles/cookie.js" async></script>
 </head>
 
 <body>

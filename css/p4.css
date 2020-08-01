@@ -28,12 +28,15 @@ table {
     vertical-align: center;
 }
 
-.img-with-text {
-
-    text-align: center;
-    width: 250px;
-
+#food{
+    max-width: 300px;
+    max-height: 300px;
 }
+
+.img-with-text {
+    text-align: center;
+}
+
 .img-with-text {
     display: block;
     text-align: center;
@@ -43,10 +46,7 @@ button {
     margin: auto;
 
 }
-textarea{
-    position: center;
-    margin: auto;
-}
+
 
 
 table{
@@ -62,7 +62,8 @@ p{
     background-color: burlywood;
     text-align: center;
     display: block;
-    margin: auto;
+    width: 30px;
+
 
 }
 .delete{
@@ -76,22 +77,19 @@ p{
     background-color: burlywood;
     text-align: center;
     display: block;
-    margin: auto;
+    width: 30px;
 }
 .continue{
     text-align: center;
     display: block;
     margin: auto;
 }
-textarea {
+#number {
     background-color: thistle;
     text-align: center;
-    display: block;
-    width: 30px
-}
-
-textarea {
-    resize: none;
+    padding: 6px 10px 6px 10px;
+    width: 15px;
+    position: center;
 }
 
 .checkout{
@@ -100,6 +98,5 @@ textarea {
 }
 th{
     border-bottom-style: dotted;
-
 }
 
