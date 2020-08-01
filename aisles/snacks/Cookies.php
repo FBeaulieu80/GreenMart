@@ -25,8 +25,9 @@
     </div>
     <div class="grid-container">
         <div class="grid-item">
+            <div class = "col">
             <img src="../../images/snacks/Chocolate%20cookies.jpg" alt="Cookies image"> <!-- default image -->
-
+            </div>
         </div>
         <div class="grid-item">
             <h2>Vegan Fairtrade Cookies</h2>
