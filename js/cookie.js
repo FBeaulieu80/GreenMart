@@ -25,39 +25,30 @@
     button4.onclick = function () {
         if (description.className == "open") {
             // shrink the box
-            description.className = "";
-            button4.innerHTML = "More Details";
+            description.className = ""
+            button4.innerHTML = "More Details"
         } else {
             //expand the box
-            description.className = "open";
-            button4.innerHTML = "Fewer Details";
+            description.className = "open"
+            button4.innerHTML = "Fewer Details"
         }
     }
 
-/* variables for the cookie increment & decrementing*/
-    var btnAdd = document.getElementById("add")
-    var btnSub = document.getElementById("subtract")
-    var input = document.getElementById("cookquantity")
-
-/* code for the cookie increment & decrementing */
-    btnAdd.addEventListener("click", () =>{
-        input.value = parseInt(input.value)+1 ;
-    })
-
-    btnSub.addEventListener("click", () =>{
-    subtractQuantity() ;
-    })
+/* code for the cookie increment & decrementing*/
 
     function subtractQuantity(){
-        if (input.value > 0){
-        input.value--;
-        }
+        if (document.getElementById("cookquantity").value > 0)
+        {document.getElementById("cookquantity").value--}
+
+        document.getElementById("subtotal").innerHTML = "$" + (document.getElementById("cookquantity").value * 4.99).toFixed(2)
     }
 
-/* variable for calculating subtotal */
-    var quantity = document.getElementById("cookquantity").value
-    var subtotal = 0;
+    function addQuantity(){
+        document.getElementById("cookquantity").value++
+        document.getElementById("subtotal").innerHTML = "$" + (document.getElementById("cookquantity").value * 4.99).toFixed(2)
+    }
 
-/* code for calculating subtotal*/
-    subtotal = (quantity * 4.99)
-    document.getElementsByClassName("subtotal")[0].innerText = "$" + subtotal
+    function addToCart(){
+        alert("Your items have been added to your cart!");
+    }
+

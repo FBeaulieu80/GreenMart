@@ -169,6 +169,7 @@ table, th, td {
     width: 15px;
 }
 
-#total, #amount{
+#total{
   font-weight: bold;
 }
+

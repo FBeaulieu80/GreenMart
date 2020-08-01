@@ -38,16 +38,12 @@
 
                     <label for="quantity">Quantity:</label> <br /> <br />
 
-                    <button type="submit" style="float:right" id="cookcartbutton">Add to Cart</button>
-                    <button id = "subtract">-</button>
+                    <button type="submit" style="float:right" id="cookcartbutton" onclick = "addToCart()">Add to Cart</button>
+                    <button id = "subtract" onclick = "subtractQuantity()">-</button>
                     <input type = "text" value = 1 id="cookquantity" name="quantity" readonly>
-                    <button id = "add">+</button> <br /> <br />
+                    <button id = "add" onclick = "addQuantity()">+</button> <br /> <br />
                 <label id = "total">Subtotal:</label>
-                <span id = "total" class = "subtotal">$4.99</span>
-
-
-
-
+                <span id = "subtotal"  > $4.99 </span>
             </div>
 
             <br /> <br />
@@ -60,8 +56,6 @@
             </div>
 
             <a id = "details">More Details</a>
-
-
 
         </div>
     </div>
