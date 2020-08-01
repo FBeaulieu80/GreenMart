@@ -15,20 +15,25 @@
 <body>
 <?php require_once "../../common/header.php"; ?>
 <div class="main">
-    <div class = "cookie-options">
 
-        <h3>Select one of our delicious cookie options</h3>
-        <button class = "cookie-button" id = "button1">Chocolate</button>
-        <button class = "cookie-button" id = "button2">Peanut Butter</button>
-        <button class = "cookie-button" id = "button3">Salted Caramel</button>
-
-    </div>
     <div class="grid-container">
+
+
+
+
         <div class="grid-item">
             <div class = "col">
+                <div class = "cookie-options">
+
+                    <h3>Select one of our delicious cookie options</h3>
+                    <button class = "cookie-button" id = "button1">Chocolate</button>
+                    <button class = "cookie-button" id = "button2">Peanut Butter</button>
+                    <button class = "cookie-button" id = "button3">Salted Caramel</button>
+                </div>
             <img src="../../images/snacks/Chocolate%20cookies.jpg" alt="Cookies image"> <!-- default image -->
             </div>
         </div>
+
         <div class="grid-item">
             <div class = "col">
             <h2>Vegan Fairtrade Cookies</h2>
@@ -58,8 +63,10 @@
             </div>
 
             <a id = "details">More Details</a>
+            </div>
         </div>
-        </div>
+
+
     </div>
 </div>
 <?php require "../../common/footer.html"; ?>
