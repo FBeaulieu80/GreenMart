@@ -18,13 +18,9 @@
 
     <div class="grid-container">
 
-
-
-
         <div class="grid-item">
             <div class = "col">
                 <div class = "cookie-options">
-
                     <h3>Select one of our delicious cookie options</h3>
                     <button class = "cookie-button" id = "button1">Chocolate</button>
                     <button class = "cookie-button" id = "button2">Peanut Butter</button>
@@ -42,9 +38,7 @@
             <br />
             Product of Canada. <br /> <br />
             <div class="cookie-addToCart">
-
                     <label for="quantity">Quantity:</label> <br /> <br />
-
                     <button type="submit" style="float:right" id="cookcartbutton" onclick = "addToCart()">Add to Cart</button>
                     <button id = "subtract" onclick = "subtractQuantity()">-</button>
                     <input type = "text" value = 1 id="cookquantity" name="quantity" readonly>
@@ -52,16 +46,13 @@
                 <label id = "total">Subtotal:</label>
                 <span id = "subtotal"  > $4.99 </span>
             </div>
-
             <br /> <br />
-            <div id = "description">
-            <p>These vegan fairtrade cookies are a baker's masterpiece. <br><br>
+
+            <p id = "description">These vegan fairtrade cookies are a baker's masterpiece. <br><br>
                 This snack is delicious, moist and melts
                 in your mouth. At every step of production,
                 all workers are well compensated for their work and all
                 our ingredients are ethically sourced, as they should be.  </p>
-            </div>
-
             <a id = "details">More Details</a>
             </div>
         </div>
