@@ -37,6 +37,6 @@
             </div>
         </div>
     </div>
-    <?php require "../../common/footer.html"; ?>
+    <?php require "../../common/footer.php"; ?>
 </body>
 </html>

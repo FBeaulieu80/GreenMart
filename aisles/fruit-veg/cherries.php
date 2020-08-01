@@ -64,7 +64,7 @@
     </div>
 </div>
 <script src="../../scripts/aisles/fruitveg-cherries.js"></script>
-<?php require "../../common/footer.html"; ?>
+<?php require "../../common/footer.php"; ?>
 </body>
 
 </html>
