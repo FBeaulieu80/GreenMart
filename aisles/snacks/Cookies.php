@@ -58,7 +58,6 @@
             </div>
 
             <a id = "details">More Details</a>
-
         </div>
         </div>
     </div>
