@@ -17,16 +17,15 @@
 <table align="center" cellspacing="20" >
     <tr valign="top">
         <th class = "img-with-text">
-            <h2>Organic Baby Spinach</h2>
-            <img src="images/fruit-veg/Baby Spinach.jpg"
-                 alt = "Picture of Organic Baby Spinach"
-                 height = 250 width = 175>
-            <p>$4.99 each</p>
+            <h2>Carrot Cake</h2>
+            <img id = "food" src="images/bakery/carrot-cake.jpg"
+                 alt = "Carrot Cake">
+            <p>$11.99</p>
             <button class = "add">+</button>
             <form action = ""></form>
-            <textarea name = "number" rows = "1" cols = "1" > 1 </textarea>
+            <input type = "text" value = 1 id = "number" readonly>
             <button class = "subtract">-</button><br/>
-            <button class = "delete">Delete Item </button>
+            <button class = "delete">Remove Item </button>
         </th>
         <th class = "checkout">   <button> Checkout Now</button>
             <h3> Order Summary</h3>
@@ -55,46 +54,43 @@
 
     <tr valign="top">
         <th class = "img-with-text">
-            <h2>Organic Banana</h2>
-            <img src="images/fruit-veg/banana.png"
-                 alt = "Picture of Organic Banana"
-                 height = 200 width = 200>
-            <p>$0.58 each</p>
+            <h2>Cheddar Cheese</h2>
+            <img id = "food" src="images/dairy-eggs/cheddar.jpg"
+                 alt = "Cheddar Cheese">
+            <p>$3.29</p>
             <button class = "add">+</button>
             <form action = ""></form>
-            <textarea name = "number" rows = "1" cols = "1" > 1 </textarea>
+            <input type = "text" value = 1 id = "number" readonly>
             <button class = "subtract">-</button><br/>
-            <button class = "delete">Delete Item</button>
+            <button class = "delete">Remove Item</button>
         </th>
     </tr>
 
     <tr valign="top">
         <th class="img-with-text">
-            <h2>Organic Blue Corn Chips</h2>
-            <img img src="images/snacks/Blue Chips.jpeg"
-                 alt="Picture of Organic Blue Tortilla Chips"
-                 height=210 width=160>
-            <p>$4.19 each</p>
+            <h2>Rainer Cherries</h2>
+            <img id = "food" src="images/fruit-veg/rainier-cherry.jpg"
+                 alt="Rainer Cherries">
+            <p>$4.99</p>
             <button class="add">+</button>
             <form action=""></form>
-            <textarea name="number" rows="1" cols="1"> 1 </textarea>
+            <input type = "text" value = 1 id = "number" readonly>
             <button class="subtract">-</button>
             <br/>
-            <button class="delete">Delete Item</button>
+            <button class="delete">Remove Item</button>
         </th>
 
         <th class="img-with-text">
-            <h2>Organic Chickpeas</h2>
-            <img src="images/snacks/Chickpeas.png"
-                 alt="Picture of Organic Chickpeas"
-                 height=220 width=170>
-            <p>$2.19 each</p>
+            <h2>Roast Chicken</h2>
+            <img id = "food" src="images/meat/chicken.jpg"
+                 alt="Roast Chicken">
+            <p>$9.99</p>
             <button class="add">+</button>
             <form action=""></form>
-            <textarea name="number" rows="1" cols="1"> 1 </textarea>
+            <input type = "text" value = 1 id = "number" readonly>
             <button class="subtract">-</button>
             <br/>
-            <button class="delete">Delete Item</button>
+            <button class="delete">Remove Item</button>
         </th>
     </tr>
 </table>
