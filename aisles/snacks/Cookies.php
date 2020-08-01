@@ -30,6 +30,7 @@
             </div>
         </div>
         <div class="grid-item">
+            <div class = "col">
             <h2>Vegan Fairtrade Cookies</h2>
             <span class="price">$4.99/ea</span><br />
 
@@ -58,6 +59,7 @@
 
             <a id = "details">More Details</a>
 
+        </div>
         </div>
     </div>
 </div>
