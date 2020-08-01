@@ -17,11 +17,11 @@
 
     <div class="aisle-cards">
         <div class="aisle-card">
-            <a href="kombucha.php">
-                <img src="../../images/snacks/kombucha.png" alt="Kombucha">
+<!--            <a href="kombucha.php">-->
+                <img src="../../images/snacks/kombucha.png" alt="Kombucha" style="filter: grayscale(100%)">
                 <div class="text">Kombucha</div>
-                <div class="price-sale">$3.00/ea</div>
-            </a>
+                <div class="price-sale">SOLD OUT</div>
+<!--            </a>-->
         </div>
 
         <div class="aisle-card">

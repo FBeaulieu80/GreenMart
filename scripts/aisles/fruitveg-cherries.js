@@ -66,9 +66,21 @@ function quantityIncr(){
     if (document.getElementById("quantity").value < 30){
         document.getElementById("quantity").value++;
     }
+    document.getElementById("price").innerHTML = "$" + (Math.floor((4.99 * document.getElementById("quantity").value) * 100) / 100).toString();
 }
 function quantityDecr() {
     if (document.getElementById("quantity").value > 0){
         document.getElementById("quantity").value--;
     }
+    document.getElementById("price").innerHTML = "$" + (Math.floor((4.99 * document.getElementById("quantity").value) * 100) / 100).toString();
+}
+
+function addToCartAlert() {
+    if (document.getElementById("quantity").value == 0){
+        alert('Please select at least 1 product!')
+    }
+    else {
+        alert(document.getElementById("quantity").value + ' products added to cart!')
+    }
+
 }

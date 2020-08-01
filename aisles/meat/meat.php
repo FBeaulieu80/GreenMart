@@ -17,19 +17,19 @@
 
     <div class="aisle-cards">
         <div class="aisle-card">
-            <a href="bacon.php">
-                <img src="../../images/meat/bacon.jpg" alt="Bacon">
+<!--            <a href="bacon.php">-->
+                <img src="../../images/meat/bacon.jpg" alt="Bacon" style="filter: grayscale(100%)">
                 <div class="text">Bacon</div>
-                <div class="price-sale">$6.80/ea</div>
-            </a>
+                <div class="price-sale">SOLD OUT</div>
+<!--            </a>-->
         </div>
 
         <div class="aisle-card">
-            <a href="salmon-filet.php">
-                <img src="../../images/meat/salmon.png" alt="Salmon Filet">
+<!--            <a href="salmon-filet.php">-->
+                <img src="../../images/meat/salmon.png" alt="Salmon Filet" style="filter: grayscale(100%)">
                 <div class="text">Salmon Filet</div>
-                <div class="price-sale">$8.50/lb</div>
-            </a>
+                <div class="price-sale">SOLD OUT</div>
+<!--            </a>-->
         </div>
 
         <div class="aisle-card">

@@ -23,7 +23,7 @@
         <div class="grid-item">
             <div class="col">
             <h2>Cherries</h2>
-            <span class="original-price" style="text-decoration: none">$4.99/lb</span>
+                <span class="original-price" style="text-decoration: none">$4.99/lb</span>
             <br /><br />
             Product of Mexico.
             <br /> <br />
@@ -44,18 +44,24 @@
             <label for="quantity">Quantity:</label> <br />
             <div class="addtocart">
                 <form action="">
-                    <button type="button" onclick="alert('Products added to cart!')" style="float:right">Add to Cart</button>
+                    <button type="button" onclick="addToCartAlert()" style="float:right">Add to Cart</button>
                     <button type="button" id="incr-item" onclick="quantityIncr()" style="float:right">+</button>
                     <button type="button" id="decr-item" onclick="quantityDecr()" style="float:left">-</button>
                     <input type="text" id="quantity" name="quantity" value="1" readonly>
                 </form>
             </div>
 
+            <br /><br />
+
+            <span class="original-price" style="text-decoration: none">Subtotal: </span>
+            <span class="original-price" id="price" style="text-decoration: none">$4.99</span>
+
             <br /> <br />
+
             <div class="detailed-description-button">
             <button type="button" onclick="detailedDescription()">Detailed Description</button>
             </div>
-            <div id="detailed-description">
+            <div id="detailed-description" style="display: none;">
                 Organic Cherries from Mexico. Grown on a sustainable and fair trade certified farm.
                 Check out our <a href="../../recipes.php">recipes</a> to see what delicious meals and desserts you can make with cherries.
             </div>

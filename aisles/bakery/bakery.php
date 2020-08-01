@@ -39,18 +39,18 @@
 
     <div class="aisle-cards">
         <div class="aisle-card">
-            <a href="rye_bread.php">
-                <img src="../../images/bakery/rye_bread.jpg" alt="Rye Bread">
+<!--            <a href="rye_bread.php">-->
+                <img src="../../images/bakery/rye_bread.jpg" alt="Rye Bread" style="filter: grayscale(100%)">
                 <div class="text">Rye Bread</div>
-                <div class="price-sale">$3.45/ea</div>
-            </a>
+                <div class="price-sale">SOLD OUT</div> <!-- $3.45/ea -->
+<!--            </a>-->
         </div>
         <div class="aisle-card">
-            <a href="baguette.php">
-                <img src="../../images/bakery/baguette.jpg" alt="Baguette">
+<!--            <a href="baguette.php">-->
+                <img src="../../images/bakery/baguette.jpg" alt="Baguette" style="filter: grayscale(100%)">
                 <div class="text">French Baguette</div>
-                <div class="price-sale">$3.95/ea</div>
-            </a>
+                <div class="price-sale">SOLD OUT</div> <!-- $3.95/ea -->
+<!--            </a>-->
         </div>
 
         <div class="aisle-card">

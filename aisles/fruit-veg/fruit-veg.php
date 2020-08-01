@@ -17,19 +17,19 @@
 
     <div class="aisle-cards">
         <div class="aisle-card">
-            <a href="banana.php">
-                <img src="../../images/fruit-veg/banana.png" alt="Banana">
+<!--            <a href="banana.php">-->
+                <img src="../../images/fruit-veg/banana.png" alt="Banana" style="filter: grayscale(100%)">
                 <div class="text">Banana</div>
-                <div class="price-sale">$0.60/lb</div>
-            </a>
+                <div class="price-sale">SOLD OUT</div>
+<!--            </a>-->
         </div>
 
         <div class="aisle-card">
-            <a href="kiwi.php">
-                <img src="../../images/fruit-veg/kiwi.jpg" alt="kiwi">
+<!--            <a href="kiwi.php">-->
+                <img src="../../images/fruit-veg/kiwi.jpg" alt="kiwi" style="filter: grayscale(100%)">
                 <div class="text">Kiwi</div>
-                <div class="price-sale">$2.15/lb</div>
-            </a>
+                <div class="price-sale">SOLD OUT</div>
+<!--            </a>-->
         </div>
         <div class="aisle-card">
             <a href="cherries.php">
