@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<users>
+    <user id="1" firstName="Felix" lastName="" email="" address="" phone="" avatarUrl=""/>
+    <user id="2" firstName="Michael" lastName="" email="" address="" phone="" avatarUrl=""/>
+    <user id="3" firstName="Kyle" lastName="" email="" address="" phone="" avatarUrl=""/>
+</users>

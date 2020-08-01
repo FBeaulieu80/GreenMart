@@ -13,7 +13,7 @@
 <body>
 <?php require "common/header.php"; ?>
 <div class="main">
-    <h2><a href="common/404.php">Deals of the week</a></h2>
+    <h2><a href="deals.php">Deals of the week</a></h2>
 
     <div class="dow-cards">
         <div class="dow-item">

@@ -8,16 +8,24 @@ html, body {
 }
 
 .grid-container {
+    /*Remove for responsive*/
+    /*display: grid;*/
+    /*grid-column-gap:0;*/
+    /*grid-template-columns: 400px 400px;*/
+    /*justify-content: center;*/
+    /*padding: 50px;*/
+    /*padding-top:0;*/
+
+    /*Add for responsive*/
     display: grid;
-    grid-column-gap:0;
-    grid-template-columns: 400px 400px;
-    justify-content: center;
-    padding: 50px;
-    padding-top:0;
+    margin: 0 auto;
+    max-width: 1200px;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .grid-item {
-    padding: 10px;
+    /*padding: 10px; Remove for responsive*/
     text-align: left;
 }
 
@@ -31,9 +39,10 @@ html, body {
 }
 
 .grid-item img {
+    /*Changed widths*/
     max-width: 300px;
-    max-height: 200px;
-    padding: 30px;
+    max-height: 300px;
+    /*padding: 30px; Remove for responsive*/
 }
 
 .sale-price {
@@ -48,10 +57,11 @@ html, body {
 }
 
 .main {
-    margin-top: 30px;
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-bottom: 20px;
+    /*Change to % for responsiveness*/
+    margin-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 5%;
 }
 
 .main h2 {
@@ -89,11 +99,37 @@ display: inline-block;
 
 }
 
+.addtocart #decr-item, .addtocart #incr-item {
+    margin: 0px;
+    padding: 6px 6px 6px 6px;
+}
+.detailed-description-button button {
+    padding: 6px 6px 6px 6px;
+    background: lightgray;
+    font-size: 16px;
+    border: none;
+    margin-left: 0px;
+}
+
+#detailed-description {
+    display: none;
+    margin-top: 10px;
+}
+
+.type button {
+    padding: 6px 6px 6px 6px;
+    background: lightgray;
+    font-size: 16px;
+    border: none;
+    margin-left: 0px;
+}
+
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
     font-weight: normal;
 }
+
 
 
 .cookie-options{
@@ -171,5 +207,47 @@ table, th, td {
 
 #total{
   font-weight: bold;
+}
+
+=======
+ RESPONSIVE GRID
+* {
+    box-sizing: border-box;
+}
+
+.col::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="row-"] {
+    float: top;
+    /*padding: 15px;*/
+
+}
+
+.row-1 {
+    height: 16.66%;
+}
+
+.row-2 {
+    height: 33.33%;
+}
+
+.row-3 {
+    height: 50%;
+}
+
+.row-4 {
+    height: 66.66%;
+}
+
+.row-5 {
+    height: 83.33%;
+}
+
+.row-6 {
+    height: 100%;
 }
 
