@@ -4,12 +4,12 @@
 
 <head>
     <meta name="author" content="Laura Boivin">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
     <meta charset="UTF-8">
     <title>Vegan Fairtrade Cookies | Snacks | Green Mart</title>
     <link rel="stylesheet" type="text/css" href="../../css/main.css" />
     <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
     <script src = "../../js/cookie.js" async></script>
-    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
 </head>
 
 <body>
