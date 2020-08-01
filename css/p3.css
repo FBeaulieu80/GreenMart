@@ -133,7 +133,7 @@ table, th, td {
 
 
 .cookie-options{
-    text-align: center;
+    text-align: left;
     margin-bottom: 50px;
 
 }
@@ -155,7 +155,7 @@ table, th, td {
 }
 
 #description{
-    max-height: 70px;
+    max-height: 0px;
     overflow: hidden;
 
     /*set smooth transitions up*/
@@ -209,7 +209,7 @@ table, th, td {
   font-weight: bold;
 }
 
-=======
+
  RESPONSIVE GRID
 * {
     box-sizing: border-box;
