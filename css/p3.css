@@ -45,6 +45,15 @@ html, body {
     /*padding: 30px; Remove for responsive*/
 }
 
+@media screen and (max-width: 600px) {
+    .grid-item img {
+        /*Changed widths*/
+        max-width: 200px;
+        max-height: 200px;
+        /*padding: 30px; Remove for responsive*/
+    }
+}
+
 .sale-price {
     color: red;
     font-weight: bolder;
@@ -209,7 +218,7 @@ table, th, td {
 }
 
 
- RESPONSIVE GRID
+ /*RESPONSIVE GRID*/
 * {
     box-sizing: border-box;
 }
