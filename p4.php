@@ -54,11 +54,10 @@
 
             <h3>Carrot Cake</h3>
             <img id = "food" src="images/bakery/carrot-cake.jpg" alt = "Carrot Cake"><br><br>
-            <span id = "subtotal"  > $11.99 </span><br><br>
-            <button id = "add" onclick = "addQuantity()">+</button>
-            <form action = ""></form>
-            <input type = "text" value = 1 id = "number" readonly>
-            <button id = "subtract" onclick = "subtractQuantity()">-</button><br/>
+            <span id = "subtotal1"  > $11.99 </span><br><br>
+            <button id = "add" onclick = "addQuantity1()">+</button>
+            <input type = "text" value = 1 id = "number1" readonly>
+            <button id = "subtract" onclick = "subtractQuantity1()">-</button><br/>
             <button id = "delete" onclick ="parentElement.remove()">Remove Item </button><br><br>
 
         </th>
@@ -69,11 +68,10 @@
 
             <h3>Cheddar Cheese</h3>
             <img id = "food" src="images/dairy-eggs/cheddar.jpg" alt = "Cheddar Cheese"><br><br>
-            <span id = "subtotal"  > $3.29 </span><br><br>
-            <button id = "add" onclick = "addQuantity()">+</button>
-            <form action = ""></form>
-            <input type = "text" value = 1 id = "number" readonly>
-            <button id = "subtract" onclick = "subtractQuantity()">-</button><br/>
+            <span id = "subtotal2"  > $3.29 </span><br><br>
+            <button id = "add" onclick = "addQuantity2()">+</button>
+            <input type = "text" value = 1 id = "number2" readonly>
+            <button id = "subtract" onclick = "subtractQuantity2()">-</button><br/>
             <button id = "delete" onclick ="parentElement.remove()">Remove Item</button><br><br>
 
         </th>
@@ -85,11 +83,10 @@
 
             <h3>Rainer Cherries</h3>
             <img id = "food" src="images/fruit-veg/rainier-cherry.jpg" alt="Rainer Cherries"><br><br>
-            <span id = "subtotal"  > $4.99 </span><br><br>
-            <button id = "add" onclick = "addQuantity()">+</button>
-            <form action=""></form>
-            <input type = "text" value = 1 id = "number" readonly>
-            <button id = "subtract" onclick = "subtractQuantity()">-</button>
+            <span id = "subtotal3"  > $4.99 </span><br><br>
+            <button id = "add" onclick = "addQuantity3()">+</button>
+            <input type = "text" value = 1 id = "number3" readonly>
+            <button id = "subtract" onclick = "subtractQuantity3()">-</button>
             <br/>
             <button id="delete" onclick ="parentElement.remove()">Remove Item</button><br><br>
         </th>
@@ -100,11 +97,10 @@
 
             <h3>Roast Chicken</h3>
             <img id = "food" src="images/meat/chicken.jpg" alt="Roast Chicken"><br><br>
-            <span id = "subtotal"  > $9.99 </span><br><br>
-            <button id = "add" onclick = "addQuantity()">+</button>
-            <form action=""></form>
-            <input type = "text" value = 1 id = "number" readonly>
-            <button id = "subtract" onclick = "subtractQuantity()">-</button>
+            <span id = "subtotal4"  > $9.99 </span><br><br>
+            <button id = "add" onclick = "addQuantity4()">+</button>
+            <input type = "text" value = 1 id = "number4" readonly>
+            <button id = "subtract" onclick = "subtractQuantity4()">-</button>
             <br/>
             <button id="delete" onclick ="parentElement.remove()">Remove Item</button><br><br>
         </th>

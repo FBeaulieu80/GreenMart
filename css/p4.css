@@ -10,7 +10,6 @@
 h1 {
     /*font-family: cursive;*/
     color: seagreen;
-
 }
 
 h2 {
@@ -88,7 +87,7 @@ button {
     display: block;
     margin: auto;
 }
-#number {
+#number1, #number2, #number3, #number4{
     background-color: thistle;
     text-align: center;
     padding: 6px 10px 6px 10px;
@@ -106,7 +105,6 @@ button {
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 5%;
-
 }
 
 .main {
