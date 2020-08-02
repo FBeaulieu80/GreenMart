@@ -2,7 +2,7 @@
     <?php
     $httpProtocol = !isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] != 'on' ? 'http' : 'https';
     $base = $httpProtocol.'://'.$_SERVER['HTTP_HOST'];
-    $base = strpos($base, "localhost")? $base."/Soen287_team/": $base."/"; ?>
+    $base = strpos($base, "localhost")? $base."/SOEN287/": $base."/"; ?>
 
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,7 +44,7 @@
             <h4><i>Your community grocery store.</i></h4>
         </div>
         <div id="logo">
-            <a href="<?php echo $base ?>index.php" class="active""><img src="<?php echo $base ?>images/logo_new.png" alt="Green Mart logo" id="logo"></a>
+            <a href="<?php echo $base ?>index.php" class="active"><img src="<?php echo $base ?>images/logo_new.png" alt="Green Mart logo" id="logo"></a>
         </div>
 
     <div class="icon">
