@@ -80,7 +80,7 @@ button {
    /* width: 100%;*/
     font-size: 150%;
 }
-#delete{
+#delete1, #delete2, #delete3, #delete4{
     font-family: cursive;
     background-color: burlywood;
     text-align: center;
