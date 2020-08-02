@@ -7,6 +7,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src = "scripts/p4.js" async></script>
     </head>
 
 <!--    OLD NAVIGATION BAR     -->
@@ -49,7 +50,7 @@
 
     <div class="icon">
         <div class="rightlinks">
-            <a href="<?php echo $base ?>p4.php" style="float:right">Shopping Cart (4)</a>
+            <a href="<?php echo $base ?>p4.php" style="float:right" id = "shoppingCartNbr">Shopping Cart (4)</a>
             <a href="<?php echo $base ?>p6.php" style="float:right">Sign Up</a>
             <a href="<?php echo $base ?>p5.php" style="float:right">Log In</a>
         </div>
