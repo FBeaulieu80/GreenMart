@@ -12,6 +12,7 @@
 
 <body marginwidth="100%" >
 <?php require "common/header.php"; ?>
+<form id = "box">
 <div class="main" style = "text-align: center">
     <div class="grid-container">
         <div class="grid-item">
@@ -111,6 +112,7 @@
         </div>
     </div>
 </div>
+</form>
 
 
 <?php require "../../common/footer.php"; ?>
