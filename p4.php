@@ -32,19 +32,19 @@
 
                 <br>
                 <button onclick = "checkOut()"> Checkout Now</button>
-                <h3> Order Summary</h3>
+                <h3> Your Order Summary</h3>
 
                 <span id = "orderTitle">Subtotal:</span>
-                <span id = "amount">$11.95</span><br>
+                <span id = "allSubtotal">$30.26</span><br>
 
                 <span id = "orderTitle">QST:</span>
-                <span id = "amount">$1.19</span><br>
+                <span id = "qst">$3.02</span><br>
 
                 <span id = "orderTitle">GST:</span>
-                <span id = "amount">$0.60</span><br><br>
+                <span id = "gst">$0.60</span><br><br>
 
-                <span id = "orderTitle">Total:</span>
-                <span id = "amount">$13.74</span><br><br>
+                <button id = total onclick = "calculateTotal()">Calculate Total:</button><br><br>
+                <span id = "totalcost"></span><br><br>
 
             </th>
         </tr>
