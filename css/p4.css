@@ -157,7 +157,15 @@ th{
     border-bottom-style: dotted;
 }
 
-@media screen and (max-width: 600px){
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px){
+table, tr, th{
+    display: block;
+}
+    tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px,
+    }
 
 }
 
