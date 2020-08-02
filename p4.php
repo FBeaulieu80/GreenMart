@@ -10,9 +10,9 @@
     <title>Shopping Cart (4) | Green Mart</title>
 </head>
 
-<body marginwidth="100%">
+<body marginwidth="100%" >
 <?php require "common/header.php"; ?>
-<div class="main">
+<div class="main" style = "text-align: center">
     <div class="grid-container">
         <div class="grid-item">
             <div class = "col">
