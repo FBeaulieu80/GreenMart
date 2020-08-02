@@ -1,0 +1,157 @@
+/* AUTHOR: FELIX BEAULIEU */
+.main {
+    padding: 0;
+}
+
+#image {
+    margin: 0 auto;
+}
+
+#image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+                    "image info"
+                    "description description"
+                    "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: fit-content(100%) auto fit-content(100%);
+    padding: 1rem;
+    justify-content: center;
+}
+
+#image {
+    grid-area: image;
+    padding: 0;
+}
+
+#descriptionArea {
+    grid-area: description;
+    padding: 0 1rem;
+}
+
+.productInfo {
+    display: grid;
+    grid-template-areas:
+                    "heading"
+                    "price"
+                    "origin"
+                    "options"
+                    "addtocart"
+                    "subtotal";
+    grid-template-rows: auto auto auto auto auto;
+    grid-row-gap: 0.5rem;
+}
+
+.productPageButton {
+    padding: 1em;
+    background: #eee;
+    font-size: 16px;
+    border: none;
+}
+
+.productPageButton:hover {
+    cursor: pointer;
+    background: #ccc;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.accordion {
+    background-color: #eee;
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    font-weight: bold;
+}
+
+.accordion .active {
+    color: #333333;
+    background-color: #ccc;
+}
+
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    color: black;
+}
+
+.accordion.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.addtocart form {
+    display: grid;
+    grid-template-columns: fit-content(100%) auto fit-content(100%);
+    grid-column-gap: 1em;
+}
+
+.addtocart button:hover {
+    background-color: #ccc;
+}
+
+#quantity {
+    width: 100%;
+    min-width: 20px;
+}
+
+.typeSelection {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-column-gap: 0.5em;
+}
+
+.addtocart form {
+    display: grid;
+    grid-template-columns: repeat(2, fit-content(100%)) auto repeat(2, fit-content(100%));
+    grid-column-gap: 0.5em;
+}
+
+.typeSelection {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+                    "image"
+                    "info"
+                    "description"
+                    "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: fit-content(100%) fit-content(100%) auto fit-content(100%);
+        padding: 1rem;
+        justify-content: center;
+    }
+}
