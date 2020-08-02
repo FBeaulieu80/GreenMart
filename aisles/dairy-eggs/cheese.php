@@ -38,9 +38,11 @@
             <div class="addtocart">
                 <form action=""> <!-- Will add /action_page.php for WP3 -->
                     <label for="quantity">Quantity:</label> <br />
-                        <div onclick="increaseValue()" value="Increase Value">+</div>
-                        <input type="number" id="number" value="0" />
-                        <div onclick="decreaseValue()" value="Decrease Value">-</div><br>
+                    <button onclick="increaseValue()" type="button" style="float:left; border-radius: 50%; border: 2px solid black;">+</button>&nbsp
+                    <input type="text" id="number" value="0" readonly/>
+                    <button onclick="decreaseValue()" type="button" style="float:right; border-radius: 50%; border: 2px solid black;">-</button><br><br>
+                    <span>Subtotal: </span>
+                    <span id="price">$0.00</span><br><br>
                     <button type="submit" onclick="alert('Item has been added to your cart.')">Add to Cart</button>
                 </form>
             </div>

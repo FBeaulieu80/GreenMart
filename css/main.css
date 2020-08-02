@@ -1,4 +1,4 @@
-/* COPY CODE FROM HERE FOR TOP BAR */
+
 html, body, footer {
     margin: 0;
     padding: 0;
@@ -104,9 +104,73 @@ html, body, footer {
 .mainnav a:hover {
     background-color: darkgreen;
 }
-/* COPY CODE BETWEEN TOP COMMENT AND THIS COMMENT */
 
-/* MAIN CONTENT */
+ body {
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+.mobnav {
+    overflow: hidden;
+    background-color: seagreen;
+    position: relative;
+}
+
+.mobnav #myLinks {
+    display: none;
+}
+
+.mobnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+/*#logo img {*/
+/*    height: 75%;*/
+/*}*/
+
+.mobnav a.icon {
+    background: #333;
+    display: block;
+    position: relative;
+    /*right: 0;*/
+    left: 0;
+    top: 0;
+}
+
+.logo a:hover{
+    background-color: seagreen;
+}
+
+#myLinks a:hover {
+    background-color: darkgreen; /*#ddd*/
+    color: white;
+}
+
+.rightlinks a:hover{
+    background-color: darkgreen; /*#ddd*/
+    color: white;
+}
+.active {
+    background-color: seagreen;
+    color: white;
+}
+
+.slogan {
+    color: white;
+    float: right;
+    padding: 2% 2%
+}
+@media screen and (max-width: 600px) {
+    .slogan{
+        display: none;
+        visibility: hidden;
+
+    }
+}
+
 .main {
     position: relative;
     display: block;
@@ -133,9 +197,7 @@ p {
     padding-right: 150px;
     padding-bottom: 20px;*/
 }
-/* END OF MAIN CONTENT */
 
-/* COPY FOOTER STYLE */
 footer {
     background-color: seagreen;
     padding-left: 10px;
@@ -143,8 +205,8 @@ footer {
     padding-bottom: 10px;
     padding-right: -10px;
     color: white;
-    position: fixed;
-    /*position: relative;*/
+    /*position: fixed;*/
+    position: relative;
     bottom: 0;
     width: 100%;
     box-sizing: border-box;
@@ -166,4 +228,3 @@ footer a {
 footer a:hover {
     font-weight: bold;
 }
-/* COPY FOOTER STYLE */
