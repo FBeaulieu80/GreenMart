@@ -160,7 +160,9 @@ th{
 }
 
 @media screen and (max-width: 600px){
-    /*css for mobile*/
+   table{
+       align-self: center;
+   }
 }
 
 
