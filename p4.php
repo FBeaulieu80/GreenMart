@@ -5,6 +5,7 @@
     <meta name="author" content="Laura Boivin">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/p4.css">
+    <script type="text/javascript" src="scripts/p4.js"></script>
     <title>Shopping Cart (4) | Green Mart</title>
 </head>
 
@@ -27,7 +28,7 @@
             <button class = "subtract">-</button><br/>
             <button class = "delete">Remove Item </button>
         </th>
-        <th class = "checkout">   <button> Checkout Now</button>
+        <th class = "checkout">   <button onclick="checkout()"> Checkout Now</button>
             <h3> Order Summary</h3>
             <h4>4 Products </h4><br/>
             <table>
