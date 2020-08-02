@@ -76,7 +76,7 @@ button {
     text-align: center;
     display: block;
     width: 10%;
-    font-size: 175%;
+    font-size: 100%;
 }
 #delete{
     font-family: cursive;
@@ -93,8 +93,6 @@ button {
     text-align: center;
     display: block;
     width: 10%;
-    padding-top:  2%;
-    padding-bottom: 2%;
     font-size: 100%;
 }
 .continue{
