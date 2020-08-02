@@ -59,7 +59,7 @@
             <button id = "add" onclick = "addQuantity1()">+</button>
             <input type = "text" value = 1 id = "number1" readonly>
             <button id = "subtract" onclick = "subtractQuantity1()">-</button><br/>
-            <button id = "delete" onclick ="parentElement.remove()">Remove Item </button><br><br>
+            <button id = "delete1" onclick ="removeItem1()">Remove Item </button><br><br>
 
         </th>
     </tr>
@@ -73,7 +73,7 @@
             <button id = "add" onclick = "addQuantity2()">+</button>
             <input type = "text" value = 1 id = "number2" readonly>
             <button id = "subtract" onclick = "subtractQuantity2()">-</button><br/>
-            <button id = "delete" onclick ="parentElement.remove()">Remove Item</button><br><br>
+            <button id = "delete2" onclick ="removeItem2()">Remove Item</button><br><br>
 
         </th>
     </tr>
@@ -89,7 +89,7 @@
             <input type = "text" value = 1 id = "number3" readonly>
             <button id = "subtract" onclick = "subtractQuantity3()">-</button>
             <br/>
-            <button id="delete" onclick ="parentElement.remove()">Remove Item</button><br><br>
+            <button id = "delete3" onclick ="removeItem3()">Remove Item</button><br><br>
         </th>
     </tr>
 
@@ -103,7 +103,7 @@
             <input type = "text" value = 1 id = "number4" readonly>
             <button id = "subtract" onclick = "subtractQuantity4()">-</button>
             <br/>
-            <button id="delete" onclick ="parentElement.remove()">Remove Item</button><br><br>
+            <button id ="delete4" onclick ="removeItem4()">Remove Item</button><br><br>
         </th>
     </tr>
 
