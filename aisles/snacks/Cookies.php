@@ -53,7 +53,7 @@
                 in your mouth. At every step of production,
                 all workers are well compensated for their work and all
                 our ingredients are ethically sourced, as they should be.  </p>
-            <a id = "details">More Details</a>
+            <a id = "details">More Description</a>
             </div>
         </div>
 

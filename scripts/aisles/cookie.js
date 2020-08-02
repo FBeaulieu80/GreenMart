@@ -26,11 +26,11 @@
         if (description.className == "open") {
             // shrink the box
             description.className = ""
-            button4.innerHTML = "More Details"
+            button4.innerHTML = "More Description"
         } else {
             //expand the box
             description.className = "open"
-            button4.innerHTML = "Fewer Details"
+            button4.innerHTML = "Less Description"
         }
     }
 
