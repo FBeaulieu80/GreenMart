@@ -10,6 +10,7 @@
 h1 {
     /*font-family: cursive;*/
     color: seagreen;
+    font-size: 300%;
 }
 
 h2 {
@@ -21,8 +22,9 @@ h2 {
 
 h3 {
     font-family: Helvetica;
-    font-size: large;
+    font-size: 200%;
     text-align: center;
+
 }
 
 h4{
@@ -30,20 +32,27 @@ h4{
     color: seagreen;
 }
 
+button{
+    font-size: 75%;
+}
+.continue{
+    font-size: 150%;
+}
+
 table {
     border-style: ridge;
     border-color: darkslategrey;
     vertical-align: auto;
     text-align: center;
-    margin-top: 15%;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-bottom: 15%;
+    margin-top: 5%;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 5%;
 }
 
 #food{
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .img-with-text {
@@ -66,7 +75,8 @@ button {
     background-color: burlywood;
     text-align: center;
     display: block;
-    width: 30px;
+    width: 10%;
+    font-size: 175%;
 }
 #delete{
     font-family: cursive;
@@ -74,13 +84,18 @@ button {
     text-align: center;
     display: block;
     margin: auto;
+    width: 100%;
+    font-size: 150%;
 }
 
 #add{
     background-color: burlywood;
     text-align: center;
     display: block;
-    width: 30px;
+    width: 10%;
+    padding-top:  2%;
+    padding-bottom: 2%;
+    font-size: 100%;
 }
 .continue{
     text-align: center;
@@ -93,6 +108,10 @@ button {
     padding: 6px 10px 6px 10px;
     width: 15px;
     position: center;
+    font-size: 120%
+}
+#subtotal1,#subtotal2,#subtotal3,#subtotal4{
+    font-size: 140%
 }
 
 #checkout{
@@ -105,6 +124,7 @@ button {
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 5%;
+    font-size: 150%
 }
 
 .main {
@@ -118,6 +138,7 @@ button {
 
 #orderTitle{
     font-weight: bold;
+
 }
 
 .grid-item {
@@ -136,6 +157,10 @@ button {
 
 th{
     border-bottom-style: dotted;
+}
+
+@media screen and (max-width: 600px){
+    /*css for mobile*/
 }
 
 
