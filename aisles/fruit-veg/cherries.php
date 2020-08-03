@@ -8,9 +8,10 @@
     <title>Cherries | Fruits & Vegetables | Green Mart</title>
     <link rel="stylesheet" type="text/css" href="../../css/main.css" />
     <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
+    <script src="../../scripts/aisles/fruitveg-cherries.js"></script>
 </head>
 
-<body>
+<body onload="remember();">
 <?php require_once "../../common/header.php"; ?>
 <div class="main">
 
@@ -30,15 +31,15 @@
 
             <label for="type">Type:</label> <br />
             <div class="type">
-                <button type="button" id="bing" onclick="bing()">Bing</button>
-                <button type="button" id="rainier" onclick="rainier()">Rainier</button>
-                <button type="button" id="tartarian" onclick="tartarian()">Black Tartarian</button>
+                <button type="button" class="cherryTypeButton" id="bing" onclick="setSelected(this, '../../images/fruit-veg/bing-cherry.jpg')">Bing</button>
+                <button type="button" class="cherryTypeButton" id="rainier" onclick="setSelected(this, '../../images/fruit-veg/rainier-cherry.jpg')">Rainier</button>
+                <button type="button" class="cherryTypeButton" id="tartarian" onclick="setSelected(this, '../../images/fruit-veg/tartarian-cherry.jpg')">Black Tartarian</button>
             </div>
             <br />
             <label for="type">Organic:</label> <br />
             <div class="type">
-                <button type="button" id="organic" onclick="organic()">Organic</button>
-                <button type="button" id="regular" onclick="regular()">Regular</button>
+                <button type="button" class="cherryOrganicButton" id="organic" onclick="setSelected(this)">Organic</button>
+                <button type="button" class="cherryOrganicButton" id="regular" onclick="setSelected(this)">Regular</button>
             </div>
             <br />
             <label for="quantity">Quantity:</label> <br />
@@ -69,7 +70,7 @@
         </div>
     </div>
 </div>
-<script src="../../scripts/aisles/fruitveg-cherries.js"></script>
+
 <?php require "../../common/footer.php"; ?>
 </body>
 
