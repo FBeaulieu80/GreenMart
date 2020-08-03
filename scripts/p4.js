@@ -11,6 +11,7 @@ function addQuantity1() {
     calculateQST()
     calculateGST()
     updateTopBanner()
+    localStorage.setItem(LocalStorageKeys.ITEM1_COUNT, document.getElementById("number1").value);
 }
 function addQuantity2() {
     document.getElementById("number2").value++
@@ -20,6 +21,7 @@ function addQuantity2() {
     calculateQST()
     calculateGST()
     updateTopBanner()
+    localStorage.setItem(LocalStorageKeys.ITEM2_COUNT, document.getElementById("number2").value);
 }
 function addQuantity3() {
     document.getElementById("number3").value++
@@ -29,6 +31,7 @@ function addQuantity3() {
     calculateQST()
     calculateGST()
     updateTopBanner()
+    localStorage.setItem(LocalStorageKeys.ITEM3_COUNT, document.getElementById("number3").value);
 }
 function addQuantity4() {
     document.getElementById("number4").value++
@@ -38,6 +41,7 @@ function addQuantity4() {
     calculateQST()
     calculateGST()
     updateTopBanner()
+    localStorage.setItem(LocalStorageKeys.ITEM4_COUNT, document.getElementById("number4").value);
 }
 
 function subtractQuantity1() {
@@ -49,6 +53,7 @@ function subtractQuantity1() {
         calculateQST()
         calculateGST()
         updateTopBanner()
+        localStorage.setItem(LocalStorageKeys.ITEM1_COUNT, document.getElementById("number1").value);
     }
 }
     function subtractQuantity2() {
@@ -60,6 +65,7 @@ function subtractQuantity1() {
             calculateQST()
             calculateGST()
             updateTopBanner()
+            localStorage.setItem(LocalStorageKeys.ITEM2_COUNT, document.getElementById("number2").value);
         }
     }
 function subtractQuantity3() {
@@ -71,6 +77,7 @@ function subtractQuantity3() {
         calculateQST()
         calculateGST()
         updateTopBanner()
+        localStorage.setItem(LocalStorageKeys.ITEM3_COUNT, document.getElementById("number3").value);
     }
 }
 function subtractQuantity4() {
@@ -82,7 +89,7 @@ function subtractQuantity4() {
         calculateQST()
         calculateGST()
         updateTopBanner()
-
+        localStorage.setItem(LocalStorageKeys.ITEM4_COUNT, document.getElementById("number4").value);
     }
 }
 
@@ -162,4 +169,43 @@ function removeItem4(){
 
 function updateTopBanner(){
     document.getElementById("shoppingCartNbr").innerHTML = "Shopping Cart (" + ((document.getElementById("number1").value*1) + (document.getElementById("number2").value*1) + (document.getElementById("number3").value*1) + (document.getElementById("number4").value*1)) +")"
+}
+
+const LocalStorageKeys = {
+    CART_ITEM_COUNT: "cart-item-count",
+    ITEM1_COUNT: "item1-count",
+    ITEM2_COUNT: "item2-count",
+    ITEM3_COUNT: "item3-count",
+    ITEM4_COUNT: "item4-count"
+};
+
+function remember() {
+    if (localStorage.getItem(LocalStorageKeys.ITEM1_COUNT))
+        document.getElementById("number1").value = localStorage.getItem(LocalStorageKeys.ITEM1_COUNT);
+    else
+        localStorage.setItem(LocalStorageKeys.ITEM1_COUNT, document.getElementById("number1").value);
+    if (localStorage.getItem(LocalStorageKeys.ITEM2_COUNT))
+        document.getElementById("number2").value = localStorage.getItem(LocalStorageKeys.ITEM2_COUNT);
+    else
+        localStorage.setItem(LocalStorageKeys.ITEM2_COUNT, document.getElementById("number2").value);
+    if (localStorage.getItem(LocalStorageKeys.ITEM3_COUNT))
+        document.getElementById("number3").value = localStorage.getItem(LocalStorageKeys.ITEM3_COUNT);
+    else
+        localStorage.setItem(LocalStorageKeys.ITEM3_COUNT, document.getElementById("number3").value);
+    if (localStorage.getItem(LocalStorageKeys.ITEM4_COUNT))
+        document.getElementById("number4").value = localStorage.getItem(LocalStorageKeys.ITEM4_COUNT);
+    else
+        localStorage.setItem(LocalStorageKeys.ITEM4_COUNT, document.getElementById("number4").value);
+
+    if (localStorage.getItem(LocalStorageKeys.CART_ITEM_COUNT)) {
+        document.getElementById("shoppingCartNbr").innerHTML = localStorage.getItem(LocalStorageKeys.CART_ITEM_COUNT);
+    }
+    else {
+        localStorage.setItem(LocalStorageKeys.CART_ITEM_COUNT, "4");
+    }
+    hideTotal();
+    calculateSubtotal();
+    calculateQST();
+    calculateGST();
+    updateTopBanner();
 }

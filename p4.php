@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html long = "en">
+<html lang="en">
 
 <head>
     <meta name="author" content="Laura Boivin">
@@ -10,7 +10,7 @@
     <title>Shopping Cart (4) | Green Mart</title>
 </head>
 
-<body marginwidth="100%" >
+<body marginwidth="100%" onload="remember();">
 <?php require "common/header.php"; ?>
 <div id = "box">
 <div class="main" style = "text-align: center">
@@ -57,7 +57,7 @@
             <img id = "food" src="images/bakery/carrot-cake.jpg" alt = "Carrot Cake"><br><br>
             <span id = "subtotal1"  > $11.99 </span><br><br>
             <button id = "add" onclick = "addQuantity1()">+</button>
-            <input type = "text" value = 1 id = "number1" readonly>
+            <label><input type = "text" value = 1 id = "number1" readonly></label>
             <button id = "subtract" onclick = "subtractQuantity1()">-</button><br/>
             <button id = "delete1" onclick ="removeItem1()">Remove Item </button><br><br>
 
@@ -71,7 +71,7 @@
             <img id = "food" src="images/dairy-eggs/cheddar.jpg" alt = "Cheddar Cheese"><br><br>
             <span id = "subtotal2"  > $3.29 </span><br><br>
             <button id = "add" onclick = "addQuantity2()">+</button>
-            <input type = "text" value = 1 id = "number2" readonly>
+            <label><input type = "text" value = 1 id = "number2" readonly></label>
             <button id = "subtract" onclick = "subtractQuantity2()">-</button><br/>
             <button id = "delete2" onclick ="removeItem2()">Remove Item</button><br><br>
 
@@ -86,7 +86,7 @@
             <img id = "food" src="images/fruit-veg/rainier-cherry.jpg" alt="Rainer Cherries"><br><br>
             <span id = "subtotal3"  > $4.99 </span><br><br>
             <button id = "add" onclick = "addQuantity3()">+</button>
-            <input type = "text" value = 1 id = "number3" readonly>
+            <label><input type = "text" value = 1 id = "number3" readonly></label>
             <button id = "subtract" onclick = "subtractQuantity3()">-</button>
             <br/>
             <button id = "delete3" onclick ="removeItem3()">Remove Item</button><br><br>
@@ -100,7 +100,7 @@
             <img id = "food" src="images/meat/chicken.jpg" alt="Roast Chicken"><br><br>
             <span id = "subtotal4"  > $9.99 </span><br><br>
             <button id = "add" onclick = "addQuantity4()">+</button>
-            <input type = "text" value = 1 id = "number4" readonly>
+            <label><input type = "text" value = 1 id = "number4" readonly></label>
             <button id = "subtract" onclick = "subtractQuantity4()">-</button>
             <br/>
             <button id ="delete4" onclick ="removeItem4()">Remove Item</button><br><br>
