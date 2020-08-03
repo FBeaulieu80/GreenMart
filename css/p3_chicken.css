@@ -1,0 +1,58 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    height: 30px;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+    height: 30px;
+}
+
+.cutCook {
+    background: lightgreen;
+    cursor: pointer;
+    padding: 25px;
+}
+
+.cutCook:hover {
+    background: green;
+}
+
+.toggleDesc {
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+.toggleDesc:hover {
+    background-color: green;
+}
+
+.addtocart button {
+    background: lightgreen;
+}
+
+.addtocart button:hover {
+    background-color: green;
+}
+
+.sub {
+    color: green;
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0;
+    justify-content: center;
+}
+
+.descButton {
+    padding: 0 30px;
+    max-height: 0;
+    overflow: hidden;
+}

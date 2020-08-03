@@ -11,10 +11,10 @@
     <script type="text/javascript" src="../../scripts/aisles/meat.js"></script>
 </head>
 
-<body onload="refresh()")>
+<body onload="refresh()">
 <?php require_once "../../common/header.php"; ?>
 <div>
-    </br></br></br>
+    <br><br><br>
     <div class="grid">
         <div class="grid-item" id="image">
             <img src="../../images/meat/chicken-whole.jpg" alt="Chicken Whole">
@@ -36,11 +36,11 @@
                 <button class="cutCook" name="cook" value="grilled" id="grilled" onclick="grilled()">Grilled</button>
                 <button class="cutCook" name="cook" value="roasted" id="roasted" onclick="roasted()">Roasted</button>
             </div>
-            </br></br></br>
+            <br><br><br>
 
             <div class="addtocart">
                 <form action="">
-                    <button type="button" onclick="notification()">Add to Shopping Cart</button>
+                    <button type="button" onclick="notification()">Add to Cart</button>
                     <button type="button" id="incr-item" onclick="add()" style="float:right">+</button>
                     <button type="button" id="decr-item" onclick="subtract()" style="float:left">-</button>
                     <input type="number" id="quantity" name="quantity" value="0" min="0" size="5" onchange="sessionStorage.setItem('quantity', this.value);">
@@ -49,13 +49,13 @@
 
             <span class="sub">
                 <span class="original-price" style="text-decoration: none">Total (tax not included): </span>
-                <span class="original-price" id="current-price" name="subtotal" style="text-decoration: none">$0.00</span>
+                <span class="original-price" id="current-price" style="text-decoration: none">$0.00</span>
             </span>
 
         </div>
     </div>
     <div id="showDesc">
-        <button class="toggleDesc" onclick="showDesc();">Description</button>
+        <button class="toggleDesc" id="toggleDesc" onclick="showDesc();">Description</button>
         <p class="descButton" id="descButton"></p>
     </div>
 </div>
