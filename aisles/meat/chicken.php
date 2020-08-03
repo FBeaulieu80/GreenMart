@@ -7,34 +7,56 @@
     <title>Chicken | Meat | Green Mart</title>
     <link rel="stylesheet" type="text/css" href="../../css/main.css" />
     <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/p3_chicken.css"/>
+    <script type="text/javascript" src="../../scripts/aisles/meat.js"></script>
 </head>
 
-<body>
+<body onload="refresh()")>
 <?php require_once "../../common/header.php"; ?>
-<div class="main">
-
-    <div class="grid-container">
-        <div class="grid-item">
-            <img src="../../images/meat/chicken.jpg" alt="Roast Chicken">
+<div>
+    </br></br></br>
+    <div class="grid">
+        <div class="grid-item" id="image">
+            <img src="../../images/meat/chicken-whole.jpg" alt="Chicken Whole">
         </div>
         <div class="grid-item">
-            <h2>Roast Chicken</h2>
-            <span class="price">$9.99/ea</span><br />
-            <br />
-            Product of Alberta. <br /> <br />
+            <h2>Chicken</h2>
+            <div id="price" class="price"></div>
+            <div id="location"></div>
+
+            <div>
+                <h3>Cut</h3>
+                <button class="cutCook" id="whole" onclick="whole()">Whole</button>
+                <button class="cutCook" id="breast" onclick="breast()">Breast</button>
+                <button class="cutCook" id="leg" onclick="leg()">Leg</button>
+            </div>
+
+            <div>
+                <h3>Cook Method</h3>
+                <button class="cutCook" name="cook" value="grilled" id="grilled" onclick="grilled()">Grilled</button>
+                <button class="cutCook" name="cook" value="roasted" id="roasted" onclick="roasted()">Roasted</button>
+            </div>
+            </br></br></br>
+
             <div class="addtocart">
-                <form action="/action_page.php">
-                    <label for="quantity">Quantity:</label> <br />
-                    <button type="submit" style="float:right">Add to Cart</button>
-                    <input type="text" id="quantity" name="quantity" value="1">
+                <form action="">
+                    <button type="button" onclick="notification()">Add to Shopping Cart</button>
+                    <button type="button" id="incr-item" onclick="add()" style="float:right">+</button>
+                    <button type="button" id="decr-item" onclick="subtract()" style="float:left">-</button>
+                    <input type="number" id="quantity" name="quantity" value="0" min="0" size="5" onchange="sessionStorage.setItem('quantity', this.value);">
                 </form>
             </div>
-            <br /> <br />
-            <h3>Description</h3> <!-- Change description below -->
-            <p>Chicken is the most common type of poultry in the world. Owing to the relative ease and low cost of raising
-                them in comparison to animals such as cattle or hogs, chickens have become prevalent throughout the cuisine
-                of cultures around the world, and their meat has been variously adapted to regional tastes.</p>
+
+            <span class="sub">
+                <span class="original-price" style="text-decoration: none">Total (tax not included): </span>
+                <span class="original-price" id="current-price" name="subtotal" style="text-decoration: none">$0.00</span>
+            </span>
+
         </div>
+    </div>
+    <div id="showDesc">
+        <button class="toggleDesc" onclick="showDesc();">Description</button>
+        <p class="descButton" id="descButton"></p>
     </div>
 </div>
 <?php require "../../common/footer.php"; ?>
