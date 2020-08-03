@@ -135,6 +135,7 @@ function removeItem1(){
     document.getElementById("delete1").parentElement.parentElement.style.display = 'none'
     hideTotal()
     updateTopBanner()
+    localStorage.setItem(LocalStorageKeys.ITEM1_DELETED, "true");
 }
 
 function removeItem2(){
@@ -145,6 +146,7 @@ function removeItem2(){
     document.getElementById("delete2").parentElement.parentElement.style.display = 'none'
     hideTotal()
     updateTopBanner()
+    localStorage.setItem(LocalStorageKeys.ITEM2_DELETED, "true");
 }
 
 function removeItem3(){
@@ -155,6 +157,7 @@ function removeItem3(){
     document.getElementById("delete3").parentElement.style.display = 'none'
     hideTotal()
     updateTopBanner()
+    localStorage.setItem(LocalStorageKeys.ITEM3_DELETED, "true");
 }
 
 function removeItem4(){
@@ -165,6 +168,7 @@ function removeItem4(){
     document.getElementById("delete4").parentElement.parentElement.style.display = 'none'
     hideTotal()
     updateTopBanner()
+    localStorage.setItem(LocalStorageKeys.ITEM4_DELETED, "true");
 }
 
 function updateTopBanner(){
@@ -176,7 +180,11 @@ const LocalStorageKeys = {
     ITEM1_COUNT: "item1-count",
     ITEM2_COUNT: "item2-count",
     ITEM3_COUNT: "item3-count",
-    ITEM4_COUNT: "item4-count"
+    ITEM4_COUNT: "item4-count",
+    ITEM1_DELETED: "item1-deleted",
+    ITEM2_DELETED: "item2-deleted",
+    ITEM3_DELETED: "item3-deleted",
+    ITEM4_DELETED: "item4-deleted"
 };
 
 function remember() {
@@ -203,6 +211,27 @@ function remember() {
     else {
         localStorage.setItem(LocalStorageKeys.CART_ITEM_COUNT, "4");
     }
+    if (localStorage.getItem(LocalStorageKeys.ITEM1_DELETED)) {
+        if (localStorage.getItem(LocalStorageKeys.ITEM1_DELETED) === "true") {
+            removeItem1();
+        }
+    }
+    if (localStorage.getItem(LocalStorageKeys.ITEM2_DELETED)) {
+        if (localStorage.getItem(LocalStorageKeys.ITEM2_DELETED) === "true") {
+            removeItem2();
+        }
+    }
+    if (localStorage.getItem(LocalStorageKeys.ITEM3_DELETED)) {
+        if (localStorage.getItem(LocalStorageKeys.ITEM3_DELETED) === "true") {
+            removeItem3();
+        }
+    }
+    if (localStorage.getItem(LocalStorageKeys.ITEM4_DELETED)) {
+        if (localStorage.getItem(LocalStorageKeys.ITEM4_DELETED) === "true") {
+            removeItem4();
+        }
+    }
+    
     hideTotal();
     calculateSubtotal();
     calculateQST();
