@@ -17,11 +17,11 @@
 
     <div class="aisle-cards">
         <div class="aisle-card">
-            <a href="eggs.php">
-                <img src="../../images/dairy-eggs/eggs.jpg" alt="Eggs">
+<!--            <a href="eggs.php">-->
+                <img src="../../images/dairy-eggs/eggs.jpg" alt="Eggs" style="filter: grayscale(100%)">
                 <div class="text">Eggs</div>
-                <div class="price-sale">$2.49/ea</div>
-            </a>
+                <div class="price-sale">SOLD OUT</div> <!-- $2.49/ea -->
+<!--            </a>-->
         </div>
 
         <div class="aisle-card">
@@ -33,14 +33,14 @@
         </div>
 
         <div class="aisle-card">
-            <a href="milk.php">
-                <img src="../../images/dairy-eggs/milk.jpg" alt="Milk">
+<!--            <a href="milk.php">-->
+                <img src="../../images/dairy-eggs/milk.jpg" alt="Milk" style="filter: grayscale(100%)">
                 <div class="text">Milk</div>
-                <div class="price-sale">$4.49/lb</div>
-            </a>
+                <div class="price-sale">SOLD OUT</div>
+<!--            </a>-->
         </div>
     </div>
 </div>
-<?php require "../../common/footer.html"; ?>
+<?php require "../../common/footer.php"; ?>
 </body>
 </html>

@@ -1,104 +1,120 @@
 <!DOCTYPE html>
-<html long = "en">
+<html lang="en">
 
 <head>
     <meta name="author" content="Laura Boivin">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/p4.css">
+    <script src = "scripts/p4.js" async></script>
     <title>Shopping Cart (4) | Green Mart</title>
 </head>
 
-
-<body marginwidth="100%">
+<body marginwidth="100%" onload="remember();">
 <?php require "common/header.php"; ?>
+<div id = "box">
+<div class="main" style = "text-align: center">
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class = "col">
 
-<button class = "continue">Continue Shopping</button>
-<h1 align="center" >My Shopping Cart</h1>
+                <form action = "aisles/index.php">
+                <button class = "continue" >Continue Shopping</button>
+                </form>
+
+                <h1 align="center" >My Shopping Cart</h1>
+
+
+
 <table align="center" cellspacing="20" >
-    <tr valign="top">
+
+        <tr valign="top" id = "checkout">
+            <th >
+
+                <br>
+                <button onclick = "checkOut()"> Checkout Now</button>
+                <h3> Your Order Summary</h3>
+
+                <span id = "orderTitle">Subtotal:</span>
+                <span id = "allSubtotal">$30.26</span><br>
+
+                <span id = "orderTitle">QST:</span>
+                <span id = "qst">$3.02</span><br>
+
+                <span id = "orderTitle">GST:</span>
+                <span id = "gst">$0.60</span><br><br>
+
+                <button id = total onclick = "calculateTotal()">Calculate Total:</button><br><br>
+                <span id = "totalcost"></span><br><br>
+
+            </th>
+        </tr>
+
+    <tr valign="top" id = "itemBlock" >
         <th class = "img-with-text">
-            <h2>Organic Baby Spinach</h2>
-            <img src="images/fruit-veg/Baby Spinach.jpg"
-                 alt = "Picture of Organic Baby Spinach"
-                 height = 250 width = 175>
-            <p>$4.99 each</p>
-            <button class = "add">+</button>
-            <form action = ""></form>
-            <textarea name = "number" rows = "1" cols = "1" > 1 </textarea>
-            <button class = "subtract">-</button><br/>
-            <button class = "delete">Delete Item </button>
+
+            <h3>Carrot Cake</h3>
+            <img id = "food" src="images/bakery/carrot-cake.jpg" alt = "Carrot Cake"><br><br>
+            <span id = "subtotal1"  > $11.99 </span><br><br>
+            <button id = "add" onclick = "addQuantity1()">+</button>
+            <label><input type = "text" value = 1 id = "number1" readonly></label>
+            <button id = "subtract" onclick = "subtractQuantity1()">-</button><br/>
+            <button id = "delete1" onclick ="removeItem1()">Remove Item </button><br><br>
+
         </th>
-        <th class = "checkout">   <button> Checkout Now</button>
-            <h3> Order Summary</h3>
-            <h4>4 Products </h4><br/>
-            <table>
-                <tr>
-                    <th>
-                        Subtotal:
-                    </th>
-                    <td>$11.95</td>
-                </tr>
-                <tr>
-                    <th>QST:</th>
-                    <td>$1.19</td>
-                </tr>
-                <tr>
-                    <th>GST:</th>
-                    <td>$0.60</td>
-                </tr>
-                <tr>
-                    <th>Total:</th>
-                    <td >$13.74</td>
-                </tr>
-            </table>
     </tr>
 
     <tr valign="top">
         <th class = "img-with-text">
-            <h2>Organic Banana</h2>
-            <img src="images/fruit-veg/banana.png"
-                 alt = "Picture of Organic Banana"
-                 height = 200 width = 200>
-            <p>$0.58 each</p>
-            <button class = "add">+</button>
-            <form action = ""></form>
-            <textarea name = "number" rows = "1" cols = "1" > 1 </textarea>
-            <button class = "subtract">-</button><br/>
-            <button class = "delete">Delete Item</button>
+
+            <h3>Cheddar Cheese</h3>
+            <img id = "food" src="images/dairy-eggs/cheddar.jpg" alt = "Cheddar Cheese"><br><br>
+            <span id = "subtotal2"  > $3.29 </span><br><br>
+            <button id = "add" onclick = "addQuantity2()">+</button>
+            <label><input type = "text" value = 1 id = "number2" readonly></label>
+            <button id = "subtract" onclick = "subtractQuantity2()">-</button><br/>
+            <button id = "delete2" onclick ="removeItem2()">Remove Item</button><br><br>
+
+        </th>
+    </tr>
+
+
+    <tr valign="top">
+        <th class="img-with-text">
+
+            <h3>Rainer Cherries</h3>
+            <img id = "food" src="images/fruit-veg/rainier-cherry.jpg" alt="Rainer Cherries"><br><br>
+            <span id = "subtotal3"  > $4.99 </span><br><br>
+            <button id = "add" onclick = "addQuantity3()">+</button>
+            <label><input type = "text" value = 1 id = "number3" readonly></label>
+            <button id = "subtract" onclick = "subtractQuantity3()">-</button>
+            <br/>
+            <button id = "delete3" onclick ="removeItem3()">Remove Item</button><br><br>
         </th>
     </tr>
 
     <tr valign="top">
         <th class="img-with-text">
-            <h2>Organic Blue Corn Chips</h2>
-            <img img src="images/snacks/Blue Chips.jpeg"
-                 alt="Picture of Organic Blue Tortilla Chips"
-                 height=210 width=160>
-            <p>$4.19 each</p>
-            <button class="add">+</button>
-            <form action=""></form>
-            <textarea name="number" rows="1" cols="1"> 1 </textarea>
-            <button class="subtract">-</button>
-            <br/>
-            <button class="delete">Delete Item</button>
-        </th>
 
-        <th class="img-with-text">
-            <h2>Organic Chickpeas</h2>
-            <img src="images/snacks/Chickpeas.png"
-                 alt="Picture of Organic Chickpeas"
-                 height=220 width=170>
-            <p>$2.19 each</p>
-            <button class="add">+</button>
-            <form action=""></form>
-            <textarea name="number" rows="1" cols="1"> 1 </textarea>
-            <button class="subtract">-</button>
+            <h3>Roast Chicken</h3>
+            <img id = "food" src="images/meat/chicken.jpg" alt="Roast Chicken"><br><br>
+            <span id = "subtotal4"  > $9.99 </span><br><br>
+            <button id = "add" onclick = "addQuantity4()">+</button>
+            <label><input type = "text" value = 1 id = "number4" readonly></label>
+            <button id = "subtract" onclick = "subtractQuantity4()">-</button>
             <br/>
-            <button class="delete">Delete Item</button>
+            <button id ="delete4" onclick ="removeItem4()">Remove Item</button><br><br>
         </th>
     </tr>
+
 </table>
-<?php //require "common/footer.html"; ?>
-</body>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 
+
+<?php require "common/footer.php"; ?>
+</body>
 </html>

@@ -13,7 +13,7 @@
 <body>
 <?php require "common/header.php"; ?>
 <div class="main">
-    <h2><a href="common/404.php">Deals of the week</a></h2>
+    <h2><a href="deals.php">Deals of the week</a></h2>
 
     <div class="dow-cards">
         <div class="dow-item">
@@ -90,6 +90,6 @@
     <p>Nullam volutpat risus eget lacus feugiat vestibulum. Phasellus elementum dolor leo, pretium facilisis velit dapibus ultricies. In lacinia bibendum euismod. In vestibulum elit et sodales interdum. Sed aliquet massa ligula, quis tempus lectus sollicitudin id. Donec justo nunc, ultrices ac felis quis, eleifend placerat dui. Aliquam ante elit, faucibus sit amet vulputate a, efficitur quis ex. Nulla nunc lorem, sodales ut eleifend vitae, aliquet vitae nibh. Ut eget sodales nulla, et sagittis dolor. Curabitur et lacus lacus. Curabitur dapibus scelerisque magna, ut condimentum tellus vehicula sed. Vivamus at blandit orci. Donec non ultrices nulla, quis venenatis justo. Nulla sit amet lobortis magna. Donec non auctor nisl.</p>
     <p>Curabitur metus massa, lobortis sed dui nec, hendrerit viverra ante. Phasellus interdum nunc velit, sed interdum diam congue a. Vivamus at magna ut dui ornare laoreet sed a justo. Vivamus porttitor, dui a rutrum vulputate, ipsum eros luctus neque, at fringilla risus tortor quis dui. Pellentesque sollicitudin pharetra arcu. Cras tincidunt, arcu id consequat blandit, erat metus accumsan lacus, id varius ipsum tellus facilisis eros. Praesent efficitur sagittis arcu, vel viverra nisl consequat ut. Aliquam a sodales turpis.</p>
 </div>
-<?php require "common/footer.html" ?>
+<?php require "common/footer.php" ?>
 </body>
 </html>

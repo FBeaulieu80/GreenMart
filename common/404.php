@@ -11,6 +11,6 @@
 <div class="main">
     <h2> Error 404. <br/> Page not found. </>
 </div>
-<?php require "footer.html"; ?>
+<?php require "footer.php"; ?>
 </body>
 </html>

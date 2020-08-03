@@ -4,21 +4,22 @@ html, body {
 }
 
 * {
-    font-family: Helvetica, Arial;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .grid-container {
+    /*Add for responsive*/
     display: grid;
-    grid-column-gap:0;
-    grid-template-columns: 400px 400px;
-    justify-content: center;
-    padding: 50px;
-    padding-top:0;
+    margin: 0 auto;
+    max-width: 1200px;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .grid-item {
-    padding: 10px;
+    /*padding: 10px; Remove for responsive*/
     text-align: left;
+    margin: 0 auto;
 }
 
 .grid-item a {
@@ -31,9 +32,19 @@ html, body {
 }
 
 .grid-item img {
+    /*Changed widths*/
     max-width: 300px;
-    max-height: 200px;
-    padding: 30px;
+    max-height: 300px;
+    /*padding: 30px; Remove for responsive*/
+}
+
+@media screen and (max-width: 600px) {
+    .grid-item img {
+        /*Changed widths*/
+        max-width: 200px;
+        max-height: 200px;
+        /*padding: 30px; Remove for responsive*/
+    }
 }
 
 .sale-price {
@@ -48,10 +59,11 @@ html, body {
 }
 
 .main {
-    margin-top: 30px;
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-bottom: 20px;
+    /*Change to % for responsiveness*/
+    margin-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    /*padding-bottom: 5%;*/
 }
 
 .main h2 {
@@ -80,15 +92,169 @@ display: inline-block;
     font-size: 16px;
     border: none;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .addtocart input[type=text]{
     font-size: 16px;
     padding: 4px 10px;
+
+}
+
+.addtocart #decr-item, .addtocart #incr-item {
+    margin: 0;
+    padding: 6px 6px 6px 6px;
+}
+.detailed-description-button button {
+    padding: 6px 6px 6px 6px;
+    background: lightgray;
+    font-size: 16px;
+    border: none;
+    margin-left: 0;
+}
+
+#detailed-description {
+    display: none;
+    margin-top: 10px;
+}
+
+.type button {
+    padding: 6px 6px 6px 6px;
+    background: lightgray;
+    font-size: 16px;
+    border: none;
+    margin-left: 0;
 }
 
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
     font-weight: normal;
+}
+
+
+.cookie-options{
+    text-align: left;
+    margin-bottom: 50px;
+
+}
+.cookie-button{
+    height: 50px;
+    width: 125px;
+    font-size: 15px;
+    background: tan;
+    cursor: pointer;
+}
+
+#details{
+    cursor: pointer;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+    background-color: lightgoldenrodyellow;
+    border-style: ridge;
+}
+
+#description{
+    max-height: 0;
+    overflow: hidden;
+
+    /*set smooth transitions up*/
+
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
+
+}
+
+#description.open{
+    max-height: 300px;
+
+    /*set smooth transitions up*/
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
+}
+
+.cookie-addToCart{
+    display: inline-block;
+    padding: 10px;
+
+}
+
+#cookcartbutton {
+    float: left;
+    padding: 6px 10px 6px 6px;
+    background: lightgray;
+    font-size: 16px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#add, #subtract{
+    cursor: pointer;
+    font-size: 12px;
+    padding: 6px 10px 6px 10px;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+#cookquantity{
+    text-align: center;
+    padding: 6px 10px 6px 10px;
+    width: 40px;
+}
+
+#total{
+  font-weight: bold;
+}
+
+
+ /*RESPONSIVE GRID*/
+* {
+    box-sizing: border-box;
+}
+
+.col::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="row-"] {
+    float: top;
+    /*padding: 15px;*/
+
+}
+
+.row-1 {
+    height: 16.66%;
+}
+
+.row-2 {
+    height: 33.33%;
+}
+
+.row-3 {
+    height: 50%;
+}
+
+.row-4 {
+    height: 66.66%;
+}
+
+.row-5 {
+    height: 83.33%;
+}
+
+.row-6 {
+    height: 100%;
+}
+
+@media (max-width: 400px) {
+    .main {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }

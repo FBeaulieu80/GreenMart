@@ -17,22 +17,22 @@
 
     <div class="aisle-cards">
         <div class="aisle-card">
-            <a href="kombucha.php">
-                <img src="../../images/snacks/kombucha.png" alt="Kombucha">
+<!--            <a href="kombucha.php">-->
+                <img src="../../images/snacks/kombucha.png" alt="Kombucha" style="filter: grayscale(100%)">
                 <div class="text">Kombucha</div>
-                <div class="price-sale">$3.00/ea</div>
-            </a>
+                <div class="price-sale">SOLD OUT</div>
+<!--            </a>-->
         </div>
 
         <div class="aisle-card">
             <a href="Cookies.php">
                 <img src="../../images/snacks/Chocolate%20cookies.jpg" alt="Vegan Fairtrade Chocolate Cookies">
-                <div class="text">Vegan Fairtrade Chocolate Cookies</div>
+                <div class="text">Vegan Fairtrade Cookies</div>
                 <div class="price">$4.99/ea</div>
             </a>
         </div>
     </div>
 </div>
-<?php require "../../common/footer.html"; ?>
+<?php require "../../common/footer.php"; ?>
 </body>
 </html>
