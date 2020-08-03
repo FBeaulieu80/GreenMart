@@ -10,6 +10,7 @@ function addQuantity1() {
     calculateSubtotal()
     calculateQST()
     calculateGST()
+    updateTopBanner()
 }
 function addQuantity2() {
     document.getElementById("number2").value++
@@ -18,6 +19,7 @@ function addQuantity2() {
     calculateSubtotal()
     calculateQST()
     calculateGST()
+    updateTopBanner()
 }
 function addQuantity3() {
     document.getElementById("number3").value++
@@ -26,6 +28,7 @@ function addQuantity3() {
     calculateSubtotal()
     calculateQST()
     calculateGST()
+    updateTopBanner()
 }
 function addQuantity4() {
     document.getElementById("number4").value++
@@ -34,6 +37,7 @@ function addQuantity4() {
     calculateSubtotal()
     calculateQST()
     calculateGST()
+    updateTopBanner()
 }
 
 function subtractQuantity1() {
@@ -44,6 +48,7 @@ function subtractQuantity1() {
         calculateSubtotal()
         calculateQST()
         calculateGST()
+        updateTopBanner()
     }
 }
     function subtractQuantity2() {
@@ -54,6 +59,7 @@ function subtractQuantity1() {
             calculateSubtotal()
             calculateQST()
             calculateGST()
+            updateTopBanner()
         }
     }
 function subtractQuantity3() {
@@ -64,7 +70,7 @@ function subtractQuantity3() {
         calculateSubtotal()
         calculateQST()
         calculateGST()
-
+        updateTopBanner()
     }
 }
 function subtractQuantity4() {
@@ -75,6 +81,7 @@ function subtractQuantity4() {
         calculateSubtotal()
         calculateQST()
         calculateGST()
+        updateTopBanner()
 
     }
 }
@@ -120,6 +127,7 @@ function removeItem1(){
     calculateTotal()
     document.getElementById("delete1").parentElement.parentElement.style.display = 'none'
     hideTotal()
+    updateTopBanner()
 }
 
 function removeItem2(){
@@ -129,6 +137,7 @@ function removeItem2(){
     calculateGST()
     document.getElementById("delete2").parentElement.parentElement.style.display = 'none'
     hideTotal()
+    updateTopBanner()
 }
 
 function removeItem3(){
@@ -138,6 +147,7 @@ function removeItem3(){
     calculateGST()
     document.getElementById("delete3").parentElement.style.display = 'none'
     hideTotal()
+    updateTopBanner()
 }
 
 function removeItem4(){
@@ -147,4 +157,9 @@ function removeItem4(){
     calculateGST()
     document.getElementById("delete4").parentElement.parentElement.style.display = 'none'
     hideTotal()
+    updateTopBanner()
+}
+
+function updateTopBanner(){
+    document.getElementById("shoppingCartNbr").innerHTML = "Shopping Cart (" + ((document.getElementById("number1").value*1) + (document.getElementById("number2").value*1) + (document.getElementById("number3").value*1) + (document.getElementById("number4").value*1)) +")"
 }
