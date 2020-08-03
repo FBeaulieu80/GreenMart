@@ -4,18 +4,10 @@ html, body {
 }
 
 * {
-    font-family: Helvetica, Arial;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .grid-container {
-    /*Remove for responsive*/
-    /*display: grid;*/
-    /*grid-column-gap:0;*/
-    /*grid-template-columns: 400px 400px;*/
-    /*justify-content: center;*/
-    /*padding: 50px;*/
-    /*padding-top:0;*/
-
     /*Add for responsive*/
     display: grid;
     margin: 0 auto;
@@ -27,6 +19,7 @@ html, body {
 .grid-item {
     /*padding: 10px; Remove for responsive*/
     text-align: left;
+    margin: 0 auto;
 }
 
 .grid-item a {
@@ -70,7 +63,7 @@ html, body {
     margin-top: 5%;
     padding-left: 20%;
     padding-right: 20%;
-    padding-bottom: 5%;
+    /*padding-bottom: 5%;*/
 }
 
 .main h2 {
@@ -109,7 +102,7 @@ display: inline-block;
 }
 
 .addtocart #decr-item, .addtocart #incr-item {
-    margin: 0px;
+    margin: 0;
     padding: 6px 6px 6px 6px;
 }
 .detailed-description-button button {
@@ -117,7 +110,7 @@ display: inline-block;
     background: lightgray;
     font-size: 16px;
     border: none;
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 #detailed-description {
@@ -130,7 +123,7 @@ display: inline-block;
     background: lightgray;
     font-size: 16px;
     border: none;
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 table, th, td {
@@ -163,7 +156,7 @@ table, th, td {
 }
 
 #description{
-    max-height: 0px;
+    max-height: 0;
     overflow: hidden;
 
     /*set smooth transitions up*/
@@ -259,3 +252,9 @@ table, th, td {
     height: 100%;
 }
 
+@media (max-width: 400px) {
+    .main {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}

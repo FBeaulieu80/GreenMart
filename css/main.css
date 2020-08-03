@@ -1,113 +1,58 @@
-
-html, body, footer {
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-    max-height: 100%;
-}
-
 * {
-    font-family: Helvetica, Arial;
-    /*box-sizing: border-box;*/
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
 }
 
-.topnav {
-    position: relative;
-    /*position: fixed;*/
-    background-color: seagreen;
-    top: 0;
-    max-width: 100%;
-    margin: 0;
-    min-height: 50px;
-    height: 5%;
-    max-height: 100px;
-    padding: 2%;
-}
-
-.topnav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    /*padding: 10px;*/
-    overflow: hidden;
-    background-color: seagreen;
-    /*position: relative;*/
-    /*top: 0;*/
-    /*width: 100%;*/
-}
-
-.topnav img {
-    width: 75%;
-    display: block;
-}
-
-.topnav li {
-    float: left;
-}
-
-.topnav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.topnav .search-bar button{
-    float: right;
-    padding: 6px 10px;
-    margin-top: 25px;
-    margin-right: 16px;
-    background: lightgray;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-.topnav input[type=text] {
-    padding: 6px;
-    margin-top: 25px;
-    font-size: 16px;
-    border: none;
-}
-
-.mainnav {
-    /*position: fixed;*/
-    width: 100%;
-    position: relative;
-}
-
-.mainnav ul {
-    max-width:100%;
-    max-height:100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: seagreen;
-    width: 100%;
-    position: relative;
-}
-
-.mainnav li {
-    float: left;
-}
-
-.mainnav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.mainnav a:hover {
-    background-color: darkgreen;
-}
-
- body {
+body {
      font-family: Arial, Helvetica, sans-serif;
- }
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.main {
+    min-height: 100%;
+    display: block;
+    padding: 2%;
+    margin-bottom: 70px;
+}
+
+.main::after {
+    content: "";
+    display: block;
+}
+
+.main h2 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 40px;
+    margin: 0;
+    max-width: 100%;
+}
+
+footer, .main::after {
+    height: 70px;
+}
+
+footer {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    background-color: seagreen;
+    padding: 1em;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    display: inline;
+}
+
+footer a:hover {
+    font-weight: bold;
+}
 
 .mobnav {
     overflow: hidden;
@@ -127,15 +72,10 @@ html, body, footer {
     display: block;
 }
 
-/*#logo img {*/
-/*    height: 75%;*/
-/*}*/
-
 .mobnav a.icon {
     background: #333;
     display: block;
     position: relative;
-    /*right: 0;*/
     left: 0;
     top: 0;
 }
@@ -163,30 +103,6 @@ html, body, footer {
     float: right;
     padding: 2% 2%
 }
-@media screen and (max-width: 600px) {
-    .slogan{
-        display: none;
-        visibility: hidden;
-
-    }
-}
-
-.main {
-    position: relative;
-    display: block;
-    /*margin-top: 170px;*/
-    padding: 2%;
-    margin-bottom: 50px;
-}
-
-.main h2 {
-    text-align: center;
-    padding: 10px;
-    font-size: 40px;
-    margin: 0;
-    max-width: 100%;
-}
-
 
 p {
     margin-left: auto;
@@ -198,33 +114,16 @@ p {
     padding-bottom: 20px;*/
 }
 
-footer {
-    background-color: seagreen;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: -10px;
-    color: white;
-    /*position: fixed;*/
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    box-sizing: border-box;
+@media screen and (max-width: 600px) {
+    .slogan{
+        display: none;
+        visibility: hidden;
+
+    }
 }
 
-footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-footer a {
-    text-decoration: none;
-    color: white;
-    display: inline;
-}
-
-footer a:hover {
-    font-weight: bold;
+@media (max-width: 400px) {
+    .main {
+        padding: 5%;
+    }
 }

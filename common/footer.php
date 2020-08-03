@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <footer>
-    <ul>
-        <li>Copyright &copy 2020 Green Mart Inc. All Rights Reserved.</li>
-        <li>Created my free logo at <a href="https://logomakr.com/">Logomakr.com</a></li>
-    </ul>
+    <div>
+        <div>
+            Copyright &copy 2020 Green Mart Inc. All Rights Reserved.
+        </div>
+        <div>
+            Created my free logo at <a href="https://logomakr.com/">Logomakr.com</a>
+        </div>
+    </div>
 </footer>
