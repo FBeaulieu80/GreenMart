@@ -68,7 +68,7 @@ const LocalStorageKeys = {
     CHERRY_TYPES: { BING: "bing", RAINIER: "rainier", BLACK_TARTARIAN: "black-tartarian" },
     IS_ORGANIC: "is-organic",
     ORGANIC: { YES: "organic", NO: "regular"},
-    ITEM_COUNT: "item-count"
+    ITEM_COUNT: "cherries-count"
 };
 
 function remember() {

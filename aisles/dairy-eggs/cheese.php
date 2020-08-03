@@ -10,7 +10,7 @@
     <script type="text/javascript" src="../../scripts/aisles/dairy-eggs.js"></script>
 </head>
 
-<body>
+<body onload="remember();">
 <?php require "../../common/header.php" ?>
 <div class="main">
 
@@ -29,15 +29,15 @@
             <br />
 
             <p style="color: darkslateblue;font-weight: bold;">Select between 3 types of cheese:
-                <select id="dlist" onChange="swapImage()">
+                <label><select id="dlist" onChange="swapImage()">
                     <option style="color: darkgreen;" value="../../images/dairy-eggs/cheese.jpg">Regular</option>
                     <option style="color: crimson;" value="../../images/dairy-eggs/cheddar.jpg">Cheddar</option>
                     <option style="color: blueviolet;" value="../../images/dairy-eggs/parmesan.jpg">Parmesan</option>
-                </select></p>
+                </select></label></p>
 
             <div class="addtocart">
                 <form action=""> <!-- Will add /action_page.php for WP3 -->
-                    <label for="quantity">Quantity:</label> <br />
+                    <label for="number">Quantity:</label> <br />
                     <button onclick="increaseValue()" type="button" style="float:left; border-radius: 50%; border: 2px solid black;">+</button>&nbsp
                     <input type="text" id="number" value="0" readonly/>
                     <button onclick="decreaseValue()" type="button" style="float:right; border-radius: 50%; border: 2px solid black;">-</button><br><br>

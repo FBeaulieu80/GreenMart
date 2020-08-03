@@ -9,7 +9,7 @@ const CakeTypes = {
 
 const LocalStorageKeys = {
     CAKE_TYPE: "cake-type",
-    ITEM_COUNT: "item-count"
+    ITEM_COUNT: "cake-count"
 };
 
 
