@@ -12,7 +12,7 @@
     <script src = "../../scripts/aisles/cookie.js" async></script>
 </head>
 
-<body>
+<body onload="remember();">
 <?php require_once "../../common/header.php"; ?>
 <div class="main">
 
@@ -38,7 +38,7 @@
             <br />
             Product of Canada. <br /> <br />
             <div class="cookie-addToCart">
-                    <label for="quantity">Quantity:</label> <br /> <br />
+                    <label for="cookquantity">Quantity:</label> <br /> <br />
                     <button type="submit" style="float:right" id="cookcartbutton" onclick = "addToCart()">Add to Cart</button>
                     <button id = "subtract" onclick = "subtractQuantity()">-</button>
                     <input type = "text" value = 1 id="cookquantity" name="quantity" readonly>
