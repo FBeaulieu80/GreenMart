@@ -2,7 +2,7 @@
     <?php
     $httpProtocol = !isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] != 'on' ? 'http' : 'https';
     $base = $httpProtocol.'://'.$_SERVER['HTTP_HOST'];
-    $base = strpos($base, "localhost")? $base."/SOEN287/": $base."/"; ?>
+    $base = strpos($base, "localhost")? $base."/greenmart/": $base."/"; ?>
 
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">

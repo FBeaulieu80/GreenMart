@@ -4,7 +4,7 @@
     <title>Edit User Profile | Back Store | Green Mart</title>
     <link rel="stylesheet" type="text/css" href="../css/backstore.css"/>
     <link rel="stylesheet" type="text/css" href="../css/p10.css"/>
-    <script type="text/javascript" src="../scripts/backstore/userList.js"></script>
+    <script type="text/javascript" src="scripts/userList.js"></script>
     <meta name="author" content="Felix Beaulieu">
 </head>
 <body>
@@ -33,11 +33,11 @@
                 <input type="text" id="fullAddressInput" name="fulladdress" placeholder="Full Address">
             </label><br/>
             <label>
-                <input type="tel" id="phoneNumberInput" name="phonenumber" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Phone Number">
+                <input type="tel" id="phoneNumberInput" name="phonenumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone Number">
             </label><br/>
-            <input type="submit" name="confirmbtn" value="Confirm Changes" onclick="createNewUser()">
-            <input type="button" name="cancelbtn" value="Cancel" onclick="window.history.back();">
-            <input type="button" name="deletebtn" value="Delete Account" onclick="deleteUser()" style="background-color: darkgreen;color: white">
+            <input type="submit" name="confirmbtn" value="Confirm Changes" formmethod="post"> <!--TODO: FIX SUBMIT-->
+            <input type="button" name="cancelbtn" value="Cancel" onclick="window.open('GreenMartUserAccounts.php');">
+            <input type="button" name="deletebtn" value="Delete Account" formmethod="post" style="background-color: darkgreen;color: white"> <!--TODO: FIX DELETE-->
         </div>
     </form>
 </div>
