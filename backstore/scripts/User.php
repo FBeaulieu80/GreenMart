@@ -168,6 +168,7 @@ class User
     public function addUser() {
         //echo $_SERVER["DOCUMENT_ROOT"];
         self::$userCount += 1;
+        self::$userFile->UserCount = self::$userCount;
         $new = self::$userFile->addChild("user");
         
         $new->addChild("id", $this->id );
@@ -180,7 +181,7 @@ class User
         $new->addChild("phoneNumber", $this->phone );
         $new->addChild("avatarUrl", $this->avatarUrl );
         $new->addChild("accountType", $this->accountType );
-        echo "new: "; print_r($new); echo "<br/>";
+        // echo "new: "; print_r($new); echo "<br/>"; // TODO REMOVE
         self::$userFile->asXML("../files/users.xml");
     }
 
