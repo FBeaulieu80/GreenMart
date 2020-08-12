@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <users>
-    <UserCount>3</UserCount>
+    <UserCount>6</UserCount>
     <user>
         <id>1</id>
         <firstName>Felix</firstName>
@@ -35,4 +35,4 @@
         <phoneNumber/>
         <accountType>admin</accountType>
     </user>
-</users>
+<user><id>4</id><firstName>Dummy</firstName><middleName/><lastName>Dumdum</lastName><email>dummy@dummy.com</email><password>123</password><fullAddress>123 Dummy Street</fullAddress><phoneNumber>0123456789</phoneNumber><avatarUrl/><accountType>client</accountType></user><user><id>5</id><firstName>Dummy2</firstName><middleName/><lastName>Dumdum</lastName><email>dummy@dummy.com</email><password>123</password><fullAddress>123 Dummy Street</fullAddress><phoneNumber>0123456789</phoneNumber><avatarUrl/><accountType>admin</accountType></user><user><id>6</id><firstName>Asal</firstName><middleName/><lastName>Ansari</lastName><email>asalansari@hotmail.com</email><password>123</password><fullAddress>245 rue Rosario</fullAddress><phoneNumber>5145912725</phoneNumber><avatarUrl/><accountType>admin</accountType></user></users>
