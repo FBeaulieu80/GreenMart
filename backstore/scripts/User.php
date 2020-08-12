@@ -147,8 +147,7 @@ class User
         $this->phone = $phone;
         $this->avatarUrl = $avatarUrl;
         $this->accountType = $accountType;
-        User::$userCount += 1;
-        
+
         $this->userLinkBtnId = "userLinkBtn".$id;
         $this->userInfoCardDivId = "userInfoCardDivId".$id;
         if ($this->middleName != "")

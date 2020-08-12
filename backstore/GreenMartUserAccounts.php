@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $accountType = isset($_POST["accountType"]) ? $_POST["accountType"] : AccountTypes::CLIENT;
 
         $user = new User(
-            User::getUserCount(),
+            User::getUserCount()+1,
             $firstName,
             $middleName,
             $lastName,
@@ -57,7 +57,8 @@ $usersFile = simplexml_load_file("../files/users.xml") or die("Error: Cannot cre
 $numUsers = $usersFile->UserCount;
 $users = new ArrayObject();
 for ($i = 0; $i < $usersFile->user->count(); $i++) {
-    $user = new User(intval($usersFile->user[$i]->id),
+    $user = new User(
+        intval($usersFile->user[$i]->id),
         $usersFile->user[$i]->firstName,
         $usersFile->user[$i]->middleName,
         $usersFile->user[$i]->lastName,
