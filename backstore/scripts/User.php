@@ -8,21 +8,120 @@ class AccountTypes {
 class User
 {
     // Properties
+    private static SimpleXMLElement $userFile;
     private static int $userCount = 0;
-    public int $id;
-    public string $firstName;
-    public string $middleName;
-    public string $lastName;
-    public string $email;
-    public string $password;
-    public string $fullAddress;
-    public string $phone;
-    public string $avatarUrl;
-    public string $accountType;
+    private int $id;
+    private string $firstName;
+    private string $middleName;
+    private string $lastName;
+    private string $email;
+    private string $password;
+    private string $fullAddress;
+    private string $phone;
+    private string $avatarUrl;
+    private string $accountType;
     
     private string $userLinkBtnId; 
     private string $userInfoCardDivId;
     private string $title;
+
+    /**
+     * @return int
+     */
+    public static function getUserCount(): int
+    {
+        return self::$userCount;
+    }
+
+    /**
+     * @param int $userCount
+     */
+    public static function setUserCount(int $userCount): void
+    {
+        self::$userCount = $userCount;
+    }
+
+    /**
+     * @return int
+     */
+    public function getId(): int
+    {
+        return $this->id;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFirstName(): string
+    {
+        return $this->firstName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMiddleName(): string
+    {
+        return $this->middleName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLastName(): string
+    {
+        return $this->lastName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEmail(): string
+    {
+        return $this->email;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPassword(): string
+    {
+        return $this->password;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFullAddress(): string
+    {
+        return $this->fullAddress;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPhone(): string
+    {
+        return $this->phone;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAvatarUrl(): string
+    {
+        return $this->avatarUrl;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAccountType(): string
+    {
+        return $this->accountType;
+    }
+
+
 
     /**
      * User constructor.
@@ -58,28 +157,59 @@ class User
             $this->title = $this->firstName." ".$this->lastName;
     }
 
-    public static function addUser(User $user) {
+    public static function init() {
+        self::$userFile = simplexml_load_file("../files/users.xml") or die("Could not read file...");
+        self::$userCount = intval(self::$userFile->UserCount);
+    }
 
+    /**
+     * @param SimpleXMLElement $doc
+     * @return void
+     */
+    public function addUser() {
+        //echo $_SERVER["DOCUMENT_ROOT"];
+        self::$userCount += 1;
+        $new = self::$userFile->addChild("user");
+        
+        $new->addChild("id", $this->id );
+        $new->addChild("firstName", $this->firstName );
+        $new->addChild("middleName", $this->middleName );
+        $new->addChild("lastName", $this->lastName );
+        $new->addChild("email", $this->email );
+        $new->addChild("password", $this->password );
+        $new->addChild("fullAddress", $this->fullAddress );
+        $new->addChild("phoneNumber", $this->phone );
+        $new->addChild("avatarUrl", $this->avatarUrl );
+        $new->addChild("accountType", $this->accountType );
+        echo "new: "; print_r($new); echo "<br/>";
+        self::$userFile->asXML("../files/users.xml");
     }
 
     public static function removeUser(User $user) {
 
     }
 
-    public function generateUserLink() {
-        $onclick = "openUser('{$this->userLinkBtnId}', '{$this->userInfoCardDivId}');";
-
-        return '<button class="tablink" onclick="'.$onclick.'" id="'.$this->userLinkBtnId.'">'.$this->title.'</button>';
-    }
-    
     /**
-     * Create User Button and Info Card
+     * Create User List Button
+     * @param bool $isActive
      * @return string
      */
-    public function generateUserInfoCard() {
+    public function generateUserLink(bool $isActive=false) {
+        $onclick = "openUser(\"{$this->userLinkBtnId}\", \"{$this->userInfoCardDivId}\");";
+        $class = $isActive ? "tablink active" : "tablink";
+        return "<button class='{$class}' onclick='{$onclick}' id='{$this->userLinkBtnId}'>{$this->title}</button>";
+    }
+
+    /**
+     * Create User Info Card
+     * @param bool $isActive
+     * @return string
+     */
+    public function generateUserInfoCard(bool $isActive=false) {
+        $class = $isActive ? "userInfoCard active" : "userInfoCard";
         // Card Header
         $header = "<h3>{$this->id}. {$this->title}</h3>";
-        $editBtn = "<button class='editButton' onclick='window.open(`EditUserProfile.php`, `_self`);'>Edit</button>";
+        $editBtn = "<form method='post' action='EditUserProfile.php'><input type='submit' value='EDIT PROFILE' name='editBtn' class='editButton'></form>";
         $headerDiv = "<div class='userInfoHeader'>
                           {$header}
                           {$editBtn}
@@ -101,7 +231,8 @@ class User
         $email = "<div class='userInfo'>email: <b>{$this->email}</b></div>";
 
         // Password
-        $password = "<div class='userInfo'>{$this->password}</div>";
+        $starred = str_repeat("*", strlen($this->password));
+        $password = "<div class='userInfo'>Password: {$starred}</div>";
 
         // Address
         $address = "<div class='userInfo'>Full Address: <b>{$this->fullAddress}</b></div>";
@@ -113,7 +244,7 @@ class User
         $accountType = "<div class='userInfo'>Account Type: <b>{$this->accountType}</b></div>";
 
         // Main Card (Main Container)
-        return "<div class='userInfoCard' id='{$this->userInfoCardDivId}'>
+        return "<div class='{$class}' id='{$this->userInfoCardDivId}'>
                     {$headerDiv}
                     {$avatar}
                     {$firstName}

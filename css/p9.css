@@ -140,12 +140,9 @@ footer a:hover {
 
 /* END OF BACKSTORE.CSS */
 
-* {box-sizing: border-box}
-
 body {
     background-color: seagreen;
     min-width: 300px;
-
 }
 
 #userListMainDiv {
@@ -219,14 +216,17 @@ body {
     /*Parent Grid*/
     grid-area: menu;
     /*Other*/
-    /*float: left;*/
     background-color: seagreen;
     width: 100%;
     height: content-box;
     border: none;
     min-width: 100px;
     overflow: auto;
+}
 
+#addUserForm {
+    padding: 0;
+    margin: 0;
 }
 
 /* Style the buttons inside the tab */
@@ -274,6 +274,10 @@ body {
     color: white;
     padding: 0 2rem;
     overflow-wrap: break-word;
+}
+
+.userInfoCard.active {
+    display: block;
 }
 
 .userInfoCard .userInfoHeader {
@@ -330,16 +334,6 @@ div::-webkit-scrollbar-thumb
 {
     background-color: #004400;
 
-}
-
-#userListSplashScreen {
-    width: 100%;
-    background-color: inherit;
-    font-size: 1rem;
-    padding: 2rem;
-    text-align: center;
-    color: white;
-    font-weight: bold;
 }
 
 /* MEDIA QUERIES */

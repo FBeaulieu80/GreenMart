@@ -167,3 +167,23 @@ function searchUser() {
     }
 
 }
+
+
+function togglePasswordVisibility() {
+    console.log("working")
+
+    let vis = document.getElementsByClassName("visibility");
+    let pass = document.getElementById("passwordInput");
+    let confPass = document.getElementById("confirmPasswordInput");
+    if (pass.type === "password" || confPass.type === "password") {
+        pass.type = "text";
+        confPass.type = "text";
+    }
+    else {
+        pass.type = "password";
+        confPass.type = "password";
+    }
+    for (let i = 0; i < vis.length; i++) {
+        vis[i].classList.toggle("visibility-off");
+    }
+}
