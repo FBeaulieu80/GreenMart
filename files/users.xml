@@ -15,6 +15,7 @@
         <middleName/>
         <avatarUrl>../images/users/cat2.jpg</avatarUrl>
         <email/>
+        <password>pa55word</password>
         <firstName>Michael</firstName>
         <fullAddress/>
         <lastName>Rowe</lastName>
@@ -25,13 +26,11 @@
         <avatarUrl>../images/users/cat3.jpg</avatarUrl>
         <middleName/>
         <email/>
+        <password>pa55word</password>
         <firstName>Kyle</firstName>
         <fullAddress/>
         <lastName>Taylor-Bracken</lastName>
         <phone/>
         <accountType>admin</accountType>
     </user>
-    
-    
-    
 </users>
