@@ -197,7 +197,9 @@ class User
      */
     public static function init() {
         self::$userFile = simplexml_load_file("../files/users.xml") or die("Could not read file...");
+        self::$userFile["count"] = self::$userFile->children()->count();
         self::$userCount = intval(self::$userFile["count"]);
+        self::saveUsers();
     }
 
     /**
