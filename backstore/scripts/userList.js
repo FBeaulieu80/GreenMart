@@ -168,10 +168,7 @@ function searchUser() {
 
 }
 
-
 function togglePasswordVisibility() {
-    console.log("working")
-
     let vis = document.getElementsByClassName("visibility");
     let pass = document.getElementById("passwordInput");
     let confPass = document.getElementById("confirmPasswordInput");
@@ -185,5 +182,19 @@ function togglePasswordVisibility() {
     }
     for (let i = 0; i < vis.length; i++) {
         vis[i].classList.toggle("visibility-off");
+    }
+}
+
+function checkPassword() {
+    console.log("In checkPassword()...")
+    let form = document.getElementById("newUserForm");
+    let pass = document.getElementById("passwordInput");
+    let confPass = document.getElementById("confirmPasswordInput");
+
+    if (confPass.value !== pass.value) {
+        confPass.style.color = "red";
+    }
+    else {
+        confPass.style.color = "default";
     }
 }

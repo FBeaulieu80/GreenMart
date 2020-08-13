@@ -282,7 +282,14 @@ body {
 
 .userInfoCard .userInfoHeader {
     display: grid;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: auto fit-content(100%);
+    grid-template-rows: min-content;
+    /*place-items: center;*/
+}
+
+.userInfoCard .userInfoHeader h3, form {
+    margin: 0;
+    padding: 1rem 0;
 }
 
 .editButton {
@@ -294,10 +301,11 @@ body {
     cursor: pointer;
     transition: 0.3s;
     float: right;
-    padding: 1rem;
     text-transform: uppercase;
     text-align: center;
     min-width: fit-content;
+    height: 100%;
+    font-size: 1.17em;
 }
 
 .editButton:hover {

@@ -75,7 +75,7 @@ html, body, header {
     height: 1rem;
     filter: invert(1);
     margin: 0;
-    padding: 0;
+    padding: 0 1em 0 0;
 }
 
 #logInText {

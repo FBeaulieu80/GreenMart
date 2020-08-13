@@ -1,4 +1,7 @@
-<html lang="en" xmlns:style="http://www.w3.org/1999/html">
+<?php
+    require "common/authenticate.php";
+?>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +13,7 @@
 <?php require "common/header.php"; ?>
 <div class="main">
     <h2>Back Store</h2>
+    <?php if (isset($_SESSION["username"])) echo "<h3 style='text-align: center'>Welcome {$_SESSION["username"]}.</h3>"; ?>
 </div>
 <?php require "common/footer.html"; ?>
 </body>

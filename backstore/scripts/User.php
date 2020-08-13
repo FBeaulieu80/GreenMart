@@ -10,7 +10,7 @@ class User
     // Properties
     private static SimpleXMLElement $userFile;
     private static int $userCount = 0;
-    private int $id;
+    private string $id;
     private string $firstName;
     private string $middleName;
     private string $lastName;
@@ -25,6 +25,7 @@ class User
     private string $userInfoCardDivId;
     private string $title;
 
+    /* GETTERS */
     /**
      * @return int
      */
@@ -34,17 +35,9 @@ class User
     }
 
     /**
-     * @param int $userCount
+     * @return string
      */
-    public static function setUserCount(int $userCount): void
-    {
-        self::$userCount = $userCount;
-    }
-
-    /**
-     * @return int
-     */
-    public function getId(): int
+    public function getId(): string
     {
         return $this->id;
     }
@@ -121,11 +114,34 @@ class User
         return $this->accountType;
     }
 
+    /**
+     * Get array of Users from the XML file.
+     * @return SimpleXMLElement
+     */
+    public static function getUsers() {
+        return self::$userFile->children();
+    }
+
+    /**
+     * @param string $id
+     * @return false|User
+     */
+    public static function getUserById(string $id) {
+        $users = User::$userFile->xpath("//user['{$id}']");
+        if (count($users) >= 1) {
+            return self::fromSimpleXMLElement($users[0]);
+        }
+        else {
+            return false;
+        }
+    }
+    /* END OF GETTERS */
+
 
 
     /**
      * User constructor.
-     * @param int $id
+     * @param string $id
      * @param string $firstName
      * @param string $middleName
      * @param string $lastName
@@ -136,7 +152,7 @@ class User
      * @param string $avatarUrl
      * @param string $accountType
      */
-    public function __construct( int $id, string $firstName, string $middleName, string $lastName, string $email, string $password, string $fullAddress, string $phone, string $avatarUrl, string $accountType=AccountTypes::CLIENT) {
+    public function __construct( string $id, string $firstName, string $middleName, string $lastName, string $email, string $password, string $fullAddress, string $phone, string $avatarUrl, string $accountType=AccountTypes::CLIENT) {
         $this->id = $id;
         $this->firstName = $firstName;
         $this->middleName = $middleName;
@@ -156,39 +172,101 @@ class User
             $this->title = $this->firstName." ".$this->lastName;
     }
 
-    public static function init() {
-        self::$userFile = simplexml_load_file("../files/users.xml") or die("Could not read file...");
-        self::$userCount = intval(self::$userFile->UserCount);
+    /**
+     * Create User Object From SimpleXMLElement.
+     * @param SimpleXMLElement $user
+     * @return User
+     */
+    public static function fromSimpleXMLElement(SimpleXMLElement $user) : User {
+        return new User(
+            $user["id"],
+            $user->firstName,
+            $user->middleName,
+            $user->lastName,
+            $user->email,
+            $user->password,
+            $user->fullAddress,
+            $user->phone,
+            $user->avatarUrl,
+            $user->accountType
+        );
     }
 
     /**
-     * @param SimpleXMLElement $doc
-     * @return void
+     * Initialize userFile and userCount by reading 'users.xml' database.
+     */
+    public static function init() {
+        self::$userFile = simplexml_load_file("../files/users.xml") or die("Could not read file...");
+        self::$userCount = intval(self::$userFile["count"]);
+    }
+
+    /**
+     * Save users.xml file.
+     */
+    private static function saveUsers() {
+        self::$userFile->asXML("../files/users.xml");
+    }
+
+    /* ADD | SAVE | DELETE */
+    /**
+     * Add User to XML file database.
      */
     public function addUser() {
-        //echo $_SERVER["DOCUMENT_ROOT"];
         self::$userCount += 1;
-        self::$userFile->UserCount = self::$userCount;
+        self::$userFile["count"] = self::$userCount;
         $new = self::$userFile->addChild("user");
-        
-        $new->addChild("id", $this->id );
+        $new->addAttribute("id", $this->id );
         $new->addChild("firstName", $this->firstName );
         $new->addChild("middleName", $this->middleName );
         $new->addChild("lastName", $this->lastName );
         $new->addChild("email", $this->email );
         $new->addChild("password", $this->password );
         $new->addChild("fullAddress", $this->fullAddress );
-        $new->addChild("phoneNumber", $this->phone );
+        $new->addChild("phone", $this->phone );
         $new->addChild("avatarUrl", $this->avatarUrl );
         $new->addChild("accountType", $this->accountType );
         // echo "new: "; print_r($new); echo "<br/>"; // TODO REMOVE
-        self::$userFile->asXML("../files/users.xml");
+        //self::$userFile->asXML("../files/users.xml");
+        self::saveUsers();
     }
 
-    public static function removeUser(User $user) {
-
+    /**
+     * Remove this user from the XML file database.
+     */
+    public function deleteUser() {
+        // find users with current Id.
+        $users = self::$userFile->xpath("//user[@id='{$this->id}']");
+        foreach ($users as $user) {
+            $dom = dom_import_simplexml($user);
+            $dom->parentNode->removeChild($dom);
+        }
+        self::saveUsers();
     }
 
+    public function saveUser() {
+        // find users with current Id.
+        $users = self::$userFile->xpath("//user[@id='{$this->id}']");
+        foreach ($users as $user) {
+            $dom = dom_import_simplexml($user);
+            $dom->parentNode->removeChild($dom);
+        }
+        $this->addUser();
+        self::saveUsers();
+
+        /*foreach (self::$userFile->user as $user) {
+            if ($user["id"] == $id) {
+
+
+                self::$userCount -= 1;
+                self::$userFile["count"] = self::$userCount;
+                self::saveUsers();
+                return;
+            }
+        }*/
+    }
+    /* END OF ADD | SAVE | DELETE */
+
+    /* HTML GENERATOR FUNCTIONS */
     /**
      * Create User List Button
      * @param bool $isActive
@@ -209,7 +287,10 @@ class User
         $class = $isActive ? "userInfoCard active" : "userInfoCard";
         // Card Header
         $header = "<h3>{$this->id}. {$this->title}</h3>";
-        $editBtn = "<form method='post' action='EditUserProfile.php'><input type='submit' value='EDIT PROFILE' name='editBtn' class='editButton'></form>";
+        $editBtn = "<form method='post' action='EditUserProfile.php'>
+                        <input type='submit' value='EDIT PROFILE' name='editBtn' class='editButton'>
+                        <input type='hidden' name='userId' value='{$this->id}'>
+                    </form>";
         $headerDiv = "<div class='userInfoHeader'>
                           {$header}
                           {$editBtn}
@@ -257,4 +338,7 @@ class User
                     {$accountType}
                 </div>";
     }
+
+    /* END OF HTML GENERATOR FUNCTIONS */
+
 }
