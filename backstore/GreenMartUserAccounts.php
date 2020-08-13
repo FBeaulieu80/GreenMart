@@ -37,17 +37,10 @@
             $user->addUser();
         }
         if (isset($_POST["confirmBtn"]) && $_POST["confirmBtn"] == "Confirm Changes") {
-            echo "Save changes...";
             $user->saveUser();
-            //User::saveUser();
-        }
-        if (isset($_POST["cancelBtn"])) {
-            echo "Cancelled";
         }
         if (isset($_POST["deleteBtn"]) && isset($_POST["userId"])) {
-            echo "Delete";
             $user->deleteUser();
-            //User::removeUser($_POST["userId"]);
         }
 
     }
