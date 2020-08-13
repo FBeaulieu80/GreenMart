@@ -12,6 +12,12 @@
 
 <body onload="remember();">
 <?php require "../../common/header.php" ?>
+<ul class="breadcrumb">
+    <li><a href="../../index.php">Store</a></li>
+    <li><a href="../index.php">Aisles</a></li>
+    <li><a href="dairy-eggs.php">Dairy & Eggs</a></li>
+    <li>Cheese</li>
+</ul>
 <div class="main">
 
     <div class="grid-container">

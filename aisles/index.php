@@ -9,7 +9,12 @@
 </head>
 <body>
 <?php require "../common/header.php"; ?>
+<ul class="breadcrumb">
+    <li><a href="../index.php">Store</a></li>
+    <li>Aisles</li>
+</ul>
 <div class="main">
+
     <div class="aisle-cards">
         <div class="aisle-card">
             <a href="bakery/bakery.php">

@@ -114,7 +114,36 @@ p {
     padding-bottom: 20px;*/
 }
 
-@media screen and (max-width: 600px) {
+ul.breadcrumb {
+    margin: 0;
+    padding: 2em;/*10px 16px;*/
+    list-style: none;
+    background-color: seagreen;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    /*font-size: 18px;*/
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    content: "/";
+}
+
+ul.breadcrumb li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
     .slogan{
         display: none;
         visibility: hidden;
@@ -122,7 +151,7 @@ p {
     }
 }
 
-@media (max-width: 400px) {
+@media only screen and (max-width: 400px) {
     .main {
         padding: 5%;
     }

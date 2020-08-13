@@ -13,6 +13,12 @@
 
 <body onload="refresh()">
 <?php require_once "../../common/header.php"; ?>
+<ul class="breadcrumb">
+    <li><a href="../../index.php">Store</a></li>
+    <li><a href="../index.php">Aisles</a></li>
+    <li><a href="meat.php">Meat</a></li>
+    <li>Roast Chicken</li>
+</ul>
 <div>
     <br><br><br>
     <div class="grid">

@@ -30,13 +30,12 @@
 </head>
 <body onload="slideShow()">
 <?php require "../../common/header.php"; ?>
+<ul class="breadcrumb">
+    <li><a href="../../index.php">Store</a></li>
+    <li><a href="../index.php">Aisles</a></li>
+    <li>Bakery</li>
+</ul>
 <div class="main">
-    <div class="row aisle-header">
-        <div class="col-1"><a href="../index.php"><<</a></div>
-        <div class="col-11">Bakery</div>
-    </div>
-
-
     <div class="aisle-cards">
         <div class="aisle-card">
 <!--            <a href="rye_bread.php">-->

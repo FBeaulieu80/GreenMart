@@ -84,7 +84,7 @@
     color: white;
 }
 
-/**/
+/*
 .aisle-header {
     box-sizing: border-box;
     background-color: seagreen;
@@ -106,7 +106,7 @@
 
 .aisle-header a:hover {
     font-weight: normal;
-}
+}*/
 
 .row {
     box-sizing: border-box;

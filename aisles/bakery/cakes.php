@@ -13,6 +13,12 @@
 </head>
 <body onload="remember();">
 <?php require_once "../../common/header.php"; ?>
+<ul class="breadcrumb">
+    <li><a href="../../index.php">Store</a></li>
+    <li><a href="../index.php">Aisles</a></li>
+    <li><a href="bakery.php">Bakery</a></li>
+    <li>Cakes</li>
+</ul>
 <div class="main">
     <div class="grid-container">
         <div class="grid-item" id="image">
