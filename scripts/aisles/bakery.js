@@ -2,21 +2,15 @@
 let slideIndex = 0;
 
 const CakeTypes = {
-  CHEESE: 'cheese',
-  CHOCOLATE: 'chocolate',
-  CARROT: 'carrot'
+    CHEESE: 'cheese',
+    CHOCOLATE: 'chocolate',
+    CARROT: 'carrot'
 };
 
 const LocalStorageKeys = {
     CAKE_TYPE: "cake-type",
-    ITEM_COUNT: "item-count"
+    ITEM_COUNT: "cake-count"
 };
-
-
-/* HELPER FUNCTIONS */
-function isPortrait(image) {
-    return image.width < image.height;
-}
 
 /* UI FUNCTIONS */
 function toggleAccordion() {
@@ -35,10 +29,14 @@ function toggleAccordion() {
 function slideShow() {
     let i;
     let slides = document.getElementsByClassName("slide");
-    for (i = 0; i < slides.length; i++) { slides[i].style.display = 'none'; }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
     slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1; }
-    slides[slideIndex-1].style.display = "block";
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
     setTimeout(slideShow, 3000);
 }
 

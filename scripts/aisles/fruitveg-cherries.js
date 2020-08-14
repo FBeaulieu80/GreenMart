@@ -1,55 +1,24 @@
-function bing() {
-    document.getElementById('cherry-image').src='../../images/fruit-veg/bing-cherry.jpg'
-    document.getElementById("bing").style.border = "solid";
-    document.getElementById("bing").style.borderWidth = "2px";
+function setSelected(e, src = null) {
+    if (e.classList.contains("cherryTypeButton")) {
+        let cherryTypeButtons = document.getElementsByClassName("cherryTypeButton");
+        for (let i = 0; i < cherryTypeButtons.length; i++) {
+            cherryTypeButtons[i].style.border = "none";
+            cherryTypeButtons[i].style.borderWidth = "0px";
+        }
+        document.getElementById('cherry-image').src = src;
+        localStorage.setItem(LocalStorageKeys.CHERRY_URL, src);
+        localStorage.setItem(LocalStorageKeys.CHERRY_TYPE, e.id);
+    } else {
+        let organicButtons = document.getElementsByClassName("cherryOrganicButton");
+        for (let i = 0; i < organicButtons.length; i++) {
+            organicButtons[i].style.border = "none";
+            organicButtons[i].style.borderWidth = "0px";
+        }
+        localStorage.setItem(LocalStorageKeys.IS_ORGANIC, e.id);
+    }
 
-    // Reset other buttons
-    document.getElementById("rainier").style.border = "none";
-    document.getElementById("rainier").style.borderWidth = "0px";
-    document.getElementById("tartarian").style.border = "none";
-    document.getElementById("tartarian").style.borderWidth = "0px";
-}
-
-function rainier() {
-    document.getElementById('cherry-image').src='../../images/fruit-veg/rainier-cherry.jpg'
-    document.getElementById("rainier").style.border = "solid";
-    document.getElementById("rainier").style.borderWidth = "2px";
-
-    // Reset other buttons
-    document.getElementById("bing").style.border = "none";
-    document.getElementById("bing").style.borderWidth = "0px";
-    document.getElementById("tartarian").style.border = "none";
-    document.getElementById("tartarian").style.borderWidth = "0px";
-}
-
-function tartarian() {
-    document.getElementById('cherry-image').src='../../images/fruit-veg/tartarian-cherry.jpg'
-    document.getElementById("tartarian").style.border = "solid";
-    document.getElementById("tartarian").style.borderWidth = "2px";
-
-    // Reset other buttons
-    document.getElementById("rainier").style.border = "none";
-    document.getElementById("rainier").style.borderWidth = "0px";
-    document.getElementById("bing").style.border = "none";
-    document.getElementById("bing").style.borderWidth = "0px";
-}
-
-function organic() {
-    document.getElementById("organic").style.border = "solid";
-    document.getElementById("organic").style.borderWidth = "2px";
-
-    // Reset other button
-    document.getElementById("regular").style.border = "none";
-    document.getElementById("regular").style.borderWidth = "0px";
-}
-
-function regular() {
-    document.getElementById("regular").style.border = "solid";
-    document.getElementById("regular").style.borderWidth = "2px";
-
-    // Reset other buttons
-    document.getElementById("organic").style.border = "none";
-    document.getElementById("organic").style.borderWidth = "0px";
+    e.style.border = "solid";
+    e.style.borderWidth = "2px";
 }
 
 function detailedDescription() {
@@ -61,25 +30,58 @@ function detailedDescription() {
     }
 }
 
-function quantityIncr(){
-    if (document.getElementById("quantity").value < 30){
-        document.getElementById("quantity").value++;
+function quantityIncr() {
+    let quantity = document.getElementById("quantity");
+    if (quantity.value < 30) {
+        quantity.value++;
     }
-    document.getElementById("price").innerHTML = "$" + (Math.floor((4.99 * document.getElementById("quantity").value) * 100) / 100).toString();
+    calculateSubtotal();
+    localStorage.setItem(LocalStorageKeys.ITEM_COUNT, quantity.value);
 }
+
 function quantityDecr() {
-    if (document.getElementById("quantity").value > 0){
-        document.getElementById("quantity").value--;
+    let quantity = document.getElementById("quantity");
+    if (quantity.value > 0) {
+        quantity.value--;
     }
+    calculateSubtotal();
+    localStorage.setItem(LocalStorageKeys.ITEM_COUNT, quantity.value);
+}
+
+function calculateSubtotal() {
     document.getElementById("price").innerHTML = "$" + (Math.floor((4.99 * document.getElementById("quantity").value) * 100) / 100).toString();
 }
 
 function addToCartAlert() {
-    if (document.getElementById("quantity").value == 0){
+    if (document.getElementById("quantity").value === "0") {
         alert('Please select at least 1 product!')
-    }
-    else {
+    } else {
         alert(document.getElementById("quantity").value + ' products added to cart!')
     }
 
+}
+
+const LocalStorageKeys = {
+    CHERRY_TYPE: "cherry-type",
+    CHERRY_URL: "url",
+    CHERRY_TYPES: {BING: "bing", RAINIER: "rainier", BLACK_TARTARIAN: "black-tartarian"},
+    IS_ORGANIC: "is-organic",
+    ORGANIC: {YES: "organic", NO: "regular"},
+    ITEM_COUNT: "cherries-count"
+};
+
+function remember() {
+    if (localStorage.getItem(LocalStorageKeys.ITEM_COUNT))
+        document.getElementById("quantity").value = localStorage.getItem(LocalStorageKeys.ITEM_COUNT);
+
+    if (localStorage.getItem(LocalStorageKeys.CHERRY_TYPE)) {
+        setSelected(document.getElementById(localStorage.getItem(LocalStorageKeys.CHERRY_TYPE)),
+            localStorage.getItem(LocalStorageKeys.CHERRY_URL));
+
+    }
+
+    if (localStorage.getItem(LocalStorageKeys.IS_ORGANIC)) {
+        setSelected(document.getElementById(localStorage.getItem(LocalStorageKeys.IS_ORGANIC)));
+    }
+    calculateSubtotal();
 }
