@@ -6,6 +6,7 @@
     width: 100%;
     grid-template-areas: ". form .";
 }
+
 /* START EDIT USER PROFILE (P10) */
 .userProfileForm {
     /* PARENT */
@@ -20,18 +21,21 @@
     position: relative;
     display: grid;
     grid-gap: 0;
+    min-height: fit-content;
 }
 
 .avatarImg {
     margin: 0 auto;
     display: block;
-
+    min-height: 200px;
     min-width: 200px;
     width: 100%;
     max-width: 400px;
+    max-height: 400px;
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
+    object-fit: cover;
 }
 
 .middle {
@@ -104,6 +108,7 @@
 .visibility:hover {
     cursor: pointer;
 }
+
 /* END EDIT USER PROFILE (P10) */
 
 footer a {
@@ -112,7 +117,7 @@ footer a {
 
 /* Medium Devices */
 @media only screen and (min-device-width: 600px) and (max-device-width: 1366px) {
-    .container#info input, select{
+    .container#info input, select {
         font-size: 2vw;
     }
 

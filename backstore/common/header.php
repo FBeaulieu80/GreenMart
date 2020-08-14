@@ -1,8 +1,8 @@
 <header><!-- Logo -->
     <?php
-        $httpProtocol = !isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] != 'on' ? 'http' : 'https';
-        $base = $httpProtocol.'://'.$_SERVER['HTTP_HOST'];
-        $base = strpos($base, "localhost")? $base."/greenmart/": $base."/"; ?>
+    $httpProtocol = !isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] != 'on' ? 'http' : 'https';
+    $base = $httpProtocol . '://' . $_SERVER['HTTP_HOST'];
+    $base = strpos($base, "localhost") ? $base . "/greenmart/" : $base . "/"; ?>
     <div class="topnav">
         <a href="<?php echo $base; ?>backstore/index.php">
             <img src="<?php echo $base; ?>images/logo_new.png" alt="Green Mart logo">
@@ -21,8 +21,7 @@
                 <a href='{$base}p5.php'><img style="display: inline-block" id='logInIcon' src='{$base}images/users/avatar.svg' alt='Avatar'><p id='logInText'>Log Out</p></a>
             </div>
             MAINNAV;
-    }
-    else {
+    } else {
         echo <<<MAINNAV
             <div id='mainNav' style='grid-template-columns: repeat(2, auto)'>
                 <a href='{$base}index.php' id='storeLink'>Store</a>
@@ -35,10 +34,12 @@
 
 </header>
 <script type="text/javascript">
-    window.onscroll = function () { setStickyNav() };
+    window.onscroll = function () {
+        setStickyNav()
+    };
 
-    var mainNav = document.getElementById("mainNav");
-    var sticky = mainNav.offsetTop;
+    const mainNav = document.getElementById("mainNav");
+    const sticky = mainNav.offsetTop;
 
     function setStickyNav() {
         if (window.pageYOffset >= sticky) {

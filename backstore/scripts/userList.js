@@ -5,7 +5,7 @@
 /* GLOBALS */
 const SMALL = "small";
 const LARGE = "large";
-var screenMode;
+let screenMode;
 
 
 /* HELPER FUNCTIONS */
@@ -13,26 +13,7 @@ function setScreenMode() {
     screenMode = window.innerWidth <= 400 ? screenMode = SMALL : LARGE;
 }
 
-function isImageLink(url) {
-    console.log("URL: ", url);
-    return url.endsWith(".apng") ||
-        url.endsWith(".bmp") ||
-        url.endsWith(".gif") ||
-        url.endsWith(".ico") ||
-        url.endsWith(".cur") ||
-        url.endsWith(".jpg") ||
-        url.endsWith(".jpeg") ||
-        url.endsWith(".jfif") ||
-        url.endsWith(".pjpeg") ||
-        url.endsWith(".pjp") ||
-        url.endsWith(".png") ||
-        url.endsWith(".svg") ||
-        url.endsWith(".tif") ||
-        /*url.endsWith(".tiff") ||*/
-        url.endsWith(".webp");
-}
-
-function show(element, displayMethod="block") {
+function show(element, displayMethod = "block") {
     if (element != null)
         element.style.display = displayMethod;
 }
@@ -44,31 +25,9 @@ function hide(e) {
 
 function isVisible(e) {
     if (e != null)
-        return !!( e.offsetWidth || e.offsetHeight || e.getClientRects().length );
+        return !!(e.offsetWidth || e.offsetHeight || e.getClientRects().length);
 }
-
-function toggleVisibility(e) {
-    if (isVisible(e)) hide(e);
-    else show(e);
-}
-
 /* END OF HELPER FUNCTIONS */
-
-// TODO: Fix reload of page on OK.
-function changeAvatar() {
-    let newAvatarUrl = prompt("Enter the URL to the image you'd like to use: ");
-    if (newAvatarUrl == null || newAvatarUrl === "") {
-        console.log("Action cancelled by user.");
-    }
-    else if (isImageLink(newAvatarUrl)) {
-        console.log(newAvatarUrl);
-        document.getElementById("userAvatarImg").src = newAvatarUrl;
-    }
-    else {
-        console.log("Invalid URL.");
-        alert("Provided URL is invalid.");
-    }
-}
 
 function openUser(userLinkId, userInfoCardId) {
     let userLink = document.getElementById(userLinkId);
@@ -92,7 +51,9 @@ function openUser(userLinkId, userInfoCardId) {
     userInfoCard.style.display = "block";
     userLink.classList.add("active");
     userInfoCard.classList.add("active");
-    if (screenMode === SMALL) { toggleMenu(); }
+    if (screenMode === SMALL) {
+        toggleMenu();
+    }
 }
 
 // Collapse Menu function only works when the collapse button is visible,
@@ -175,8 +136,7 @@ function togglePasswordVisibility() {
     if (pass.type === "password" || confPass.type === "password") {
         pass.type = "text";
         confPass.type = "text";
-    }
-    else {
+    } else {
         pass.type = "password";
         confPass.type = "password";
     }
@@ -185,6 +145,7 @@ function togglePasswordVisibility() {
     }
 }
 
+// TODO : FIX PASSWORD VALIDATION.
 function checkPassword() {
     console.log("In checkPassword()...")
     let form = document.getElementById("newUserForm");
@@ -193,8 +154,7 @@ function checkPassword() {
 
     if (confPass.value !== pass.value) {
         confPass.style.color = "red";
-    }
-    else {
+    } else {
         confPass.style.color = "default";
     }
 }

@@ -2,12 +2,14 @@
 <html lang="en">
 
 <head>
+
+    <link rel="shortcut icon" href="favicon.ico">
     <meta name="author" content="Kyle">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Deals | Green Mart</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/p1.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/p1.css"/>
 </head>
 
 <body>
@@ -21,8 +23,8 @@
         <div class="dow-item">
             <div class="col">
                 <a href="aisles/fruit-veg/banana.php">
-                    <img class="row-3" src="images/fruit-veg/banana.png" alt="Banana"><br />
-                    <div class="row-1">Banana </div>
+                    <img class="row-3" src="images/fruit-veg/banana.png" alt="Banana"><br/>
+                    <div class="row-1">Banana</div>
                     <div class="row-1 original-price">$0.89/lb</div>
                     <div class="row-1 sale-price">$0.60/lb!!</div>
                 </a>

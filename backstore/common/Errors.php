@@ -9,4 +9,3 @@ class Errors
     const ERROR405 = "Error 405. Method not allowed.";
 }
 
-?>

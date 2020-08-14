@@ -4,15 +4,15 @@ html, body {
 }
 
 * {
-    font-family: Helvetica, Arial;
+    font-family: Helvetica, Arial, serif;
 }
 
-#box{
-       border: 1px solid black;
-       padding: 1% 2% 1% 2%;
-       margin: 0 auto;
-       max-width: 550px;;
-       background: lightgreen;
+#box {
+    border: 1px solid black;
+    padding: 1% 2% 1% 2%;
+    margin: 0 auto;
+    max-width: 550px;;
+    background: lightgreen;
 }
 
 .grid-container {
@@ -21,8 +21,7 @@ html, body {
     /*grid-template-columns: auto auto auto;*/
     grid-template-columns: 400px 400px 400px;
     justify-content: space-evenly;
-    padding: 50px;
-    padding-top:0;
+    padding: 0 50px 50px;
 }
 
 .grid-item {
@@ -51,6 +50,7 @@ html, body {
     color: red;
     font-weight: bolder;
 }
+
 .original-price {
     text-decoration: line-through;
 }

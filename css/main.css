@@ -4,7 +4,7 @@
 }
 
 body {
-     font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 html, body {
@@ -13,10 +13,10 @@ html, body {
 }
 
 .main {
-    min-height: 100%;
     display: block;
     padding: 2%;
     margin-bottom: 70px;
+    min-height: calc(100vh - 70px);
 }
 
 .main::after {
@@ -80,7 +80,7 @@ footer a:hover {
     top: 0;
 }
 
-.logo a:hover{
+.logo a:hover {
     background-color: seagreen;
 }
 
@@ -89,10 +89,11 @@ footer a:hover {
     color: white;
 }
 
-.rightlinks a:hover{
+.rightlinks a:hover {
     background-color: darkgreen; /*#ddd*/
     color: white;
 }
+
 .active {
     background-color: seagreen;
     color: white;
@@ -116,7 +117,7 @@ p {
 
 ul.breadcrumb {
     margin: 0;
-    padding: 2em;/*10px 16px;*/
+    padding: 2em; /*10px 16px;*/
     list-style: none;
     background-color: seagreen;
     width: 100%;
@@ -129,7 +130,7 @@ ul.breadcrumb li {
     /*font-size: 18px;*/
 }
 
-ul.breadcrumb li+li:before {
+ul.breadcrumb li + li:before {
     padding: 8px;
     content: "/";
 }
@@ -144,7 +145,7 @@ ul.breadcrumb li a:hover {
 }
 
 @media only screen and (max-width: 600px) {
-    .slogan{
+    .slogan {
         display: none;
         visibility: hidden;
 

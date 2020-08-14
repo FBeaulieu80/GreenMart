@@ -2,11 +2,13 @@
 <html lang="en">
 
 <head>
+
+    <link rel="shortcut icon" href="../../favicon.ico">
     <meta name="author" content="Michael Rowe">
     <meta charset="UTF-8">
     <title>Chicken | Meat | Green Mart</title>
-    <link rel="stylesheet" type="text/css" href="../../css/main.css" />
-    <link rel="stylesheet" type="text/css" href="../../css/p3.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/p3.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/p3_chicken.css"/>
     <script type="text/javascript" src="../../scripts/aisles/meat.js"></script>
 </head>
@@ -49,7 +51,8 @@
                     <button type="button" onclick="notification()">Add to Cart</button>
                     <button type="button" id="incr-item" onclick="add()" style="float:right">+</button>
                     <button type="button" id="decr-item" onclick="subtract()" style="float:left">-</button>
-                    <input type="number" id="quantity" name="quantity" value="0" min="0" size="5" onchange="sessionStorage.setItem('quantity', this.value);">
+                    <label><input type="number" id="quantity" name="quantity" value="0" min="0" size="5"
+                                                 onchange="sessionStorage.setItem('quantity', this.value);"></label>
                 </form>
             </div>
 

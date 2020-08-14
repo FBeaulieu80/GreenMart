@@ -1,20 +1,23 @@
 
-
 textarea {
     resize: none;
 }
-div.editOrder{
+
+div.editOrder {
     margin-top: 5%;
     margin-bottom: 5%;
 }
-body{
-    text-align:  center;
+
+body {
+    text-align: center;
 }
-table{
-background-color: cornsilk;
+
+table {
+    background-color: cornsilk;
     border-style: double;
     margin-bottom: 5%;
 }
-select{
-     text-align-last: center;
+
+select {
+    text-align-last: center;
 }

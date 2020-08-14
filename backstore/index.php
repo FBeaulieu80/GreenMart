@@ -1,12 +1,14 @@
 <?php
-    require "common/authenticate.php";
+require "common/authenticate.php";
 ?>
 <html lang="en">
 <head>
+
+    <link rel="shortcut icon" href="../favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Back Store | Green Mart</title>
-    <link rel="stylesheet" type="text/css" href="../css/backstore.css" />
+    <link rel="stylesheet" type="text/css" href="../css/backstore.css"/>
     <meta name="author" content="Felix Beaulieu">
 </head>
 <body>

@@ -1,10 +1,12 @@
-<html lang="en" xmlns:style="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
+
+    <link rel="shortcut icon" href="../../favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruits & Vegetables</title>
-    <link rel="stylesheet" href="../../css/main.css" type="text/css" />
-    <link rel="stylesheet" href="../../css/p2.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="../../css/p2.css" type="text/css"/>
     <meta name="author" content="Kyle Taylor-Bracken">
 </head>
 <body>
@@ -17,19 +19,19 @@
 <div class="main">
     <div class="aisle-cards">
         <div class="aisle-card">
-<!--            <a href="banana.php">-->
-                <img src="../../images/fruit-veg/banana.png" alt="Banana" style="filter: grayscale(100%)">
-                <div class="text">Banana</div>
-                <div class="price-sale">SOLD OUT</div>
-<!--            </a>-->
+            <!--            <a href="banana.php">-->
+            <img src="../../images/fruit-veg/banana.png" alt="Banana" style="filter: grayscale(100%)">
+            <div class="text">Banana</div>
+            <div class="price-sale">SOLD OUT</div>
+            <!--            </a>-->
         </div>
 
         <div class="aisle-card">
-<!--            <a href="kiwi.php">-->
-                <img src="../../images/fruit-veg/kiwi.jpg" alt="kiwi" style="filter: grayscale(100%)">
-                <div class="text">Kiwi</div>
-                <div class="price-sale">SOLD OUT</div>
-<!--            </a>-->
+            <!--            <a href="kiwi.php">-->
+            <img src="../../images/fruit-veg/kiwi.jpg" alt="kiwi" style="filter: grayscale(100%)">
+            <div class="text">Kiwi</div>
+            <div class="price-sale">SOLD OUT</div>
+            <!--            </a>-->
         </div>
         <div class="aisle-card">
             <a href="cherries.php">
