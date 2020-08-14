@@ -43,7 +43,7 @@
             <br />
             <label for="quantity">Quantity:</label> <br />
             <div class="addtocart">
-                <form action="">
+                <form action="../../files/addtocart.php" method="post">
                     <button type="button" onclick="addToCartAlert()" style="float:right">Add to Cart</button>
                     <button type="button" id="incr-item" onclick="quantityIncr()" style="float:right">+</button>
                     <button type="button" id="decr-item" onclick="quantityDecr()" style="float:left">-</button>

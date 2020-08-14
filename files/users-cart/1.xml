@@ -1,0 +1,14 @@
+<productList>
+    <product>
+        <id></id>
+        <prodName>Cherries</prodName>
+        <aisle>Fruits & Vegetables</aisle>
+        <price>4.99</price>
+        <discount></discount>
+        <quantity>2</quantity>
+        <origin>Mexico</origin>
+        <description></description>
+        <seller></seller>
+        <status></status>
+    </product>
+</productList>

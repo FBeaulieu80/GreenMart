@@ -1,4 +1,3 @@
-
 function bing() {
     document.getElementById('cherry-image').src='../../images/fruit-veg/bing-cherry.jpg'
     document.getElementById("bing").style.border = "solid";
