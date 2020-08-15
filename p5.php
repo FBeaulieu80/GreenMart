@@ -13,15 +13,15 @@
 <body>
 <?php require_once "common/header.php" ?>
 <div class="main">
-    <form id="box">
+    <form id="box" action="/authenticate.php" target="_blank" method="post">
         <h4 style="font-weight: bold; color: darkblue;text-align: center;">LOG IN TO YOUR GREEN MART ACCOUNT</h4>
         <label>
             Email:
-            <input type="text" name="email" id="email" required>
+            <input type="text" name="username" required>
         </label><br><br>
         <label>
             Password:
-            <input type="password" value="" id="login_password">
+            <input type="password" name="password" value="" id="login_password">
         </label><br><br>
         <label>
             <input type="checkbox" id="showpasscb" onclick="myFunction()" required>
