@@ -6,7 +6,7 @@
     <meta name="author" content="Michael Rowe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>Carrot Cake | Bakery | Green Mart</title>
+    <title>Cakes | Bakery | Green Mart</title>
     <link rel="stylesheet" type="text/css" href="../../css/main.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/p3.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/p3_cakes.css"/>

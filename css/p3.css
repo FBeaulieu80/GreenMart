@@ -127,6 +127,14 @@ html, body {
     margin-left: 0;
 }
 
+.type input {
+    padding: 6px 6px 6px 6px;
+    background: lightgray;
+    font-size: 16px;
+    border: none;
+    margin-left: 0;
+}
+
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;

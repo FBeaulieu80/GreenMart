@@ -1,14 +1,18 @@
-<productList>
+<cartList>
+
     <product>
         <id></id>
         <prodName>Cherries</prodName>
-        <aisle>Fruits & Vegetables</aisle>
+        <aisle>Fruits &amp; Vegetables</aisle>
         <price>4.99</price>
         <discount></discount>
         <quantity>2</quantity>
         <origin>Mexico</origin>
-        <description></description>
+        <description>Organic Cherries from Mexico. Grown on a sustainable and fair trade certified farm.
+            Check out our <a href="../../recipes.php">recipes</a> to see what delicious meals and desserts you
+            can make with cherries.</description>
         <seller></seller>
         <status></status>
     </product>
-</productList>
+
+</cartList>
