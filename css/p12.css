@@ -38,8 +38,15 @@ table {
     text-align-last: left;
     padding: 1% 2% 1% 2%;
     margin: 0 auto;
-    max-width: 550px;
-    display: block;
+    width: 75%;
+    height:100%;
+
+    table-layout: fixed;
+    font-size: 120%;
+}
+
+td{
+    padding-right: 50%;
 }
 
 select {
@@ -59,7 +66,10 @@ a.button {
     padding: .5%;
     width: 20%;
     font-size: 110%;
-
+}
+.savebutton {
+    font-size: 120%;
+    margin-top: 5%;
 }
 
 #box {
