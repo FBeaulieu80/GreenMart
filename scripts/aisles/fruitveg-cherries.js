@@ -6,6 +6,7 @@ function setSelected(e, src = null) {
             cherryTypeButtons[i].style.borderWidth = "0px";
         }
         document.getElementById('cherry-image').src = src;
+        e.id.value = true;
         localStorage.setItem(LocalStorageKeys.CHERRY_URL, src);
         localStorage.setItem(LocalStorageKeys.CHERRY_TYPE, e.id);
     } else {
@@ -56,7 +57,7 @@ function addToCartAlert() {
     if (document.getElementById("quantity").value === "0") {
         alert('Please select at least 1 product!')
     } else {
-        alert(document.getElementById("quantity").value + ' products added to cart!')
+        // alert(document.getElementById("quantity").value + ' products added to cart!')
     }
 
 }
