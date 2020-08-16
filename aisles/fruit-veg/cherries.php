@@ -37,7 +37,7 @@
                 Product of Mexico.
                 <br/> <br/>
 
-                <form action="../../scripts/addtocart.php" id="cart" method="post"> <!-- may change to post later -->
+                <form action="../../scripts/addtocart.php" id="cart" method="post">
 
                 <input type="hidden" name="id" value="408731" form="cart">
                 <input type="hidden" name="prodName" value="Cherries" form="cart">

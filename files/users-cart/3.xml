@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<product>
+  <id>408731</id>
+  <prodName>Cherries</prodName>
+  <aisle>Fruits &amp; Vegetables</aisle>
+  <price>4.99</price>
+  <discount>false</discount>
+  <quantity>2</quantity>
+  <origin>Mexico</origin>
+  <description>Organic Cherries from Mexico. Grown on a sustainable and fair trade certified farm.&#xD;
+                Check out our recipes to see what delicious meals and desserts you can make with cherries.</description>
+  <seller></seller>
+  <status></status>
+  <cherryType>bing</cherryType>
+  <organic>true</organic>
+  <cakeType></cakeType>
+</product>

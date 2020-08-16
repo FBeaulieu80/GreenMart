@@ -17,14 +17,22 @@ $origin = $_POST["origin"];
 $description = $_POST["description"];
 $seller = $_POST["seller"];
 $status = $_POST["status"];
+
 $cherryType = $_POST["cherryType"];
 $organic = $_POST["organic"];
 
+$cakeType = $_POST["cakeType"];
+
 echo "Data successfully sent via POST";
 
-// Create new file
 $xml = new DOMDocument();
 $xml->formatOutput = true;
+if(file_exists('../files/users-cart/3.xml')){
+    $xml->load('../files/users-cart/3.xml');
+} else {
+    $xml->loadXML('<cartList/>');
+}
+
 $xml_cart = $xml->createElement("cartList");
 $xml_product = $xml->createElement("product");
 $xml_prodID = $xml->createElement("id");
@@ -51,6 +59,8 @@ $xml_cherryType = $xml->createElement("cherryType");
 $xml_cherryType->nodeValue = $cherryType;
 $xml_organic = $xml->createElement("organic");
 $xml_organic->nodeValue = $organic;
+$xml_cakeType = $xml->createElement("cakeType");
+$xml_cakeType->nodeValue = $cakeType;
 
 $xml_product->appendChild( $xml_prodID );
 $xml_product->appendChild( $xml_prodName );
@@ -64,21 +74,15 @@ $xml_product->appendChild( $xml_seller );
 $xml_product->appendChild( $xml_status );
 $xml_product->appendChild( $xml_cherryType );
 $xml_product->appendChild( $xml_organic );
+$xml_product->appendChild( $xml_cakeType );
+
 $xml_cart->appendChild( $xml_product );
-$xml->appendChild( $xml_cart );
 
-$xml->save("../files/users-cart/2.xml");
-
-// Load and write to file
-//$xml = new DOMDocument();
-//$xml->load('../files/users-cart/2.xml');
-//$nodes = $xml->getElementsByTagName('cartList') ;
-//if ($nodes->length > 0) {
-//    //insert some stuff using appendChild()
+//if ($xml->getElementsByTagName('cartList')->length == 0){
+    $xml->appendChild( $xml_cart );
 //}
-//
-////re-save
-//$xml->save("/tmp/test.xml");
+
+$xml->save("../files/users-cart/3.xml");
 
 header('Location: ' . $_SERVER['HTTP_REFERER']);
 

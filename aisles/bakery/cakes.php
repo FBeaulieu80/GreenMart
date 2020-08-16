@@ -33,13 +33,25 @@
                 <div id="productOrigin"></div>
 
                 <div class="typeSelection">
-                    <button class="productPageButton" onclick="chooseCake(CakeTypes.CARROT)">Carrot</button>
-                    <button class="productPageButton" onclick="chooseCake(CakeTypes.CHEESE)">Cheese</button>
-                    <button class="productPageButton" onclick="chooseCake(CakeTypes.CHOCOLATE)">Chocolate</button>
+                    <input type="radio" name="cakeType" value="carrot" form="cart" class="productPageButton" onclick="chooseCake(CakeTypes.CARROT)" checked>
+                    <label for="carrot">Carrot</label>
+                    <input type="radio" name="cakeType" value="cheese" form="cart" class="productPageButton" onclick="chooseCake(CakeTypes.CHEESE)">
+                    <label for="cheese">Cheese</label>
+                    <input type="radio" name="cakeType" value="chocolate" form="cart"class="productPageButton" onclick="chooseCake(CakeTypes.CHOCOLATE)">
+                    <label for="chocolate">Chocolate</label>
                 </div>
 
                 <div class="addtocart">
-                    <form action="../../common/404.php">
+                    <form action="../../scripts/addtocart.php" id="cart" method="post">
+
+                    <input type="hidden" name="id" value="887325" form="cart">
+                    <input type="hidden" name="prodName" value="Cakes" form="cart">
+                    <input type="hidden" name="aisle" value="Bakery" form="cart">
+                    <input type="hidden" name="origin" value=productOrigin form="cart"/>
+                    <input type="hidden" name="price" value=cakePrice form="cart"/>
+                    <input type="hidden" name="discount" value="false" form="cart"/>
+                    <input type="hidden" name="description" value=description form="cart" />
+
                         <label for="quantity">Quantity:</label>
                         <input type="button" value="-" class="plusMinusButton productPageButton" id="minusButton"
                                onclick="let q = document.getElementById('quantity'); q.value -= (q.value > q.min)? 1:0;updateSubtotal();">

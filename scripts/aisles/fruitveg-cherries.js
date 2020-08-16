@@ -57,7 +57,7 @@ function addToCartAlert() {
     if (document.getElementById("quantity").value === "0") {
         alert('Please select at least 1 product!')
     } else {
-        alert(document.getElementById("quantity").value + ' products added to cart!')
+        // alert(document.getElementById("quantity").value + ' products added to cart!')
     }
 
 }
