@@ -100,9 +100,10 @@ if (isset($_POST['delete'])) {
 </form>
 
 
-<?php require "common/footer.html"; ?>
+
         </div>
         </div>
 </div>
+<?php require "common/footer.html"; ?>
 </body>
 
