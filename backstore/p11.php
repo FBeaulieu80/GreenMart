@@ -23,7 +23,6 @@
         <th>Units / LBS</th>
         <th>Seller</th>
         <th>Order Date</th>
-        <th>Arrived</th>
         <th></th>
 
     </tr>
@@ -37,19 +36,6 @@
         <td>
             <date>12-07-2020</date>
         </td>
-        <td>
-            <form action="">
-                <label>
-                    <select name="answer">
-                        <option>No</option>
-                        <option>Yes</option>
-                    </select>
-                </label>
-            </form>
-        </td>
-        <th>
-            <button>Delete</button>
-        </th>
     </tr>
     <tr>
         <td>Yummy Chickpeas</td>
@@ -59,19 +45,6 @@
         <td>
             <date>10-07-2020</date>
         </td>
-        <td>
-            <form action="">
-                <label>
-                    <select name="answer">
-                        <option>No</option>
-                        <option>Yes</option>
-                    </select>
-                </label>
-            </form>
-        </td>
-        <th>
-            <button>Delete</button>
-        </th>
     </tr>
     <tr>
         <td>Cherry Tomatoes</td>
@@ -81,19 +54,7 @@
         <td>
             <date>09-07-2020</date>
         </td>
-        <td>
-            <form action="">
-                <label>
-                    <select name="answer">
-                        <option>No</option>
-                        <option>Yes</option>
-                    </select>
-                </label>
-            </form>
-        </td>
-        <th>
-            <button>Delete</button>
-        </th>
+
     </tr>
     <tr>
         <td>Jimmy's Natural Potato Chips</td>
@@ -103,19 +64,7 @@
         <td>
             <date>05-07-2020</date>
         </td>
-        <td>
-            <form action="">
-                <label>
-                    <select name="answer">
-                        <option>No</option>
-                        <option>Yes</option>
-                    </select>
-                </label>
-            </form>
-        </td>
-        <th>
-            <button>Delete</button>
-        </th>
+
     </tr>
 
 </table>
