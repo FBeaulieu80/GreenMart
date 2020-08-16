@@ -16,6 +16,7 @@
     <a href="../backstore/p12.php" class="button">Edit</a>
 </div>
 
+<?php $xml = simplexml_load_file('orders.xml'); ?>
 <table marginwidth="100%" cellspacing="20" align="center">
     <tr>
         <th>Product Name</th>
@@ -23,50 +24,34 @@
         <th>Units / LBS</th>
         <th>Seller</th>
         <th>Order Date</th>
-        <th></th>
-
-    </tr>
-    <tr>
-        <td>Organic Banana</td>
-        <td>4HKZ19</td>
-        <td>
-            <weight>30lbs</weight>
-        </td>
-        <td>Johanne's Garden Lte</td>
-        <td>
-            <date>12-07-2020</date>
-        </td>
-    </tr>
-    <tr>
-        <td>Yummy Chickpeas</td>
-        <td>7ZYT28</td>
-        <td>50</td>
-        <td>Pea Haven Co</td>
-        <td>
-            <date>10-07-2020</date>
-        </td>
-    </tr>
-    <tr>
-        <td>Cherry Tomatoes</td>
-        <td>96YRE4P</td>
-        <td>25lbs</td>
-        <td>Jerry's Dream</td>
-        <td>
-            <date>09-07-2020</date>
-        </td>
-
-    </tr>
-    <tr>
-        <td>Jimmy's Natural Potato Chips</td>
-        <td>46RY3X</td>
-        <td>30</td>
-        <td>Jimmy's Basement</td>
-        <td>
-            <date>05-07-2020</date>
-        </td>
-
     </tr>
 
+
+    <?php foreach($xml->order as $orderelement) : ?>
+    <tr>
+        <td><?php echo $orderelement->ProductName ; ?></td>
+        <td><?php echo $orderelement->ProductID; ?></td>
+        <td><?php echo $orderelement->UnitsLbs; ?></td>
+        <td><?php echo $orderelement->Seller; ?></td>
+        <td><?php echo $orderelement->Date; ?></td>
+    </tr>
+    <?php endforeach;?>
+
+</table>
+
+<?php
+
+
+?>
+
+<table>
+    <tr><th>Enter a Product Name to Delete an Order</th></tr>
+    <td>
+        <input type = "text" name="deleteProductName" rows="1" cols="20">
+    </td>
+    <td>
+        <input type = "submit" name = "delete" value = "Delete">
+    </td>
 </table>
 <?php require "common/footer.html"; ?>
 </body>

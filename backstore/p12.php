@@ -64,6 +64,11 @@ if (isset($_POST['edit'])){
             $order2->Seller = $seller2;
             $order2->Date = $date2;
         }
+        else{
+            $message = $name2 . " not found in orders. Please try again.";
+            echo "<script type='text/javascript'>alert('$message');</script>";
+            break;
+        }
     }
     file_put_contents("orders.xml", $source->saveXML());
 
