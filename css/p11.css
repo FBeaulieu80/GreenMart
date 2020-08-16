@@ -7,7 +7,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-a.button {
+addbutton {
     -webkit-appearance: button;
     -moz-appearance: button;
     border-style: solid;
