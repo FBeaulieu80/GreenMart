@@ -29,7 +29,7 @@ if (!$validated) {
 
 // If arrives here, is a valid user.
 echo "<p>Welcome $user.</p>";
-echo "<p>Congratulation, you have accessed the order list - P11.</p>";
+echo "<p>Congratulations, you have accessed the order list - P11.</p>";
 
 ?>
 
@@ -99,7 +99,7 @@ if (isset($_POST['delete'])) {
     </td>
 
 </table>
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
 </form>
 
