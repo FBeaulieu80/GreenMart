@@ -92,8 +92,8 @@ if (isset($_POST['delete'])) {
     <tr></tr><tr></tr>
 
     <tr><th>Enter a Product Name to Delete an Order</th></tr>
-    <td>
-        <input type = "text" name="deleteProductName" rows="1" cols="20">
+    <td colspan="3">
+        <input class = "textbox" type = "text" name="deleteProductName" rows="1" cols="20">
 
         <input class = "button" type = "submit" name = "delete" value = "Delete" >
     </td>

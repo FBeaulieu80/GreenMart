@@ -7,7 +7,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-addbutton {
+.addbutton {
     -webkit-appearance: button;
     -moz-appearance: button;
     border-style: solid;
@@ -19,7 +19,6 @@ addbutton {
     padding: .5%;
     width: 5%;
     font-size: 100%;
-
 }
 
 h1 {
@@ -27,14 +26,14 @@ h1 {
     font-size: 300%;
 }
 .button {
-    font-size: 75%;
+    font-size: 120%;
+    margin-top: 5%;
 }
 .addbutton{
     font-size: 150%;
 }
 
 table {
-
     border-style: double;
     /*padding: 5%;
     margin-top: 5%;
@@ -43,8 +42,14 @@ table {
     text-align-last: left;
     padding: 1% 2% 1% 2%;
     margin: 0 auto;
-    max-width: 550px;
+   width: 100%;
     display: block;
+    table-layout: fixed;
+    font-size: 120%;
+}
+
+.textbox{
+    font-size: 120%;
 }
 .grid-item {
     text-align: left;
