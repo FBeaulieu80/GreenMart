@@ -64,8 +64,8 @@ if (isset($_POST['delete'])) {
 <form action = "p11.php" method = "post">
 <h1>Order List </h1>
 <div align="center">
-    <a href="../backstore/p12.php" class="button" name = "add">Add</a>
-    <a href="../backstore/p12.php" class="button" name = "add">Edit</a>
+    <a href="../backstore/p12.php" class="addbutton" name = "add">Add</a>
+    <a href="../backstore/p12.php" class="addbutton" name = "add">Edit</a>
 </div>
 
 <?php $xml = simplexml_load_file('orders.xml'); ?>
