@@ -99,7 +99,7 @@ if (isset($_POST['delete'])) {
     </td>
 
 </table>
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
 </form>
 
