@@ -11,7 +11,7 @@
 <body>
 <?php require_once "common/header.php" ?>
 <div class="main">
-    <form id="box" action="/GreenMartUserAccounts.php" target="_blank" method="post">
+    <form id="box" action="backstore/GreenMartUserAccounts.php" target="_blank" method="post">
             <h4 style="font-weight: bold; color: darkblue; text-align: center;">SIGNUP TO CREATE A GREEN MART ACCOUNT</h4>
             <h3 style="font-weight: bold; text-decoration: underline;">PROFILE</h3>
             <label>
