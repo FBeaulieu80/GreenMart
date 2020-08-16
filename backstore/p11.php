@@ -9,6 +9,7 @@
     <title>Order List</title>
 </head>
 <body>
+<div id="box">
 <?php require "common/header.php"; ?>
 
 <?php
@@ -98,5 +99,6 @@ if (isset($_POST['delete'])) {
 
 
 <?php require "common/footer.html"; ?>
+</div>
 </body>
 

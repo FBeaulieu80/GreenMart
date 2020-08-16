@@ -11,7 +11,9 @@
 </head>
 
 <?php require "common/header.php"; ?>
+
 <body widthmargin="100%">
+<div id="box">
 <?php
 
 if (isset($_POST['save']))
@@ -171,11 +173,11 @@ if (isset($_POST['edit'])){
 
 
 
-
-    <?php require "common/footer.html"; ?>
 </div>
-</form>
+    <?php require "common/footer.html"; ?>
 
+</form>
+</div>
 </body>
 
 
