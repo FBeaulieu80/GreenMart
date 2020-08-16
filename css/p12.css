@@ -57,3 +57,6 @@ a.button {
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+.grid-item {
+    text-align: left;
+}

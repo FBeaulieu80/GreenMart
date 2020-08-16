@@ -29,7 +29,9 @@ table {
     margin: 0 auto;
     max-width: 550px;
 }
-
+.grid-item {
+    text-align: left;
+}
 tr {
     border-top: thin solid;
     border-bottom: thin solid
