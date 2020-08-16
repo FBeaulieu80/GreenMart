@@ -7,7 +7,9 @@ a.button {
     background-color: burlywood;
     color: initial;
     text-decoration: none;
-    padding: .5%
+    padding: .5%;
+    width: 5%;
+    font-size: 100%;
 
 }
 
@@ -28,4 +30,9 @@ table {
 tr {
     border-top: thin solid;
     border-bottom: thin solid
+}
+#box {
+    padding: 1% 2% 1% 2%;
+    margin: 0 auto;
+    max-width: 550px;
 }

@@ -10,8 +10,9 @@
     <title>Order List</title>
 </head>
 
-<?php require "common/header.php"; ?>
 <body widthmargin="100%">
+<?php require "common/header.php"; ?>
+<div id="box">
 <?php
 
 if (isset($_POST['save']))
@@ -82,9 +83,10 @@ if (isset($_POST['edit'])){
 
 
 
-<h1 align="center">Add an Order<br/></h1>
+
 
 <div class=editOrder>
+    <h1 align="center">Add an Order<br/></h1>
     <form action = "p12.php" method = "post">
 
     <table marginwidth="100%" cellspacing="20" align="center">
@@ -170,11 +172,11 @@ if (isset($_POST['edit'])){
 
 
 
-
-    <?php require "common/footer.html"; ?>
 </div>
-</form>
+    <?php require "common/footer.html"; ?>
 
+</form>
+</div>
 </body>
 
 
