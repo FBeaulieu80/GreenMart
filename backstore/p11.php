@@ -13,8 +13,27 @@
 
 <?php
 
-include "common/authenticate.php";
+$valid_passwords = array ("marker" => "isadmin");
+$valid_users = array_keys($valid_passwords);
 
+$user = $_SERVER['PHP_AUTH_USER'];
+$pass = $_SERVER['PHP_AUTH_PW'];
+
+$validated = (in_array($user, $valid_users)) && ($pass == $valid_passwords[$user]);
+
+if (!$validated) {
+    header('WWW-Authenticate: Basic realm="My Realm"');
+    header('HTTP/1.0 401 Unauthorized');
+    die ("Not authorized");
+}
+
+// If arrives here, is a valid user.
+echo "<p>Welcome $user.</p>";
+echo "<p>Congratulation, you have accessed the order list - P11.</p>";
+
+?>
+
+<?php
 
 if (isset($_POST['delete'])) {
 
@@ -40,8 +59,8 @@ if (isset($_POST['delete'])) {
 <form action = "p11.php" method = "post">
 <h1>Order List </h1>
 <div align="center">
-    <a href="../backstore/p12.php" class="button">Add</a>
-    <a href="../backstore/p12.php" class="button">Edit</a>
+    <a href="../backstore/p12.php" class="button" name = "add">Add</a>
+    <a href="../backstore/p12.php" class="button" name = "add">Edit</a>
 </div>
 
 <?php $xml = simplexml_load_file('orders.xml'); ?>
