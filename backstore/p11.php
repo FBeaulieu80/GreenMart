@@ -59,6 +59,7 @@ if (isset($_POST['delete'])) {
 <div id="box">
     <div class="grid-container">
         <div class="grid-item">
+            <div class="col">
 <form action = "p11.php" method = "post">
 <h1>Order List </h1>
 <div align="center">
@@ -100,7 +101,7 @@ if (isset($_POST['delete'])) {
 </form>
 
 
-
+</div>
         </div>
         </div>
 </div>

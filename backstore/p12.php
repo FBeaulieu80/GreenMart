@@ -12,9 +12,7 @@
 
 <body widthmargin="100%">
 <?php require "common/header.php"; ?>
-<div id="box">
-    <div class="grid-container">
-        <div class="grid-item">
+
 <?php
 
 if (isset($_POST['save']))
@@ -85,7 +83,10 @@ if (isset($_POST['edit'])){
 
 
 
-
+<div id="box">
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="col">
 
 <div class=editOrder>
     <h1 align="center">Add an Order<br/></h1>
@@ -178,6 +179,7 @@ if (isset($_POST['edit'])){
 
 
 </form>
+            </div>
         </div>
         </div>
     <?php require "common/footer.html"; ?>
