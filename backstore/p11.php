@@ -10,12 +10,60 @@
 </head>
 <body>
 <?php require "common/header.php"; ?>
+
+<?php
+
+$valid_passwords = array ("marker" => "isadmin");
+$valid_users = array_keys($valid_passwords);
+
+$user = $_SERVER['PHP_AUTH_USER'];
+$pass = $_SERVER['PHP_AUTH_PW'];
+
+$validated = (in_array($user, $valid_users)) && ($pass == $valid_passwords[$user]);
+
+if (!$validated) {
+    header('WWW-Authenticate: Basic realm="My Realm"');
+    header('HTTP/1.0 401 Unauthorized');
+    die ("Not authorized");
+}
+
+// If arrives here, is a valid user.
+echo "<p>Welcome $user.</p>";
+echo "<p>Congratulation, you have accessed the order list - P11.</p>";
+
+?>
+
+<?php
+
+if (isset($_POST['delete'])) {
+
+    $xml = simplexml_load_file("orders.xml");
+
+    $name2 = htmlentities($_POST['deleteProductName']);
+
+    $toDelete = array();
+
+    foreach ($xml->order as $order2){
+        if ($name2 == (string)$order2->ProductName){
+            $toDelete[] = $order2;
+        }
+    }
+
+    foreach($toDelete as $order2){
+        $dom = dom_import_simplexml($order2);
+        $dom->parentNode->removeChild($dom);
+    }
+    echo $xml->asXML("orders.xml");
+}
+?>
+<form action = "p11.php" method = "post">
 <h1>Order List </h1>
 <div align="center">
-    <a href="../backstore/p12.php" class="button">Add</a>
-    <a href="../backstore/p12.php" class="button">Edit</a>
+    <a href="../backstore/p12.php" class="button" name = "add">Add</a>
+    <a href="../backstore/p12.php" class="button" name = "add">Edit</a>
 </div>
 
+<?php $xml = simplexml_load_file('orders.xml'); ?>
 <table marginwidth="100%" cellspacing="20" align="center">
     <tr>
         <th>Product Name</th>
@@ -23,102 +71,32 @@
         <th>Units / LBS</th>
         <th>Seller</th>
         <th>Order Date</th>
-        <th>Arrived</th>
-        <th></th>
+    </tr>
 
-    </tr>
+
+    <?php foreach($xml->order as $orderelement) : ?>
     <tr>
-        <td>Organic Banana</td>
-        <td>4HKZ19</td>
-        <td>
-            <weight>30lbs</weight>
-        </td>
-        <td>Johanne's Garden Lte</td>
-        <td>
-            <date>12-07-2020</date>
-        </td>
-        <td>
-            <form action="">
-                <label>
-                    <select name="answer">
-                        <option>No</option>
-                        <option>Yes</option>
-                    </select>
-                </label>
-            </form>
-        </td>
-        <th>
-            <button>Delete</button>
-        </th>
+        <td><?php echo $orderelement->ProductName ; ?></td>
+        <td><?php echo $orderelement->ProductID; ?></td>
+        <td><?php echo $orderelement->UnitsLbs; ?></td>
+        <td><?php echo $orderelement->Seller; ?></td>
+        <td><?php echo $orderelement->Date; ?></td>
     </tr>
-    <tr>
-        <td>Yummy Chickpeas</td>
-        <td>7ZYT28</td>
-        <td>50</td>
-        <td>Pea Haven Co</td>
-        <td>
-            <date>10-07-2020</date>
-        </td>
-        <td>
-            <form action="">
-                <label>
-                    <select name="answer">
-                        <option>No</option>
-                        <option>Yes</option>
-                    </select>
-                </label>
-            </form>
-        </td>
-        <th>
-            <button>Delete</button>
-        </th>
-    </tr>
-    <tr>
-        <td>Cherry Tomatoes</td>
-        <td>96YRE4P</td>
-        <td>25lbs</td>
-        <td>Jerry's Dream</td>
-        <td>
-            <date>09-07-2020</date>
-        </td>
-        <td>
-            <form action="">
-                <label>
-                    <select name="answer">
-                        <option>No</option>
-                        <option>Yes</option>
-                    </select>
-                </label>
-            </form>
-        </td>
-        <th>
-            <button>Delete</button>
-        </th>
-    </tr>
-    <tr>
-        <td>Jimmy's Natural Potato Chips</td>
-        <td>46RY3X</td>
-        <td>30</td>
-        <td>Jimmy's Basement</td>
-        <td>
-            <date>05-07-2020</date>
-        </td>
-        <td>
-            <form action="">
-                <label>
-                    <select name="answer">
-                        <option>No</option>
-                        <option>Yes</option>
-                    </select>
-                </label>
-            </form>
-        </td>
-        <th>
-            <button>Delete</button>
-        </th>
-    </tr>
+
+    <?php endforeach;?>
+    <tr></tr><tr></tr>
+
+    <tr><th>Enter a Product Name to Delete an Order</th></tr>
+    <td>
+        <input type = "text" name="deleteProductName" rows="1" cols="20">
+
+        <input type = "submit" name = "delete" value = "Delete" >
+    </td>
 
 </table>
+</form>
+
+
 <?php require "common/footer.html"; ?>
 </body>
 

@@ -1,5 +1,4 @@
 <?xml version="1.0"?>
 <orders>
-    <order><ProductName>New Order</ProductName></order>
 
-<order><ProductName>Vegan Cookie</ProductName><ProductID>nnj</ProductID><UnitsLbs>5</UnitsLbs><Seller>FairTradeCookies</Seller><Date>08-15-2020</Date></order></orders>
+<order><ProductName>CarrotCake</ProductName><ProductID>carr456</ProductID><UnitsLbs>7</UnitsLbs><Seller>CakeChef</Seller><Date>08-15-2020</Date></order><order><ProductName>Vegan Cookie</ProductName><ProductID>cook123</ProductID><UnitsLbs>10</UnitsLbs><Seller>VeganDelight</Seller><Date>08-15-2020</Date></order></orders>

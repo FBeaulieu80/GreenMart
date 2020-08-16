@@ -11,7 +11,7 @@
 <body>
 <?php require_once "common/header.php" ?>
 <div class="main">
-    <form id="box" action="/authenticate.php" target="_blank" method="post">
+    <form id="box" action="backstore/common/authenticate.php" target="_blank" method="post">
         <h4 style="font-weight: bold; color: darkblue;text-align: center;">LOG IN TO YOUR GREEN MART ACCOUNT</h4>
         <label>
             Email:

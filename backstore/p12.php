@@ -27,7 +27,6 @@ $seller = htmlentities($_POST['Seller']);
 $date = htmlentities($_POST['OrderDate']);
 
     $rootTag = $xml->getElementsByTagName('orders')->item(0);
-    //$xml->appendChild($rootTag);
 
     $dataTag = $xml->createElement("order");
     $rootTag->appendChild($dataTag);
@@ -48,28 +47,48 @@ $date = htmlentities($_POST['OrderDate']);
     $dataTag->appendChild($dateTag);
 
     file_put_contents($xml->save('orders.xml'), FILE_APPEND );
+}
+if (isset($_POST['edit'])){
+    $source = simplexml_load_file('orders.xml');
+
+    $name2 = htmlentities($_POST['editProductName']);
+    $ID2 = htmlentities($_POST['editProductID']);
+    $unitslb2 = htmlentities($_POST['editUnitsLbs']);
+    $seller2 = htmlentities($_POST['editSeller']);
+    $date2 = htmlentities($_POST['editOrderDate']);
+
+    foreach($source->order as $order2) {
+        if ((string)$order2->ProductName == $name2){
+            $order2->ProductID = $ID2;
+            $order2-> UnitsLbs = $unitslb2;
+            $order2->Seller = $seller2;
+            $order2->Date = $date2;
+        }
+        else{
+            $message = $name2 . " not found in orders. Please try again.";
+            echo "<script type='text/javascript'>alert('$message');</script>";
+            break;
+        }
+    }
+    file_put_contents("orders.xml", $source->saveXML());
 
 }
 ?>
 
-<h1 align="center">Add an Order<br/></h1>
-<!--
-<form method="post" action="">
-  <?php /*
-    echo "<select name = edit>";
-    $xml = simplexml_load_file('orders.xml');
-    foreach($xml->order as $order){
-        echo "<option value='".$order->ProductName."'>"  . $order-> ProductName . "</option>";
-    }
-    echo "</select>"*/
-    ?>
-</form>
--->
-<div class=editOrder>
+<div align="center">
+    <a href="../backstore/p11.php" class="button" name = "OrderList">Back to Order List</a>
 
+</div>
+
+
+
+<h1 align="center">Add an Order<br/></h1>
+
+<div class=editOrder>
+    <form action = "p12.php" method = "post">
 
     <table marginwidth="100%" cellspacing="20" align="center">
-        <form action = "p12.php" method = "post">
+
         <tr>
             <th>Product Name:</th>
             <td>
@@ -100,24 +119,53 @@ $date = htmlentities($_POST['OrderDate']);
                     <input type = "text" name="OrderDate" rows="1" cols="20">
             </td>
         </tr>
-        <tr>
-            <th> Arrived:</th>
-            <td>
-                        <select name="answer">
-                            <option>No</option>
-                            <option>Yes</option>
-                        </select>
-            </td>
-        </tr>
+
             <tr>
                 <td>
             <input type = "submit" name = "save" value = "Save">
                 </td>
             </tr>
     </table>
+        <h1 align="center">Edit an Order<br/></h1>
+        <table marginwidth="100%" cellspacing="20" align="center">
 
-    <h1 align="center">Edit an Order<br/></h1>
+            <tr>
+                <th>Enter Product Name </br> & reset the fields below:</th>
+                <td>
+                    <input type = "text" name="editProductName" rows="1" cols="20">
+                </td>
+            </tr>
+            <tr>
+                <th>Product ID:</th>
+                <td>
+                    <input type = "text" name="editProductID" rows="1" cols="20">
+                </td>
+            </tr>
+            <tr>
+                <th>Units / LBS:</th>
+                <td>
+                    <input type = "text" name="editUnits/LBS" rows="1" cols="20">
+                </td>
+            </tr>
+            <tr>
+                <th>Seller:</th>
+                <td>
+                    <input type = "text" name="editSeller" rows="1" cols="20">
+                </td>
+            </tr>
+            <tr>
+                <th>Order Date:</th>
+                <td>
+                    <input type = "text" name="editOrderDate" rows="1" cols="20">
+                </td>
+            </tr>
 
+            <tr>
+                <td>
+                    <input type = "submit" name = "edit" value = "Edit">
+                </td>
+            </tr>
+        </table>
 
 
 
