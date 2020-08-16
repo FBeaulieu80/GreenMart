@@ -13,9 +13,15 @@ body {
 }
 
 table {
-    background-color: cornsilk;
     border-style: double;
-    margin-bottom: 5%;
+    /*padding: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;*/
+    background-color: cornsilk;
+    text-align-last: left;
+    padding: 1% 2% 1% 2%;
+    margin: 0 auto;
+    max-width: 550px;
 }
 
 select {

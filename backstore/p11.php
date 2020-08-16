@@ -10,9 +10,7 @@
 </head>
 <body>
 <?php require "common/header.php"; ?>
-<div id="box">
-    <div class="grid-container">
-        <div class="grid-item">
+
 <?php
 
 $valid_passwords = array ("marker" => "isadmin");
@@ -58,6 +56,9 @@ if (isset($_POST['delete'])) {
     echo $xml->asXML("orders.xml");
 }
 ?>
+<div id="box">
+    <div class="grid-container">
+        <div class="grid-item">
 <form action = "p11.php" method = "post">
 <h1>Order List </h1>
 <div align="center">
