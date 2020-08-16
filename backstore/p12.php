@@ -82,9 +82,10 @@ if (isset($_POST['edit'])){
 
 
 
-<h1 align="center">Add an Order<br/></h1>
+
 
 <div class=editOrder>
+    <h1 align="center">Add an Order<br/></h1>
     <form action = "p12.php" method = "post">
 
     <table marginwidth="100%" cellspacing="20" align="center">
