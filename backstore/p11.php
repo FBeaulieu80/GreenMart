@@ -12,6 +12,10 @@
 <?php require "common/header.php"; ?>
 
 <?php
+
+include "common/authenticate.php";
+
+
 if (isset($_POST['delete'])) {
 
     $xml = simplexml_load_file("orders.xml");

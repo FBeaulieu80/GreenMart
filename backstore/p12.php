@@ -14,6 +14,8 @@
 <body widthmargin="100%">
 <?php
 
+include "common/authenticate.php";
+
 if (isset($_POST['save']))
 {
 $xml = new DOMDocument("1.0");
