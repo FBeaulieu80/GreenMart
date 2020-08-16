@@ -1,13 +1,5 @@
 <?php
 
-// Redirect user to login page if they are not logged in
-session_start();
-$_SESSION["loggedin"] = true; // TODO REMOVE
-
-if ($_SESSION["loggedin"] == false){
-    header("Location: ../p5.php");
-}
-
 $productID = $_POST["id"];
 $prodName = $_POST["prodName"];
 $aisle = $_POST["aisle"];
@@ -28,12 +20,7 @@ echo "Data successfully sent via POST";
 
 $xml = new DOMDocument();
 $xml->formatOutput = true;
-//if(file_exists('../files/users-cart/3.xml')){
-//    $xml->load('../files/users-cart/3.xml');
-//} else {
-//    $xml->loadXML('<cartList/>');
-//}
-$xml->load('../files/users-cart/3.xml');
+$xml->load('../files/cart.xml');
 
 $xml_cart = $xml->createElement("cartList");
 //$xml_cart = $xml->addChild("cartList");
@@ -80,23 +67,16 @@ $xml_product->appendChild( $xml_cherryType );
 $xml_product->appendChild( $xml_organic );
 $xml_product->appendChild( $xml_cakeType );
 
-//$nodes = $xml->getElementsByTagName('cartList');
-//$results = $xpath->query('/data/galleries');
-//$xml_cart = $nodes->item(0);
+
 $xml_cart->appendChild( $xml_product );
 
 //if ($xml->getElementsByTagName('cartList') == null){
-//    $xml->appendChild( $xml_cart );
+    $xml->appendChild( $xml_cart );
 //}
 
-file_put_contents($xml->save("../files/users-cart/3.xml"), FILE_APPEND );
-//$xml->save("../files/users-cart/3.xml");
-
-
-
-if($_SESSION["loggedin"] == true){
-    header('Location: ' . $_SERVER['HTTP_REFERER']);
-}
+//file_put_contents($xml->save("/cart.xml"), FILE_APPEND );
+$xml->save("../files/cart.xml");
+header('Location: ' . $_SERVER['HTTP_REFERER']);
 
 
 // Process:
