@@ -32,6 +32,8 @@ a.button {
     color: initial;
     text-decoration: none;
     margin-top: 5%;
-    padding: .5%
+    padding: .5%;
+    width: 20%;
+    font-size: 110%;
 
 }

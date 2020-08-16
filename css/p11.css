@@ -7,7 +7,9 @@ a.button {
     background-color: burlywood;
     color: initial;
     text-decoration: none;
-    padding: .5%
+    padding: .5%;
+    width: 5%;
+    font-size: 100%;
 
 }
 

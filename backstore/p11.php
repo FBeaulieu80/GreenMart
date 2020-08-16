@@ -90,7 +90,7 @@ if (isset($_POST['delete'])) {
     <td>
         <input type = "text" name="deleteProductName" rows="1" cols="20">
 
-        <input type = "submit" name = "delete" value = "Delete" >
+        <input class = "button" type = "submit" name = "delete" value = "Delete" >
     </td>
 
 </table>
