@@ -57,6 +57,7 @@ if (isset($_POST['delete'])) {
 }
 ?>
 <div id="box">
+    <div class="main" style="text-align: center">
     <div class="grid-container">
         <div class="grid-item">
             <div class="col">
@@ -104,6 +105,7 @@ if (isset($_POST['delete'])) {
 </div>
         </div>
         </div>
+    </div>
 </div>
 <?php require "common/footer.html"; ?>
 </body>

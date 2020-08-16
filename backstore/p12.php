@@ -84,6 +84,7 @@ if (isset($_POST['edit'])){
 
 
 <div id="box">
+    <div class="main" style="text-align: center">
     <div class="grid-container">
         <div class="grid-item">
             <div class="col">
@@ -179,6 +180,7 @@ if (isset($_POST['edit'])){
 
 
 </form>
+            </div>
             </div>
         </div>
         </div>
