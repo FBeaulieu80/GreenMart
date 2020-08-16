@@ -55,7 +55,7 @@ a.button {
 #box {
     padding: 1% 2% 1% 2%;
     margin: 0 auto;
-    max-width: 300%;
+    max-width: 100%;
 }
 
 .grid-item {
