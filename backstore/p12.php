@@ -75,6 +75,11 @@ if (isset($_POST['edit'])){
 }
 ?>
 
+<div align="center">
+    <a href="../backstore/p11.php" class="button" name = "OrderList">Back to Order List</a>
+
+</div>
+
 
 
 <h1 align="center">Add an Order<br/></h1>
