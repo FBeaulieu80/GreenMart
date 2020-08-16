@@ -36,3 +36,11 @@ tr {
     margin: 0 auto;
     max-width: 550px;
 }
+.grid-container {
+    /*Add for responsive*/
+    display: grid;
+    margin: 0 auto;
+    max-width: 1200px;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}

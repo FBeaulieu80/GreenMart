@@ -13,6 +13,8 @@
 <body widthmargin="100%">
 <?php require "common/header.php"; ?>
 <div id="box">
+    <div class="grid-container">
+        <div class="grid-item">
 <?php
 
 if (isset($_POST['save']))
@@ -176,6 +178,8 @@ if (isset($_POST['edit'])){
     <?php require "common/footer.html"; ?>
 
 </form>
+        </div>
+        </div>
 </div>
 </body>
 

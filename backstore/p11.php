@@ -11,6 +11,8 @@
 <body>
 <?php require "common/header.php"; ?>
 <div id="box">
+    <div class="grid-container">
+        <div class="grid-item">
 <?php
 
 $valid_passwords = array ("marker" => "isadmin");
@@ -98,6 +100,8 @@ if (isset($_POST['delete'])) {
 
 
 <?php require "common/footer.html"; ?>
+        </div>
+        </div>
 </div>
 </body>
 
