@@ -7,7 +7,7 @@
 
     <link rel="shortcut icon" href="../favicon.ico">
     <meta name="author" content="Laura Boivin">
-    <title>Order List</title>
+    <title>Edit Order List | Back Store | Green Mart</title>
 </head>
 
 <body widthmargin="100%">

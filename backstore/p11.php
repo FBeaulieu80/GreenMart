@@ -6,7 +6,7 @@
     <meta name="author" content="Laura Boivin">
     <link rel="stylesheet" type="text/css" href="../css/p11.css">
     <link rel="stylesheet" type="text/css" href="../css/backstore.css">
-    <title>Order List</title>
+    <title>Order List | Back Store | Green Mart</title>
 </head>
 <body>
 <?php require "common/header.php"; ?>
