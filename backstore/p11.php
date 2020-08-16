@@ -10,6 +10,30 @@
 </head>
 <body>
 <?php require "common/header.php"; ?>
+
+<?php
+if (isset($_POST['delete'])) {
+
+    $xml = simplexml_load_file("orders.xml");
+
+    $name2 = htmlentities($_POST['deleteProductName']);
+
+    $toDelete = array();
+
+    foreach ($xml->order as $order2){
+        if ($name2 == (string)$order2->ProductName){
+            $toDelete[] = $order2;
+        }
+    }
+
+    foreach($toDelete as $order2){
+        $dom = dom_import_simplexml($order2);
+        $dom->parentNode->removeChild($dom);
+    }
+    echo $xml->asXML("orders.xml");
+}
+?>
+<form action = "p11.php" method = "post">
 <h1>Order List </h1>
 <div align="center">
     <a href="../backstore/p12.php" class="button">Add</a>
@@ -35,24 +59,21 @@
         <td><?php echo $orderelement->Seller; ?></td>
         <td><?php echo $orderelement->Date; ?></td>
     </tr>
+
     <?php endforeach;?>
+    <tr></tr><tr></tr>
 
-</table>
-
-<?php
-
-
-?>
-
-<table>
     <tr><th>Enter a Product Name to Delete an Order</th></tr>
     <td>
         <input type = "text" name="deleteProductName" rows="1" cols="20">
+
+        <input type = "submit" name = "delete" value = "Delete" >
     </td>
-    <td>
-        <input type = "submit" name = "delete" value = "Delete">
-    </td>
+
 </table>
+</form>
+
+
 <?php require "common/footer.html"; ?>
 </body>
 
