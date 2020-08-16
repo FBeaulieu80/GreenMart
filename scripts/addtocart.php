@@ -1,11 +1,12 @@
 <?php
 
-//$xmlstr = simplexml_load_file("../files/users-cart/1.xml");
-//
-//$xmlstr = dom_import_simplexml();
+// Redirect user to login page if they are not logged in
+session_start();
+$_SESSION["loggedin"] = true; // TODO REMOVE
 
-//$cartList = new SimpleXMLElement($xmlstr);
-//echo $cartList->product[0]->prodName;
+if ($_SESSION["loggedin"] == false){
+    header("Location: ../p5.php");
+}
 
 $productID = $_POST["id"];
 $prodName = $_POST["prodName"];
@@ -27,14 +28,17 @@ echo "Data successfully sent via POST";
 
 $xml = new DOMDocument();
 $xml->formatOutput = true;
-if(file_exists('../files/users-cart/3.xml')){
-    $xml->load('../files/users-cart/3.xml');
-} else {
-    $xml->loadXML('<cartList/>');
-}
+//if(file_exists('../files/users-cart/3.xml')){
+//    $xml->load('../files/users-cart/3.xml');
+//} else {
+//    $xml->loadXML('<cartList/>');
+//}
+$xml->load('../files/users-cart/3.xml');
 
 $xml_cart = $xml->createElement("cartList");
+//$xml_cart = $xml->addChild("cartList");
 $xml_product = $xml->createElement("product");
+
 $xml_prodID = $xml->createElement("id");
 $xml_prodID->nodeValue = $productID;
 $xml_prodName = $xml->createElement("prodName");
@@ -76,20 +80,32 @@ $xml_product->appendChild( $xml_cherryType );
 $xml_product->appendChild( $xml_organic );
 $xml_product->appendChild( $xml_cakeType );
 
+//$nodes = $xml->getElementsByTagName('cartList');
+//$results = $xpath->query('/data/galleries');
+//$xml_cart = $nodes->item(0);
 $xml_cart->appendChild( $xml_product );
 
-//if ($xml->getElementsByTagName('cartList')->length == 0){
-    $xml->appendChild( $xml_cart );
+//if ($xml->getElementsByTagName('cartList') == null){
+//    $xml->appendChild( $xml_cart );
 //}
 
-$xml->save("../files/users-cart/3.xml");
+file_put_contents($xml->save("../files/users-cart/3.xml"), FILE_APPEND );
+//$xml->save("../files/users-cart/3.xml");
 
-header('Location: ' . $_SERVER['HTTP_REFERER']);
+
+
+if($_SESSION["loggedin"] == true){
+    header('Location: ' . $_SERVER['HTTP_REFERER']);
+}
+
 
 // Process:
 // 0. if user not signed in, redirect to login page
 // 1. receive data from GET / POST
-// 2. convert to an object
-// 3. conect with user account
+// 2. write data to an XML file with the USER ID as the filename
+// // 2. convert to an object
+// 3. attach with user account
+// // 3.1. in the user account xml have a <cart>../../1.xml</cart>
+// somewhere: display proper products on page
 // 4. write to an XML file
 // 5. return to page

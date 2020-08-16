@@ -53,7 +53,7 @@
                 <div class="type">
 
                     <input form="cart" type="radio" class="cherryTypeButton" id="bing" name="cherryType" value="bing"
-                            onclick="setSelected(this, '../../images/fruit-veg/bing-cherry.jpg')" checked>
+                            onclick="setSelected(this, '../../images/fruit-veg/bing-cherry.jpg')">
                     <label for="bing">Bing</label>
                     <br />
                     <input form="cart" type="radio" class="cherryTypeButton" id="rainier" name="cherryType" value="rainier"
