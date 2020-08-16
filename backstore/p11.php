@@ -9,9 +9,8 @@
     <title>Order List</title>
 </head>
 <body>
-<div id="box">
 <?php require "common/header.php"; ?>
-
+<div id="box">
 <?php
 
 $valid_passwords = array ("marker" => "isadmin");

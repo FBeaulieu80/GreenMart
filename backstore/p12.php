@@ -10,9 +10,8 @@
     <title>Order List</title>
 </head>
 
-<?php require "common/header.php"; ?>
-
 <body widthmargin="100%">
+<?php require "common/header.php"; ?>
 <div id="box">
 <?php
 
