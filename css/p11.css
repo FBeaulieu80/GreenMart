@@ -5,6 +5,7 @@
     max-width: 1200px;
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding-bottom: 100%;
 }
 
 .addbutton {
@@ -16,7 +17,7 @@
     background-color: burlywood;
     color: initial;
     text-decoration: none;
-    padding: .5%;
+    padding-: .5%;
     width: 10%;
 
 }
