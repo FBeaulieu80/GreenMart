@@ -184,8 +184,9 @@ if (isset($_POST['edit'])){
             </div>
         </div>
         </div>
-    <?php require "common/footer.html"; ?>
+
 </div>
+<?php require "common/footer.html"; ?>
 </body>
 
 
