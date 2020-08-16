@@ -91,7 +91,7 @@ if (isset($_POST['edit'])){
     <h1 align="center">Add an Order<br/></h1>
     <form action = "p12.php" method = "post">
 
-    <table marginwidth="100%" cellspacing="20" align="center">
+    <table  cellspacing="20" align="center">
 
         <tr>
             <th>Product Name:</th>
@@ -131,7 +131,7 @@ if (isset($_POST['edit'])){
             </tr>
     </table>
         <h1 align="center">Edit an Order<br/></h1>
-        <table marginwidth="100%" cellspacing="20" align="center">
+        <table  cellspacing="20" align="center">
 
             <tr>
                 <th>Enter Product Name </br> & reset the fields below:</th>

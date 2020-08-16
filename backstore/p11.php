@@ -67,7 +67,7 @@ if (isset($_POST['delete'])) {
 </div>
 
 <?php $xml = simplexml_load_file('orders.xml'); ?>
-<table marginwidth="100%" cellspacing="20" align="center">
+<table cellspacing="20" align="center">
     <tr>
         <th>Product Name</th>
         <th>Product ID</th>
