@@ -71,28 +71,28 @@ if (isset($_POST['delete'])) {
 <?php $xml = simplexml_load_file('orders.xml'); ?>
 <table cellspacing="20" align="center">
     <tr>
-        <th>Product Name</th>
-        <th>Product ID</th>
-        <th>Units / LBS</th>
-        <th>Seller</th>
-        <th>Order Date</th>
+        <th colspan="3">Product Name</th>
+        <th colspan="3">Product ID</th>
+        <th colspan="4">Units / LBS</th>
+        <th colspan="3">Seller</th>
+        <th colspan="3">Order Date</th>
     </tr>
 
 
     <?php foreach($xml->order as $orderelement) : ?>
     <tr>
-        <td><?php echo $orderelement->ProductName ; ?></td>
-        <td><?php echo $orderelement->ProductID; ?></td>
-        <td><?php echo $orderelement->UnitsLbs; ?></td>
-        <td><?php echo $orderelement->Seller; ?></td>
-        <td><?php echo $orderelement->Date; ?></td>
+        <td colspan="3"><?php echo $orderelement->ProductName ; ?></td>
+        <td colspan="3"><?php echo $orderelement->ProductID; ?></td>
+        <td colspan="4"><?php echo $orderelement->UnitsLbs; ?></td>
+        <td colspan="3"><?php echo $orderelement->Seller; ?></td>
+        <td colspan="3" ><?php echo $orderelement->Date; ?></td>
     </tr>
 
     <?php endforeach;?>
     <tr></tr><tr></tr>
 
-    <tr><th>Enter a Product Name to Delete an Order</th></tr>
-    <td colspan="3">
+    <tr><th colspan="5">Enter a Product Name to Delete an Order</th></tr>
+    <td colspan="5">
         <input class = "textbox" type = "text" name="deleteProductName" rows="1" cols="20">
 
         <input class = "button" type = "submit" name = "delete" value = "Delete" >
