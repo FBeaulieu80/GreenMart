@@ -8,32 +8,9 @@
     <link rel="stylesheet" type="text/css" href="../css/backstore.css">
     <title>Order List</title>
 </head>
+<?php require $_SERVER["DOCUMENT_ROOT"]."backstore/common/authenticate.php"; ?>
 <body>
-<?php require "common/header.php"; ?>
-
-<?php
-
-$valid_passwords = array ("marker" => "isadmin");
-$valid_users = array_keys($valid_passwords);
-
-$user = $_SERVER['PHP_AUTH_USER'];
-$pass = $_SERVER['PHP_AUTH_PW'];
-
-$validated = (in_array($user, $valid_users)) && ($pass == $valid_passwords[$user]);
-
-if (!$validated) {
-    header('WWW-Authenticate: Basic realm="My Realm"');
-    header('HTTP/1.0 401 Unauthorized');
-    die ("Not authorized");
-}
-
-// If arrives here, is a valid user.
-echo "<p>Welcome $user.</p>";
-echo "<p>Congratulation, you have accessed the order list - P11.</p>";
-
-?>
-
-<?php
+<?php require $_SERVER["DOCUMENT_ROOT"]."backstore/common/header.php";
 
 if (isset($_POST['delete'])) {
 
@@ -93,7 +70,9 @@ if (isset($_POST['delete'])) {
 
     <tr><th colspan="5">Enter a Product Name to Delete an Order</th></tr>
     <td colspan="5">
-        <input class = "textbox" type = "text" name="deleteProductName" rows="1" cols="20">
+        <label>
+            <input class = "textbox" type = "text" name="deleteProductName" rows="1" cols="20">
+        </label>
 
         <input class = "button" type = "submit" name = "delete" value = "Delete" >
     </td>
@@ -107,6 +86,6 @@ if (isset($_POST['delete'])) {
         </div>
     </div>
 </div>
-<?php require "common/footer.html"; ?>
+<?php require $_SERVER["DOCUMENT_ROOT"]."backstore/common/footer.html"; ?>
 </body>
 

@@ -13,15 +13,13 @@ function receiveFile()
     $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
 // Check if image file is a actual image or fake image
-    if (isset($_POST["confirmBtn"])) {
-        $check = getimagesize($_FILES["avatarFile"]["tmp_name"]);
-        if ($check !== false) {
-            if (isset($DEBUG) && $DEBUG == true) echo "File is an image - " . $check["mime"] . ".";
-            $uploadOk = 1;
-        } else {
-            if (isset($DEBUG) && $DEBUG == true) echo "File is not an image.";
-            $uploadOk = 0;
-        }
+    $check = getimagesize($_FILES["avatarFile"]["tmp_name"]);
+    if ($check !== false) {
+        if (isset($DEBUG) && $DEBUG == true) echo "File is an image - " . $check["mime"] . ".";
+        $uploadOk = 1;
+    } else {
+        if (isset($DEBUG) && $DEBUG == true) echo "File is not an image.";
+        $uploadOk = 0;
     }
 
 // Check if file already exists

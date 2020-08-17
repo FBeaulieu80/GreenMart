@@ -9,7 +9,9 @@ class AccountTypes
 class User
 {
     // Properties
-    private static SimpleXMLElement $userFile;
+    private static string $databaseUrl;
+    private static DOMDocument $userFile;
+    private static DOMElement $users;
     private static int $userCount = 0;
     private string $id;
     private string $firstName;
@@ -72,45 +74,45 @@ class User
 
     /**
      * Get array of Users from the XML file.
-     * @return SimpleXMLElement
+     * @return DOMNodeList|null
      */
     public static function getUsers()
     {
-        return self::$userFile->children();
+        return self::$users->childNodes;
     }
 
     /**
      * @param string $id
      * @return false|User
      */
-    public static function getUserById(string $id)
+    /*public static function getUserById(string $id)
     {
         $users = User::$userFile->xpath("//user['{$id}']");
         if (count($users) >= 1) {
-            return self::fromSimpleXMLElement($users[0]);
+            return self::fromDOMElement($users[0]);
         } else {
             return false;
         }
-    }
+    }*/
 
     /**
      * Create User Object From SimpleXMLElement.
-     * @param SimpleXMLElement $user
+     * @param DOMElement $user
      * @return User
      */
-    public static function fromSimpleXMLElement(SimpleXMLElement $user): User
+    public static function fromDOMElement(DOMElement $user): User
     {
         return new User(
-            $user["id"],
-            $user["firstName"],
-            $user["middleName"],
-            $user["lastName"],
-            $user["email"],
-            $user["password"],
-            $user["fullAddress"],
-            $user["phone"],
-            $user["avatarFile"],
-            $user["accountType"]
+            $user->getAttribute("id"),
+            $user->getAttribute("firstName"),
+            $user->getAttribute("middleName"),
+            $user->getAttribute("lastName"),
+            $user->getAttribute("email"),
+            $user->getAttribute("password"),
+            $user->getAttribute("fullAddress"),
+            $user->getAttribute("phone"),
+            $user->getAttribute("avatarFile"),
+            $user->getAttribute("accountType")
         );
     }
 
@@ -119,9 +121,21 @@ class User
      */
     public static function init()
     {
-        self::$userFile = simplexml_load_file("../files/users.xml") or die("Could not read file...");
-        self::$userFile["count"] = self::$userFile->children()->count();
-        self::$userCount = intval(self::$userFile["count"]);
+        self::$databaseUrl = $_SERVER['DOCUMENT_ROOT']."files/users.xml";
+        self::$userFile = new DOMDocument();
+        self::$userFile->formatOutput = true;
+        self::$userFile->preserveWhiteSpace = false;
+        self::$userFile->load(self::$databaseUrl) or die("Could not read file...");
+        if (self::$userFile->hasChildNodes()) {
+            self::$users = self::$userFile->childNodes[0];
+            self::$users->setAttribute("count", self::$users->childNodes->count());
+            self::$userCount = self::$users->childNodes->count();
+        } else {
+            self::$users = self::$userFile->createElement("users");
+            self::$users->setAttribute("count", "0");
+            self::$userFile->appendChild(self::$users);
+        }
+
         self::saveUsers();
     }
 
@@ -130,19 +144,18 @@ class User
      */
     private static function saveUsers()
     {
-        $file = dom_import_simplexml(self::$userFile->children())->ownerDocument;
-        $file->formatOutput = true;
-        $file->preserveWhiteSpace = true;
-        $users = $file->getElementsByTagName("user");
-        $sorted = iterator_to_array($users);
+        if (!isset(self::$databaseUrl))
+            throw new RuntimeException("Call to User::init() function is required prior to calling User::saveUsers().");
+
+        $sorted = iterator_to_array(self::$users->childNodes);
         usort($sorted, function (DOMElement $u1, DOMElement $u2) {
             return intval($u1->getAttribute("id")) - intval($u2->getAttribute("id"));
         });
-        foreach ($sorted as $node) {
+        /*foreach ($sorted as $node) {
             $users->item(0)->parentNode->appendChild($node);
-        }
-        $file->save("../files/users.xml");
-        self::$userFile = simplexml_load_file("../files/users.xml") or die("Could not read file...");
+        }*/
+        self::$userFile->save(self::$databaseUrl);
+        self::$userFile->load(self::$databaseUrl) or die("Could not read file...");
     }
 
     /**
@@ -233,9 +246,8 @@ class User
      */
     public function deleteUser()
     {
-        // find users with current Id.
-        $users = self::$userFile->xpath("//user[@id='{$this->id}']");
-        foreach ($users as $user) {
+        $users = new DOMXPath(self::$userFile);
+        foreach ($users->query("//user[@id='{$this->id}']") as $user) {
             $dom = dom_import_simplexml($user);
             $dom->parentNode->removeChild($dom);
         }
@@ -244,14 +256,33 @@ class User
 
     public function saveUser()
     {
-        // find users with current Id.
-        $users = self::$userFile->xpath("//user[@id='{$this->id}']");
-        foreach ($users as $user) {
-            $dom = dom_import_simplexml($user);
-            $dom->parentNode->removeChild($dom);
+        foreach (self::$userFile->childNodes as $root) {
+            foreach ($root->childNodes as $oldUser) {
+                if ($oldUser->getAttribute("id") == $this->id) {
+                    $root->replaceChild($this->asXML(), $oldUser);
+                    self::saveUsers();
+                }
+            }
         }
-        $this->addUser();
-        self::saveUsers();
+    }
+
+    /**
+     * Return this User object as a DOMElement object. (Convert OBJ to XML)
+     * @return DOMElement
+     */
+    private function asXML() : DOMElement{
+        $new = self::$userFile->createElement("user");
+        $new->setAttribute("id", $this->id);
+        $new->setAttribute("firstName", $this->firstName);
+        $new->setAttribute("middleName", $this->middleName);
+        $new->setAttribute("lastName", $this->lastName);
+        $new->setAttribute("email", $this->email);
+        $new->setAttribute("password", $this->password);
+        $new->setAttribute("fullAddress", $this->fullAddress);
+        $new->setAttribute("phone", $this->phone);
+        $new->setAttribute("avatarFile", $this->avatarFile);
+        $new->setAttribute("accountType", $this->accountType);
+        return $new;
     }
 
     /**
@@ -260,18 +291,8 @@ class User
     public function addUser()
     {
         self::$userCount += 1;
-        self::$userFile["count"] = self::$userCount;
-        $new = self::$userFile->addChild("user");
-        $new->addAttribute("id", $this->id);
-        $new->addAttribute("firstName", $this->firstName);
-        $new->addAttribute("middleName", $this->middleName);
-        $new->addAttribute("lastName", $this->lastName);
-        $new->addAttribute("email", $this->email);
-        $new->addAttribute("password", $this->password);
-        $new->addAttribute("fullAddress", $this->fullAddress);
-        $new->addAttribute("phone", $this->phone);
-        $new->addAttribute("avatarFile", $this->avatarFile);
-        $new->addAttribute("accountType", $this->accountType);
+        self::$users->setAttribute("count", self::$userCount);
+        self::$users->appendChild($this->asXML());
         self::saveUsers();
     }
     /* END OF ADD | SAVE | DELETE */

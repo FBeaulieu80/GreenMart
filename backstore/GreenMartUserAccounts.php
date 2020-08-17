@@ -10,20 +10,22 @@
     <meta name="author" content="Felix Beaulieu">
 </head>
 <?php
-require "common/authenticate.php";
-include "scripts/upload.php";
+require $_SERVER['DOCUMENT_ROOT']."backstore/common/authenticate.php";
 
 header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1.
 header("Pragma: no-cache"); // HTTP 1.0.
 header("Expires: 0"); // Proxies.
 
-include "scripts/User.php";
+require_once $_SERVER['DOCUMENT_ROOT']."backstore/scripts/upload.php";
+require_once $_SERVER['DOCUMENT_ROOT']."backstore/scripts/User.php";
 User::init();
 unset($selectedUserId);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (((isset($_POST["confirmBtn"]) && $_POST["confirmBtn"] == "Add new user") ||
-            (isset($_POST["confirmBtn"]) && $_POST["confirmBtn"] == "Confirm Changes")) && isset($_FILES["avatarFile"])) {
+
+    if (isset($_POST["confirmBtn"]) &&
+        ($_POST["confirmBtn"] == "Add new user" || $_POST["confirmBtn"] == "Confirm Changes") &&
+        isset($_FILES["avatarFile"]) && $_FILES["avatarFile"]["size"] > 0) {
         $avatarFile = receiveFile();
     }
 
@@ -57,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 <body onload="/*generateUserList();*/" onresize="setScreenMode()">
-<?php require_once "common/header.php"; ?>
+<?php include $_SERVER['DOCUMENT_ROOT']."backstore/common/header.php"; ?>
 
 <div id="userListMainDiv" class="main">
     <div id="pageHeader">
@@ -74,7 +76,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <script src="scripts/userList.js">setScreenMode();</script>
         <?php // Generate User List Links
         foreach (User::getUsers() as $xmlUser) {
-            $user = User::fromSimpleXMLElement($xmlUser);
+            $user = User::fromDOMElement($xmlUser);
             echo $user->generateUserLink($user->getId() == (isset($selectedUserId) ? $selectedUserId : 1));
         }
         ?>
@@ -82,14 +84,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <?php // Generate User Info Cards
     foreach (User::getUsers() as $xmlUser) {
-        $user = User::fromSimpleXMLElement($xmlUser);
+        $user = User::fromDOMElement($xmlUser);
         echo $user->generateUserInfoCard($user->getId() == (isset($selectedUserId) ? $selectedUserId : 1));
     }
     /*for ($i = 0; $i < $users->count(); $i++) {
         echo $users[$i]->generateUserInfoCard($i == 0);
     }*/
     ?>
-    <?php require "common/footer.html"; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."backstore/common/footer.html"; ?>
 </div>
 </body>
 </html>

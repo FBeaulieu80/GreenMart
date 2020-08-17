@@ -9,20 +9,20 @@
     <meta name="author" content="Athigan Sinnathurai"/>
 </head>
 <body>
-<?php require_once "common/header.php" ?>
+<?php require_once $_SERVER["DOCUMENT_ROOT"]."common/header.php" ?>
 <div class="main">
-    <form id="box" action="backstore/common/authenticate.php" target="_blank" method="post">
+    <form id="box" action="backstore/common/authenticate.php" method="post" >
         <h4 style="font-weight: bold; color: darkblue;text-align: center;">LOG IN TO YOUR GREEN MART ACCOUNT</h4>
         <label>
             Email:
-            <input type="text" name="username" required>
+            <input type="text" name="username" required autofocus>
         </label><br><br>
         <label>
             Password:
-            <input type="password" name="password" value="" id="login_password">
+            <input type="password" name="password" value="" id="login_password" required>
         </label><br><br>
         <label>
-            <input type="checkbox" id="showpasscb" onclick="myFunction()" required>
+            <input type="checkbox" id="showpasscb" onclick="myFunction()">
             Show Password
         </label><br><br>
         <script>
@@ -35,7 +35,7 @@
                 }
             }
         </script>
-        <button type="button" class="submit" style="font-weight: bold;">Submit</button>
+        <button type="submit" class="submit" style="font-weight: bold;">Submit</button>
         <button type="button" class="forgotpassword" style="font-weight: bold; float: right;">Forgot Password</button>
     </form>
     <p style="text-align: center;">Don't have an account? <a href="p6.php">Sign up</a> to shop online and receive all
@@ -46,7 +46,7 @@
         </button>
     </p>
 </div>
-<?php require_once "common/footer.php" ?>
+<?php require_once $_SERVER["DOCUMENT_ROOT"]."common/footer.php" ?>
 </body>
 
 </html>
