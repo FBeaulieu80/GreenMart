@@ -10,10 +10,10 @@
 </head>
 <body>
 <?php
-    /*header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1.
+    header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1.
     header("Pragma: no-cache"); // HTTP 1.0.
-    header("Expires: 0"); */// Proxies.
-    require_once $_SERVER["DOCUMENT_ROOT"]."common/header.php" ?>
+    header("Expires: 0"); // Proxies.
+    include "common/header.php" ?>
 <ul class="breadcrumb">
     <li><a href="index.php">Store</a></li>
     <li>Log In</li>
@@ -78,7 +78,7 @@
         </button>
     </p>
 </div>
-<?php require_once $_SERVER["DOCUMENT_ROOT"]."common/footer.php" ?>
+<?php include "common/footer.php" ?>
 </body>
 
 </html>
