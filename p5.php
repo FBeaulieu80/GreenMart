@@ -1,51 +1,85 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:style="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
+    <link rel="shortcut icon" href="favicon.ico">
     <meta charset="UTF-8">
     <title>Log In | Green Mart</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/p5.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/p5.css"/>
     <meta name="author" content="Athigan Sinnathurai"/>
 </head>
-
 <body>
-    <?php require_once "common/header.php"?>
-    <div class="main">
-        <!-- TODO: All inputs should have labels.-->
-        <form id="box">
-            <h4 style="font-weight: bold; color: darkblue;text-align: center;">LOG IN TO YOUR GREEN MART ACCOUNT</h4>
-            <label>
-                Email:
-                <input type="text" name="email" id="email" required>
-            </label><br><br>
-            <label>
-                Password:
-                <input type="password" value="" id="login_password">
-            </label><br><br>
-            <label>
-                <input type="checkbox" id="showpasscb" onclick="myFunction()" required>
-                Show Password
-            </label><br><br>
-            
-            <script>
-                function myFunction() {
-                    const x = document.getElementById("login_password");
-                    if (x.type === "password") {
+<?php
+    session_start();
+    header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1.
+    header("Pragma: no-cache"); // HTTP 1.0.
+    header("Expires: 0"); // Proxies.
+    include "common/header.php" ?>
+<ul class="breadcrumb">
+    <li><a href="index.php">Store</a></li>
+    <li>Log In</li>
+</ul>
+<div class="main">
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "GET") {
+        if (isset($_GET["login"])) {
+            switch ($_GET["login"]) {
+                case "Successful":
+                    echo "<h3>You are now logged in.</h3>";
+                    break;
+                case "Wrong Password":
+                    echo "<h3>Wrong password.</h3>";
+                    break;
+                case "Unknown Error":
+                    echo "<h3>Oops! Something went wrong...</h3>";
+                    break;
+            }
+        }
+        if (isset($_GET["logout"]) && $_GET["logout"] == 'true') {
+            unset($_SESSION["loggedin"]);
+            unset($_SESSION["username"]);
+            unset($_SESSION["password"]);
+            unset($_SESSION["adminauthenticated"]);
+            echo "<h3>You are logged out!</h3>";
+        }
+    }
+    ?>
+    <form id="box" action="backstore/common/authenticate.php" method="post" >
+        <h4 style="font-weight: bold; color: darkblue;text-align: center;">LOG IN TO YOUR GREEN MART ACCOUNT</h4>
+        <label>
+            Email:
+            <input type="text" name="username" required autofocus>
+        </label><br><br>
+        <label>
+            Password:
+            <input type="password" name="password" value="" id="login_password" required>
+        </label><br><br>
+        <label>
+            <input type="checkbox" id="showpasscb" onclick="myFunction()">
+            Show Password
+        </label><br><br>
+        <script>
+            function myFunction() {
+                const x = document.getElementById("login_password");
+                if (x.type === "password") {
                     x.type = "text";
-                  } else {
+                } else {
                     x.type = "password";
-                  }
                 }
-            </script>
-        
-        <button type="button" class="submit" style="font-weight: bold;">Submit</button>
+            }
+        </script>
+        <button type="submit" class="submit" style="font-weight: bold;">Submit</button>
         <button type="button" class="forgotpassword" style="font-weight: bold; float: right;">Forgot Password</button>
-        </form>
-
-        <p style="text-align: center;">Don't have an account? <a href="p6.php">Sign up</a> to shop online and receive all the latest promotions at Green Mart.</p>
-        <p style="text-align: center;"><button style="background-color: black; "><a href="backstore/index.php" style="text-decoration: none; color: white;">Access Backstore</a></button></p>
-    </div>
-    <?php require_once "common/footer.php" ?>
+    </form>
+    <p style="text-align: center;">Don't have an account? <a href="p6.php">Sign up</a> to shop online and receive all
+        the latest promotions at Green Mart.</p>
+    <p style="text-align: center;">
+        <button style="background-color: black; "><a href="backstore/index.php"
+                                                     style="text-decoration: none; color: white;">Access Backstore</a>
+        </button>
+    </p>
+</div>
+<?php include "common/footer.php" ?>
 </body>
 
 </html>

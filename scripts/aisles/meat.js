@@ -1,5 +1,5 @@
 function whole() {
-    document.getElementById('image').querySelector("img").src="../../images/meat/chicken-whole.jpg"
+    document.getElementById('image').querySelector("img").src = "../../images/meat/chicken-whole.jpg"
     document.getElementById('image').alt = "Chicken Whole";
     document.getElementById("descButton").innerHTML = "The chicken with all parts intact, generally including the giblets stuffed in the cavity. Consists of white and dark meat.";
     document.getElementById("location").innerText = "Product of Alberta.";
@@ -16,7 +16,7 @@ function whole() {
 }
 
 function breast() {
-    document.getElementById('image').querySelector("img").src="../../images/meat/chicken-breast.jpg"
+    document.getElementById('image').querySelector("img").src = "../../images/meat/chicken-breast.jpg"
     document.getElementById('image').alt = "Chicken Breast";
     document.getElementById("descButton").innerHTML = "The entire breast portion of the chicken. It is available bone-in, boneless, skin-on and skinless. Consists of white meat only.";
     document.getElementById("location").innerText = "Product of Nova Scotia.";
@@ -33,7 +33,7 @@ function breast() {
 }
 
 function leg() {
-    document.getElementById('image').querySelector("img").src="../../images/meat/chicken-leg.jpg";
+    document.getElementById('image').querySelector("img").src = "../../images/meat/chicken-leg.jpg";
     document.getElementById('image').alt = "Chicken Leg";
     document.getElementById("descButton").innerHTML = "The leg of the chicken consists of two parts, which are the thigh and the drumstick. Consist of dark meat only.";
     document.getElementById("location").innerText = "Product of Quebec.";
@@ -87,41 +87,36 @@ function add() {
 }
 
 function subtract() {
-    if (document.getElementById("quantity").value > 0){
+    if (document.getElementById("quantity").value > 0) {
         document.getElementById("quantity").value--;
     }
     subtotal();
 }
 
 function notification() {
-    if (document.getElementById("quantity").value == 0){
+    if (document.getElementById("quantity").value === 0) {
         alert('Warning: No items selected!')
-    }
-    else if (document.getElementById("quantity").value == 1){
+    } else if (document.getElementById("quantity").value === 1) {
         alert(document.getElementById("quantity").value + ' item has been added to the cart')
-    }
-    else {
+    } else {
         alert(document.getElementById("quantity").value + ' items have been added to the cart')
     }
 }
 
 function cut() {
-    if (sessionStorage.getItem('cut') == "breast") {
+    if (sessionStorage.getItem('cut') === "breast") {
         breast();
-    }
-    else if (sessionStorage.getItem('cut') == "leg") {
+    } else if (sessionStorage.getItem('cut') === "leg") {
         leg();
-    }
-    else {
+    } else {
         whole();
     }
 }
 
 function cook() {
-    if (sessionStorage.getItem('cook') == "roasted") {
+    if (sessionStorage.getItem('cook') === "roasted") {
         roasted()
-    }
-    else {
+    } else {
         grilled()
     }
 }
@@ -134,7 +129,7 @@ function showDesc() {
     }
 }
 
-function refresh () {
+function refresh() {
     cut();
     cook();
     subtotal();

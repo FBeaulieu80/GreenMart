@@ -68,7 +68,7 @@ html, body {
 
 .main h2 {
     text-align: left;
-    padding:0;
+    padding: 0;
     font-size: 40px;
 }
 
@@ -81,8 +81,8 @@ html, body {
     width: 30px;
 }
 
-.addtocart{
-display: inline-block;
+.addtocart {
+    display: inline-block;
 }
 
 .addtocart button {
@@ -95,7 +95,7 @@ display: inline-block;
     cursor: pointer;
 }
 
-.addtocart input[type=text]{
+.addtocart input[type=text] {
     font-size: 16px;
     padding: 4px 10px;
 
@@ -105,6 +105,7 @@ display: inline-block;
     margin: 0;
     padding: 6px 6px 6px 6px;
 }
+
 .detailed-description-button button {
     padding: 6px 6px 6px 6px;
     background: lightgray;
@@ -126,6 +127,14 @@ display: inline-block;
     margin-left: 0;
 }
 
+.type input {
+    padding: 6px 6px 6px 6px;
+    background: lightgray;
+    font-size: 16px;
+    border: none;
+    margin-left: 0;
+}
+
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
@@ -133,12 +142,13 @@ table, th, td {
 }
 
 
-.cookie-options{
+.cookie-options {
     text-align: left;
     margin-bottom: 50px;
 
 }
-.cookie-button{
+
+.cookie-button {
     height: 50px;
     width: 125px;
     font-size: 15px;
@@ -146,7 +156,7 @@ table, th, td {
     cursor: pointer;
 }
 
-#details{
+#details {
     cursor: pointer;
     margin: 20px auto;
     text-align: center;
@@ -155,7 +165,7 @@ table, th, td {
     border-style: ridge;
 }
 
-#description{
+#description {
     max-height: 0;
     overflow: hidden;
 
@@ -167,7 +177,7 @@ table, th, td {
 
 }
 
-#description.open{
+#description.open {
     max-height: 300px;
 
     /*set smooth transitions up*/
@@ -176,7 +186,7 @@ table, th, td {
     transition: max-height 0.7s;
 }
 
-.cookie-addToCart{
+.cookie-addToCart {
     display: inline-block;
     padding: 10px;
 
@@ -192,7 +202,7 @@ table, th, td {
     cursor: pointer;
 }
 
-#add, #subtract{
+#add, #subtract {
     cursor: pointer;
     font-size: 12px;
     padding: 6px 10px 6px 10px;
@@ -200,18 +210,18 @@ table, th, td {
     background-color: aliceblue;
 }
 
-#cookquantity{
+#cookquantity {
     text-align: center;
     padding: 6px 10px 6px 10px;
     width: 40px;
 }
 
-#total{
-  font-weight: bold;
+#total {
+    font-weight: bold;
 }
 
 
- /*RESPONSIVE GRID*/
+/*RESPONSIVE GRID*/
 * {
     box-sizing: border-box;
 }

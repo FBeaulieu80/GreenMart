@@ -1,27 +1,29 @@
-<html lang="en" xmlns:style="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
+
+    <link rel="shortcut icon" href="../../favicon.ico">
     <meta name="author" content="Michael Rowe">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aisles</title>
-    <link rel="stylesheet" href="../../css/main.css" type="text/css" />
-    <link rel="stylesheet" href="../../css/p2.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="../../css/p2.css" type="text/css"/>
 </head>
 <body>
 <?php require "../../common/header.php"; ?>
+<ul class="breadcrumb">
+    <li><a href="../../index.php">Store</a></li>
+    <li><a href="../index.php">Aisles</a></li>
+    <li>Dairy & Eggs</li>
+</ul>
 <div class="main">
-    <div class="row aisle-header">
-        <div class="col-1"><a href="../index.php"><<</a></div>
-        <div class="col-11">Dairy & Eggs</div>
-    </div>
-
     <div class="aisle-cards">
         <div class="aisle-card">
-<!--            <a href="eggs.php">-->
-                <img src="../../images/dairy-eggs/eggs.jpg" alt="Eggs" style="filter: grayscale(100%)">
-                <div class="text">Eggs</div>
-                <div class="price-sale">SOLD OUT</div> <!-- $2.49/ea -->
-<!--            </a>-->
+            <!--            <a href="eggs.php">-->
+            <img src="../../images/dairy-eggs/eggs.jpg" alt="Eggs" style="filter: grayscale(100%)">
+            <div class="text">Eggs</div>
+            <div class="price-sale">SOLD OUT</div> <!-- $2.49/ea -->
+            <!--            </a>-->
         </div>
 
         <div class="aisle-card">
@@ -33,11 +35,11 @@
         </div>
 
         <div class="aisle-card">
-<!--            <a href="milk.php">-->
-                <img src="../../images/dairy-eggs/milk.jpg" alt="Milk" style="filter: grayscale(100%)">
-                <div class="text">Milk</div>
-                <div class="price-sale">SOLD OUT</div>
-<!--            </a>-->
+            <!--            <a href="milk.php">-->
+            <img src="../../images/dairy-eggs/milk.jpg" alt="Milk" style="filter: grayscale(100%)">
+            <div class="text">Milk</div>
+            <div class="price-sale">SOLD OUT</div>
+            <!--            </a>-->
         </div>
     </div>
 </div>

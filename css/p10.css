@@ -1,5 +1,17 @@
+
+.main {
+    display: grid;
+    grid-template-columns: auto minmax(auto, 600px) auto;
+    place-items: center;
+    width: 100%;
+    grid-template-areas: ". form .";
+}
+
 /* START EDIT USER PROFILE (P10) */
 .userProfileForm {
+    /* PARENT */
+    grid-area: form;
+    /* LOCAL */
     width: 100%;
     min-height: 200px;
 }
@@ -7,23 +19,28 @@
 .container {
     margin: 0 auto;
     position: relative;
-    max-width: 20%;
-    min-width: 200px;
+    display: grid;
+    grid-gap: 0;
+    min-height: fit-content;
 }
 
 .avatarImg {
     margin: 0 auto;
     display: block;
+    min-height: 200px;
+    min-width: 200px;
     width: 100%;
-
+    max-width: 400px;
+    max-height: 400px;
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
+    object-fit: cover;
 }
 
 .middle {
     transition: .5s ease;
-    opacity: 0;
+    opacity: 1;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -53,18 +70,93 @@
     margin: 0 auto;
 }
 
-.container#info input {
-    text-transform: uppercase;
+.container#info input, select {
     min-width: 30px;
     width: 100%;
     text-align: center;
     margin: 0;
     padding: 0.5rem;
+    font-size: 4vw;
 }
+
+.passwordInputField {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.visibility {
+    display: inline-block;
+    height: 4vw;
+    width: 4vw;
+    float: right;
+    margin-left: -6vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    z-index: 2;
+    position: absolute;
+    background-image: url("../images/visibility-black-18dp.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.visibility-off {
+    background-image: url("../images/visibility_off-black-18dp.svg");
+}
+
+.visibility:hover {
+    cursor: pointer;
+}
+
 /* END EDIT USER PROFILE (P10) */
 
-@media (max-width: 400px) {
+footer a {
+    font-weight: bold;
+}
+
+/* Medium Devices */
+@media only screen and (min-device-width: 600px) and (max-device-width: 1366px) {
+    .container#info input, select {
+        font-size: 2vw;
+    }
+
+    .visibility {
+        height: 2vw;
+        width: 2vw;
+        float: right;
+        margin-left: -4vw;
+        margin-top: 0.5vh;
+        margin-bottom: 0.5vh;
+        z-index: 2;
+        position: absolute;
+
+    }
+}
+
+
+/* Devices larger than an iPad Pro*/
+@media only screen and (min-device-width: 1367px) {
+    .container#info input {
+        font-size: 1vw;
+    }
+
     .middle {
-        opacity: 1;
+        opacity: 0;
+    }
+
+    footer a {
+        font-weight: normal;
+    }
+
+    .visibility {
+        height: 2vw;
+        width: 2vw;
+        float: right;
+        margin-left: -4vw;
+        margin-top: 0.5vh;
+        margin-bottom: 0.5vh;
+        z-index: 2;
+        position: absolute;
+
     }
 }

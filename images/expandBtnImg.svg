@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg"
      preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" width="640" height="640">
     <defs>
         <path d="M617.67 293C624.48 293 630 298.52 630 305.33C630 313.67 630 326.33 630 334.67C630 341.48 624.48 347 617.67 347C496.13 347 143.87 347 22.33 347C15.52 347 10 341.48 10 334.67C10 326.33 10 313.67 10 305.33C10 298.52 15.52 293 22.33 293C143.87 293 496.13 293 617.67 293Z"

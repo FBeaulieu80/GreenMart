@@ -1,15 +1,15 @@
-function setSelected(e, src=null) {
+function setSelected(e, src = null) {
     if (e.classList.contains("cherryTypeButton")) {
         let cherryTypeButtons = document.getElementsByClassName("cherryTypeButton");
         for (let i = 0; i < cherryTypeButtons.length; i++) {
             cherryTypeButtons[i].style.border = "none";
             cherryTypeButtons[i].style.borderWidth = "0px";
         }
-        document.getElementById('cherry-image').src= src;
+        document.getElementById('cherry-image').src = src;
+        e.id.value = true;
         localStorage.setItem(LocalStorageKeys.CHERRY_URL, src);
         localStorage.setItem(LocalStorageKeys.CHERRY_TYPE, e.id);
-    }
-    else {
+    } else {
         let organicButtons = document.getElementsByClassName("cherryOrganicButton");
         for (let i = 0; i < organicButtons.length; i++) {
             organicButtons[i].style.border = "none";
@@ -31,17 +31,18 @@ function detailedDescription() {
     }
 }
 
-function quantityIncr(){
+function quantityIncr() {
     let quantity = document.getElementById("quantity");
-    if (quantity.value < 30){
+    if (quantity.value < 30) {
         quantity.value++;
     }
     calculateSubtotal();
     localStorage.setItem(LocalStorageKeys.ITEM_COUNT, quantity.value);
 }
+
 function quantityDecr() {
     let quantity = document.getElementById("quantity");
-    if (quantity.value > 0){
+    if (quantity.value > 0) {
         quantity.value--;
     }
     calculateSubtotal();
@@ -53,11 +54,10 @@ function calculateSubtotal() {
 }
 
 function addToCartAlert() {
-    if (document.getElementById("quantity").value === "0"){
+    if (document.getElementById("quantity").value === "0") {
         alert('Please select at least 1 product!')
-    }
-    else {
-        alert(document.getElementById("quantity").value + ' products added to cart!')
+    } else {
+        // alert(document.getElementById("quantity").value + ' products added to cart!')
     }
 
 }
@@ -65,9 +65,9 @@ function addToCartAlert() {
 const LocalStorageKeys = {
     CHERRY_TYPE: "cherry-type",
     CHERRY_URL: "url",
-    CHERRY_TYPES: { BING: "bing", RAINIER: "rainier", BLACK_TARTARIAN: "black-tartarian" },
+    CHERRY_TYPES: {BING: "bing", RAINIER: "rainier", BLACK_TARTARIAN: "black-tartarian"},
     IS_ORGANIC: "is-organic",
-    ORGANIC: { YES: "organic", NO: "regular"},
+    ORGANIC: {YES: "organic", NO: "regular"},
     ITEM_COUNT: "cherries-count"
 };
 
@@ -77,7 +77,7 @@ function remember() {
 
     if (localStorage.getItem(LocalStorageKeys.CHERRY_TYPE)) {
         setSelected(document.getElementById(localStorage.getItem(LocalStorageKeys.CHERRY_TYPE)),
-                    localStorage.getItem(LocalStorageKeys.CHERRY_URL));
+            localStorage.getItem(LocalStorageKeys.CHERRY_URL));
 
     }
 
