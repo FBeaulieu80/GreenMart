@@ -1,3 +1,10 @@
+<?php
+header('Content-Type: text/css');
+include("../p4.php")
+// This is a php file because I was trying to change css with php but it doesnt work :)
+?>
+
+
 .grid-container {
     /*Add for responsive*/
     display: grid;
@@ -6,6 +13,18 @@
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
+<?php ////$value0 = "none"; ?>
+<!--#cart0 {display: --><?php //echo $value0; ?><!--}-->
+<!--#cart1 {display: --><?php //echo $value1; ?><!--}-->
+<!--#cart2 {display: --><?php //echo $value2; ?><!--}-->
+<!--#cart3 {display: --><?php //echo $value3; ?><!--}-->
+<!--#cart4 {display: --><?php //echo $value4; ?><!--}-->
+<!--#cart5 {display: --><?php //echo $value5; ?><!--}-->
+<!--#cart6 {display: --><?php //echo $value6; ?><!--}-->
+<!--#cart7 {display: --><?php //echo $value7; ?><!--}-->
+<!--#cart8 {display: --><?php //echo $value8; ?><!--}-->
+<!--#cart9 {display: --><?php //echo $value9; ?><!--}-->
 
 h1 {
     /*font-family: cursive;*/

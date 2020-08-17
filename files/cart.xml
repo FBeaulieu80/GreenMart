@@ -1,36 +1,4 @@
 <?xml version="1.0"?>
+<!--DELETING NOT IMPLEMENTED: MUST MANUALLY REMOVE TEXT BETWEEN <cartList> TAGS-->
 <cartList>
-  <product>
-    <id>887325</id>
-    <prodName>Cakes</prodName>
-    <aisle>Bakery</aisle>
-    <price>cakePrice</price>
-    <discount>false</discount>
-    <quantity>1</quantity>
-    <origin>productOrigin</origin>
-    <description>description</description>
-    <seller/>
-    <status/>
-    <cherryType/>
-    <organic/>
-    <cakeType>carrot</cakeType>
-  </product>
-</cartList>
-<cartList>
-  <product>
-    <id>408731</id>
-    <prodName>Cherries</prodName>
-    <aisle>Fruits &amp; Vegetables</aisle>
-    <price>4.99</price>
-    <discount>false</discount>
-    <quantity>1</quantity>
-    <origin>Mexico</origin>
-    <description>Organic Cherries from Mexico. Grown on a sustainable and fair trade certified farm.&#xD;
-                Check out our recipes to see what delicious meals and desserts you can make with cherries.</description>
-    <seller></seller>
-    <status></status>
-    <cherryType></cherryType>
-    <organic>true</organic>
-    <cakeType></cakeType>
-  </product>
 </cartList>
