@@ -18,7 +18,7 @@
                 <a href='{$base}backstore/ProductList.php'>Inventory</a>
                 <a href='{$base}backstore/GreenMartUserAccounts.php'>Users</a>
                 <a href='{$base}backstore/p11.php'>Orders</a>
-                <a href='{$base}p5.php'><img style="display: inline-block" id='logInIcon' src='{$base}images/users/avatar.svg' alt='Avatar'><p id='logInText'>Log Out</p></a>
+                <a href='{$base}p5.php?logout=true'><img style="display: inline-block" id='logInIcon' src='{$base}images/users/avatar.svg' alt='Avatar'><p id='logInText'>Log Out</p></a>
             </div>
             MAINNAV;
     } else {
