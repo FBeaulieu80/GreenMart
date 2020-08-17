@@ -18,11 +18,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     break;
                 } else {
                     $status = 1;
-                    break;
                 }
             } else {
                 $status = 2;
-                break;
             }
         }
         switch ($status) {
