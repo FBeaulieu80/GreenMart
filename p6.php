@@ -13,7 +13,7 @@
     header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1.
     header("Pragma: no-cache"); // HTTP 1.0.
     header("Expires: 0"); // Proxies.
-    require_once $_SERVER["DOCUMENT_ROOT"]."common/header.php" ?>
+    include "common/header.php" ?>
 <ul class="breadcrumb">
     <li><a href="index.php">Store</a></li>
     <li>Sign Up</li>
@@ -84,5 +84,5 @@
     <p style="text-align: center;">Already have a Green Mart account? <a href="p5.php">Login</a> to shop online.</p>
 </div>
 </body>
-<?php require_once "common/footer.php" ?>
+<?php include "common/footer.php" ?>
 </html>
