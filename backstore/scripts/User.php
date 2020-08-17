@@ -292,7 +292,9 @@ class User
     {
         self::$userCount += 1;
         self::$users->setAttribute("count", self::$userCount);
-        self::$users->appendChild($this->asXML());
+        foreach (self::$userFile->childNodes as $root) {
+            $root->appendChild($this->asXML());
+        }
         self::saveUsers();
     }
     /* END OF ADD | SAVE | DELETE */

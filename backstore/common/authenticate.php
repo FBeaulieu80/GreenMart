@@ -4,28 +4,38 @@ session_start();
 
 // If page is accessed from a form (ie P5), authenticate user for the current session.
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $xml = simplexml_load_file('../../files/users.xml');
-
-    foreach ($xml as $user) {
-        if ($user->email == $_POST['email']) {
-            if ($user->password == $_POST['password']) {
-                $_SESSION["loggedin"] = true;
-                $_SESSION["username"] = $_POST['email'];
-                //echo "Successful login";
-                if ($user->accountType == 'admin') {
-                    $_SESSION["adminauthenticated"] = true;
+    if (isset($_POST['username'], $_POST['password'])) {
+        $xml = simplexml_load_file('../../files/users.xml');
+        $status = -1;
+        foreach ($xml as $user) {
+            if (strtolower($user['email']) == strtolower($_POST['username'])) {
+                if ($user['password'] == $_POST['password']) {
+                    $_SESSION["loggedin"] = true;
+                    $_SESSION["username"] = $_POST['username'];
+                    $_SESSION["adminauthenticated"] = ($user['accountType'] == 'admin');
+                    $status = 0;
+                    break;
+                } else {
+                    $status = 1;
+                    break;
                 }
-                header("Location: ". "p5.php?login=Successful");
-                break;
             } else {
-                //echo "Password does not match";
-                header("Location: ". "p5.php?login=Wrong+Password");
+                $status = 2;
                 break;
             }
-        } else {
-            //echo "User does not exist";
-            header("Location: ". "p6.php");
-            break;
+        }
+        switch ($status) {
+            case 0:
+                header("Location: " . "/p5.php?login=Successful");
+                break;
+            case 1:
+                header("Location: " . "/p5.php?login=Wrong+Password");
+                break;
+            case 2:
+                header("Location: " . "/p6.php?login=Unknown+User");
+                break;
+            default:
+                header("Location: " . "/p5.php?login=Unknown+Error");
         }
     }
 }

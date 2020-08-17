@@ -1,8 +1,10 @@
 <?xml version="1.0"?>
-<users count="5">
-  <user id="1" firstName="Felix" middleName="" lastName="Beaulieu" email="felix.beaulieu@mail.concordia.ca" password="pa55word" fullAddress="123 rue Street, Cityville, A1B 2C3, Country" phone="5555555555" avatarFile="../images/users/cat1.jpg" accountType="admin"/>
-  <user id="2" firstName="Michael" middleName="" lastName="Rowe" email="mrowe@roweinc.com" password="pa55word" fullAddress="123 Rowe street, michaelsville" phone="15555555555" avatarFile="../images/users/cat2.jpg" accountType="admin"/>
-  <user id="3" firstName="Kyle" middleName="" lastName="Taylor-Bracken" email="" password="pa55word" fullAddress="" phone="" avatarFile="../images/users/cat3.jpg" accountType="admin"/>
-  <user id="4" firstName="Laura" middleName="" lastName="Boivin" email="" password="" fullAddress="sfdsdffds" phone="" avatarFile="../images/users/avatar.svg" accountType="client"/>
-  <user id="5" firstName="Athigan" middleName="" lastName="Sinnathurai" email="" password="" fullAddress="" phone="" avatarFile="../images/users/avatar.svg" accountType="admin"/>
+<users count="7">
+  <user id="1" firstName="Felix" middleName="" lastName="Beaulieu" email="felix.beaulieu@greenmart.ca" password="pa55word" fullAddress="123 rue Street, Cityville, A1B 2C3, Country" phone="5555555555" avatarFile="../images/users/avatar.svg" accountType="admin"/>
+  <user id="2" firstName="Michael" middleName="" lastName="Rowe" email="michael.rowe@greenmart.com" password="pa55word" fullAddress="123 Rowe street, michaelsville" phone="15555555555" avatarFile="../images/users/avatar.svg" accountType="admin"/>
+  <user id="3" firstName="Kyle" middleName="" lastName="Taylor-Bracken" email="kyle.taylor.bracken@greenmart.com" password="pa55word" fullAddress="" phone="" avatarFile="../images/users/avatar.svg" accountType="admin"/>
+  <user id="4" firstName="Laura" middleName="" lastName="Boivin" email="laura.boivin@greenmart.com" password="pa55word" fullAddress="" phone="" avatarFile="../images/users/avatar.svg" accountType="admin"/>
+  <user id="5" firstName="Athigan" middleName="" lastName="Sinnathurai" email="ATHIGAN.SINNATHURAI@greenmart.com" password="pa55word" fullAddress="" phone="" avatarFile="../images/users/avatar.svg" accountType="admin"/>
+  <user id="6" firstName="Marker" middleName="" lastName="Admin" email="marker.admin@greenmart.com" password="marker" fullAddress="" phone="" avatarFile="../images/users/avatar.svg" accountType="admin"/>
+  <user id="7" firstName="Marker" middleName="" lastName="Client" email="marker.client@greenmart.com" password="client" fullAddress="" phone="" avatarFile="../images/users/avatar.svg" accountType="client"/>
 </users>

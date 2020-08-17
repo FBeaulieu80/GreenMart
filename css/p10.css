@@ -71,7 +71,6 @@
 }
 
 .container#info input, select {
-    text-transform: uppercase;
     min-width: 30px;
     width: 100%;
     text-align: center;

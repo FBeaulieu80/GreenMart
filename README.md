@@ -4,7 +4,7 @@
 
 ### Members:
 - Felix Beaulieu (40092684)
-- Michael Rowe ()
-- Kyle Taylor-Bracken ()
-- Athigan Sinnathurai ()
-- Laura Boivin ()
+- Michael Rowe (26101267)
+- Kyle Taylor-Bracken (40073991)
+- Athigan Sinnathurai (40132792)
+- Laura Boivin (40066319)

@@ -10,7 +10,28 @@
 </head>
 <body>
 <?php require_once $_SERVER["DOCUMENT_ROOT"]."common/header.php" ?>
+<ul class="breadcrumb">
+    <li><a href="index.php">Store</a></li>
+    <li>Log In</li>
+</ul>
 <div class="main">
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "GET") {
+        if (isset($_GET["login"])) {
+            switch ($_GET["login"]) {
+                case "Successful":
+                    echo "<h3>You are now logged in.</h3>";
+                    break;
+                case "Wrong Password":
+                    echo "<h3>Wrong password.</h3>";
+                    break;
+                case "Unknown Error":
+                    echo "<h3>Oops! Something went wrong...</h3>";
+                    break;
+            }
+        }
+    }
+    ?>
     <form id="box" action="backstore/common/authenticate.php" method="post" >
         <h4 style="font-weight: bold; color: darkblue;text-align: center;">LOG IN TO YOUR GREEN MART ACCOUNT</h4>
         <label>

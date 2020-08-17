@@ -10,7 +10,18 @@
 </head>
 <body>
 <?php require_once "common/header.php" ?>
+<ul class="breadcrumb">
+    <li><a href="index.php">Store</a></li>
+    <li>Sign Up</li>
+</ul>
 <div class="main">
+    <?php
+        if ($_SERVER["REQUEST_METHOD"] == "GET") {
+            if (isset($_GET["login"]) && $_GET["login"] == "Unknown User") {
+                echo "<h3>Unknown User, if you would like to create an account, please fill the form below.</h3>";
+            }
+        }
+    ?>
     <form id="box" action="backstore/GreenMartUserAccounts.php" target="_blank" method="post">
             <h4 style="font-weight: bold; color: darkblue; text-align: center;">SIGNUP TO CREATE A GREEN MART ACCOUNT</h4>
             <h3 style="font-weight: bold; text-decoration: underline;">PROFILE</h3>
