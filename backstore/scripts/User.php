@@ -121,7 +121,7 @@ class User
      */
     public static function init()
     {
-        self::$databaseUrl = $_SERVER['DOCUMENT_ROOT']."files/users.xml";
+        self::$databaseUrl = "../files/users.xml";
         self::$userFile = new DOMDocument();
         self::$userFile->formatOutput = true;
         self::$userFile->preserveWhiteSpace = false;

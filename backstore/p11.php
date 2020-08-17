@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <link rel="shortcut icon" href="../favicon.ico">
     <meta name="author" content="Laura Boivin">
     <link rel="stylesheet" type="text/css" href="../css/p11.css">
     <link rel="stylesheet" type="text/css" href="../css/backstore.css">
     <title>Order List | Back Store | Green Mart</title>
 </head>
-<?php require "backstore/common/authenticate.php"; ?>
+<?php require "common/authenticate.php"; ?>
 <body>
-<?php include "backstore/common/header.php";
+<?php include "common/header.php";
 
 if (isset($_POST['delete'])) {
 
@@ -90,6 +89,6 @@ if (isset($_POST['delete'])) {
         </div>
     </div>
 </div>
-<?php include "backstore/common/footer.html"; ?>
+<?php include "common/footer.html"; ?>
 </body>
 
