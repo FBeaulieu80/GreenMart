@@ -15,7 +15,7 @@ foreach ($xml as $user) {
 	    $_SESSION["loggedin"] = true;
         $_SESSION["username"] = $_POST['email'];
 	    echo "Successful login";
-	      if($user->adminType == 'admin'){
+	      if($user->accountType == 'admin'){
 		     $_SESSION["adminauthenticated"] = true;
 	    }
 	    break;			
