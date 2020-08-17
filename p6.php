@@ -9,7 +9,11 @@
     <meta name="author" content="Athigan Sinnathurai"/>
 </head>
 <body>
-<?php require_once "common/header.php" ?>
+<?php
+    header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1.
+    header("Pragma: no-cache"); // HTTP 1.0.
+    header("Expires: 0"); // Proxies.
+    require_once $_SERVER["DOCUMENT_ROOT"]."common/header.php" ?>
 <ul class="breadcrumb">
     <li><a href="index.php">Store</a></li>
     <li>Sign Up</li>
