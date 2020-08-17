@@ -9,13 +9,13 @@
     <meta name="author" content="Felix Beaulieu">
 </head>
 <?php
-include $_SERVER['DOCUMENT_ROOT']."backstore/common/authenticate.php";
+include "common/authenticate.php";
 
 header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1.
 header("Pragma: no-cache"); // HTTP 1.0.
 header("Expires: 0"); // Proxies.
 
-require_once $_SERVER['DOCUMENT_ROOT']."backstore/scripts/User.php";
+require_once "scripts/User.php";
 User::init();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 <body>
-<?php include $_SERVER['DOCUMENT_ROOT']."backstore/common/header.php"; ?>
+<?php include "common/header.php"; ?>
 <div class='main'>
     <form class="userProfileForm" method="post" action="GreenMartUserAccounts.php" id="newUserForm"
           enctype="multipart/form-data">
@@ -108,6 +108,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </form>
 </div>
 
-<?php include $_SERVER['DOCUMENT_ROOT']."backstore/common/footer.html"; ?>
+<?php include "common/footer.html"; ?>
 </body>
 </html>

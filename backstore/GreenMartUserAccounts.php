@@ -10,14 +10,14 @@
     <meta name="author" content="Felix Beaulieu">
 </head>
 <?php
-require $_SERVER['DOCUMENT_ROOT']."backstore/common/authenticate.php";
+require "common/authenticate.php";
 
 header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1.
 header("Pragma: no-cache"); // HTTP 1.0.
 header("Expires: 0"); // Proxies.
 
-require_once $_SERVER['DOCUMENT_ROOT']."backstore/scripts/upload.php";
-require_once $_SERVER['DOCUMENT_ROOT']."backstore/scripts/User.php";
+require_once "scripts/upload.php";
+require_once "scripts/User.php";
 User::init();
 unset($selectedUserId);
 
@@ -59,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 <body onload="/*generateUserList();*/" onresize="setScreenMode()">
-<?php include $_SERVER['DOCUMENT_ROOT']."backstore/common/header.php"; ?>
+<?php include "common/header.php"; ?>
 
 <div id="userListMainDiv" class="main">
     <div id="pageHeader">
@@ -91,7 +91,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo $users[$i]->generateUserInfoCard($i == 0);
     }*/
     ?>
-    <?php include $_SERVER['DOCUMENT_ROOT']."backstore/common/footer.html"; ?>
+    <?php include "common/footer.html"; ?>
 </div>
 </body>
 </html>

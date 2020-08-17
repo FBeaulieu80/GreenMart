@@ -14,7 +14,7 @@
 </head>
 
 <?php
-include $_SERVER['DOCUMENT_ROOT']."backstore/common/authenticate.php";
+include "backstore/common/authenticate.php";
 //$valid_passwords = array ("marker" => "isadmin");
 //$valid_users = array_keys($valid_passwords);
 //

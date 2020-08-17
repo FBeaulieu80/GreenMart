@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../css/p7.css"/>
     <link rel="stylesheet" type="text/css" href="../css/backstore.css"/>
 </head>
-<?php require $_SERVER['DOCUMENT_ROOT']."backstore/common/authenticate.php"; ?>
+<?php require "common/authenticate.php"; ?>
 <body>
 <!-- Header in external file -->
 <?php require "common/header.php"; ?>

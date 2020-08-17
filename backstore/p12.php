@@ -9,7 +9,7 @@
     <meta name="author" content="Laura Boivin">
     <title>Edit Order List | Back Store | Green Mart</title>
 </head>
-<?php require $_SERVER['DOCUMENT_ROOT']."backstore/common/authenticate.php"; ?>
+<?php require "common/authenticate.php"; ?>
 <body widthmargin="100%">
 <?php require "common/header.php"; ?>
 
