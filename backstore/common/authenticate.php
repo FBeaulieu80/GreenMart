@@ -1,35 +1,41 @@
 <?php
 include "Errors.php";
-require_once $_SERVER["DOCUMENT_ROOT"]."backstore/scripts/User.php";
 session_start();
 
-if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    if (isset($_POST["username"], $_POST["password"])) {
-        $_SESSION["PH_AUTH_USER"] = $_POST["username"];
-        $_SESSION["PH_AUTH_PW"] = $_POST["password"];
-    }
+// If page is accessed from a form (ie P5), authenticate user for the current session.
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $xml = simplexml_load_file('../../files/users.xml');
 
-    User::init();
-    foreach (User::getUsers() as $user) {
-        if ($_SESSION["PH_AUTH_USER"] == $user->getAttribute("email") && $_SESSION["PH_AUTH_PW"] == $user->getAttribute("password")) {
-            $_SESSION["loggedin"] = true;
-            if ($user->getAttribute("accountType") == AccountTypes::ADMIN) {
-                $_SESSION["isadmin"] = true;
+    foreach ($xml as $user) {
+        if ($user->email == $_POST['email']) {
+            if ($user->password == $_POST['password']) {
+                $_SESSION["loggedin"] = true;
+                $_SESSION["username"] = $_POST['email'];
+                //echo "Successful login";
+                if ($user->accountType == 'admin') {
+                    $_SESSION["adminauthenticated"] = true;
+                }
+                header("Location: ". "p5.php?login=Successful");
+                break;
+            } else {
+                //echo "Password does not match";
+                header("Location: ". "p5.php?login=Wrong+Password");
+                break;
             }
-            else {
-                $_SESSION["isadmin"] = false;
-            }
+        } else {
+            //echo "User does not exist";
+            header("Location: ". "p6.php");
+            break;
         }
     }
 }
-
-if (isset($_SESSION['loggedin']) && $_SESSION["loggedin"] == true) {
-    if (isset($_SESSION["isadmin"]) && $_SESSION["isadmin"] == true) {
-        $_SESSION["adminauthenticated"] = true;
+// If the page is included in another page
+else {
+    if (isset($_SESSION['loggedin']) && $_SESSION["loggedin"] == true) {
+        if (isset($_SESSION["adminauthenticated"]) && $_SESSION["adminauthenticated"] == false) {
+            header("Location: " . "common/error.php?errorcode=" . Errors::ERROR401);
+        }
     } else {
-        $_SESSION["adminauthenticated"] = false;
-        header("Location: " . "common/error.php?errorcode=" . Errors::ERROR401);
+        header("Location: " . "/p5.php");
     }
-} else {
-    header("Location: " . "/p5.php");
 }

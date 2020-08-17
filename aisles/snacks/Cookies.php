@@ -23,20 +23,36 @@
     <li>Cookies</li>
 </ul>
 <div class="main">
-
+<form action="../../scripts/addtocart.php" id="cart" method="post">
     <div class="grid-container">
 
         <div class="grid-item">
             <div class="col">
                 <div class="cookie-options">
                     <h3>Select one of our delicious cookie options</h3>
-                    <button class="cookie-button" id="button1">Chocolate</button>
-                    <button class="cookie-button" id="button2">Peanut Butter</button>
-                    <button class="cookie-button" id="button3">Salted Caramel</button>
+                    <input type="radio" name="cookieType" value="chocolate" class="cookie-button" id="button1" checked>
+                    <label for="button1">Chocolate</label> <br>
+                    <input type="radio" name="cookieType" value="peanut" class="cookie-button" id="button2">
+                    <label for="button2">Peanut Butter</label> <br>
+                    <input type="radio" name="cookieType" value="caramel" class="cookie-button" id="button3">
+                    <label for="button3">Salted Caramel</label><br>
                 </div>
                 <img src="../../images/snacks/Chocolate%20cookies.jpg" alt="Cookies image"> <!-- default image -->
             </div>
         </div>
+
+        <input type="hidden" name="image" value="images/snacks/Chocolate%20cookies.jpg" form="cart">
+        <input type="hidden" name="id" value="003429" form="cart">
+        <input type="hidden" name="prodName" value="Cookies" form="cart">
+        <input type="hidden" name="aisle" value="Snacks" form="cart">
+        <input type="hidden" name="origin" value="Canada" form="cart"/>
+        <input type="hidden" name="price" value="4.99" form="cart"/>
+        <input type="hidden" name="discount" value="false" form="cart"/>
+        <input type="hidden" name="description" value="These vegan fairtrade cookies are a baker's masterpiece. <br><br>
+                    This snack is delicious, moist and melts
+                    in your mouth. At every step of production,
+                    all workers are well compensated for their work and all
+                    our ingredients are ethically sourced, as they should be." form="cart" />
 
         <div class="grid-item">
             <div class="col">
@@ -66,7 +82,7 @@
                 <a id="details">More Description</a>
             </div>
         </div>
-
+</form>
 
     </div>
 </div>

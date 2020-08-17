@@ -6,7 +6,7 @@
     <meta name="author" content="Laura Boivin">
     <link rel="stylesheet" type="text/css" href="../css/p11.css">
     <link rel="stylesheet" type="text/css" href="../css/backstore.css">
-    <title>Order List</title>
+    <title>Order List | Back Store | Green Mart</title>
 </head>
 <?php require $_SERVER["DOCUMENT_ROOT"]."backstore/common/authenticate.php"; ?>
 <body>
@@ -35,11 +35,12 @@ if (isset($_POST['delete'])) {
 ?>
 <div id="box">
     <div class="main" style="text-align: center">
+        <h1>Order List </h1>
     <div class="grid-container">
         <div class="grid-item">
             <div class="col">
 <form action = "p11.php" method = "post">
-<h1>Order List </h1>
+
 <div align="center">
     <a href="../backstore/p12.php" class="addbutton" name = "add">Add</a>
     <a href="../backstore/p12.php" class="addbutton" name = "add">Edit</a>

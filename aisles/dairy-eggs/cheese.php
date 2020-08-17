@@ -45,14 +45,29 @@
                             </option>
                         </select></label></p>
 
+                <input type="hidden" name="cheeseType" value="idkkkk" form="cart"/>
+                <input type="hidden" name="image" value="images/dairy-eggs/cheese.jpg" form="cart">
+                <input type="hidden" name="id" value="12492" form="cart">
+                <input type="hidden" name="prodName" value="Cheese" form="cart">
+                <input type="hidden" name="aisle" value="Dairy &amp;amp; Eggs" form="cart">
+                <input type="hidden" name="origin" value="Switzerland" form="cart"/>
+                <input type="hidden" name="price" value="3.29" form="cart"/>
+                <input type="hidden" name="discount" value="true" form="cart"/>
+                <input type="hidden" name="description" value="Cheese is a dairy product, derived from milk and produced
+                        in a wide range of flavors, textures and forms
+                        by coagulation of the milk protein casein. It comprises proteins and fat from milk, usually the
+                        milk of
+                        cows, buffalo, goats, or sheep." form="cart" />
+
+
                 <div class="addtocart">
-                    <form action=""> <!-- Will add /action_page.php for WP3 -->
+                    <form action="../../scripts/addtocart.php" id="cart" method="post"> <!-- Will add /action_page.php for WP3 -->
                         <label for="number">Quantity:</label> <br/>
                         <button onclick="increaseValue()" type="button"
                                 style="float:left; border-radius: 50%; border: 2px solid black;">+
                         </button>
                         &nbsp
-                        <input type="text" id="number" value="0" readonly/>
+                        <input type="text" id="number" name="quantity" value="0" readonly/>
                         <button onclick="decreaseValue()" type="button"
                                 style="float:right; border-radius: 50%; border: 2px solid black;">-
                         </button>

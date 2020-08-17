@@ -31,30 +31,50 @@
             <h2>Chicken</h2>
             <div id="price" class="price"></div>
             <div id="location"></div>
-
+            <form action="../../scripts/addtocart.php" id="cart" method="post">
             <div>
                 <h3>Cut</h3>
-                <button class="cutCook" id="whole" onclick="whole()">Whole</button>
-                <button class="cutCook" id="breast" onclick="breast()">Breast</button>
-                <button class="cutCook" id="leg" onclick="leg()">Leg</button>
+<!--                <button class="cutCook" id="whole" onclick="whole()">Whole</button>-->
+<!--                <button class="cutCook" id="breast" onclick="breast()">Breast</button>-->
+<!--                <button class="cutCook" id="leg" onclick="leg()">Leg</button>-->
+                <input type="radio" name="chickenCut" class="cutCook" id="whole" onclick="whole()" checked>
+                <label for="whole">Whole</label>
+                <input type="radio" name="chickenCut" class="cutCook" id="breast" onclick="breast()">
+                <label for="breast">Breast</label>
+                <input type="radio" name="chickenCut" class="cutCook" id="leg" onclick="leg()">
+                <label for="leg">Leg</label>
             </div>
 
             <div>
                 <h3>Cook Method</h3>
-                <button class="cutCook" name="cook" value="grilled" id="grilled" onclick="grilled()">Grilled</button>
-                <button class="cutCook" name="cook" value="roasted" id="roasted" onclick="roasted()">Roasted</button>
-            </div>
+<!--                <button class="cutCook" name="cook" value="grilled" id="grilled" onclick="grilled()">Grilled</button>-->
+<!--                <button class="cutCook" name="cook" value="roasted" id="roasted" onclick="roasted()">Roasted</button>-->
+                <input type="radio" class="cutCook" name="cookMethod" value="grilled" id="grilled" onclick="grilled()" checked>
+                <label for="grilled">Grilled</label>
+                <input type="radio" class="cutCook" name="cookMethod" value="roasted" id="roasted" onclick="roasted()">
+                <label for="roasted">Roasted</label>
+        </div>
             <br><br><br>
 
             <div class="addtocart">
-                <form action="">
-                    <button type="button" onclick="notification()">Add to Cart</button>
+
+                <button type="submit" value="Add to Cart" onclick="notification()">Add to Cart</button>
                     <button type="button" id="incr-item" onclick="add()" style="float:right">+</button>
                     <button type="button" id="decr-item" onclick="subtract()" style="float:left">-</button>
                     <label><input type="number" id="quantity" name="quantity" value="0" min="0" size="5"
                                                  onchange="sessionStorage.setItem('quantity', this.value);"></label>
                 </form>
             </div>
+
+            <input type="hidden" name="id" value="543634" form="cart">
+            <input type="hidden" name="image" value="images/meat/chicken-whole.jpg" form="cart">
+            <input type="hidden" name="prodName" value="Chicken" form="cart">
+            <input type="hidden" name="aisle" value="Meat" form="cart">
+            <input type="hidden" name="origin" value="Alberta" form="cart"/>
+            <input type="hidden" name="price" value="9.99" form="cart"/>
+            <input type="hidden" name="discount" value="false" form="cart"/>
+            <input type="hidden" name="description" value=description form="cart" />
+            <input type="hidden" name="cook" value=description form="cart" />
 
             <span class="sub">
                 <span class="original-price" style="text-decoration: none">Total (tax not included): </span>

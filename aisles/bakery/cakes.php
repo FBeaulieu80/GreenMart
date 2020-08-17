@@ -45,12 +45,13 @@
                     <form action="../../scripts/addtocart.php" id="cart" method="post">
 
                     <input type="hidden" name="id" value="887325" form="cart">
+                    <input type="hidden" name="image" value="images/bakery/carrot-cake.jpg" form="cart">
                     <input type="hidden" name="prodName" value="Cakes" form="cart">
                     <input type="hidden" name="aisle" value="Bakery" form="cart">
-                    <input type="hidden" name="origin" value=productOrigin form="cart"/>
-                    <input type="hidden" name="price" value=cakePrice form="cart"/>
+                    <input type="hidden" name="origin" value="Australia" form="cart"/>
+                    <input type="hidden" name="price" value="11.99" form="cart"/>
                     <input type="hidden" name="discount" value="false" form="cart"/>
-                    <input type="hidden" name="description" value=description form="cart" />
+                    <input type="hidden" name="description" value="Carrot cake is cake that contains carrots mixed into the batter. Most modern carrot cake recipes have a white cream cheese frosting." form="cart" />
 
                         <label for="quantity">Quantity:</label>
                         <input type="button" value="-" class="plusMinusButton productPageButton" id="minusButton"

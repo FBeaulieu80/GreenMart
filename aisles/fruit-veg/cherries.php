@@ -47,13 +47,13 @@
                 <input type="hidden" name="discount" value="false" form="cart"/>
                 <input type="hidden" name="description" value="Organic Cherries from Mexico. Grown on a sustainable and fair trade certified farm.
                 Check out our recipes to see what delicious meals and desserts you can make with cherries." form="cart" />
-
+                <input type="hidden" name="image" value="images/fruit-veg/bing-cherry.jpg" form="cart"/>
 
                 <label for="type">Type:</label> <br/>
                 <div class="type">
 
                     <input form="cart" type="radio" class="cherryTypeButton" id="bing" name="cherryType" value="bing"
-                            onclick="setSelected(this, '../../images/fruit-veg/bing-cherry.jpg')">
+                            onclick="setSelected(this, '../../images/fruit-veg/bing-cherry.jpg')" checked>
                     <label for="bing">Bing</label>
                     <br />
                     <input form="cart" type="radio" class="cherryTypeButton" id="rainier" name="cherryType" value="rainier"
