@@ -10,6 +10,7 @@
 </head>
 <body>
 <?php
+    session_start();
     header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1.
     header("Pragma: no-cache"); // HTTP 1.0.
     header("Expires: 0"); // Proxies.
@@ -34,13 +35,13 @@
                     break;
             }
         }
-        /*if (isset($_GET["logout"]) && $_GET["logout"] == 'true') {
+        if (isset($_GET["logout"]) && $_GET["logout"] == 'true') {
             unset($_SESSION["loggedin"]);
             unset($_SESSION["username"]);
             unset($_SESSION["password"]);
             unset($_SESSION["adminauthenticated"]);
             echo "<h3>You are logged out!</h3>";
-        }*/
+        }
     }
     ?>
     <form id="box" action="backstore/common/authenticate.php" method="post" >
