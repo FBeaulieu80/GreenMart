@@ -1,5 +1,5 @@
 <?php
-require "backstore/common/authenticate.php";
+require "common/authenticate.php";
 ?>
 <html lang="en">
 <head>
@@ -12,11 +12,11 @@ require "backstore/common/authenticate.php";
     <meta name="author" content="Felix Beaulieu">
 </head>
 <body>
-<?php include "backstore/common/header.php"; ?>
+<?php include "common/header.php"; ?>
 <div class="main">
     <h2>Back Store</h2>
     <?php if (isset($_SESSION["username"])) echo "<h3 style='text-align: center'>Welcome {$_SESSION["username"]}.</h3>"; ?>
 </div>
-<?php include "backstore/common/footer.html"; ?>
+<?php include "common/footer.html"; ?>
 </body>
 </html>

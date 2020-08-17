@@ -16,7 +16,7 @@
 
 <body>
 <!-- Header in external file -->
-<?php require "common/header.php"; ?>
+<?php include "common/header.php"; ?>
 <div class="main">
     <h2>Edit Product</h2>
     <div id="edit-product" class="product-table">
@@ -57,7 +57,7 @@
 </div>
 
 <!--Footer in external file-->
-<?php require "common/footer.html"; ?>
+<?php include "common/footer.html"; ?>
 </body>
 
 
