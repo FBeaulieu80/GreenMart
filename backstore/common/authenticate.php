@@ -12,6 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 if ($user['password'] == $_POST['password']) {
                     $_SESSION["loggedin"] = true;
                     $_SESSION["username"] = $_POST['username'];
+                    $_SESSION["password"] = $_POST['password'];
                     $_SESSION["adminauthenticated"] = ($user['accountType'] == 'admin');
                     $status = 0;
                     break;
