@@ -1,5 +1,5 @@
 <?php
-require $_SERVER["DOCUMENT_ROOT"]."backstore/common/authenticate.php";
+require "/backstore/common/authenticate.php";
 ?>
 <html lang="en">
 <head>
@@ -12,11 +12,11 @@ require $_SERVER["DOCUMENT_ROOT"]."backstore/common/authenticate.php";
     <meta name="author" content="Felix Beaulieu">
 </head>
 <body>
-<?php require $_SERVER["DOCUMENT_ROOT"]."backstore/common/header.php"; ?>
+<?php include "/backstore/common/header.php"; ?>
 <div class="main">
     <h2>Back Store</h2>
     <?php if (isset($_SESSION["username"])) echo "<h3 style='text-align: center'>Welcome {$_SESSION["username"]}.</h3>"; ?>
 </div>
-<?php require $_SERVER["DOCUMENT_ROOT"]."backstore/common/footer.html"; ?>
+<?php include "/backstore/common/footer.html"; ?>
 </body>
 </html>

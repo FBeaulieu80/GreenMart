@@ -8,9 +8,9 @@
     <link rel="stylesheet" type="text/css" href="../css/backstore.css">
     <title>Order List | Back Store | Green Mart</title>
 </head>
-<?php require $_SERVER["DOCUMENT_ROOT"]."backstore/common/authenticate.php"; ?>
+<?php require "/backstore/common/authenticate.php"; ?>
 <body>
-<?php require $_SERVER["DOCUMENT_ROOT"]."backstore/common/header.php";
+<?php include "/backstore/common/header.php";
 
 if (isset($_POST['delete'])) {
 
@@ -87,6 +87,6 @@ if (isset($_POST['delete'])) {
         </div>
     </div>
 </div>
-<?php require $_SERVER["DOCUMENT_ROOT"]."backstore/common/footer.html"; ?>
+<?php include "/backstore/common/footer.html"; ?>
 </body>
 
