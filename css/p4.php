@@ -80,7 +80,6 @@ table {
 .img-with-text {
     display: block;
     text-align: center;
-
 }
 
 button {

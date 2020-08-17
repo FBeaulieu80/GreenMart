@@ -7,12 +7,12 @@
 
     <link rel="shortcut icon" href="../favicon.ico">
     <meta name="author" content="Laura Boivin">
-    <title>Order List</title>
+    <title>Edit Order List | Back Store | Green Mart</title>
 </head>
 
 <body widthmargin="100%">
 <?php require "common/header.php"; ?>
-<div id="box">
+
 <?php
 
 if (isset($_POST['save']))
@@ -83,88 +83,92 @@ if (isset($_POST['edit'])){
 
 
 
-
+<div id="box">
+    <div class="main" style="text-align: center">
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="col">
 
 <div class=editOrder>
     <h1 align="center">Add an Order<br/></h1>
     <form action = "p12.php" method = "post">
 
-    <table marginwidth="100%" cellspacing="20" align="center">
+    <table  cellspacing="20" align="center">
 
         <tr>
-            <th>Product Name:</th>
-            <td>
+            <th >Product Name:</th>
+            <td >
                 <input type = "text" name="ProductName" rows="1" cols="20">
             </td>
         </tr>
         <tr>
-            <th>Product ID:</th>
-            <td>
+            <th >Product ID:</th>
+            <td >
                 <input type = "text" name="ProductID" rows="1" cols="20">
             </td>
         </tr>
         <tr>
-            <th>Units / LBS:</th>
-            <td>
+            <th >Units / LBS:</th>
+            <td >
                     <input type = "text" name="Units/LBS" rows="1" cols="20">
             </td>
         </tr>
         <tr>
-            <th>Seller:</th>
-            <td>
+            <th >Seller:</th>
+            <td >
                     <input type = "text" name="Seller" rows="1" cols="20">
             </td>
         </tr>
         <tr>
-            <th>Order Date:</th>
-            <td>
+            <th >Order Date:</th>
+            <td >
                     <input type = "text" name="OrderDate" rows="1" cols="20">
             </td>
         </tr>
 
             <tr>
-                <td>
-            <input type = "submit" name = "save" value = "Save">
+                <td >
+            <input class = "savebutton" type = "submit" name = "save" value = "Save">
                 </td>
             </tr>
     </table>
         <h1 align="center">Edit an Order<br/></h1>
-        <table marginwidth="100%" cellspacing="20" align="center">
+        <table  cellspacing="20" align="center">
 
             <tr>
-                <th>Enter Product Name </br> & reset the fields below:</th>
-                <td>
+                <th >Enter Product Name </br> & reset the fields below:</th>
+                <td >
                     <input type = "text" name="editProductName" rows="1" cols="20">
                 </td>
             </tr>
             <tr>
-                <th>Product ID:</th>
-                <td>
+                <th >Product ID:</th>
+                <td >
                     <input type = "text" name="editProductID" rows="1" cols="20">
                 </td>
             </tr>
             <tr>
-                <th>Units / LBS:</th>
-                <td>
+                <th >Units / LBS:</th>
+                <td >
                     <input type = "text" name="editUnits/LBS" rows="1" cols="20">
                 </td>
             </tr>
             <tr>
-                <th>Seller:</th>
-                <td>
+                <th >Seller:</th>
+                <td >
                     <input type = "text" name="editSeller" rows="1" cols="20">
                 </td>
             </tr>
             <tr>
-                <th>Order Date:</th>
-                <td>
+                <th >Order Date:</th>
+                <td >
                     <input type = "text" name="editOrderDate" rows="1" cols="20">
                 </td>
             </tr>
 
             <tr>
-                <td>
-                    <input type = "submit" name = "edit" value = "Edit">
+                <td >
+                    <input class = "savebutton" type = "submit" name = "edit" value = "Edit">
                 </td>
             </tr>
         </table>
@@ -172,11 +176,18 @@ if (isset($_POST['edit'])){
 
 
 
+
 </div>
-    <?php require "common/footer.html"; ?>
+
 
 </form>
+            </div>
+            </div>
+        </div>
+        </div>
+
 </div>
+<?php require "common/footer.html"; ?>
 </body>
 
 
